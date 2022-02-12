@@ -8,7 +8,6 @@ namespace GA.MonsterProject
     {
         public Transform m_gcLerpPoint1;
         public Transform m_gcLerpPoint2;
-        public Material m_gcMaterial;
 
         public float m_fLerpDurationSeconds = 1.0f;
         private float m_fEventTime = 0.0f;
@@ -33,12 +32,6 @@ namespace GA.MonsterProject
                 m_gcLerpPoint2 = gcTemp;
                 m_fEventTime = Time.time;
             }
-
-            if (Input.GetButton("Fire1") && fRatio < 0.6f && fRatio > 0.4f)
-            {
-                m_gcMaterial.color = Color.green;
-            }
-            
         }
     }
 }
