@@ -10,28 +10,37 @@ namespace GA.MonsterProject
         public Transform m_gcLerpPoint2;
 
         public float m_fLerpDurationSeconds = 1.0f;
+        private float m_fRatio;
         private float m_fEventTime = 0.0f;
         void Start()
         {
             m_fEventTime = Time.time;
         }
         
-        
-
         void Update()
         {
-            // 0 ..1    
-            float fRatio = (Time.time - m_fEventTime) / m_fLerpDurationSeconds;
+            m_fRatio = (Time.time - m_fEventTime) / m_fLerpDurationSeconds;
             
-            transform.position = Vector3.Lerp(m_gcLerpPoint1.position, m_gcLerpPoint2.position, fRatio);
+            transform.position = Vector3.Lerp(m_gcLerpPoint1.position, m_gcLerpPoint2.position, m_fRatio);
 
-            if (fRatio >= 1.0f)
+            if (m_fRatio >= 1.0f)
             {
                 var gcTemp = m_gcLerpPoint1;
                 m_gcLerpPoint1 = m_gcLerpPoint2;
                 m_gcLerpPoint2 = gcTemp;
                 m_fEventTime = Time.time;
             }
+        }
+
+        public float GetRatio()
+        {
+            return m_fRatio;
+        }
+
+        public void Reset()
+        {
+            transform.position = m_gcLerpPoint1.position;
+            m_fEventTime = Time.time;
         }
     }
 }

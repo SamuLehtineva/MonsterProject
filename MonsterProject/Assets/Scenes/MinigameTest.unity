@@ -742,6 +742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 902081710}
+  - component: {fileID: 902081711}
   m_Layer: 0
   m_Name: minigame1
   m_TagString: Untagged
@@ -767,6 +768,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &902081711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902081709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ab922718fc8ad4f822c78b2dd4cd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gcMoveBetween: {fileID: 2107713810}
+  m_gcMaterial: {fileID: 2100000, guid: 4fb37af2a4ab1ee4683fc0685647a586, type: 2}
+  m_iEnemyHealth: 100
+  m_iPetHealth: 100
+  m_bIsMyTurn: 0
+  m_txtEnemyHealthText: {fileID: 65377894}
+  m_txtPetHealthText: {fileID: 593976897}
 --- !u!1 &1009323753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,7 +1344,7 @@ GameObject:
   - component: {fileID: 2107713809}
   - component: {fileID: 2107713808}
   - component: {fileID: 2107713807}
-  - component: {fileID: 2107713805}
+  - component: {fileID: 2107713810}
   - component: {fileID: 2107713806}
   m_Layer: 0
   m_Name: Cylinder
@@ -1333,22 +1353,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2107713805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107713804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ab922718fc8ad4f822c78b2dd4cd56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_gcLerpPoint1: {fileID: 1446641573}
-  m_gcLerpPoint2: {fileID: 1909162168}
-  m_gcMaterial: {fileID: 2100000, guid: 4fb37af2a4ab1ee4683fc0685647a586, type: 2}
-  m_fLerpDurationSeconds: 0.4
 --- !u!136 &2107713806
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1426,3 +1430,18 @@ Transform:
   m_Father: {fileID: 902081710}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107713810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107713804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70d88ecc9c6a214d909f228f9ee3d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gcLerpPoint1: {fileID: 1446641573}
+  m_gcLerpPoint2: {fileID: 1909162168}
+  m_fLerpDurationSeconds: 0.5
