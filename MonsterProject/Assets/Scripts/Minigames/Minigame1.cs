@@ -18,11 +18,13 @@ namespace GA.MonsterProject
 
         [SerializeField]
         TMP_Text m_txtPetHealthText;
-        private bool m_bPressed;
+
+        [SerializeField]
+        TMP_Text m_txtTurnText;
         void Start()
         {
-            m_gcMaterial.color = Color.black;
-            m_bPressed = false;
+            m_gcMaterial.color = Color.white;
+            m_bIsMyTurn = true;
         }
 
         void Update()
@@ -32,30 +34,78 @@ namespace GA.MonsterProject
 
             if (Input.GetButtonDown("Fire1"))
             {
-                if (m_gcMoveBetween.GetRatio() < 0.6f && m_gcMoveBetween.GetRatio() > 0.4f)
-                {
-                    m_gcMaterial.color = Color.green;
+                Action(m_gcMoveBetween.GetRatio());
+            }
 
+            if (m_bIsMyTurn)
+            {
+                m_txtTurnText.text = "Attack!";
+            }
+            else
+            {
+                m_txtTurnText.text = "Defend!";
+            }
+            CheckWin();
+        }
+
+        public void Action(float ratio)
+        {
+            if (ratio < 0.6f && ratio > 0.4f)
+            {
+                m_gcMaterial.color = Color.green;
+
+                if (m_bIsMyTurn)
+                {
                     m_iEnemyHealth -= 50;
-                    StartCoroutine(ActionDelay());
+                    m_txtEnemyHealthText.color = Color.red;
+                }
+                else
+                {
+                    m_iPetHealth -= 25;
+                    m_txtPetHealthText.color = Color.yellow;
+                }
+            } 
+            else
+            {
+                m_gcMaterial.color = Color.red;
+                
+                if (m_bIsMyTurn)
+                {
+                    m_txtEnemyHealthText.color = Color.yellow;
                 }
                 else{
-                    m_gcMaterial.color = Color.red;
-                    
+                    m_iPetHealth -= 50;
+                    m_txtPetHealthText.color = Color.red;
                 }
-                m_bPressed = !m_bPressed;
             }
             
+            StartCoroutine(ActionDelay());
+        }
+
+        public void CheckWin()
+        {
+            if (m_iEnemyHealth <= 0)
+            {
+                m_txtTurnText.text = "Victory";
+                m_gcMoveBetween.enabled = false;
+            }
+            else if (m_iPetHealth <= 0)
+            {
+                m_txtTurnText.text = "Defeat";
+                m_gcMoveBetween.enabled = false;
+            }
         }
 
         IEnumerator ActionDelay()
         {
             m_gcMoveBetween.enabled = false;
-            m_txtEnemyHealthText.color = Color.red;
             yield return new WaitForSeconds(1);
             m_gcMoveBetween.enabled = true;
             m_gcMoveBetween.Reset();
             m_txtEnemyHealthText.color = Color.white;
+            m_txtPetHealthText.color = Color.white;
+            m_gcMaterial.color = Color.white;
+            m_bIsMyTurn = !m_bIsMyTurn;
         }
     }
 }
