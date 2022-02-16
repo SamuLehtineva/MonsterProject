@@ -7,43 +7,18 @@ namespace GA.MonsterProject
 {
     public class Interactable : MonoBehaviour
     {
-        private bool LoadNarrative;
-        private bool InArea = false;
-
-        private void OnTriggerEnter()
+        void Update()
         {
-            Debug.Log("OnTriggerEnter");
-            InArea = true;
-            if (InArea == true)
-            {
-                Debug.Log("InArea=True");
-                PauseForNarrative();
-            }
-            InArea = false;
+            LoadNarrative();
         }
-        public void PauseForNarrative()
+        public void LoadNarrative()
         {
-
-            if (Input.GetKey(KeyCode.E))
-            {
-                var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
-                LoadNarrative = true;
-                Time.timeScale = 0f;
-                Debug.Log("KeyCodeE");
-
-            }
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                SceneManager.UnloadSceneAsync("NarrativeBox");
-                LoadNarrative = false;
-                Time.timeScale = 1f;
-                Debug.Log("KeyCodeEsc");
-            }
+                if (Input.GetKey(KeyCode.E))
+                {
+                    var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
+                    Time.timeScale = 0f;
+                }
         }
-
-
-
-
     }
 }
 

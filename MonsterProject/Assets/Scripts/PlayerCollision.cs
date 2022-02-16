@@ -14,18 +14,6 @@ namespace GA.MonsterProject
 
         private void OnTriggerEnter()
         {
-            Debug.Log("TriggerEnter");
-            InArea = true;
-            if(InArea == true)
-            {
-                Debug.Log("InArea=True");
-                interactable.PauseForNarrative();
-            }
-            InArea = false;
         }
-
-
-
-
     }
 }
