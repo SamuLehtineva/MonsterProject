@@ -7,9 +7,18 @@ namespace GA.MonsterProject
 {
     public class Interactable : MonoBehaviour
     {
+        public LayerMask interactableLayermask;
+
         void Update()
         {
-            LoadNarrative();
+            RaycastHit hit;
+
+            if(Physics.Raycast(transform.position,Vector3.forward, out hit, 2, interactableLayermask))
+            {
+                Debug.Log(hit.collider.name);
+                LoadNarrative();
+            }
+            
         }
         public void LoadNarrative()
         {

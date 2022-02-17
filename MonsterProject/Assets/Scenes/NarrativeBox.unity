@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -193,7 +193,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Insert morally difficult choice to make here
+  m_Text: 'You walked past your neighbours house. You could see flames dancing in
+    his eyes as the old man walked closer.
+
+
+    "Your creature ate some of my chickens!
+    What the fuck my guy? You better pay for them or else!"'
 --- !u!222 &39291495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -599,7 +604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Steal the item
+  m_Text: Laugh at his face
 --- !u!222 &1104914942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -678,7 +683,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pay for the item
+  m_Text: Pay the man
 --- !u!222 &1195934985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -902,7 +907,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You payed for the item, like a pussy
+  m_Text: You payed for the damages your monster had caused, apologized and left
 --- !u!222 &1353237643
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2014,7 +2019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Serves them right lmao
+  m_Text: You laughed at your neighbour and continued walking
 --- !u!222 &2146718312
 CanvasRenderer:
   m_ObjectHideFlags: 0

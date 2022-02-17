@@ -361,6 +361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c5f4481222a1e47bcf22049427f804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactableLayermask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &945869640
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +376,7 @@ GameObject:
   - component: {fileID: 945869643}
   - component: {fileID: 945869642}
   - component: {fileID: 945869641}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere Thicc
   m_TagString: Interactable
   m_Icon: {fileID: 0}
