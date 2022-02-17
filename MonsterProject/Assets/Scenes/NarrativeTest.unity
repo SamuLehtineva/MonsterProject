@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d77ca7ee48bb8749a64af24d34e0e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ccPlayer: {fileID: 760277330}
+  m_tTarget: {fileID: 760277330}
   m_fXOffset: 0
   m_fYOffset: 5
   m_fZOffset: -6
