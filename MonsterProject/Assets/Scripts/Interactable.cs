@@ -13,7 +13,7 @@ namespace GA.MonsterProject
         }
         public void LoadNarrative()
         {
-                if (Input.GetKey(KeyCode.E))
+                if (Input.GetButtonDown("Fire1"))
                 {
                     var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
                     Time.timeScale = 0f;
