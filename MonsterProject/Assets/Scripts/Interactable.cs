@@ -15,7 +15,6 @@ namespace GA.MonsterProject
 
             if(Physics.Raycast(transform.position,Vector3.forward, out hit, 2, interactableLayermask))
             {
-                Debug.Log(hit.collider.name);
                 LoadNarrative();
             }
             
@@ -25,6 +24,9 @@ namespace GA.MonsterProject
                 if (Input.GetButtonDown("Fire1"))
                 {
                     var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
+                    SceneLoad.completed += (s) => {
+                        SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
+                    };
                     Time.timeScale = 0f;
                 }
         }
