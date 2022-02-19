@@ -7,9 +7,10 @@ namespace GA.MonsterProject
 {
     public class ReadTextFile : MonoBehaviour
     {
-        string m_sFileName = "dialog.txt";
+        public string m_sFileName = "dialog.txt";
         string m_sFileContents;
         string[] m_sLines;
+
         void Start()
         {
             StreamReader srReader = new StreamReader(Application.dataPath + "/TextFiles/" + m_sFileName);

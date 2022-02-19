@@ -71,5 +71,31 @@ namespace GA.MonsterProject
                     break;
             }
         }
+
+        public void AddResources(int money, int rep, int bond)
+        {
+            m_iMoney += money;
+            if (m_iMoney < 0)
+            {
+                m_iMoney = 0;
+            }
+
+            m_iReputation += rep;
+            if (m_iReputation < 0)
+            {
+                m_iReputation = 0;
+            }
+
+            m_iBond += bond;
+
+            if (m_iBond < 0)
+            {
+                m_iBond = 0;
+            }
+            else if (m_iBond > 100)
+            {
+                m_iBond = 100; 
+            }
+        }
     }
 }

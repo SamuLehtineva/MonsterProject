@@ -21,7 +21,7 @@ namespace GA.MonsterProject
         int m_iLineAmount;
         void Start()
         {
-        
+            m_gcReadText.m_sFileName = "dialog.txt";
         }
 
         // Update is called once per frame
