@@ -49,16 +49,6 @@ namespace GA.MonsterProject
             m_iLineAmount = lineAmount;
         }
 
-        public void GiveMoney(int amount)
-        {
-            GameObject.Find("Player").gameObject.GetComponent<PlayerResources>().AddResource(EResources.EResource._Money, amount);
-        }
-
-        public void GiveReputation(int amount)
-        {
-            GameObject.Find("Player").gameObject.GetComponent<PlayerResources>().AddResource(EResources.EResource._Reputation, amount);
-        }
-
         public void exitText()
         {
             Debug.Log("exitText");
