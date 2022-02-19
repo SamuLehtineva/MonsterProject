@@ -2012,14 +2012,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836848fe1752fd74e88f2f2b85dc5dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sFileName: 
+  m_sFileName: chicken_quest.txt
   m_qRewardA:
-    m_iMoney: 0
-    m_iReputation: 0
+    m_iMoney: -25
+    m_iReputation: 10
     m_iBond: 0
   m_qRewardB:
     m_iMoney: 0
-    m_iReputation: 0
+    m_iReputation: -40
     m_iBond: 0
 --- !u!1 &1812944667
 GameObject:
