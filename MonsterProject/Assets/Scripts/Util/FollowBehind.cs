@@ -24,7 +24,7 @@ namespace GA.MonsterProject
             transform.LookAt(m_vTargetPos, Vector3.up);
             float fRatio = InverseLerp(transform.position, m_vTargetPos, transform.position + transform.forward);
             transform.position += transform.forward * m_fMoveSpeed * Time.deltaTime / fRatio;
-            Debug.Log(fRatio);
+            //Debug.Log(fRatio);
         }
 
         public float InverseLerp(Vector3 a, Vector3 b, Vector3 value)

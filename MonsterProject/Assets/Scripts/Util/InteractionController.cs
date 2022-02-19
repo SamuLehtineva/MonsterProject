@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
-    public class Interactable : MonoBehaviour
+    public class InteractionController : MonoBehaviour
     {
+        [SerializeField]
+        Canvas m_gcCanvas;
         public LayerMask interactableLayermask;
 
         void Update()
@@ -29,6 +31,21 @@ namespace GA.MonsterProject
                     };
                     Time.timeScale = 0f;
                 }
+        }
+
+        private void OnTriggerEnter(Collider other) {
+            IInteractables mytest = other.gameObject.GetComponent(typeof(IInteractables)) as IInteractables;
+            if (mytest is IInteractables)
+            {
+                mytest.Activate();
+                m_gcCanvas.gameObject.SetActive(true);
+            }
+            
+            Debug.Log(other.tag);
+        }
+
+        private void OnTriggerExit(Collider other) {
+            m_gcCanvas.gameObject.SetActive(false);
         }
     }
 }
