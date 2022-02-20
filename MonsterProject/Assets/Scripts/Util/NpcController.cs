@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
-    public class DoorController : MonoBehaviour, IInteractables
+    public class NpcController : MonoBehaviour, IInteractables
     {
-        Animator m_aDoorAnimator;
         public bool IsActive
         {
             get;
@@ -17,7 +16,6 @@ namespace GA.MonsterProject
         void Start()
         {
             IsActive = false;
-            m_aDoorAnimator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -27,33 +25,33 @@ namespace GA.MonsterProject
             {
                 Interact();
             }
+            
         }
 
         public void Activate()
         {
             if (!IsActive)
             {
-                m_aDoorAnimator.Play("Door_Open", 0, 0.0f);
-                Debug.Log("Jee");
                 IsActive = true;
             }
-            
         }
 
         public void DeActivate()
         {
             if (IsActive)
             {
-                m_aDoorAnimator.Play("Door_Close", 0, 0.0f);
                 IsActive = false;
             }
         }
 
         public void Interact()
         {
-            if (IsActive)
-            {
-                SceneManager.LoadScene("Cabin");
+            if (IsActive) {
+                var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
+                    SceneLoad.completed += (s) => {
+                        SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
+                    };
+                Time.timeScale = 0f;
             }
         }
     }
