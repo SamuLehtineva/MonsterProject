@@ -12,6 +12,9 @@ namespace GA.MonsterProject
         ReadTextFile m_gcReadText;
 
         [SerializeField]
+        QuestController m_gcQuestController;
+
+        [SerializeField]
         TMP_Text m_txtDialogText;
 
         [SerializeField]
@@ -19,9 +22,15 @@ namespace GA.MonsterProject
 
         [SerializeField]
         int m_iLineAmount;
+
+        private QuestReward m_gcRewardA;
+        private QuestReward m_gcRewardB;
         void Start()
         {
             m_gcReadText.m_sFileName = "dialog.txt";
+            m_gcRewardA = m_gcQuestController.m_qRewardA;
+            m_gcRewardB = m_gcQuestController.m_qRewardB;
+
         }
 
         // Update is called once per frame
@@ -54,6 +63,16 @@ namespace GA.MonsterProject
             Debug.Log("exitText");
             SceneManager.UnloadSceneAsync("NarrativeBox");
             Time.timeScale = 1f;
+        }
+
+        public void GiveRewardA()
+        {
+            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardA.m_iMoney, m_gcRewardA.m_iReputation, m_gcRewardA.m_iBond);
+        }
+
+        public void GiveRewardB()
+        {
+            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardB.m_iMoney, m_gcRewardB.m_iReputation, m_gcRewardB.m_iBond);
         }
     }
 }
