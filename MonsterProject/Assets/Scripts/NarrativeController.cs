@@ -34,7 +34,7 @@ namespace GA.MonsterProject
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
             UpdateText(m_iStartingLine, m_iLineAmount);
         }
