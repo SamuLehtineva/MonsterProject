@@ -8,13 +8,14 @@ namespace GA.MonsterProject
     {
         private CharacterController m_ccCharacterController;
         private Vector3 m_vDirection;
-
+        private Animator m_gcANimator;
         public float m_fMoveSpeed;
         public float m_fTurnSpeed;
         // Start is called before the first frame update
         void Start()
         {
             m_ccCharacterController = GetComponent<CharacterController>();
+            m_gcANimator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -32,9 +33,14 @@ namespace GA.MonsterProject
 
             if (m_vDirection != Vector3.zero)
             {
+                m_gcANimator.SetBool("IsMoving", true);
                 Quaternion gTargetRotation = Quaternion.LookRotation(m_vDirection, Vector3.up);
                 Quaternion qNewRotation = Quaternion.Slerp(transform.rotation, gTargetRotation, m_fTurnSpeed * Time.deltaTime);
                 transform.rotation = gTargetRotation;
+            }
+            else
+            {
+                m_gcANimator.SetBool("IsMoving", false);
             }
         }
     }
