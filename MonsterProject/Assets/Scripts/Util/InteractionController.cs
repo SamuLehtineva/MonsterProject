@@ -17,7 +17,7 @@ namespace GA.MonsterProject
 
             if(Physics.Raycast(transform.position,Vector3.forward, out hit, 2, interactableLayermask))
             {
-                LoadNarrative();
+                //LoadNarrative();
             }
             
         }
@@ -45,7 +45,12 @@ namespace GA.MonsterProject
         }
 
         private void OnTriggerExit(Collider other) {
-            m_gcCanvas.gameObject.SetActive(false);
+            IInteractables mytest = other.gameObject.GetComponent(typeof(IInteractables)) as IInteractables;
+            if (mytest is IInteractables)
+            {
+                mytest.DeActivate();
+                m_gcCanvas.gameObject.SetActive(false);
+            }
         }
     }
 }
