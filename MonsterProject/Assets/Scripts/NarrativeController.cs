@@ -3,17 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using GA.MonsterProject;
 
 namespace GA.MonsterProject
 {
     public class NarrativeController : MonoBehaviour
     {
-        [SerializeField]
-        ReadTextFile m_gcReadText;
-
-        [SerializeField]
-        QuestController m_gcQuestController;
-
         [SerializeField]
         TMP_Text m_txtDialogText;
 
@@ -23,14 +18,19 @@ namespace GA.MonsterProject
         [SerializeField]
         int m_iLineAmount;
 
-        private QuestReward m_gcRewardA;
-        private QuestReward m_gcRewardB;
+        public static QuestReward m_gcRewardA;
+        public static QuestReward m_gcRewardB;
+
+        private ReadTextFile m_ReadText;
+        private string[] m_sLines;
+        public static string m_sFileName = "dialog.txt";
         void Start()
         {
-            m_gcReadText.m_sFileName = "dialog.txt";
-            m_gcRewardA = m_gcQuestController.m_qRewardA;
-            m_gcRewardB = m_gcQuestController.m_qRewardB;
-
+            if (m_sFileName != null)
+            {
+                m_ReadText = new ReadTextFile(m_sFileName);
+            }
+            
         }
 
         // Update is called once per frame
@@ -44,7 +44,7 @@ namespace GA.MonsterProject
             m_txtDialogText.text = "";
             for (int i = 0; i < lineAmount; i++)
             {
-                m_txtDialogText.text += m_gcReadText.GetLine(startingLine + i) + "\n";
+                m_txtDialogText.text += m_ReadText.GetLine(startingLine + i) + "\n";
             }
         }
 

@@ -398,6 +398,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_sFileName: dialog2.txt
+  m_qRewardA:
+    m_iMoney: 50
+    m_iReputation: -50
+    m_iBond: 0
+  m_qRewardB:
+    m_iMoney: 100
+    m_iReputation: 100
+    m_iBond: 0
 --- !u!1 &482558975
 GameObject:
   m_ObjectHideFlags: 0

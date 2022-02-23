@@ -350,12 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You walked past your neighbours house. You could see flames dancing in
-    his eyes as the old man walked closer.
-
-
-    "Your creature ate some of my chickens!
-    What the fuck my guy? You better pay for them or else!"'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1203,8 +1198,6 @@ GameObject:
   - component: {fileID: 1680915776}
   - component: {fileID: 1680915775}
   - component: {fileID: 1680915779}
-  - component: {fileID: 1680915780}
-  - component: {fileID: 1680915781}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1305,45 +1298,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c918d20b8675f419c4fe6cbfcdbc33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_gcReadText: {fileID: 1680915780}
-  m_gcQuestController: {fileID: 1680915781}
   m_txtDialogText: {fileID: 398010137}
   m_iStartingLine: 1
   m_iLineAmount: 3
---- !u!114 &1680915780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680915774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3692805c4294540b2b173287125064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_sFileName: dialog.txt
---- !u!114 &1680915781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680915774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 836848fe1752fd74e88f2f2b85dc5dd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_sFileName: chicken_quest.txt
-  m_qRewardA:
-    m_iMoney: -25
-    m_iReputation: 10
-    m_iBond: 0
-  m_qRewardB:
-    m_iMoney: 0
-    m_iReputation: -40
-    m_iBond: 0
 --- !u!1 &1843543267
 GameObject:
   m_ObjectHideFlags: 0
