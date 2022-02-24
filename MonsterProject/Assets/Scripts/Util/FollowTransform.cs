@@ -12,6 +12,8 @@ namespace GA.MonsterProject
         public float m_fYOffset;
         public float m_fZOffset;
 
+        public float m_fZLookOffset;
+
         void Update()
         {
             Vector3 vCurrentPos = transform.position;
@@ -23,7 +25,9 @@ namespace GA.MonsterProject
 
             transform.position = Vector3.Lerp(vCurrentPos, vWantedPos, 25.0f * Time.deltaTime);
             transform.position = vWantedPos;
-            transform.LookAt(m_tTarget);
+            Vector3 vTarget = m_tTarget.transform.position;
+            vTarget.z += m_fZLookOffset;
+            transform.LookAt(vTarget);
         }
     }
 }
