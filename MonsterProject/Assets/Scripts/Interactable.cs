@@ -15,6 +15,7 @@ namespace GA.MonsterProject
 
             if(Physics.Raycast(transform.position,Vector3.forward, out hit, 2, interactableLayermask))
             {
+                Debug.Log("hit");
                 LoadNarrative();
             }
             
