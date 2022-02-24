@@ -19,8 +19,14 @@ namespace GA.MonsterProject
             m_sLines = m_sFileContents.Split("\n"[0]);
         }
 
-        public string GetLine(int line) {
+        public string GetLine(int line) 
+        {
             return m_sLines[line -1];
+        }
+
+        public string[] GetLines()
+        {
+            return m_sLines;
         }
     }
 }
