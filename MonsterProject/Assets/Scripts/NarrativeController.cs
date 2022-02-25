@@ -27,6 +27,7 @@ namespace GA.MonsterProject
 
         private ReadTextFile m_ReadText;
         private string[] m_sLines;
+        private string[] m_sIndicators = {"#Start", "#ButtonA", "#ButtonB", "#OptionA", "#OptionB", "#ButtonEnd"};
         public static string m_sFileName = "dialog2.txt";
         void Start()
         {
@@ -88,7 +89,27 @@ namespace GA.MonsterProject
         {
             for (int i = 0; i < m_sLines.Length; i++)
             {
-                //Debug.Log(m_sLines[i]);
+                for (int j = 0; j < m_sIndicators.Length; j++)
+                {
+                    if (m_sLines[i].Contains(m_sIndicators[j]))
+                    {
+                        try
+                        {
+                            switch (j)
+                            {
+                                case 1:
+                                m_txtButtonA.text = m_sLines[i+1];
+                                break;
+                            }
+                        }
+                        catch (IndexOutOfRangeException e)
+                        {
+                            Debug.Log(m_sLines[i] + " is an indicator. The next line should contain text that can be used by the specified object");
+                            Debug.Log(e);
+                        }
+                    }
+                }
+                /*Debug.Log(m_sLines[i]);
                 if (m_sLines[i].Contains("#ButtonA"))
                 {
                     try
@@ -102,7 +123,7 @@ namespace GA.MonsterProject
                         Debug.Log(e);
                     }
                     
-                }
+                }*/
             }
         }
     }
