@@ -17,6 +17,9 @@ namespace GA.MonsterProject
         TextMeshProUGUI m_txtButtonA;
 
         [SerializeField]
+        TextMeshProUGUI m_txtButtonB;
+
+        [SerializeField]
         public int m_iStartingLine;
 
         [SerializeField]
@@ -98,8 +101,12 @@ namespace GA.MonsterProject
                             switch (j)
                             {
                                 case 1:
-                                m_txtButtonA.text = m_sLines[i+1];
-                                break;
+                                    m_txtButtonA.text = m_sLines[i+1];
+                                    break;
+
+                                case 2:
+                                    m_txtButtonB.text = m_sLines[i+1];
+                                    break;
                             }
                         }
                         catch (IndexOutOfRangeException e)
