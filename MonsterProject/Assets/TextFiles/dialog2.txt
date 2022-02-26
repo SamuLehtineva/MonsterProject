@@ -1,7 +1,21 @@
+#Start
 You danced around in your underwear
 
 "You can't do that!" someone yelled.
+#
+
+#OptionA
 You tell him to fuck off.
+#
+
+#OptionB
 You got embarassed and ran away.
+#
+
 #ButtonA
-juu
+*Agressive*
+#
+
+#ButtonB
+*Embarassed*
+#

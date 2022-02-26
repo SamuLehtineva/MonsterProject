@@ -39,8 +39,11 @@ namespace GA.MonsterProject
                 m_ReadText = new ReadTextFile(m_sFileName);
                 m_sLines = m_ReadText.GetLines();
             }
-            UpdateText(m_iStartingLine, m_iLineAmount);
-            CheckLine();
+            m_txtDialogText.text = SearchIndicator(m_sIndicators[0]);
+            m_txtButtonA.text = SearchIndicator(m_sIndicators[1]);
+            m_txtButtonB.text = SearchIndicator(m_sIndicators[2]);
+            //UpdateText(m_iStartingLine, m_iLineAmount);
+            //CheckLines();
             
         }
 
@@ -80,58 +83,42 @@ namespace GA.MonsterProject
 
         public void GiveRewardA()
         {
+            m_txtDialogText.text = SearchIndicator("#OptionA");
             GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardA.m_iMoney, m_gcRewardA.m_iReputation, m_gcRewardA.m_iBond);
         }
 
         public void GiveRewardB()
         {
+            m_txtDialogText.text = SearchIndicator("#OptionB");
             GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardB.m_iMoney, m_gcRewardB.m_iReputation, m_gcRewardB.m_iBond);
         }
 
-        public void CheckLine()
+        public string SearchIndicator(string indicator)
         {
+            string content = "";
+
             for (int i = 0; i < m_sLines.Length; i++)
             {
-                for (int j = 0; j < m_sIndicators.Length; j++)
-                {
-                    if (m_sLines[i].Contains(m_sIndicators[j]))
-                    {
-                        try
-                        {
-                            switch (j)
-                            {
-                                case 1:
-                                    m_txtButtonA.text = m_sLines[i+1];
-                                    break;
-
-                                case 2:
-                                    m_txtButtonB.text = m_sLines[i+1];
-                                    break;
-                            }
-                        }
-                        catch (IndexOutOfRangeException e)
-                        {
-                            Debug.Log(m_sLines[i] + " is an indicator. The next line should contain text that can be used by the specified object");
-                            Debug.Log(e);
-                        }
-                    }
-                }
-                /*Debug.Log(m_sLines[i]);
-                if (m_sLines[i].Contains("#ButtonA"))
+                if (m_sLines[i].Contains(indicator))
                 {
                     try
                     {
-                        m_txtButtonA.text = m_sLines[i+1];
+                       int j = 1;
+                        while (!m_sLines[i + j].Contains("#"))
+                        {
+                            content += m_sLines[i + j] + "\n";
+                            j++;
+                        } 
                     }
                     catch (IndexOutOfRangeException e)
                     {
-                        m_txtButtonA.text = "Option A";
-                        Debug.Log(m_sLines[i] + " is an indicator. The next line should contain text that can be used by the specified object");
+                        Debug.Log(m_sLines[i] + " is an indicator. The next line(s) should contain text that can be used by the specified object");
                         Debug.Log(e);
                     }
                     
-                }*/
+                }
             }
+            return content;
         }
     }
 }
