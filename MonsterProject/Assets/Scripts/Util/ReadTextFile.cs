@@ -13,7 +13,7 @@ namespace GA.MonsterProject
         public ReadTextFile(string filename)
         {
             Debug.Log(Application.dataPath);
-            StreamReader srReader = new StreamReader(Application.dataPath + "/TextFiles/" + filename);
+            StreamReader srReader = new StreamReader(Application.dataPath + "/.." + "/TextFiles/" + filename);
             m_sFileContents = srReader.ReadToEnd();
             srReader.Close();
 

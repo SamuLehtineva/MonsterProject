@@ -34,6 +34,7 @@ namespace GA.MonsterProject
         public static string m_sFileName = "dialog2.txt";
         void Start()
         {
+            m_txtDialogText.text = Application.dataPath;
             if (m_sFileName != null)
             {
                 m_ReadText = new ReadTextFile(m_sFileName);
@@ -42,6 +43,7 @@ namespace GA.MonsterProject
             m_txtDialogText.text = SearchIndicator(m_sIndicators[0]);
             m_txtButtonA.text = SearchIndicator(m_sIndicators[1]);
             m_txtButtonB.text = SearchIndicator(m_sIndicators[2]);
+            
             //UpdateText(m_iStartingLine, m_iLineAmount);
             //CheckLines();
             
