@@ -13,9 +13,12 @@ namespace GA.MonsterProject
         public ReadTextFile(string filename)
         {
             Debug.Log(Application.dataPath);
-            StreamReader srReader = new StreamReader(Application.dataPath + "/.." + "/TextFiles/" + filename);
+            /*StreamReader srReader = new StreamReader(Application.dataPath + "/.." + "/TextFiles/" + filename);
             m_sFileContents = srReader.ReadToEnd();
-            srReader.Close();
+            srReader.Close();*/
+
+            TextAsset file = (TextAsset)Resources.Load("dialog", typeof(TextAsset));
+            m_sFileContents = file.text;
 
             m_sLines = m_sFileContents.Split("\n"[0]);
         }

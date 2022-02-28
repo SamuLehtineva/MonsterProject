@@ -34,7 +34,6 @@ namespace GA.MonsterProject
         public static string m_sFileName = "dialog2.txt";
         void Start()
         {
-            m_txtDialogText.text = Application.dataPath;
             if (m_sFileName != null)
             {
                 m_ReadText = new ReadTextFile(m_sFileName);

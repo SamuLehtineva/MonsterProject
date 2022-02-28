@@ -52,12 +52,13 @@ namespace GA.MonsterProject
             if (IsActive) {
                 var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
                     SceneLoad.completed += (s) => {
-                        SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
+                        //SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
                         NarrativeController.m_gcRewardA = m_qRewardA;
                         NarrativeController.m_gcRewardB = m_qRewardB;
                         NarrativeController.m_sFileName = m_sFileName;
                     };
                 //Time.timeScale = 0f;
+                DeActivate();
             }
         }
     }
