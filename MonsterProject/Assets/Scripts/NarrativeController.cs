@@ -14,6 +14,12 @@ namespace GA.MonsterProject
         TMP_Text m_txtDialogText;
 
         [SerializeField]
+        TMP_Text m_txtRewardTextA;
+
+        [SerializeField]
+        TMP_Text m_txtRewardTextB;
+
+        [SerializeField]
         TextMeshProUGUI m_txtButtonA;
 
         [SerializeField]
@@ -35,6 +41,9 @@ namespace GA.MonsterProject
             m_txtDialogText.text = SearchIndicator(m_sIndicators[0]);
             m_txtButtonA.text = SearchIndicator(m_sIndicators[1]);
             m_txtButtonB.text = SearchIndicator(m_sIndicators[2]);
+
+            m_txtRewardTextA.text = "Money: " + m_gcRewardA.m_iMoney + "\nReputation: " + m_gcRewardA.m_iReputation + "\nBond: " + m_gcRewardA.m_iBond;
+            m_txtRewardTextB.text = "Money: " + m_gcRewardB.m_iMoney + "\nReputation: " + m_gcRewardB.m_iReputation + "\nBond: " + m_gcRewardB.m_iBond;
             
         }
 
