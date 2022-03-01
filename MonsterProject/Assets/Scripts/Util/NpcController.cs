@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,14 +22,12 @@ namespace GA.MonsterProject
             IsActive = false;
         }
 
-        // Update is called once per frame
         void Update()
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && IsActive)
             {
                 Interact();
             }
-            
         }
 
         public void Activate()
@@ -49,17 +48,15 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            if (IsActive) {
-                var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
-                    SceneLoad.completed += (s) => {
-                        //SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
-                        NarrativeController.m_gcRewardA = m_qRewardA;
-                        NarrativeController.m_gcRewardB = m_qRewardB;
-                        NarrativeController.m_sFileName = m_sFileName;
-                    };
-                //Time.timeScale = 0f;
-                DeActivate();
-            }
+            var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
+            SceneLoad.completed += (s) => {
+                //SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
+                NarrativeController.m_gcRewardA = m_qRewardA;
+                NarrativeController.m_gcRewardB = m_qRewardB;
+                NarrativeController.m_sFileName = m_sFileName;
+            };
+            //Time.timeScale = 0f;
+            DeActivate();
         }
     }
 }

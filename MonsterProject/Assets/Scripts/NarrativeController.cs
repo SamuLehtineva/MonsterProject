@@ -18,13 +18,6 @@ namespace GA.MonsterProject
 
         [SerializeField]
         TextMeshProUGUI m_txtButtonB;
-
-        [SerializeField]
-        public int m_iStartingLine;
-
-        [SerializeField]
-        int m_iLineAmount;
-
         public static QuestReward m_gcRewardA;
         public static QuestReward m_gcRewardB;
 
@@ -43,36 +36,12 @@ namespace GA.MonsterProject
             m_txtButtonA.text = SearchIndicator(m_sIndicators[1]);
             m_txtButtonB.text = SearchIndicator(m_sIndicators[2]);
             
-            //UpdateText(m_iStartingLine, m_iLineAmount);
-            //CheckLines();
-            
         }
 
         // Update is called once per frame
         void FixedUpdate()
         {
             
-        }
-
-        public void UpdateText(int startingLine, int lineAmount)
-        {
-            m_txtDialogText.text = "";
-            for (int i = 0; i < lineAmount; i++)
-            {
-                m_txtDialogText.text += m_sLines[startingLine -1 + i] + "\n";
-            }
-        }
-
-        public void SetStartingLine(int startingLine)
-        {
-            m_iStartingLine = startingLine;
-            UpdateText(m_iStartingLine, m_iLineAmount);
-        }
-
-        public void SetLineAmount(int lineAmount)
-        {
-            m_iLineAmount = lineAmount;
-            UpdateText(m_iStartingLine, m_iLineAmount);
         }
 
         public void exitText()

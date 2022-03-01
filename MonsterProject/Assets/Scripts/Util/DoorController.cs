@@ -23,7 +23,7 @@ namespace GA.MonsterProject
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && IsActive)
             {
                 Interact();
             }
@@ -51,10 +51,7 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            if (IsActive)
-            {
-                SceneManager.LoadScene("Cabin");
-            }
+            SceneManager.LoadScene("Cabin");
         }
     }
 }
