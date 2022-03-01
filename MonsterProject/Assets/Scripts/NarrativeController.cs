@@ -42,6 +42,7 @@ namespace GA.MonsterProject
             m_txtDialogText.text = SearchIndicator(m_sIndicators[0]);
             m_txtButtonA.text = SearchIndicator(m_sIndicators[1]);
             m_txtButtonB.text = SearchIndicator(m_sIndicators[2]);
+            
             //UpdateText(m_iStartingLine, m_iLineAmount);
             //CheckLines();
             
