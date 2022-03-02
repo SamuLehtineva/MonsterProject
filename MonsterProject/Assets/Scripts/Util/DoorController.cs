@@ -7,6 +7,7 @@ namespace GA.MonsterProject
 {
     public class DoorController : MonoBehaviour, IInteractables
     {
+        [SerializeField]
         Animator m_aDoorAnimator;
         public bool IsActive
         {
@@ -17,7 +18,6 @@ namespace GA.MonsterProject
         void Start()
         {
             IsActive = false;
-            m_aDoorAnimator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
