@@ -1026,7 +1026,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.56, z: 0}
+  m_Center: {x: 0, y: 0.89, z: 0}
 --- !u!114 &9182898351803093123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,9 +1054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gcCanvas: {fileID: 9182898350279458849}
-  interactableLayermask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &9182898351803093133
 MonoBehaviour:
   m_ObjectHideFlags: 0

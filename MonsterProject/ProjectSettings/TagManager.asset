@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Markers
   - Interactable
+  - SpawnPoint
+  - SpawnManager
   layers:
   - Default
   - TransparentFX

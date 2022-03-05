@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cabin.unity
     guid: 81669a7d9e8199745b8d1b99b6a91ac3
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 03832305bb82ce141a6e72c4d24cc005
   m_configObjects: {}
