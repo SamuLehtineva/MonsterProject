@@ -482,8 +482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8bc2259dd7f094ab8d76efe308d1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sTargetSceneName: 
-  m_sTargetSpawnName: 
+  m_sTargetSceneName: Town
+  m_sTargetSpawnName: Default
 --- !u!65 &416080310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1115,7 +1115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6036024
+      value: -0.5584
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.y
