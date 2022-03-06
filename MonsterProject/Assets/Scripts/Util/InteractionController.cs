@@ -20,8 +20,6 @@ namespace GA.MonsterProject
                 mytest.Activate();
                 m_gcCanvas.gameObject.SetActive(true);
             }
-            
-            Debug.Log(other.tag);
         }
 
         private void OnTriggerExit(Collider other) {

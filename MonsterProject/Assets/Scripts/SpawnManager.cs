@@ -7,9 +7,12 @@ namespace GA.MonsterProject
 {
     public class SpawnManager : MonoBehaviour
     {
+        [SerializeField]
+        Transform m_gcPlayer;
         Dictionary<string, Vector3> m_dSpawnPoints = new Dictionary<string, Vector3>();
 
         void Start() {
+
             SpawnPoint[] points = FindObjectsOfType(typeof(SpawnPoint)) as SpawnPoint[];
 
             for (int i = 0; i < points.Length; i++)
@@ -23,6 +26,8 @@ namespace GA.MonsterProject
                     Debug.Log("Each spawn point must have a unique name");
                 }
             }
+
+            m_gcPlayer.transform.position = m_dSpawnPoints[GameManager.m_sDestination];
         }
         
     }

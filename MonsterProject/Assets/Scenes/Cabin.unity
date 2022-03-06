@@ -641,7 +641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1573139200}
   - component: {fileID: 1573139199}
-  - component: {fileID: 1573139202}
   - component: {fileID: 1573139201}
   m_Layer: 0
   m_Name: Invisible Wall
@@ -689,23 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8bc2259dd7f094ab8d76efe308d1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sTargetAreaName: Yard
---- !u!54 &1573139202
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573139198}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 14
-  m_CollisionDetection: 0
+  m_sTargetSceneName: Yard
+  m_sTargetSpawnName: Yard_Cabin
 --- !u!1 &1594053605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2190406642072723604, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}

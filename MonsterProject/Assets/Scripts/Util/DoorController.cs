@@ -34,7 +34,6 @@ namespace GA.MonsterProject
             if (!IsActive)
             {
                 m_aDoorAnimator.Play("Door_Open", 0, 0.0f);
-                Debug.Log("Jee");
                 IsActive = true;
             }
             

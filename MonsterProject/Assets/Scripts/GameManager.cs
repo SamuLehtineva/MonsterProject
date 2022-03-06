@@ -6,13 +6,9 @@ namespace GA.MonsterProject
 {
     public class GameManager : MonoBehaviour
     {
-        private string m_sDestination
-        {
-            get;
-            set;
-        }
+        public static string m_sDestination = "Default";
 
-        void Awake()
+        /*void Awake()
         {
             GameObject[] objs = GameObject.FindGameObjectsWithTag("GameManager");
 
@@ -22,6 +18,6 @@ namespace GA.MonsterProject
             }
 
             DontDestroyOnLoad(this.gameObject);
-        }
+        }*/
     }
 }

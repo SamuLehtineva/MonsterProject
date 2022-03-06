@@ -8,6 +8,7 @@ TagManager:
   - Interactable
   - SpawnPoint
   - SpawnManager
+  - GameManager
   layers:
   - Default
   - TransparentFX
