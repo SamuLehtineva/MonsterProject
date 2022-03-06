@@ -27,7 +27,15 @@ namespace GA.MonsterProject
                 }
             }
 
-            m_gcPlayer.transform.position = m_dSpawnPoints[GameManager.m_sDestination];
+            try
+            {
+                m_gcPlayer.transform.position = m_dSpawnPoints[GameManager.m_sDestination];
+            }
+            catch (KeyNotFoundException)
+            {
+                Debug.Log("Spawn manager cant find a spawn with the name: " + GameManager.m_sDestination);
+            }
+            
         }
         
     }
