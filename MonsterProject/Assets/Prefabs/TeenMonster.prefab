@@ -1402,7 +1402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8890175809128246822}
-  - component: {fileID: 9001154924599428132}
+  - component: {fileID: 1541582160}
   m_Layer: 0
   m_Name: TeenMonster
   m_TagString: Untagged
@@ -1426,7 +1426,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9001154924599428132
+--- !u!114 &1541582160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1435,12 +1435,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8082817183239664796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef00d598e2c9804a87ed93510a2080d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a5932f90b94bbc4794b2bff6d9ec4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_tTarget: {fileID: 0}
-  m_fBehindOffset: -2
-  m_fMoveSpeed: 3
+  m_fDesiredDistance: 20
+  m_fMoveSpeed: 1
 --- !u!1 &8173548772836715737
 GameObject:
   m_ObjectHideFlags: 0

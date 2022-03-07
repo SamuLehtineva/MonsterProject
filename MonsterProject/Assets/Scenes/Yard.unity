@@ -3612,6 +3612,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1541582160, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
+      propertyPath: m_tTarget
+      value: 
+      objectReference: {fileID: 543450652564955400}
+    - target: {fileID: 1541582160, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
+      propertyPath: m_fDesiredDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8082817183239664796, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
       propertyPath: m_Name
       value: TeenMonster
@@ -3660,10 +3668,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9001154924599428132, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
-      propertyPath: m_tTarget
-      value: 
-      objectReference: {fileID: 543450652564955400}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
 --- !u!1001 &9182898350768625254
