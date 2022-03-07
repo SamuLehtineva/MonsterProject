@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
@@ -88,11 +89,13 @@ namespace GA.MonsterProject
             {
                 m_txtTurnText.text = "Victory";
                 m_gcMoveBetween.enabled = false;
+                StartCoroutine(EndDelay());
             }
             else if (m_iPetHealth <= 0)
             {
                 m_txtTurnText.text = "Defeat";
                 m_gcMoveBetween.enabled = false;
+                StartCoroutine(EndDelay());
             }
         }
 
@@ -106,6 +109,12 @@ namespace GA.MonsterProject
             m_txtPetHealthText.color = Color.white;
             m_gcMaterial.color = Color.white;
             m_bIsMyTurn = !m_bIsMyTurn;
+        }
+
+        IEnumerator EndDelay()
+        {
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene("Yard");
         }
     }
 }

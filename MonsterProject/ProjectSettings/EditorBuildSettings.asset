@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Town.unity
     guid: 03832305bb82ce141a6e72c4d24cc005
+  - enabled: 1
+    path: Assets/Scenes/MinigameTest.unity
+    guid: 875cc9ab93ed95a449ac8bf0d3224313
   m_configObjects: {}
