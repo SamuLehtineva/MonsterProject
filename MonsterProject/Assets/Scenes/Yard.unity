@@ -1951,6 +1951,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b7209c4942666c4baa0bf1d1278644a, type: 3}
+--- !u!1001 &489843855
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2090845447}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+      propertyPath: m_Name
+      value: TeenMonster (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
 --- !u!4 &490369807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4b7209c4942666c4baa0bf1d1278644a, type: 3}
@@ -7613,6 +7670,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84609bf18a2e33746bcaa96e7adc93f3, type: 3}
+--- !u!4 &2090845447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8890175809128246822, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
+  m_PrefabInstance: {fileID: 9001154923664849127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2091737813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8387,9 +8449,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 543450652564955400}
     - target: {fileID: 1541582160, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
-      propertyPath: m_fDesiredDistance
-      value: 10
+      propertyPath: m_fMoveSpeed
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1541582160, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
+      propertyPath: m_fDesiredDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957333458741260093, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29f50dae80d8d30478f9634d423d02f7, type: 2}
     - target: {fileID: 8082817183239664796, guid: 77987c6658b2d124e8659f00853e78da, type: 3}
       propertyPath: m_Name
       value: TeenMonster

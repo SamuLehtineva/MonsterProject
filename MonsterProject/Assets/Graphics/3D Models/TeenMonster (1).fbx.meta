@@ -1,8 +1,20 @@
 fileFormatVersion: 2
-guid: 82e186da564098c41bbedc463244adbe
+guid: 5a81a516fa76d644f85bf231368eb6ce
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -1610863427237328480
+    second: Walking
+  - first:
+      74: -795623556386871232
+    second: TeenArmature|Being pet
+  - first:
+      74: 248673586058480042
+    second: TeenArmature|Sit down
+  - first:
+      74: -867184057702458877
+    second: TeenArmature|Walking
   externalObjects: {}
   materials:
     materialImportMode: 2
