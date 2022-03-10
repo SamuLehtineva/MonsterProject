@@ -4,18 +4,33 @@ using UnityEngine;
 
 namespace GA.MonsterProject
 {
-    public class SimonGameController : MonoBehaviour
+    public class SimonGameController : MonoBehaviour, MiniGameInterface
+
     {
-        // Start is called before the first frame update
         void Start()
         {
         
         }
 
-        // Update is called once per frame
         void Update()
         {
         
         }
+
+        public void StartMiniGame()
+        {
+
+        }
+
+        public void WinMiniGame()
+        {
+
+        }
+
+        public void LoseMiniGame()
+        {
+
+        }
+
     }
 }

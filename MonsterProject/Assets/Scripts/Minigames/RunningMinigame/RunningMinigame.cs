@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GA.MonsterProject
 {
-    public class RunningMinigame : MonoBehaviour
+    public class RunningMinigame : MonoBehaviour, MiniGameInterface
     {
         public CharacterController charCont;
         public Rigidbody rigbod;
@@ -19,8 +19,6 @@ namespace GA.MonsterProject
         [Header("Movement")]
         public float moveSpeed = 1000f;
         public float speedWhileJumping = 200f;
-
-
 
         void Update()
         {
@@ -43,6 +41,21 @@ namespace GA.MonsterProject
         {
             rigbod.velocity = new Vector3(rigbod.velocity.x, 0);
             rigbod.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+        }
+
+        public void StartMiniGame()
+        {
+
+        }
+
+        public void WinMiniGame()
+        {
+
+        }
+
+        public void LoseMiniGame()
+        {
+
         }
 
         private void OnDrawGizmos()
