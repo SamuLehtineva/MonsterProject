@@ -16,17 +16,13 @@ namespace GA.MonsterProject
         TMP_Text m_txtReputationText;
 
         [SerializeField]
-        EResources.EResource m_eResource;
+        UIBar m_gcBondBar;
 
         void Update()
         {
             m_txtMoneyText.text = "Money : " + m_gcPlayerResources.GetResource(EResources.EResource._Money);
             m_txtReputationText.text = "Reputation : " + m_gcPlayerResources.GetResource(EResources.EResource._Reputation);
-
-            if (Input.GetButtonDown("Fire3"))
-            {
-                m_gcPlayerResources.AddResource(m_eResource, 10);
-            }
+            m_gcBondBar.SetWidth(m_gcPlayerResources.GetResource(EResources.EResource._Bond) / (float) 100f);
         }
     }
 }
