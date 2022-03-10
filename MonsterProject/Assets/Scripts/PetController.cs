@@ -16,9 +16,14 @@ namespace GA.MonsterProject
             //m_gcAnimator.SetBool("IsMoving", true);
         }
 
-        void FixedUpdate()
+        void Update()
         {
             m_gcAnimator.SetBool("IsMoving", m_gcMoveClose.IsMoving());
+
+            if (Input.GetButtonDown("Fire2"))
+            {
+                m_gcAnimator.Play("Pet");
+            }
         }
     }
 }

@@ -42,6 +42,11 @@ namespace GA.MonsterProject
             {
                 m_gcANimator.SetBool("IsMoving", false);
             }
+
+            if (Input.GetButtonDown("Fire2"))
+            {
+                m_gcANimator.Play("Petting");
+            }
         }
     }
 }
