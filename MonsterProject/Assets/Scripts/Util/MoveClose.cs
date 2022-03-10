@@ -18,7 +18,7 @@ namespace GA.MonsterProject
             transform.LookAt(m_tTarget.position, Vector3.up);
             m_vTargetPos = m_tTarget.position;
             float fRatio = InverseLerp(transform.position, m_vTargetPos, transform.position + transform.forward);
-            transform.position += transform.forward * m_fMoveSpeed * Time.deltaTime / fRatio * (m_fDistance / m_fDesiredDistance);
+            transform.position += transform.forward * m_fMoveSpeed * Time.deltaTime / fRatio * (JumpToZero(0.2f, m_fDistance / m_fDesiredDistance));
         }
 
         public float InverseLerp(Vector3 a, Vector3 b, Vector3 value)
@@ -26,6 +26,30 @@ namespace GA.MonsterProject
             Vector3 AB = b - a;
             Vector3 AV = value - a;
             return Vector3.Dot(AV, AB) / Vector3.Dot(AB, AB);
+        }
+
+        public float JumpToZero(float treshold, float value)
+        {
+            if (value < treshold)
+            {
+                return 0.0f;
+            } 
+            else
+            {
+                return value;
+            }
+        }
+
+        public bool IsMoving()
+        {
+            if (JumpToZero(0.2f, m_fDistance / m_fDesiredDistance) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
