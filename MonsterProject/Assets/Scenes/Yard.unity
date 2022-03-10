@@ -6175,6 +6175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FemaleNPC
       objectReference: {fileID: 0}
+    - target: {fileID: 2134461353315938316, guid: 04d0e4df439a85a4ab6e812f9671575e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 571be4321d585de4f9b6d099a574d381, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d0e4df439a85a4ab6e812f9671575e, type: 3}
 --- !u!4 &1696122977 stripped
