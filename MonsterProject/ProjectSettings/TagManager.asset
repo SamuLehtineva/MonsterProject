@@ -9,6 +9,7 @@ TagManager:
   - SpawnPoint
   - SpawnManager
   - GameManager
+  - Pet
   layers:
   - Default
   - TransparentFX

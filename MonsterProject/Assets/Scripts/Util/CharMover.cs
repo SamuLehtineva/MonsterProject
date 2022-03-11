@@ -31,6 +31,7 @@ namespace GA.MonsterProject
 
             Debug.DrawLine(transform.position, transform.position + transform.forward * 5.0f, Color.green);
 
+
             if (m_vDirection != Vector3.zero)
             {
                 m_gcANimator.SetBool("IsMoving", true);
@@ -43,14 +44,26 @@ namespace GA.MonsterProject
                 m_gcANimator.SetBool("IsMoving", false);
             }
 
-            if (Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonDown("Fire3"))
             {
-                m_gcANimator.Play("Petting");
+                TryPet();
+                
             }
-
-            if (Input.GetKeyDown("escape"))
+            else if (Input.GetKeyDown("escape"))
             {
                 SceneChanger.LoadLevel("Menu");
+            }
+        }
+
+        void TryPet()
+        {
+            RaycastHit rHit;
+            if (Physics.Raycast(transform.position, transform.forward, out rHit, 3.0f))
+            {
+                if (rHit.transform.tag == "Pet")
+                {
+                    m_gcANimator.Play("Petting");
+                }
             }
         }
     }
