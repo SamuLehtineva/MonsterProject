@@ -47,6 +47,11 @@ namespace GA.MonsterProject
             {
                 m_gcANimator.Play("Petting");
             }
+
+            if (Input.GetKeyDown("escape"))
+            {
+                SceneChanger.LoadLevel("Menu");
+            }
         }
     }
 }

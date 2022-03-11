@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sTargetSceneName: Town
-  m_sTargetSpawnName: Default
+  m_sTargetSpawnName: Town_Yard
 --- !u!65 &416080310
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ namespace GA.MonsterProject
 {
     public class SceneChanger : MonoBehaviour
     {
-        public void LoadLevel(string LevelName)
+        public static void LoadLevel(string LevelName)
         {
             SceneManager.LoadScene(LevelName);
         }

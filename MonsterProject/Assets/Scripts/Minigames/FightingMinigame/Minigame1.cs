@@ -33,7 +33,7 @@ namespace GA.MonsterProject
             m_txtEnemyHealthText.text = "Health: " + m_iEnemyHealth;
             m_txtPetHealthText.text = "Health: " + m_iPetHealth;
 
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire2"))
             {
                 Action(m_gcMoveBetween.GetRatio());
             }
