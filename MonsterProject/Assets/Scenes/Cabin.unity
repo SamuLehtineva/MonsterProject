@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0071097165, g: 0.006730773, b: 0.0066642133, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -240,15 +240,15 @@ PrefabInstance:
     - target: {fileID: -5506595588052689450, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6af9c3108a3c89841b0d3c8bedadd68e, type: 2}
+      objectReference: {fileID: 2100000, guid: a12ad3c8c5e89a9408f28c2fad13a05f, type: 2}
     - target: {fileID: -2120324079228072499, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 83a2dc49ae6061b4cb039137863b6068, type: 2}
+      objectReference: {fileID: 2100000, guid: 4684df308adb6d04a9bb679403f28c54, type: 2}
     - target: {fileID: -1131554543616998136, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cac95d348587a6240bf47cb73d86933a, type: 2}
+      objectReference: {fileID: 2100000, guid: 71adc392c45ee1245b6ad77af937980e, type: 2}
     - target: {fileID: 919132149155446097, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Name
       value: FBX_Cottage_Fireplaceroom_Merged
@@ -256,19 +256,19 @@ PrefabInstance:
     - target: {fileID: 983397592765377277, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ce7c331ca1aa15349a4013d31f24618c, type: 2}
+      objectReference: {fileID: 2100000, guid: efcf1d464ea9fd84eb986ab7fc333ac0, type: 2}
     - target: {fileID: 5754277960856697244, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e157c499434e34247922ad8b6f93e7ba, type: 2}
+      objectReference: {fileID: 2100000, guid: 8ebdc9e6cbd30a24f92a2c4994b8e204, type: 2}
     - target: {fileID: 8247994413960396516, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e767a2beaf538534292b760d85658293, type: 2}
+      objectReference: {fileID: 2100000, guid: fed68e20f31e15342b7b9ff97e6f6cdb, type: 2}
     - target: {fileID: 8247994413960396516, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 7252fb21b1378d440bad04601badebb5, type: 2}
+      objectReference: {fileID: 2100000, guid: fed68e20f31e15342b7b9ff97e6f6cdb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
 --- !u!1 &643709478

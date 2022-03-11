@@ -341,7 +341,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d0844d080bde6e4795ce380020da9df, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a32a2474135c594bbe5b21ad54fda37, type: 2}
     - target: {fileID: 919132149155446097, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Name
       value: Fence (4)
@@ -2097,7 +2097,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b83de0f37e8e6e24f8b3d2b9300a5aa4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: de2ff5a527c729c4784b20c1ca3ece7f, type: 2}
+      objectReference: {fileID: 2100000, guid: fc8f51fa96e63ef4cb71a47150c09d29, type: 2}
     - target: {fileID: 919132149155446097, guid: b83de0f37e8e6e24f8b3d2b9300a5aa4, type: 3}
       propertyPath: m_Name
       value: Bush_NoSnow
@@ -2422,7 +2422,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d0844d080bde6e4795ce380020da9df, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a32a2474135c594bbe5b21ad54fda37, type: 2}
     - target: {fileID: 919132149155446097, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Name
       value: Fence (2)
@@ -3618,6 +3618,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b7eb1cadc3acaf4d88dd516fdc8fb95, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8e0d8c3919a3040b46eae2a68f3568, type: 2}
     - target: {fileID: 919132149155446097, guid: 4b7eb1cadc3acaf4d88dd516fdc8fb95, type: 3}
       propertyPath: m_Name
       value: Birch (2)
@@ -4718,7 +4722,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d0844d080bde6e4795ce380020da9df, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a32a2474135c594bbe5b21ad54fda37, type: 2}
     - target: {fileID: 919132149155446097, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Name
       value: Fence (3)
@@ -5199,7 +5203,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d0844d080bde6e4795ce380020da9df, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a32a2474135c594bbe5b21ad54fda37, type: 2}
     - target: {fileID: 919132149155446097, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Name
       value: Fence (1)
@@ -5682,7 +5686,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c9da72262f08b8e4580d50ac65f688a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b40ef8a19c9da8e479e0e1675adcdb81, type: 2}
+      objectReference: {fileID: 2100000, guid: 11e3998d90b309d449c228cbe4ba3037, type: 2}
     - target: {fileID: 919132149155446097, guid: c9da72262f08b8e4580d50ac65f688a5, type: 3}
       propertyPath: m_Name
       value: Bench
@@ -5809,7 +5813,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -6139,7 +6143,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d0844d080bde6e4795ce380020da9df, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a32a2474135c594bbe5b21ad54fda37, type: 2}
     - target: {fileID: 919132149155446097, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Name
       value: Fence (6)
@@ -6337,7 +6341,7 @@ PrefabInstance:
     - target: {fileID: 2134461353315938316, guid: 04d0e4df439a85a4ab6e812f9671575e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 571be4321d585de4f9b6d099a574d381, type: 2}
+      objectReference: {fileID: 2100000, guid: 1175925f662fc7643b1f72ec12fc564d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d0e4df439a85a4ab6e812f9671575e, type: 3}
 --- !u!4 &1696122977 stripped
@@ -6396,6 +6400,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b7eb1cadc3acaf4d88dd516fdc8fb95, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8e0d8c3919a3040b46eae2a68f3568, type: 2}
     - target: {fileID: 919132149155446097, guid: 4b7eb1cadc3acaf4d88dd516fdc8fb95, type: 3}
       propertyPath: m_Name
       value: Birch
@@ -6699,7 +6707,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4c7edc612c82b354b9827cb57bc39c9e, type: 2}
+  - {fileID: 2100000, guid: 5b8c624211cce2c408630a5d001c84a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7938,6 +7946,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b7eb1cadc3acaf4d88dd516fdc8fb95, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e8e0d8c3919a3040b46eae2a68f3568, type: 2}
     - target: {fileID: 919132149155446097, guid: 4b7eb1cadc3acaf4d88dd516fdc8fb95, type: 3}
       propertyPath: m_Name
       value: Birch (1)
@@ -8242,7 +8254,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d0844d080bde6e4795ce380020da9df, type: 2}
+      objectReference: {fileID: 2100000, guid: 4a32a2474135c594bbe5b21ad54fda37, type: 2}
     - target: {fileID: 919132149155446097, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
       propertyPath: m_Name
       value: Fence (5)
