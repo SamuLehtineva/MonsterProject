@@ -8,11 +8,16 @@ namespace GA.MonsterProject
     {
         [SerializeField]
         MoveClose m_gcMoveClose;
+
+        [SerializeField]
+        AudioClip m_gcPetSound;
         private Animator m_gcAnimator;
+        private AudioSource m_gcAudioSource;
 
         void Start()
         {
             m_gcAnimator = GetComponent<Animator>();
+            m_gcAudioSource = GetComponent<AudioSource>();
             //m_gcAnimator.SetBool("IsMoving", true);
         }
 
@@ -23,6 +28,7 @@ namespace GA.MonsterProject
             if (Input.GetButtonDown("Fire2"))
             {
                 m_gcAnimator.Play("Pet");
+                m_gcAudioSource.PlayOneShot(m_gcPetSound);
             }
         }
     }
