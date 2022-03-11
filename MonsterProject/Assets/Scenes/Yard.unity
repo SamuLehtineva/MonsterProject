@@ -8524,17 +8524,6 @@ PrefabInstance:
       propertyPath: m_tTarget
       value: 
       objectReference: {fileID: 543450653579936483}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 1975288440075179625, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
-      propertyPath: m_fDesiredDistance
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1975288440075179630, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
-      propertyPath: m_gcPetSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 8be1bfe0470e25d4f80eb50165ecc981, type: 3}
->>>>>>> Stashed changes
     - target: {fileID: 2081537293276856857, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
       propertyPath: m_RootOrder
       value: 2
