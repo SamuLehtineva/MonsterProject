@@ -10,6 +10,7 @@ TagManager:
   - SpawnManager
   - GameManager
   - Pet
+  - EndMiniGame
   layers:
   - Default
   - TransparentFX
