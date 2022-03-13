@@ -11,6 +11,9 @@ namespace GA.MonsterProject
 
         [SerializeField]
         AudioClip m_gcPetSound;
+
+        [SerializeField]
+        SpriteRenderer m_2dInteract;
         private Animator m_gcAnimator;
         private AudioSource m_gcAudioSource;
 
@@ -18,6 +21,7 @@ namespace GA.MonsterProject
         {
             m_gcAnimator = GetComponent<Animator>();
             m_gcAudioSource = GetComponent<AudioSource>();
+            DeActivate();
             //m_gcAnimator.SetBool("IsMoving", true);
         }
 
@@ -26,10 +30,20 @@ namespace GA.MonsterProject
             m_gcAnimator.SetBool("IsMoving", m_gcMoveClose.IsMoving());
         }
 
+        public void Activate()
+        {
+            m_2dInteract.gameObject.SetActive(true);
+        }
+
+        public void DeActivate()
+        {
+            m_2dInteract.gameObject.SetActive(false);
+        }
         public void PlayPetAnimation()
         {
             m_gcAnimator.Play("Pet");
             m_gcAudioSource.PlayOneShot(m_gcPetSound);
+            DeActivate();
         }
     }
 }

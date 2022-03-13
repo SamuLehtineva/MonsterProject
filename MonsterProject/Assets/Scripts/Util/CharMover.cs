@@ -49,11 +49,8 @@ namespace GA.MonsterProject
                     m_gcANimator.SetBool("IsMoving", false);
                 }
 
-                if (Input.GetButtonDown("Fire3"))
-                {
-                    TryPet();
+                TryPet();
                     
-                }
             }
             
             else if (Input.GetKeyDown("escape"))
@@ -64,15 +61,24 @@ namespace GA.MonsterProject
 
         void TryPet()
         {
+            
             RaycastHit rHit;
             if (Physics.Raycast(transform.position, transform.forward, out rHit, 3.0f))
             {
                 if (rHit.transform.tag == "Pet")
                 {
-                    StartCoroutine(ActionDelay(2));
-                    m_gcANimator.Play("Petting");
-                    m_gcPetController.PlayPetAnimation();
+                    m_gcPetController.Activate();
+                    if (Input.GetButtonDown("Fire3"))
+                    {
+                        StartCoroutine(ActionDelay(2));
+                        m_gcANimator.Play("Petting");
+                        m_gcPetController.PlayPetAnimation();
+                    }
                 }
+            }
+            else
+            {
+                m_gcPetController.DeActivate();
             }
         }
 

@@ -1652,6 +1652,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 861666814, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_gcTarget
+      value: 
+      objectReference: {fileID: 1594055177}
     - target: {fileID: 1704836275389765795, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
       propertyPath: m_Name
       value: TeenMonster 1

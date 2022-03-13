@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 namespace GA.MonsterProject
 {
@@ -10,7 +11,6 @@ namespace GA.MonsterProject
 
         [SerializeField]
         Canvas m_gcCanvas;
-
         bool m_bCanInteract;
 
         private void OnTriggerEnter(Collider other) {
