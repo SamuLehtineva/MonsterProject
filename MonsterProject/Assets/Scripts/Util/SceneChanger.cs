@@ -11,5 +11,10 @@ namespace GA.MonsterProject
         {
             SceneManager.LoadScene(LevelName);
         }
+
+        public void CloseApp()
+        {
+            Application.Quit();
+        }
     }
 }
