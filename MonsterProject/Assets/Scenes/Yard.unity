@@ -8647,6 +8647,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2142034906}
+    - target: {fileID: 508428484521263874, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 360164de800bfd443b5956530407b2f3, type: 2}
     - target: {fileID: 1704836275389765795, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
       propertyPath: m_Name
       value: TeenMonster
@@ -8830,6 +8834,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3075042557863723706, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 966dd09a659996542846174e502f0baa, type: 2}
     - target: {fileID: 5948669747216522844, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_fontAsset
       value: 
