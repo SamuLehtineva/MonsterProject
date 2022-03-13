@@ -2465,7 +2465,7 @@ Transform:
   - {fileID: 1150258596}
   - {fileID: 2098383158}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &639390153
 PrefabInstance:
@@ -5998,7 +5998,7 @@ Transform:
   - {fileID: 235204365}
   - {fileID: 922835851}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1595488945 stripped
 Transform:
@@ -6408,7 +6408,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1696122977 stripped
 Transform:
@@ -6816,7 +6816,7 @@ Transform:
   m_Children:
   - {fileID: 277472044}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1780825530
 PrefabInstance:
@@ -8716,9 +8716,13 @@ PrefabInstance:
       propertyPath: m_gcPlayer
       value: 
       objectReference: {fileID: 543450653579936483}
+    - target: {fileID: 2234840994695341216, guid: 83124b66632242d46a3e2900c21e6b66, type: 3}
+      propertyPath: m_txtDebug
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2234840994695341217, guid: 83124b66632242d46a3e2900c21e6b66, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2234840994695341217, guid: 83124b66632242d46a3e2900c21e6b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8779,7 +8783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -16.42
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.y

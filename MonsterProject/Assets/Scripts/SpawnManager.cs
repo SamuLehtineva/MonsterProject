@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using TMPro;
 
 namespace GA.MonsterProject
 {
@@ -11,9 +12,11 @@ namespace GA.MonsterProject
         Transform m_gcPlayer;
         Dictionary<string, Vector3> m_dSpawnPoints = new Dictionary<string, Vector3>();
 
+
         void Start() {
 
             SpawnPoint[] points = FindObjectsOfType(typeof(SpawnPoint)) as SpawnPoint[];
+            Debug.Log(points.Length);
 
             for (int i = 0; i < points.Length; i++)
             {
