@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7275096341134178297}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8966388913866776193}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 818340378847603703}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4690764338804916162}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenLFL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1301364527372341103}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4542862658268412696}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenBL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5316596483442772668}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7348201629716985538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenPelvis.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,9 +261,10 @@ GameObject:
   - component: {fileID: 1975288440075179630}
   - component: {fileID: 1975288440075179625}
   - component: {fileID: 1975288439074048383}
-  m_Layer: 0
+  - component: {fileID: 1960575904}
+  m_Layer: 7
   m_Name: TeenMonster 1
-  m_TagString: Untagged
+  m_TagString: Pet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_tTarget: {fileID: 0}
-  m_fDesiredDistance: 20
+  m_fDesiredDistance: 8
   m_fMoveSpeed: 3
 --- !u!82 &1975288439074048383
 AudioSource:
@@ -428,6 +429,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1960575904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704836275389765795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1761615429906875694
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 895054484249294758}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenFL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4001745015448849120}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.l.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3111949895335812168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenKnee.r.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805206408266918262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenFL.l.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8169781944052978757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6447769747134768548}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenArmature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8988518319601725875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenUFL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +665,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6623312043223929268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenBL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2758308886677353565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419622451461865106}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4792516851968908603}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenBL.l.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91118638542063078}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7625899994469850695}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenUFL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5816683181915651726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7453745988626187363}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenFL.r.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,7 +913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6655894861471150083}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenLBL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8374372115301413111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenUBL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -961,7 +975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5540743931000197281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.l.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +1006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2562306805524198693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,7 +1037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1512671189389590285}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.r.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1054,7 +1068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3635968420774160040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail.005_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284457953619167182}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.r.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723331336024438982}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenUBL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1794467589345533845}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3014540999643374633}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.l.004_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1209,7 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8008457822308835284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenFL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7069671627176197998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenLFL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4491417676854023670}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenFL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1304,7 +1318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2668754655789880262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenPelvis.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1335,7 +1349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8902083180085936386}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.r.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1366,7 +1380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7417662134501402484}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenCollar.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1397,7 +1411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5676530334156366092}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenKnee.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1429,7 +1443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3492943469731275436}
   - component: {fileID: 508428484521263874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LowpolyTeen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,7 +1574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5571219765594525457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenKnee.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1591,7 +1605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3569181532053085222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1623,7 +1637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376848388508823268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.r.004_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1653,7 +1667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6685019642395659095}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenLBL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,7 +1698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1781594429479420128}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.l.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1085220339185090722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.l.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1745,7 +1759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5613362422300696218}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.l.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1776,7 +1790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7247294924743300404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenFL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1807,7 +1821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4438365931546002332}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.r.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1837,7 +1851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7059504224339274774}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenCollar.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226221521562834487}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenBL.l.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1899,7 +1913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5736928865802396989}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenTail.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1930,7 +1944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1288915791788783562}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenKnee.l.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1960,7 +1974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3525637801076246209}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1995,7 +2009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8889108284725856384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.r.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2025,7 +2039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2518333687432112586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenBL.r.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2069,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759335194309485889}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2087,7 +2101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7303876540176296099}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenBL.r.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2118,7 +2132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1920553557345237415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.r.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2149,7 +2163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4883568804409850612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IK-TeenElbow.r.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2180,7 +2194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1357718369886189817}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.l.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2211,7 +2225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9000662577934951736}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeenEar.l.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}

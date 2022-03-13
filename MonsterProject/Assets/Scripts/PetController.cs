@@ -24,12 +24,12 @@ namespace GA.MonsterProject
         void Update()
         {
             m_gcAnimator.SetBool("IsMoving", m_gcMoveClose.IsMoving());
+        }
 
-            if (Input.GetButtonDown("Fire2"))
-            {
-                m_gcAnimator.Play("Pet");
-                m_gcAudioSource.PlayOneShot(m_gcPetSound);
-            }
+        public void PlayPetAnimation()
+        {
+            m_gcAnimator.Play("Pet");
+            m_gcAudioSource.PlayOneShot(m_gcPetSound);
         }
     }
 }
