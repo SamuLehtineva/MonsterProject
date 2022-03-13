@@ -50,10 +50,9 @@ namespace GA.MonsterProject
                 }
 
                 TryPet();
-                    
             }
             
-            else if (Input.GetKeyDown("escape"))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 SceneChanger.LoadLevel("Menu");
             }
