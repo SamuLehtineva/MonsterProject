@@ -6,7 +6,7 @@ namespace GA.MonsterProject
 {
     public class GameManager : MonoBehaviour
     {
-        public static string m_sDestination = "Default";
+        public static string m_sDestination;
 
         /*void Awake()
         {

@@ -10,19 +10,21 @@ namespace GA.MonsterProject
     {
         [SerializeField]
         Transform m_gcPlayer;
-        Dictionary<string, Vector3> m_dSpawnPoints = new Dictionary<string, Vector3>();
+        //Dictionary<string, Transform> m_dSpawnPoints = new Dictionary<string, Transform>();
 
+        Transform[] m_aSpawnPoints;
 
         void Start() {
 
-            SpawnPoint[] points = FindObjectsOfType(typeof(SpawnPoint)) as SpawnPoint[];
-            Debug.Log(points.Length);
+            //SpawnPoint[] points = FindObjectsOfType(typeof(SpawnPoint)) as SpawnPoint[];
+            m_aSpawnPoints = new Transform[transform.childCount];
 
-            for (int i = 0; i < points.Length; i++)
+            for (int i = 0; i < m_aSpawnPoints.Length; i++)
             {
                 try
                 {
-                    m_dSpawnPoints.Add(points[i].m_sSpawnName, points[i].transform.position);
+                    //m_dSpawnPoints.Add(points[i].m_sSpawnName, points[i].transform);
+                    m_aSpawnPoints[i] = transform.GetChild(i);
                 }
                 catch (ArgumentException)
                 {
@@ -32,7 +34,19 @@ namespace GA.MonsterProject
 
             try
             {
-                m_gcPlayer.transform.position = m_dSpawnPoints[GameManager.m_sDestination];
+                Debug.Log(GameManager.m_sDestination);
+                foreach (Transform item in m_aSpawnPoints)
+                {
+                    if (item.name.Equals(GameManager.m_sDestination))
+                    {
+                        m_gcPlayer.position = item.position;
+                        m_gcPlayer.forward = item.forward;
+                    }
+                }
+
+                /*Debug.Log(m_gcPlayer.transform.position);
+                Debug.Log("spawn point" + m_dSpawnPoints[GameManager.m_sDestination].position);
+                m_gcPlayer.transform.forward = m_dSpawnPoints[GameManager.m_sDestination].forward;*/
             }
             catch (KeyNotFoundException)
             {
