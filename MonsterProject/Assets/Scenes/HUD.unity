@@ -220,7 +220,7 @@ RectTransform:
   - {fileID: 512549453}
   - {fileID: 180731057}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -254,7 +254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d9633f41b5ff74c9675056aa977994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_gcPlayerResources: {fileID: 106240735}
   m_txtMoneyText: {fileID: 515470322}
   m_txtReputationText: {fileID: 144453521}
   m_gcBondBar: {fileID: 298332042321222902}
@@ -444,6 +443,15 @@ MonoBehaviour:
   m_txtDialogText: {fileID: 1934875427}
   m_txtButtonA: {fileID: 473915726}
   m_txtButtonB: {fileID: 235852665}
+  m_oButtons: {fileID: 1331364527}
+  m_gcRewardA:
+    m_iMoney: 0
+    m_iReputation: -20
+    m_iBond: 0
+  m_gcRewardB:
+    m_iMoney: -25
+    m_iReputation: 10
+    m_iBond: 0
 --- !u!1 &210629563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,12 +1193,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716106409}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215516812
 GameObject:
@@ -1205,7 +1213,7 @@ GameObject:
   - component: {fileID: 1215516815}
   - component: {fileID: 1215516814}
   m_Layer: 5
-  m_Name: Button2A
+  m_Name: Button1B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1274,7 +1282,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1347675307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180731058}
+        m_TargetAssemblyTypeName: GA.MonsterProject.DialogController, Assembly-CSharp
+        m_MethodName: GiveRewardB
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1331364527}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1215516815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,7 +1427,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384132425}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180731058}
+        m_TargetAssemblyTypeName: GA.MonsterProject.DialogController, Assembly-CSharp
+        m_MethodName: GiveRewardA
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1331364527}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1248438997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,7 +1540,7 @@ GameObject:
   - component: {fileID: 1347675308}
   - component: {fileID: 1347675307}
   m_Layer: 5
-  m_Name: Button1AImage
+  m_Name: Button1BImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1751,6 +1807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1901738331}
+  - component: {fileID: 1901738332}
   m_Layer: 5
   m_Name: Resources
   m_TagString: Untagged
@@ -1780,6 +1837,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1901738332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901738330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e144f9eee4ff624a87b6819ccc7b51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_iMoney: 10
+  m_iReputation: 10
+  m_iBond: 10
 --- !u!1 &1934875425
 GameObject:
   m_ObjectHideFlags: 0

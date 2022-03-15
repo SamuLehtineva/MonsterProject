@@ -7,8 +7,6 @@ namespace GA.MonsterProject
 {
     public class HudController : MonoBehaviour
     {
-        public PlayerResources m_gcPlayerResources;
-
         [SerializeField]
         TMP_Text m_txtMoneyText;
 
@@ -20,9 +18,9 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            m_txtMoneyText.text = "Money : " + m_gcPlayerResources.GetResource(EResources.EResource._Money);
-            m_txtReputationText.text = "Reputation : " + m_gcPlayerResources.GetResource(EResources.EResource._Reputation);
-            m_gcBondBar.SetWidth(m_gcPlayerResources.GetResource(EResources.EResource._Bond) / (float) 100f);
+            m_txtMoneyText.text = PlayerResources.s_CurrentResources.GetResource(EResources.EResource._Money).ToString();
+            m_txtReputationText.text = "Reputation : " + PlayerResources.s_CurrentResources.GetResource(EResources.EResource._Reputation);
+            m_gcBondBar.SetWidth(PlayerResources.s_CurrentResources.GetResource(EResources.EResource._Bond) / (float) 100f);
         }
     }
 }

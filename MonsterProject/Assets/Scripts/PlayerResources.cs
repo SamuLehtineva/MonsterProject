@@ -11,6 +11,21 @@ namespace GA.MonsterProject
         public int m_iReputation = 100;
 
         public int m_iBond = 50;
+
+        public static PlayerResources s_CurrentResources;
+
+        void Awake()
+        {
+            if (s_CurrentResources != null)
+            {
+                GameObject.Destroy(s_CurrentResources);
+            }
+            else
+            {
+                s_CurrentResources = this;
+            }
+            DontDestroyOnLoad(this);
+        }
         
         public int GetResource(EResources.EResource resource)
         {
@@ -87,6 +102,32 @@ namespace GA.MonsterProject
             }
 
             m_iBond += bond;
+
+            if (m_iBond < 0)
+            {
+                m_iBond = 0;
+            }
+            else if (m_iBond > 100)
+            {
+                m_iBond = 100; 
+            }
+        }
+
+        public void AddResources(QuestReward reward)
+        {
+            m_iMoney += reward.m_iMoney;
+            if (m_iMoney < 0)
+            {
+                m_iMoney = 0;
+            }
+
+            m_iReputation += reward.m_iReputation;
+            if (m_iReputation < 0)
+            {
+                m_iReputation = 0;
+            }
+
+            m_iBond += reward.m_iBond;
 
             if (m_iBond < 0)
             {

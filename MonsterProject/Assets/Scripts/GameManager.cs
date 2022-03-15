@@ -8,7 +8,7 @@ namespace GA.MonsterProject
     {
         public static string m_sDestination;
 
-        /*void Awake()
+        void Awake()
         {
             GameObject[] objs = GameObject.FindGameObjectsWithTag("GameManager");
 
@@ -18,6 +18,6 @@ namespace GA.MonsterProject
             }
 
             DontDestroyOnLoad(this.gameObject);
-        }*/
+        }
     }
 }
