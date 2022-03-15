@@ -17,14 +17,19 @@ namespace GA.MonsterProject
 
         [SerializeField]
         TextMeshProUGUI m_txtButtonB;
-        public static QuestReward m_gcRewardA;
-        public static QuestReward m_gcRewardB;
+
+        [SerializeField]
+        GameObject m_oButtons;
+
+        public QuestReward m_gcRewardA;
+        public QuestReward m_gcRewardB;
 
         private ReadTextFile m_ReadText;
         private string[] m_sLines;
         private int m_iCurrentLine;
         private string[] m_sIndicators = {"#Start", "#ButtonA", "#ButtonB", "#OptionA", "#OptionB", "#ButtonEnd"};
         private bool m_bCanContinue;
+        private bool m_bCanEnd;
         public static string m_sFileName = "dialog";
 
         void Start()
@@ -34,11 +39,14 @@ namespace GA.MonsterProject
                 m_ReadText = new ReadTextFile(m_sFileName);
                 m_sLines = m_ReadText.GetLines();
             }
+
+            m_bCanContinue = false;
+            m_bCanEnd = false;
             m_iCurrentLine = 0;
-            /*m_txtDialogText.text = SearchIndicator("#Start")[0].ToString();
-            Debug.Log((SearchIndicator("#Start")).Count);*/
 
             ShowDialog();
+            m_oButtons.SetActive(false);
+            
             m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
             m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
             
@@ -46,11 +54,20 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            if (m_bCanContinue && Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonDown("Fire2"))
             {
-                m_iCurrentLine += 3;
-                m_bCanContinue = false;
-                ShowDialog();
+                
+                if (m_bCanContinue)
+                {
+                    Debug.Log("Jee");
+                    m_iCurrentLine += 3;
+                    m_bCanContinue = false;
+                    ShowDialog();
+                }
+                else if (m_bCanEnd)
+                {
+                    Debug.Log("End");
+                }
             }
         }
 
@@ -77,6 +94,10 @@ namespace GA.MonsterProject
             {
                 m_bCanContinue = true;
             }
+            else
+            {
+                m_oButtons.SetActive(true);
+            }
 
         }
 
@@ -90,13 +111,15 @@ namespace GA.MonsterProject
         public void GiveRewardA()
         {
             m_txtDialogText.text = SearchIndicator("#OptionA")[0].ToString();
-            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardA.m_iMoney, m_gcRewardA.m_iReputation, m_gcRewardA.m_iBond);
+            m_bCanEnd = true;
+            PlayerResources.s_CurrentResources.AddResources(m_gcRewardA);
         }
 
         public void GiveRewardB()
         {
             m_txtDialogText.text = SearchIndicator("#OptionB")[0].ToString();
-            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardB.m_iMoney, m_gcRewardB.m_iReputation, m_gcRewardB.m_iBond);
+            m_bCanEnd = true;
+            PlayerResources.s_CurrentResources.AddResources(m_gcRewardB);
         }
 
         public ArrayList SearchIndicator(string indicator)
