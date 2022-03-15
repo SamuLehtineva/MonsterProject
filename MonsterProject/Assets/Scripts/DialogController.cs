@@ -1,23 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
+using System;
 using TMPro;
 using UnityEngine.SceneManagement;
-using GA.MonsterProject;
 
 namespace GA.MonsterProject
 {
-    public class NarrativeController : MonoBehaviour
+    public class DialogController : MonoBehaviour
     {
         [SerializeField]
         TMP_Text m_txtDialogText;
-
-        [SerializeField]
-        TMP_Text m_txtRewardTextA;
-
-        [SerializeField]
-        TMP_Text m_txtRewardTextB;
 
         [SerializeField]
         TextMeshProUGUI m_txtButtonA;
@@ -29,8 +22,11 @@ namespace GA.MonsterProject
 
         private ReadTextFile m_ReadText;
         private string[] m_sLines;
+        private int m_iCurrentLine;
         private string[] m_sIndicators = {"#Start", "#ButtonA", "#ButtonB", "#OptionA", "#OptionB", "#ButtonEnd"};
-        public static string m_sFileName = "dialog2.txt";
+        private bool m_bCanContinue;
+        public static string m_sFileName = "dialog";
+
         void Start()
         {
             if (m_sFileName != null)
@@ -38,13 +34,50 @@ namespace GA.MonsterProject
                 m_ReadText = new ReadTextFile(m_sFileName);
                 m_sLines = m_ReadText.GetLines();
             }
-            m_txtDialogText.text = SearchIndicator(m_sIndicators[0]);
-            m_txtButtonA.text = SearchIndicator(m_sIndicators[1]);
-            m_txtButtonB.text = SearchIndicator(m_sIndicators[2]);
+            m_iCurrentLine = 0;
+            /*m_txtDialogText.text = SearchIndicator("#Start")[0].ToString();
+            Debug.Log((SearchIndicator("#Start")).Count);*/
 
-            m_txtRewardTextA.text = "Money: " + m_gcRewardA.m_iMoney + "\nReputation: " + m_gcRewardA.m_iReputation + "\nBond: " + m_gcRewardA.m_iBond;
-            m_txtRewardTextB.text = "Money: " + m_gcRewardB.m_iMoney + "\nReputation: " + m_gcRewardB.m_iReputation + "\nBond: " + m_gcRewardB.m_iBond;
+            ShowDialog();
+            m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
+            m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
             
+        }
+
+        void Update()
+        {
+            if (m_bCanContinue && Input.GetButtonDown("Fire2"))
+            {
+                m_iCurrentLine += 3;
+                m_bCanContinue = false;
+                ShowDialog();
+            }
+        }
+
+        public void StartDialog(string sFileName)
+        {
+            m_ReadText = new ReadTextFile(sFileName);
+            m_sLines = m_ReadText.GetLines();
+        }
+
+        public void ShowDialog()
+        {
+            m_txtDialogText.text = "";
+            ArrayList sLines = SearchIndicator("#Start");
+
+            for (int i = m_iCurrentLine; i < m_iCurrentLine + 3 && i < sLines.Count; i++)
+            {
+                if (!String.IsNullOrWhiteSpace(sLines[i].ToString()))
+                {
+                    m_txtDialogText.text += sLines[i] + "\n";
+                }
+            }
+
+            if (sLines.Count > (m_iCurrentLine + 3))
+            {
+                m_bCanContinue = true;
+            }
+
         }
 
         public void exitText()
@@ -56,19 +89,19 @@ namespace GA.MonsterProject
 
         public void GiveRewardA()
         {
-            m_txtDialogText.text = SearchIndicator("#OptionA");
+            m_txtDialogText.text = SearchIndicator("#OptionA")[0].ToString();
             GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardA.m_iMoney, m_gcRewardA.m_iReputation, m_gcRewardA.m_iBond);
         }
 
         public void GiveRewardB()
         {
-            m_txtDialogText.text = SearchIndicator("#OptionB");
+            m_txtDialogText.text = SearchIndicator("#OptionB")[0].ToString();
             GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardB.m_iMoney, m_gcRewardB.m_iReputation, m_gcRewardB.m_iBond);
         }
 
-        public string SearchIndicator(string indicator)
+        public ArrayList SearchIndicator(string indicator)
         {
-            string content = "";
+            ArrayList content = new ArrayList();
 
             for (int i = 0; i < m_sLines.Length; i++)
             {
@@ -79,7 +112,7 @@ namespace GA.MonsterProject
                        int j = 1;
                         while (!m_sLines[i + j].Contains("#"))
                         {
-                            content += m_sLines[i + j] + "\n";
+                            content.Add(m_sLines[i + j]);
                             j++;
                         } 
                     }

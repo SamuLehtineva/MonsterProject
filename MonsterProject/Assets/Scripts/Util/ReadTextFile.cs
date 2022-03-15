@@ -14,7 +14,7 @@ namespace GA.MonsterProject
         {
             //Debug.Log(Application.dataPath);
             
-            TextAsset file = (TextAsset)Resources.Load("dialog", typeof(TextAsset));
+            TextAsset file = (TextAsset)Resources.Load(filename, typeof(TextAsset));
             m_sFileContents = file.text;
 
             m_sLines = m_sFileContents.Split("\n"[0]);

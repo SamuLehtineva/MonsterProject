@@ -401,6 +401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 180731057}
+  - component: {fileID: 180731058}
   m_Layer: 5
   m_Name: Dialog
   m_TagString: Untagged
@@ -428,6 +429,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &180731058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180731056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cbc2dadf7658d4c9d74ab57a5f04ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_txtDialogText: {fileID: 1934875427}
+  m_txtButtonA: {fileID: 473915726}
+  m_txtButtonB: {fileID: 235852665}
 --- !u!1 &210629563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -17, y: 337}
+  m_AnchoredPosition: {x: 0, y: 302}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1347675305
@@ -1568,8 +1584,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64, y: -385}
-  m_SizeDelta: {x: 1192.3992, y: 276.2346}
+  m_AnchoredPosition: {x: 68, y: -406}
+  m_SizeDelta: {x: 1192.3992, y: 196.6128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353595355
 MonoBehaviour:
@@ -1584,7 +1600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6313726}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1798,7 +1814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: 0}
+  m_AnchoredPosition: {x: -17, y: -38}
   m_SizeDelta: {x: 1091.3828, y: 236.9874}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934875427
@@ -1824,10 +1840,7 @@ MonoBehaviour:
   m_text: 'You walked past your neighbours house. You could see flames dancing in
     his eyes as the old man walked closer.
 
-    
-
-    "Your creature ate some of
-    my chickens! What the fuck my guy? You better pay for them or else!"'
+    ssssssssssssss'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e3bdc93c462eb64fb912cfb901e1eee, type: 2}
   m_sharedMaterial: {fileID: 6552008821802506225, guid: 1e3bdc93c462eb64fb912cfb901e1eee, type: 2}
@@ -1836,8 +1849,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4284499871
+  m_fontColor: {r: 0.6226415, g: 0.27901387, b: 0.37575483, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
