@@ -11,6 +11,7 @@ TagManager:
   - GameManager
   - Pet
   - EndMiniGame
+  - ObstacleEndMiniGame
   layers:
   - Default
   - TransparentFX

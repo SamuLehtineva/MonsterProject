@@ -7,15 +7,6 @@ namespace GA.MonsterProject
 {
     public class RunningMinigame : MonoBehaviour, MiniGameInterface
     {
-        public CharacterController charCont;
-        public Rigidbody rigbod;
-        public bool onGround = false;
-        public LayerMask groundLayer;
-        public Vector3 moveDirection;
-
-        public static bool GamePaused = false;
-        public GameObject PauseMenu;
-
         [Header("Jumping")]
         public float rayLength = 0.5f;
         public float jumpHeight = 15f;
@@ -23,6 +14,18 @@ namespace GA.MonsterProject
         [Header("Movement")]
         public float moveSpeed = 1000f;
         public float speedWhileJumping = 200f;
+
+        [Header("Pause")]
+        public static bool GamePaused = false;
+        public GameObject PauseMenu;
+
+        [Header("Random")]
+        public bool onGround = false;
+        public Rigidbody rigbod;
+        public LayerMask groundLayer;
+        public Vector3 moveDirection;
+        public bool WinEndMiniGame = false;
+        public bool LoseEndMiniGame = false;
 
         // Game is paused in the beginning so the player can read some instructions
         void Start()
@@ -81,12 +84,26 @@ namespace GA.MonsterProject
             GamePaused = true;
         }
 
+        // Checks if the player collides with an object
+        void OnTriggerEnter(Collider col)
+        {
+            if (col.gameObject.tag == "EndMiniGame")
+            {
+                WinEndMiniGame = true;
+            }
+            if (col.gameObject.tag == "ObstacleEndMiniGame")
+            {
+                LoseEndMiniGame = true;
+            }
+        }
+
         //Checks if the character touches the gameObject that end the game as a win
         public void WinMiniGame()
         {
             Vector3 right = transform.TransformDirection(Vector3.right);
 
-            if (Physics.Raycast(transform.position, right, rayLength)) {
+            if (WinEndMiniGame == true)
+            {
                 Debug.Log("WON");
                 SceneManager.LoadScene("Town");
             }
@@ -97,7 +114,7 @@ namespace GA.MonsterProject
         {
             Vector3 right = transform.TransformDirection(Vector3.right);
 
-            if (Physics.Raycast(transform.position, right, rayLength))
+            if (LoseEndMiniGame == true)
             {
                 Debug.Log("LOST");
                 SceneManager.LoadScene("Town");
