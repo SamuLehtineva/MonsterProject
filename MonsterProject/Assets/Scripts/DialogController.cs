@@ -77,6 +77,12 @@ namespace GA.MonsterProject
             m_sLines = m_ReadText.GetLines();
         }
 
+        public void SetRewards (QuestReward rewardA, QuestReward rewardB)
+        {
+            m_gcRewardA = rewardA;
+            m_gcRewardB = rewardB;
+        }
+
         public void ShowDialog()
         {
             m_txtDialogText.text = "";

@@ -24,7 +24,6 @@ namespace GA.MonsterProject
             {
                 s_CurrentResources = this;
             }
-            DontDestroyOnLoad(this);
         }
         
         public int GetResource(EResources.EResource resource)
