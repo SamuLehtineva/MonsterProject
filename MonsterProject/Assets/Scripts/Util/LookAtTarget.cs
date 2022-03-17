@@ -11,7 +11,9 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            transform.rotation = m_gcTarget.rotation;
+            //transform.forward = m_gcTarget.forward;
+            //transform.rotation = m_gcTarget.rotation;
+            transform.LookAt(m_gcTarget);
         }
     }
 }

@@ -936,6 +936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284669868}
   - component: {fileID: 284669869}
+  - component: {fileID: 284669870}
   m_Layer: 0
   m_Name: pivot
   m_TagString: Untagged
@@ -971,6 +972,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gcTarget: {fileID: 2142034907}
+--- !u!114 &284669870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284669867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f47105aefd2ae44b84c1a42b5587f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fBounceSpeed: 2.5
+  m_fBounceDistance: 0.2
+  m_bAbsolute: 0
 --- !u!1 &296503806
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,7 +3151,6 @@ GameObject:
   m_Component:
   - component: {fileID: 919532836}
   - component: {fileID: 919532838}
-  - component: {fileID: 919532837}
   m_Layer: 0
   m_Name: alert
   m_TagString: Untagged
@@ -3157,21 +3172,6 @@ Transform:
   m_Father: {fileID: 284669868}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &919532837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919532835}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f47105aefd2ae44b84c1a42b5587f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_fBounceSpeed: 1.5
-  m_fBounceDistance: 0.2
-  m_bAbsolute: 0
 --- !u!212 &919532838
 SpriteRenderer:
   m_ObjectHideFlags: 0
