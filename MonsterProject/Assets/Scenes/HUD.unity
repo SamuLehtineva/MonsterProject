@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e144f9eee4ff624a87b6819ccc7b51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_iMoney: 100
+  m_iMoney: 110
   m_iReputation: 100
   m_iBond: 50
 --- !u!1 &1418901981
@@ -372,9 +372,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2409397305341092974, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 382.787
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305341092974, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 122.1013
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305341092974, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 760.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305341092974, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 469.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2409397305379384160, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_gcRewardA.m_iBond
       value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305575154723, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.6303925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305575154723, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305575154723, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.6303925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305575154723, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305575154723, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397305575154723, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2409397305170677005, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
