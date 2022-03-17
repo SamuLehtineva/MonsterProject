@@ -12,6 +12,9 @@ TagManager:
   - Pet
   - EndMiniGame
   - ObstacleEndMiniGame
+  - PlayerLeft
+  - PlayerUp
+  - PlayerRight
   layers:
   - Default
   - TransparentFX
