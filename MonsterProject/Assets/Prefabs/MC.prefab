@@ -81,7 +81,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3253930705473315274, guid: 40bf7636cc46a8e48ad10dec037806bd, type: 3}
+  - {fileID: 2100000, guid: 966dd09a659996542846174e502f0baa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -793,14 +793,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: E
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0643d5ea72903ca449852cacb6ec494b, type: 2}
-  m_sharedMaterial: {fileID: 7682971673941324110, guid: 0643d5ea72903ca449852cacb6ec494b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 90bef0e7a8cc1604fbd75e064a07114d, type: 2}
+  m_sharedMaterial: {fileID: -6997396678002514885, guid: 90bef0e7a8cc1604fbd75e064a07114d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4291817978
   m_fontColor: {r: 0.9803922, g: 0.9450981, b: 0.8117648, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -962,7 +962,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5948669748543155569}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
@@ -972,7 +972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.0846153, y: 0.07692309}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!223 &5948669748543155573
@@ -1111,7 +1111,6 @@ GameObject:
   - component: {fileID: 5948669748566539851}
   - component: {fileID: 5948669748566539855}
   - component: {fileID: 5948669748566539848}
-  - component: {fileID: 5948669748566539849}
   - component: {fileID: 5948669748566539854}
   - component: {fileID: 5948669748566539852}
   m_Layer: 0
@@ -1204,21 +1203,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5948669748566539849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6794949217085966387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e144f9eee4ff624a87b6819ccc7b51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_iMoney: 100
-  m_iReputation: 100
-  m_iBond: 50
 --- !u!114 &5948669748566539854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,8 +1228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 124969ca829e8fe47868ccc29495bc0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_gcPetController: {fileID: 0}
   m_fMoveSpeed: 7
   m_fTurnSpeed: 0
+  m_bCanMove: 0
 --- !u!1 &6861058730138969664
 GameObject:
   m_ObjectHideFlags: 0

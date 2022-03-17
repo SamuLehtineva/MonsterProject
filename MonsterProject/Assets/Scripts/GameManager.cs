@@ -36,12 +36,6 @@ namespace GA.MonsterProject
             {
                 m_gcCharMover = GameObject.FindWithTag("Player").GetComponent<CharMover>();
             }
-
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                UIManager.s_UIManager.StartDialog("dialog", new QuestReward(1, 1, 1), new QuestReward(-5, -5, -5));
-                PlayerCanMove(false);
-            }
         }
 
         public void PlayerCanMove(bool value)
