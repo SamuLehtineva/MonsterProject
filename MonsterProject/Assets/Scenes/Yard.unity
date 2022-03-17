@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sFileName: dialog.txt
+  m_sFileName: dialog
   m_qRewardA:
     m_iMoney: 50
     m_iReputation: -50

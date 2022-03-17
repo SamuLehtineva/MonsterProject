@@ -7,20 +7,20 @@ namespace GA.MonsterProject
     public class UIManager : MonoBehaviour
     {
 
-        public static UIManager s_GameManager;
+        public static UIManager s_UIManager;
 
         [SerializeField]
         DialogController m_gcDialogController;
 
         void Awake()
         {
-            if (s_GameManager != null)
+            if (s_UIManager != null)
             {
-                GameObject.Destroy(s_GameManager);
+                GameObject.Destroy(s_UIManager);
             }
             else
             {
-                s_GameManager = this;
+                s_UIManager = this;
             }
             DontDestroyOnLoad(this);
         }
