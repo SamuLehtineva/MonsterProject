@@ -14,7 +14,7 @@ namespace GA.MonsterProject
         public float m_fMoveSpeed;
         public float m_fTurnSpeed;
 
-        private bool m_bCanMove;
+        public bool m_bCanMove;
         // Start is called before the first frame update
         void Start()
         {
