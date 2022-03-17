@@ -32,26 +32,6 @@ namespace GA.MonsterProject
         private bool m_bCanEnd;
         public static string m_sFileName = "dialog";
 
-        void Start()
-        {
-            if (m_sFileName != null)
-            {
-                m_ReadText = new ReadTextFile(m_sFileName);
-                m_sLines = m_ReadText.GetLines();
-            }
-
-            m_bCanContinue = false;
-            m_bCanEnd = false;
-            m_iCurrentLine = 0;
-
-            ShowDialog();
-            m_oButtons.SetActive(false);
-            
-            m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
-            m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
-            
-        }
-
         void Update()
         {
             if (Input.GetButtonDown("Fire2"))
@@ -66,7 +46,7 @@ namespace GA.MonsterProject
                 }
                 else if (m_bCanEnd)
                 {
-                    Debug.Log("End");
+                    EndDialog();
                 }
             }
         }
@@ -75,6 +55,15 @@ namespace GA.MonsterProject
         {
             m_ReadText = new ReadTextFile(sFileName);
             m_sLines = m_ReadText.GetLines();
+
+            m_bCanContinue = false;
+            m_bCanEnd = false;
+            m_iCurrentLine = 0;
+            ShowDialog();
+            m_oButtons.SetActive(false);
+            
+            m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
+            m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
         }
 
         public void SetRewards (QuestReward rewardA, QuestReward rewardB)
@@ -107,11 +96,10 @@ namespace GA.MonsterProject
 
         }
 
-        public void exitText()
+        public void EndDialog()
         {
-            Debug.Log("exitText");
-            SceneManager.UnloadSceneAsync("NarrativeBox");
-            Time.timeScale = 1f;
+            gameObject.SetActive(false);
+            GameManager.s_GameManager.PlayerCanMove(true);
         }
 
         public void GiveRewardA()

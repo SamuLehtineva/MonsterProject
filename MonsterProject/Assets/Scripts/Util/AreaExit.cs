@@ -20,8 +20,6 @@ namespace GA.MonsterProject
                 GameManager.m_sDestination = m_sTargetSpawnName;
                 Debug.Log(GameManager.m_sDestination);
             }
-
-            
         }
     }
 }

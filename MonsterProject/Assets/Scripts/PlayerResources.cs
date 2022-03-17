@@ -16,9 +16,9 @@ namespace GA.MonsterProject
 
         void Awake()
         {
-            if (s_CurrentResources != null)
+            if (s_CurrentResources != null && s_CurrentResources != this)
             {
-                GameObject.Destroy(s_CurrentResources);
+                GameObject.Destroy(this);
             }
             else
             {

@@ -7,26 +7,30 @@ namespace GA.MonsterProject
     public class UIManager : MonoBehaviour
     {
 
-        public static UIManager s_GameManager;
+        public static UIManager s_UIManager;
 
         [SerializeField]
         DialogController m_gcDialogController;
 
         void Awake()
         {
-            if (s_GameManager != null)
+            if (s_UIManager != null)
             {
-                GameObject.Destroy(s_GameManager);
+                Destroy(gameObject);
             }
             else
             {
-                s_GameManager = this;
+                s_UIManager = this;
             }
             DontDestroyOnLoad(this);
+
+            m_gcDialogController.gameObject.SetActive(false);
         }
 
         public void StartDialog (string FileName, QuestReward rewardA, QuestReward rewardB) 
         {
+            GameManager.s_GameManager.PlayerCanMove(false);
+            m_gcDialogController.gameObject.SetActive(true);
             m_gcDialogController.StartDialog(FileName);
             m_gcDialogController.SetRewards(rewardA, rewardB);
         }
