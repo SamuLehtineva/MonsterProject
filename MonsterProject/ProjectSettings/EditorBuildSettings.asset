@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HUD.unity
     guid: f26dce27cf26ee3429566bb6f33e852a
+  - enabled: 1
+    path: Assets/Scenes/Test_Dialog.unity
+    guid: 8d13df5ad08286443bffa2bdf8794945
+  - enabled: 1
+    path: Assets/Scenes/Test_Dialog2.unity
+    guid: c70d57798d3574446ae91d87205717fc
   m_configObjects: {}

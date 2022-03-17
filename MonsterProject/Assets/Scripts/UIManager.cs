@@ -16,7 +16,7 @@ namespace GA.MonsterProject
         {
             if (s_UIManager != null)
             {
-                GameObject.Destroy(s_UIManager);
+                Destroy(gameObject);
             }
             else
             {

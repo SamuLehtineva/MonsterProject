@@ -189,6 +189,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1060992249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2409397304026034052, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+  m_PrefabInstance: {fileID: 2409397305266296786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1060992252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060992249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e144f9eee4ff624a87b6819ccc7b51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_iMoney: 100
+  m_iReputation: 100
+  m_iBond: 50
 --- !u!1 &1418901981
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,5 +376,6 @@ PrefabInstance:
       propertyPath: m_gcRewardA.m_iBond
       value: 36
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2409397305170677005, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
