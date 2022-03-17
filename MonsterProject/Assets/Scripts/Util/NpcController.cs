@@ -48,14 +48,16 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
+            /*var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
             SceneLoad.completed += (s) => {
                 //SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
                 NarrativeController.m_gcRewardA = m_qRewardA;
                 NarrativeController.m_gcRewardB = m_qRewardB;
                 NarrativeController.m_sFileName = m_sFileName;
             };
-            //Time.timeScale = 0f;
+            //Time.timeScale = 0f;*/
+
+            UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
             DeActivate();
         }
     }
