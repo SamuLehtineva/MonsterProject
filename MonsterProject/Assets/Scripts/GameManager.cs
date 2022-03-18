@@ -30,7 +30,7 @@ namespace GA.MonsterProject
             SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
         }
 
-        void Update ()
+        void Update()
         {
             if (m_gcCharMover == null)
             {

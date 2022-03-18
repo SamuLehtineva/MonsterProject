@@ -29,6 +29,7 @@ namespace GA.MonsterProject
             m_vDirection.x = Input.GetAxis("Horizontal");
             m_vDirection.z = Input.GetAxis("Vertical");
             m_vDirection.Normalize();
+            
 
             if (m_bCanMove)
             {
@@ -56,6 +57,11 @@ namespace GA.MonsterProject
             {
                 SceneChanger.LoadLevel("Menu");
             }
+        }
+
+        void FixedUpdate()
+        {
+            //Debug.Log(transform.position);
         }
 
         void TryPet()

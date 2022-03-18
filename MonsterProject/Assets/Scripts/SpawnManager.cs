@@ -14,8 +14,11 @@ namespace GA.MonsterProject
 
         Transform[] m_aSpawnPoints;
 
-        void Start() {
+        private CharacterController m_gcController;
 
+        void Start() {
+            m_gcController = m_gcPlayer.GetComponent<CharacterController>();
+            m_gcController.gameObject.SetActive(false);
             //SpawnPoint[] points = FindObjectsOfType(typeof(SpawnPoint)) as SpawnPoint[];
             m_aSpawnPoints = new Transform[transform.childCount];
 
@@ -39,8 +42,10 @@ namespace GA.MonsterProject
                 {
                     if (item.name.Equals(GameManager.m_sDestination))
                     {
+                        Debug.Log("Before: " + m_gcPlayer.position);
                         m_gcPlayer.position = item.position;
                         m_gcPlayer.forward = item.forward;
+                        Debug.Log("After: " + m_gcPlayer.position);
                     }
                 }
 
@@ -52,8 +57,9 @@ namespace GA.MonsterProject
             {
                 Debug.Log("Spawn manager cant find a spawn with the name: " + GameManager.m_sDestination);
             }
+
+            m_gcController.gameObject.SetActive(true);
             
-        }
-        
+        }    
     }
 }
