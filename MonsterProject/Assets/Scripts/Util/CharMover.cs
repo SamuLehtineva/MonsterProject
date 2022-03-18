@@ -58,12 +58,7 @@ namespace GA.MonsterProject
                 SceneChanger.LoadLevel("Menu");
             }
         }
-
-        void FixedUpdate()
-        {
-            //Debug.Log(transform.position);
-        }
-
+        
         void TryPet()
         {
             

@@ -23,7 +23,7 @@ namespace GA.MonsterProject
             vWantedPos.x += m_fXOffset;
             vWantedPos.z += m_fZOffset;
 
-            transform.position = Vector3.Lerp(vCurrentPos, vWantedPos, 25.0f * Time.deltaTime);
+            //transform.position = Vector3.Lerp(vCurrentPos, vWantedPos, 25.0f * Time.deltaTime);
             transform.position = vWantedPos;
             Vector3 vTarget = m_tTarget.transform.position;
             vTarget.z += m_fZLookOffset;
