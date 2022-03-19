@@ -144,14 +144,14 @@ GameObject:
   m_Component:
   - component: {fileID: 861666812}
   - component: {fileID: 861666813}
-  - component: {fileID: 861666814}
+  - component: {fileID: 130878330}
   m_Layer: 0
   m_Name: InteractionSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &861666812
 Transform:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861666811}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0291, y: 1.1192, z: -0}
   m_LocalScale: {x: 0.30785295, y: 0.27547064, z: 0.6666667}
   m_Children:
@@ -218,7 +218,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &861666814
+--- !u!114 &130878330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 861666811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbbae8b025991624eb12fcf4f8898ffb, type: 3}
+  m_Script: {fileID: 11500000, guid: 668d28b7b651e37459655b7c52e32cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_gcTarget: {fileID: 0}
@@ -678,7 +678,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.673
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1816,7 +1816,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3343573132025394428, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
+  - {fileID: 2100000, guid: 360164de800bfd443b5956530407b2f3, type: 2}
   - {fileID: 7811561045550366062, guid: 5a81a516fa76d644f85bf231368eb6ce, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0

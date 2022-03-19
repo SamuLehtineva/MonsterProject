@@ -13,7 +13,7 @@ namespace GA.MonsterProject
         {
             //transform.forward = m_gcTarget.forward;
             //transform.rotation = m_gcTarget.rotation;
-            transform.LookAt(m_gcTarget);
+            transform.LookAt(m_gcTarget, Vector3.up);
         }
     }
 }
