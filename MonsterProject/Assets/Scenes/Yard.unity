@@ -3209,7 +3209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.08
+      value: -26.54
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3217,7 +3217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.25
+      value: 5.39
       objectReference: {fileID: 0}
     - target: {fileID: 2822590903472948952, guid: 0531a91a68466ea42b7c144719120692, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7697,10 +7697,6 @@ PrefabInstance:
       propertyPath: m_gcPetController
       value: 
       objectReference: {fileID: 1960575901}
-    - target: {fileID: 5948669748566539855, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
-      propertyPath: m_SkinWidth
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 6126956954407015049, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7711,7 +7707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6126956954407015049, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6126956954407015049, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_LocalPosition.z

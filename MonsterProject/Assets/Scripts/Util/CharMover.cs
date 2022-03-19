@@ -12,6 +12,7 @@ namespace GA.MonsterProject
         private Vector3 m_vDirection;
         private Animator m_gcANimator;
         public float m_fMoveSpeed;
+        public float m_fGravity;
         public float m_fTurnSpeed;
 
         public bool m_bCanMove;
@@ -30,11 +31,14 @@ namespace GA.MonsterProject
             m_vDirection.z = Input.GetAxis("Vertical");
             m_vDirection.Normalize();
             
-
             if (m_bCanMove)
             {
                 m_vDirection *= m_fMoveSpeed;
+                m_vDirection.y -= m_fGravity;
+
                 m_ccCharacterController.Move(m_vDirection * Time.deltaTime);
+
+                m_vDirection.y = 0;
 
                 Debug.DrawLine(transform.position, transform.position + transform.forward * 5.0f, Color.green);
 

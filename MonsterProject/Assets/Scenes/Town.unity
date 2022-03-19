@@ -1216,6 +1216,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 966dd09a659996542846174e502f0baa, type: 2}
     - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
+      propertyPath: m_fGravity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_gcPetController
       value: 
       objectReference: {fileID: 267459837}
@@ -1233,7 +1237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6126956954407015049, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 243.18
+      value: 243.518
       objectReference: {fileID: 0}
     - target: {fileID: 6126956954407015049, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_LocalPosition.z

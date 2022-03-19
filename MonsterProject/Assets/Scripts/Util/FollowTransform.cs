@@ -14,7 +14,7 @@ namespace GA.MonsterProject
 
         public float m_fZLookOffset;
 
-        void Update()
+        void LateUpdate()
         {
             Vector3 vCurrentPos = transform.position;
             Vector3 vWantedPos = m_tTarget.position;

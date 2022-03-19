@@ -1108,11 +1108,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6126956954407015049}
   - component: {fileID: 5948669748566539853}
-  - component: {fileID: 5948669748566539851}
   - component: {fileID: 5948669748566539855}
   - component: {fileID: 5948669748566539848}
   - component: {fileID: 5948669748566539854}
   - component: {fileID: 5948669748566539852}
+  - component: {fileID: 5948669747235917932}
   m_Layer: 0
   m_Name: MC
   m_TagString: Player
@@ -1153,19 +1153,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5948669748566539851
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6794949217085966387}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.5847304, z: 1}
-  m_Center: {x: 0, y: 0.8393958, z: 0}
 --- !u!143 &5948669748566539855
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1181,7 +1168,7 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &5948669748566539848
@@ -1230,8 +1217,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_gcPetController: {fileID: 0}
   m_fMoveSpeed: 7
+  m_fGravity: 5
   m_fTurnSpeed: 0
   m_bCanMove: 0
+--- !u!65 &5948669747235917932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794949217085966387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.4999932, z: 1}
+  m_Center: {x: 0, y: 0.8763068, z: 0}
 --- !u!1 &6861058730138969664
 GameObject:
   m_ObjectHideFlags: 0
