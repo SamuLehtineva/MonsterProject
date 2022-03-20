@@ -7567,6 +7567,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontSize
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 90bef0e7a8cc1604fbd75e064a07114d, type: 2}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6997396678002514885, guid: 90bef0e7a8cc1604fbd75e064a07114d, type: 2}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 128436183, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 130878330, guid: cfb821ca416154546a7f2a8c42cfca83, type: 3}
       propertyPath: m_gcTarget
       value: 
