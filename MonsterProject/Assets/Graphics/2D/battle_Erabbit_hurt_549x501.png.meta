@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: a06691d8c398ff7449e1039056c73dc7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5702105477718990082
+    second: battle_Erabbit_hurt_549x501_0
+  - first:
+      213: 2684253435996195516
+    second: battle_Erabbit_hurt_549x501_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +95,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: battle_Erabbit_hurt_549x501_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 9
+        width: 473
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef220c0774d0ed0b0800000000000000
+      internalID: -5702105477718990082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battle_Erabbit_hurt_549x501_1
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 8
+        width: 503
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaccab3742604520800000000000000
+      internalID: 2684253435996195516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
