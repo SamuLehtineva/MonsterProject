@@ -9,7 +9,9 @@ namespace GA.MonsterProject
     public class Minigame1 : MonoBehaviour
     {
         public MoveBetweenTransforms m_gcMoveBetween;
-        public Material m_gcMaterial;
+        public SpriteRenderer m_gcSpriteRenderer;
+        public Sprite m_gcAtkSprite;
+        public Sprite m_gcDefSprite;
         public int m_iEnemyHealth = 100;
         public int m_iPetHealth = 100;
         public bool m_bIsMyTurn;
@@ -24,7 +26,7 @@ namespace GA.MonsterProject
         TMP_Text m_txtTurnText;
         void Start()
         {
-            m_gcMaterial.color = Color.white;
+            m_gcSpriteRenderer.sprite = m_gcAtkSprite;
             m_bIsMyTurn = true;
         }
 
@@ -41,10 +43,12 @@ namespace GA.MonsterProject
             if (m_bIsMyTurn)
             {
                 m_txtTurnText.text = "Attack!";
+                m_gcSpriteRenderer.sprite = m_gcAtkSprite;
             }
             else
             {
                 m_txtTurnText.text = "Defend!";
+                m_gcSpriteRenderer.sprite = m_gcDefSprite;
             }
             CheckWin();
         }
@@ -53,7 +57,6 @@ namespace GA.MonsterProject
         {
             if (ratio < 0.6f && ratio > 0.4f)
             {
-                m_gcMaterial.color = Color.green;
 
                 if (m_bIsMyTurn)
                 {
@@ -68,7 +71,6 @@ namespace GA.MonsterProject
             } 
             else
             {
-                m_gcMaterial.color = Color.red;
                 
                 if (m_bIsMyTurn)
                 {
@@ -107,7 +109,6 @@ namespace GA.MonsterProject
             m_gcMoveBetween.Reset();
             m_txtEnemyHealthText.color = Color.white;
             m_txtPetHealthText.color = Color.white;
-            m_gcMaterial.color = Color.white;
             m_bIsMyTurn = !m_bIsMyTurn;
         }
 
