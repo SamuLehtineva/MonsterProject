@@ -24,6 +24,17 @@ namespace GA.MonsterProject
 
         [SerializeField]
         TMP_Text m_txtTurnText;
+
+        public SpriteRenderer m_gcEnemyRenderer;
+        public SpriteRenderer m_gcPetRenderer;
+
+        public Sprite m_gcPetIdle;
+        public Sprite m_gcPetAttack;
+        public Sprite m_gcPetHit;
+
+        public Sprite m_gcEnemyIdle;
+        public Sprite m_gcEnemyAttack;
+        public Sprite m_gcEnemyHit;
         private bool m_bCanAct;
         void Start()
         {
@@ -39,6 +50,15 @@ namespace GA.MonsterProject
 
             if (Input.GetButtonDown("Fire2") && m_bCanAct)
             {
+                if (m_bIsMyTurn)
+                {
+                    m_gcPetRenderer.sprite = m_gcPetAttack;
+                }
+                else
+                {
+                    m_gcEnemyRenderer.sprite = m_gcEnemyAttack;
+                    m_gcPetRenderer.sprite = m_gcPetHit;
+                }
                 Action(m_gcMoveBetween.GetRatio());
             }
 
@@ -62,6 +82,7 @@ namespace GA.MonsterProject
 
                 if (m_bIsMyTurn)
                 {
+                    m_gcEnemyRenderer.sprite = m_gcEnemyHit;
                     m_iEnemyHealth -= 50;
                 }
                 else
@@ -105,6 +126,8 @@ namespace GA.MonsterProject
             m_bCanAct = true;
             m_gcMoveBetween.Reset();
             m_bIsMyTurn = !m_bIsMyTurn;
+            m_gcEnemyRenderer.sprite = m_gcEnemyIdle;
+            m_gcPetRenderer.sprite = m_gcPetIdle;
         }
 
         IEnumerator EndDelay()
