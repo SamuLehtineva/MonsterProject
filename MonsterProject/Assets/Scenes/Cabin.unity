@@ -184,6 +184,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963552720}
+  - {fileID: 769679397}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -555,6 +556,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0047483, y: 1.3578689, z: 1.216116}
   m_Center: {x: 1.5250196, y: 0.5307747, z: -0.052943826}
+--- !u!1 &769679396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769679397}
+  m_Layer: 0
+  m_Name: Cabin_Bigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &769679397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769679396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.34, z: -5.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 208167194}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844907746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2550463727306718371, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
@@ -1270,8 +1301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8bc2259dd7f094ab8d76efe308d1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sTargetSceneName: Yard
-  m_sTargetSpawnName: Yard_Cabin
+  m_sTargetSceneName: Cabin_Bigger_Room
+  m_sTargetSpawnName: Bigger_Cabin
 --- !u!1 &1594053605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2190406642072723604, guid: 69a26adcecf4bba4ba6929f7961e4f29, type: 3}
