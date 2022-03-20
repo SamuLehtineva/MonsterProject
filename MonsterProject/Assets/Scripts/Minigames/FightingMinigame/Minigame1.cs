@@ -24,10 +24,12 @@ namespace GA.MonsterProject
 
         [SerializeField]
         TMP_Text m_txtTurnText;
+        private bool m_bCanAct;
         void Start()
         {
             m_gcSpriteRenderer.sprite = m_gcAtkSprite;
             m_bIsMyTurn = true;
+            m_bCanAct = true;
         }
 
         void Update()
@@ -35,7 +37,7 @@ namespace GA.MonsterProject
             m_gcEnemyBar.SetWidth(m_iEnemyHealth / 100f);
             m_gcPetBar.SetWidth(m_iPetHealth / 100f);
 
-            if (Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonDown("Fire2") && m_bCanAct)
             {
                 Action(m_gcMoveBetween.GetRatio());
             }
@@ -96,9 +98,11 @@ namespace GA.MonsterProject
 
         IEnumerator ActionDelay()
         {
+            m_bCanAct = false;
             m_gcMoveBetween.enabled = false;
             yield return new WaitForSeconds(1);
             m_gcMoveBetween.enabled = true;
+            m_bCanAct = true;
             m_gcMoveBetween.Reset();
             m_bIsMyTurn = !m_bIsMyTurn;
         }
@@ -106,6 +110,7 @@ namespace GA.MonsterProject
         IEnumerator EndDelay()
         {
             yield return new WaitForSeconds(2);
+            GameManager.m_sDestination = "Yard_Fight";
             SceneManager.LoadScene("Yard");
         }
     }

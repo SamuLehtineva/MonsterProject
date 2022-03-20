@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,12 +31,30 @@ namespace GA.MonsterProject
             SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
         }
 
-        void Update()
+        void OnEnable() 
         {
-            if (m_gcCharMover == null)
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            try
             {
-                m_gcCharMover = GameObject.FindWithTag("Player").GetComponent<CharMover>();
+                if (m_gcCharMover == null)
+                {
+                    m_gcCharMover = GameObject.FindWithTag("Player").GetComponent<CharMover>();
+                }
             }
+            catch (NullReferenceException e)
+            {
+                Debug.Log(e);
+            }
+            
+        }
+
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
         public void PlayerCanMove(bool value)
