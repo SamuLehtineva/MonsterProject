@@ -49,7 +49,6 @@ namespace GA.MonsterProject
             m_gcEnemyBar.SetWidth(m_iEnemyHealth / 100f);
             m_gcPetBar.SetWidth(m_iPetHealth / 100f);
             ScaleIcon();
-            Debug.Log(0.5f + Mathf.Lerp(0f, m_fSweetSpot, m_fSpotWidth));
             if (Input.GetButtonDown("Fire2") && m_bCanAct)
             {
                 if (m_bIsMyTurn)
