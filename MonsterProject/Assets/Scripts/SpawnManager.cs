@@ -37,15 +37,12 @@ namespace GA.MonsterProject
 
             try
             {
-                Debug.Log(GameManager.m_sDestination);
                 foreach (Transform item in m_aSpawnPoints)
                 {
                     if (item.name.Equals(GameManager.m_sDestination))
                     {
-                        Debug.Log("Before: " + m_gcPlayer.position);
                         m_gcPlayer.position = item.position;
                         m_gcPlayer.forward = item.forward;
-                        Debug.Log("After: " + m_gcPlayer.position);
                     }
                 }
 

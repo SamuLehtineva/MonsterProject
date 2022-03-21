@@ -328,6 +328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_gcCanvas
+      value: 
+      objectReference: {fileID: 2409397305266296787}
     - target: {fileID: 2409397304026034058, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -435,3 +439,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2409397305170677005, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+--- !u!223 &2409397305266296787 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2409397305170677007, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+  m_PrefabInstance: {fileID: 2409397305266296786}
+  m_PrefabAsset: {fileID: 0}

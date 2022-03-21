@@ -12,6 +12,9 @@ namespace GA.MonsterProject
         [SerializeField]
         DialogController m_gcDialogController;
 
+        [SerializeField]
+        Canvas m_gcCanvas;
+
         void Awake()
         {
             if (s_UIManager != null)
@@ -33,6 +36,11 @@ namespace GA.MonsterProject
             m_gcDialogController.gameObject.SetActive(true);
             m_gcDialogController.StartDialog(FileName);
             m_gcDialogController.SetRewards(rewardA, rewardB);
+        }
+
+        public void ToggleHud(bool active)
+        {
+            m_gcCanvas.gameObject.SetActive(active);
         }
     }
 }

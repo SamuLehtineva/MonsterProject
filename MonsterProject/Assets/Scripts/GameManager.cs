@@ -9,11 +9,9 @@ namespace GA.MonsterProject
     public class GameManager : MonoBehaviour
     {
         public static string m_sDestination;
-
         public static GameManager s_GameManager;
-
         CharMover m_gcCharMover;
-
+        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame"};
         void Awake()
         {
             if (s_GameManager != null)
@@ -26,14 +24,17 @@ namespace GA.MonsterProject
             }
             DontDestroyOnLoad(this);
 
-            m_gcCharMover = GameObject.FindWithTag("Player").GetComponent<CharMover>();
+            //m_gcCharMover = GameObject.FindWithTag("Player").GetComponent<CharMover>();
 
             SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
+
+            Debug.Log(m_aNoHudScenes[0]);
         }
 
         void OnEnable() 
         {
             SceneManager.sceneLoaded += OnSceneLoaded;
+            Debug.Log("Enabled");
         }
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -50,6 +51,19 @@ namespace GA.MonsterProject
                 Debug.Log(e);
             }
             
+            
+        }
+
+        void LateUpdate() 
+        {
+            if (Array.Exists(m_aNoHudScenes, element => element == SceneManager.GetActiveScene().name))
+            {
+                UIManager.s_UIManager.ToggleHud(false);
+            }
+            else
+            {
+                UIManager.s_UIManager.ToggleHud(true);
+            }
         }
 
         void OnDisable()
