@@ -12,29 +12,27 @@ namespace GA.MonsterProject
         public SpriteRenderer m_gcSpriteRenderer;
         public Sprite m_gcAtkSprite;
         public Sprite m_gcDefSprite;
-        public int m_iEnemyHealth = 100;
-        public int m_iPetHealth = 100;
-        public bool m_bIsMyTurn;
-
-        [SerializeField]
-        UIBar m_gcEnemyBar;
-
-        [SerializeField]
-        UIBar m_gcPetBar;
 
         [SerializeField]
         TMP_Text m_txtTurnText;
+        public int m_iPetHealth = 100;
 
-        public SpriteRenderer m_gcEnemyRenderer;
+        [SerializeField]
+        UIBar m_gcPetBar;
         public SpriteRenderer m_gcPetRenderer;
-
         public Sprite m_gcPetIdle;
         public Sprite m_gcPetAttack;
         public Sprite m_gcPetHit;
 
+        public int m_iEnemyHealth = 100;
+
+        [SerializeField]
+        UIBar m_gcEnemyBar;
+        public SpriteRenderer m_gcEnemyRenderer;
         public Sprite m_gcEnemyIdle;
         public Sprite m_gcEnemyAttack;
         public Sprite m_gcEnemyHit;
+        public bool m_bIsMyTurn;
         private bool m_bCanAct;
         void Start()
         {
@@ -47,6 +45,7 @@ namespace GA.MonsterProject
         {
             m_gcEnemyBar.SetWidth(m_iEnemyHealth / 100f);
             m_gcPetBar.SetWidth(m_iPetHealth / 100f);
+            ScaleIcon();
 
             if (Input.GetButtonDown("Fire2") && m_bCanAct)
             {
@@ -73,6 +72,27 @@ namespace GA.MonsterProject
                 m_gcSpriteRenderer.sprite = m_gcDefSprite;
             }
             CheckWin();
+        }
+
+        public void ScaleIcon()
+        {
+            float fX;
+            float fY;
+
+            fX = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 100f);
+            fY = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 60f);
+            Debug.Log("X: " + fX + " Y: " + fY);
+
+            if (fX < 0.45f)
+            {
+                fX = 0.45f;
+            }
+
+            if (fY < 0.55f)
+            {
+                fY = 0.55f;
+            }
+            m_gcSpriteRenderer.transform.localScale = new Vector3(fX, fY, 1f);
         }
 
         public void Action(float ratio)
