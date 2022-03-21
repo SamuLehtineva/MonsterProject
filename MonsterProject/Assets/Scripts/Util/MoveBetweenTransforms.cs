@@ -10,7 +10,7 @@ namespace GA.MonsterProject
         public Transform m_gcLerpPoint2;
 
         public float m_fLerpDurationSeconds = 1.0f;
-        private float m_fRatio;
+        public float m_fRatio;
         private float m_fEventTime = 0.0f;
         void Start()
         {

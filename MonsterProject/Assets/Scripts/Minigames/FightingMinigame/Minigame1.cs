@@ -34,11 +34,14 @@ namespace GA.MonsterProject
         public Sprite m_gcEnemyHit;
         public bool m_bIsMyTurn;
         private bool m_bCanAct;
+        private float m_fSweetSpot;
+        private float m_fSpotWidth;
         void Start()
         {
             m_gcSpriteRenderer.sprite = m_gcAtkSprite;
             m_bIsMyTurn = true;
             m_bCanAct = true;
+            m_fSweetSpot = 0.15f;
         }
 
         void Update()
@@ -46,7 +49,7 @@ namespace GA.MonsterProject
             m_gcEnemyBar.SetWidth(m_iEnemyHealth / 100f);
             m_gcPetBar.SetWidth(m_iPetHealth / 100f);
             ScaleIcon();
-
+            Debug.Log(0.5f + Mathf.Lerp(0f, m_fSweetSpot, m_fSpotWidth));
             if (Input.GetButtonDown("Fire2") && m_bCanAct)
             {
                 if (m_bIsMyTurn)
@@ -76,28 +79,26 @@ namespace GA.MonsterProject
 
         public void ScaleIcon()
         {
-            float fX;
             float fY;
 
-            fX = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 100f);
+            m_fSpotWidth = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 100f);
             fY = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 60f);
-            Debug.Log("X: " + fX + " Y: " + fY);
 
-            if (fX < 0.45f)
+            if (m_fSpotWidth < 0.45f)
             {
-                fX = 0.45f;
+                m_fSpotWidth = 0.45f;
             }
 
             if (fY < 0.55f)
             {
                 fY = 0.55f;
             }
-            m_gcSpriteRenderer.transform.localScale = new Vector3(fX, fY, 1f);
+            m_gcSpriteRenderer.transform.localScale = new Vector3(m_fSpotWidth, fY, 1f);
         }
 
         public void Action(float ratio)
         {
-            if (ratio < 0.6f && ratio > 0.4f)
+            if (ratio < 0.5f + Mathf.Lerp(0f, m_fSweetSpot, m_fSpotWidth) && ratio > 0.5f - Mathf.Lerp(0f, m_fSweetSpot, m_fSpotWidth))
             {
 
                 if (m_bIsMyTurn)

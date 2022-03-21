@@ -764,20 +764,20 @@ MonoBehaviour:
   m_gcSpriteRenderer: {fileID: 1512290323}
   m_gcAtkSprite: {fileID: 21300000, guid: 030621cf86138ba409abcde8e7b4841b, type: 3}
   m_gcDefSprite: {fileID: 21300000, guid: 47c1cd84ffa36db4bb53d613ae9cd43d, type: 3}
-  m_iEnemyHealth: 100
-  m_iPetHealth: 100
-  m_bIsMyTurn: 0
-  m_gcEnemyBar: {fileID: 97545119}
-  m_gcPetBar: {fileID: 1463624381}
   m_txtTurnText: {fileID: 1416678811}
-  m_gcEnemyRenderer: {fileID: 1241762086}
+  m_iPetHealth: 100
+  m_gcPetBar: {fileID: 1463624381}
   m_gcPetRenderer: {fileID: 842351449}
   m_gcPetIdle: {fileID: 7584735303575350690, guid: e341ef779b5b813449c217664949736f, type: 3}
   m_gcPetAttack: {fileID: 21300000, guid: 7825dfb23aa735e48ac31b4668bb3e3a, type: 3}
   m_gcPetHit: {fileID: 8697432583910541775, guid: a139b7004fe704346b7f252233eef5de, type: 3}
+  m_iEnemyHealth: 100
+  m_gcEnemyBar: {fileID: 97545119}
+  m_gcEnemyRenderer: {fileID: 1241762086}
   m_gcEnemyIdle: {fileID: 3584183319164534218, guid: 3bdd291ecdfa7364494373daae51d60b, type: 3}
   m_gcEnemyAttack: {fileID: 21300000, guid: 743fec4ec28acc14c890fccfb7f4337e, type: 3}
   m_gcEnemyHit: {fileID: -5702105477718990082, guid: a06691d8c398ff7449e1039056c73dc7, type: 3}
+  m_bIsMyTurn: 0
 --- !u!1 &1009323753
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +976,7 @@ MonoBehaviour:
   m_gcLerpPoint1: {fileID: 1446641573}
   m_gcLerpPoint2: {fileID: 1909162168}
   m_fLerpDurationSeconds: 0.5
+  m_fRatio: 0
 --- !u!1 &1205813548
 GameObject:
   m_ObjectHideFlags: 0
