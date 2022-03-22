@@ -16,8 +16,13 @@ namespace GA.MonsterProject
         public GameObject PlayerUp;
         public GameObject PlayerRight;
 
-        public bool rightChoice = false;
+        [Header("Booleans")]
+        public bool BoolMonLeft = false;
+        public bool BoolMonUp = false;
+        public bool BoolMonRight = false;
 
+
+        public bool rightChoice = false;
         public int RandomNumber;
         public int Points = 0;
 
@@ -36,17 +41,17 @@ namespace GA.MonsterProject
         void OnMouseDown()
         {
             //Debug.Log(gameObject);
-            if(gameObject.tag == "PlayerLeft" && MonsterLeft.activeSelf)
+            if(gameObject.tag == "PlayerLeft" && BoolMonLeft == true)
             {
                 MonsterLeft.SetActive(false);
                 Points = +1;
             }
-            if (gameObject.tag == "PlayerUp" && MonsterUp.activeSelf)
+            if (gameObject.tag == "PlayerUp" && BoolMonUp == true)
             {
                 MonsterUp.SetActive(false);
                 Points = +1;
             }
-            if (gameObject.tag == "PlayerRight" && MonsterRight.activeSelf)
+            if (gameObject.tag == "PlayerRight" && BoolMonRight == true)
             {
                 MonsterRight.SetActive(false);
                 Points = +1;
@@ -60,12 +65,16 @@ namespace GA.MonsterProject
 
             if (RandomNumber == 0) {
                 MonsterLeft.SetActive(true);
+                BoolMonLeft = true;
+
             } else if (RandomNumber == 1)
             {
                 MonsterUp.SetActive(true);
+                BoolMonUp = true;
             } else //(RandomNumber == 2)
             {
                 MonsterRight.SetActive(true);
+                BoolMonRight = true;
             }
         }
 
@@ -74,8 +83,5 @@ namespace GA.MonsterProject
             RandomNumber = Random.Range(0, 3);
             Debug.Log(RandomNumber);
         }
-
-        
-
     }
 }
