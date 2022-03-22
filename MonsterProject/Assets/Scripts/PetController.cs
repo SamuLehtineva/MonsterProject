@@ -41,7 +41,7 @@ namespace GA.MonsterProject
         }
         public void PlayPetAnimation()
         {
-            m_gcAnimator.Play("Pet");
+            m_gcAnimator.Play("Being_Pet");
             m_gcAudioSource.PlayOneShot(m_gcPetSound);
             DeActivate();
         }
