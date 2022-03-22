@@ -9,7 +9,8 @@ namespace GA.MonsterProject
     public class Minigame1 : MonoBehaviour
     {
         public MoveBetweenTransforms m_gcMoveBetween;
-        public SpriteRenderer m_gcSpriteRenderer;
+        public SpriteRenderer m_gcSpotRenderer;
+        public SpriteRenderer m_gcIconRenderer;
         public Sprite m_gcAtkSprite;
         public Sprite m_gcDefSprite;
 
@@ -38,7 +39,6 @@ namespace GA.MonsterProject
         private float m_fSpotWidth;
         void Start()
         {
-            m_gcSpriteRenderer.sprite = m_gcAtkSprite;
             m_bIsMyTurn = true;
             m_bCanAct = true;
             m_fSweetSpot = 0.15f;
@@ -66,33 +66,33 @@ namespace GA.MonsterProject
             if (m_bIsMyTurn)
             {
                 m_txtTurnText.text = "Attack!";
-                m_gcSpriteRenderer.sprite = m_gcAtkSprite;
+                m_gcIconRenderer.sprite = m_gcAtkSprite;
+                m_fSpotWidth = 1f;
             }
             else
             {
                 m_txtTurnText.text = "Defend!";
-                m_gcSpriteRenderer.sprite = m_gcDefSprite;
+                m_gcIconRenderer.sprite = m_gcDefSprite;
             }
             CheckWin();
         }
 
         public void ScaleIcon()
         {
-            float fY;
-
-            m_fSpotWidth = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 100f);
-            fY = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 60f);
-
-            if (m_fSpotWidth < 0.45f)
+            if (m_bIsMyTurn)
             {
-                m_fSpotWidth = 0.45f;
+                m_fSpotWidth = Mathf.Lerp(0f, 1f, m_iEnemyHealth / 100f);
+                if (m_fSpotWidth < 0.45f)
+                {
+                    m_fSpotWidth = 0.45f;
+                }
+                m_gcSpotRenderer.transform.localScale = new Vector3(m_fSpotWidth, 1f, 1f);
             }
-
-            if (fY < 0.55f)
+            else
             {
-                fY = 0.55f;
+                m_gcSpotRenderer.transform.localScale = new Vector3(1f, 1f, 1f);
             }
-            m_gcSpriteRenderer.transform.localScale = new Vector3(m_fSpotWidth, fY, 1f);
+            
         }
 
         public void Action(float ratio)
