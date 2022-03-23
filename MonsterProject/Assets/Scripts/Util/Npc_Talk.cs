@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
-    public class NpcController : MonoBehaviour, IInteractables
+    public class Npc_Talk : MonoBehaviour, IInteractables
     {
         public bool IsActive
         {
@@ -48,15 +48,6 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            /*var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
-            SceneLoad.completed += (s) => {
-                //SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
-                NarrativeController.m_gcRewardA = m_qRewardA;
-                NarrativeController.m_gcRewardB = m_qRewardB;
-                NarrativeController.m_sFileName = m_sFileName;
-            };
-            //Time.timeScale = 0f;*/
-
             UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
             DeActivate();
         }

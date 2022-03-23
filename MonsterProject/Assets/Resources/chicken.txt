@@ -1,0 +1,23 @@
+#Start
+"Hey buddy, if you're going that way could you help me find my chicken?
+She ran into the forest, but im too busy to go looking for her"
+
+"I'll pay you nicely if you bring her back in one piece"
+#
+
+#OptionA
+You promised to find the chicken
+#
+
+#OptionB
+You tell the man it's not your problem.
+He mutters something under his breath.
+#
+
+#ButtonA
+Help him
+#
+
+#ButtonB
+Ignore him
+#

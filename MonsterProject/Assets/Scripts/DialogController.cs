@@ -34,7 +34,7 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            if (Input.GetButtonDown("Fire2"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 
                 if (m_bCanContinue)
