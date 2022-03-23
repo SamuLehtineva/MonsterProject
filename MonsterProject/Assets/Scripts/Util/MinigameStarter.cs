@@ -13,6 +13,8 @@ namespace GA.MonsterProject
             set;
         }
 
+        public string m_SceneName;
+
         void Start()
         {
             IsActive = false;
@@ -38,7 +40,7 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            SceneManager.LoadScene("MinigameTest");
+            SceneManager.LoadScene(m_SceneName);
         }
     }
 }
