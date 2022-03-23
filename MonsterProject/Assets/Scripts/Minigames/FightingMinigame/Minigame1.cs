@@ -37,11 +37,13 @@ namespace GA.MonsterProject
         private bool m_bCanAct;
         private float m_fSweetSpot;
         private float m_fSpotWidth;
+        private AudioClipPlayer m_gcClipPlayer;
         void Start()
         {
             m_bIsMyTurn = true;
             m_bCanAct = true;
             m_fSweetSpot = 0.15f;
+            m_gcClipPlayer = GetComponent<AudioClipPlayer>();
         }
 
         void Update()
@@ -104,10 +106,12 @@ namespace GA.MonsterProject
                 {
                     m_gcEnemyRenderer.sprite = m_gcEnemyHit;
                     m_iEnemyHealth -= 50;
+                    m_gcClipPlayer.PlayClip(0, 1f);
                 }
                 else
                 {
                     m_iPetHealth -= 25;
+                    m_gcClipPlayer.PlayClip(2, 0.5f);
                 }
             } 
             else
@@ -115,6 +119,7 @@ namespace GA.MonsterProject
                 if (!m_bIsMyTurn)
                 {
                     m_iPetHealth -= 50;
+                    m_gcClipPlayer.PlayClip(1, 1f);
                 }
             }
             
