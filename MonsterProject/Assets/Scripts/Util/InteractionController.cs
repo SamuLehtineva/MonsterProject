@@ -11,16 +11,10 @@ namespace GA.MonsterProject
         [SerializeField]
         Canvas m_gcCanvas;
         bool m_bCanInteract;
-
-        private List<GameObject> m_lTriggers = new List<GameObject>();
-
+        
         void Update()
         {
-            if (m_lTriggers.Count > 0)
-            {
-                m_gcCanvas.gameObject.SetActive(true);
-            }
-            else
+            if (Input.GetButtonDown("Fire1"))
             {
                 m_gcCanvas.gameObject.SetActive(false);
             }
@@ -30,7 +24,7 @@ namespace GA.MonsterProject
             if (mytest is IInteractables)
             {
                 mytest.Activate();
-                m_lTriggers.Add(other.gameObject);
+                m_gcCanvas.gameObject.SetActive(true);
             }
         }
 
@@ -39,7 +33,7 @@ namespace GA.MonsterProject
             if (mytest is IInteractables)
             {
                 mytest.DeActivate();
-                m_lTriggers.Remove(other.gameObject);
+                m_gcCanvas.gameObject.SetActive(false);
             }
         }
     }

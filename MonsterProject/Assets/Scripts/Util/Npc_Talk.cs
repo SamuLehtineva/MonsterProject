@@ -14,12 +14,14 @@ namespace GA.MonsterProject
             set;
         }
         public string m_sFileName;
+        GameObject m_gcQuestIcon;
         public QuestReward m_qRewardA;
         public QuestReward m_qRewardB;
 
         void Start()
         {
             IsActive = false;
+            m_gcQuestIcon = GameObject.Find(transform.parent.gameObject.name + "/alert");
         }
 
         void Update()
@@ -50,6 +52,11 @@ namespace GA.MonsterProject
         {
             UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
             DeActivate();
+            if (m_gcQuestIcon != null)
+            {
+                m_gcQuestIcon.SetActive(false);
+            }
+            gameObject.SetActive(false);
         }
     }
 }

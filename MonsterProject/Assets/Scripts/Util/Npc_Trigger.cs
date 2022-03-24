@@ -26,7 +26,7 @@ namespace GA.MonsterProject
 
         public void DeActivate()
         {
-            IsActive = false;
+            gameObject.SetActive(false);
         }
 
         public void Interact()
