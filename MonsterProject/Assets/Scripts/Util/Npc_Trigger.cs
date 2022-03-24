@@ -15,29 +15,37 @@ namespace GA.MonsterProject
         public string m_sFileName;
         public QuestReward m_qRewardA;
         public QuestReward m_qRewardB;
+        static bool m_bUsable = true;
+
+        void Start()
+        {
+            IsActive = true;
+            if (!m_bUsable)
+            {
+                Kill();
+            }
+        }
 
         public void Activate()
         {
-            if (IsActive)
-            {
-                Interact();
-            }
+            Interact();
         }
 
         public void DeActivate()
         {
-            gameObject.SetActive(false);
+            IsActive = false;
         }
 
         public void Interact()
         {
             UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
-            DeActivate();
+            m_bUsable = false;
+            Kill();
         }
 
-        void Start()
+        void Kill()
         {
-            IsActive = true;
+            gameObject.SetActive(false);
         }
     }
 }

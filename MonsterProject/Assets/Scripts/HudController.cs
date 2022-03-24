@@ -18,9 +18,9 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            m_txtMoneyText.text = "x " + PlayerResources.s_CurrentResources.GetResource(EResources.EResource._Money).ToString();
-            m_txtReputationText.text = "Reputation : " + PlayerResources.s_CurrentResources.GetResource(EResources.EResource._Reputation);
-            m_gcBondBar.SetWidth(PlayerResources.s_CurrentResources.GetResource(EResources.EResource._Bond) / (float) 100f);
+            m_txtMoneyText.text = "x " + PlayerResources.s_CurrentResources.GetResource(Types.EResource._Money).ToString();
+            m_txtReputationText.text = "Reputation : " + PlayerResources.s_CurrentResources.GetResource(Types.EResource._Reputation);
+            m_gcBondBar.SetWidth(PlayerResources.s_CurrentResources.GetResource(Types.EResource._Bond) / (float) 100f);
         }
     }
 }

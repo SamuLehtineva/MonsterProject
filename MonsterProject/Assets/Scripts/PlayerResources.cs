@@ -26,20 +26,20 @@ namespace GA.MonsterProject
             }
         }
         
-        public int GetResource(EResources.EResource resource)
+        public int GetResource(Types.EResource resource)
         {
             int iAmount = 0;
             switch (resource)
             {
-                case EResources.EResource._Money:
+                case Types.EResource._Money:
                     iAmount = m_iMoney;
                     break;
 
-                case EResources.EResource._Reputation:
+                case Types.EResource._Reputation:
                     iAmount = m_iReputation;
                     break;
 
-                case EResources.EResource._Bond:
+                case Types.EResource._Bond:
                     iAmount = m_iBond;
                     break;
             }
@@ -47,11 +47,11 @@ namespace GA.MonsterProject
             return iAmount;
         }
 
-        public void AddResource(EResources.EResource resource, int amount)
+        public void AddResource(Types.EResource resource, int amount)
         {
             switch (resource)
             {
-                case EResources.EResource._Money:
+                case Types.EResource._Money:
                     m_iMoney += amount;
 
                     if (m_iMoney < 0)
@@ -61,7 +61,7 @@ namespace GA.MonsterProject
 
                     break;
 
-                case EResources.EResource._Reputation:
+                case Types.EResource._Reputation:
                     m_iReputation += amount;
 
                     if (m_iReputation < 0)
@@ -71,7 +71,7 @@ namespace GA.MonsterProject
 
                     break;
 
-                case EResources.EResource._Bond:
+                case Types.EResource._Bond:
                     m_iBond += amount;
 
                     if (m_iBond < 0)

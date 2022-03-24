@@ -57,13 +57,13 @@ namespace GA.MonsterProject
         public void GiveRewardA()
         {
             m_txtDialogText.text = SearchIndicator("#OptionA");
-            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardA.m_iMoney, m_gcRewardA.m_iReputation, m_gcRewardA.m_iBond);
+            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardA);
         }
 
         public void GiveRewardB()
         {
             m_txtDialogText.text = SearchIndicator("#OptionB");
-            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardB.m_iMoney, m_gcRewardB.m_iReputation, m_gcRewardB.m_iBond);
+            GameObject.FindWithTag("Player").gameObject.GetComponent<PlayerResources>().AddResources(m_gcRewardB);
         }
 
         public string SearchIndicator(string indicator)
