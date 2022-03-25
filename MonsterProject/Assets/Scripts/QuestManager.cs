@@ -13,5 +13,17 @@ namespace GA.MonsterProject
         {
             m_aQuests = GetComponentsInChildren<QuestInfo>();
         }
+        
+        public QuestInfo GetQuestByName(string name)
+        {
+            foreach (QuestInfo quest in m_aQuests)
+            {
+                if (quest.m_sName.Equals(name))
+                {
+                    return quest;
+                }
+            }
+            return null;
+        }
     }
 }

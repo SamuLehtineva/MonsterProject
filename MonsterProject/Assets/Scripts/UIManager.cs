@@ -6,11 +6,13 @@ namespace GA.MonsterProject
 {
     public class UIManager : MonoBehaviour
     {
-
         public static UIManager s_UIManager;
 
         [SerializeField]
         DialogController m_gcDialogController;
+
+        [SerializeField]
+        QuestManager m_gcQuestManager;
 
         [SerializeField]
         Canvas m_gcCanvas;

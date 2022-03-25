@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 1027684324}
   - component: {fileID: 1027684325}
   m_Layer: 0
-  m_Name: Quest0
+  m_Name: fetch_helga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c972050230ffd2439ed6e5f5ed3cb77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sName: chivsdb
+  m_sName: fetch_helga
   m_iStatus: 2
   m_sDescription: agsgsd
 --- !u!1 &1060992249 stripped
@@ -422,6 +422,10 @@ PrefabInstance:
       propertyPath: m_gcCanvas
       value: 
       objectReference: {fileID: 2409397305266296787}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_gcQuestManager
+      value: 
+      objectReference: {fileID: 1287170718}
     - target: {fileID: 2409397304026034058, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_RootOrder
       value: 2
