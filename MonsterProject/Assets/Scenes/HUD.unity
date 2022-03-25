@@ -189,6 +189,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1027684323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1027684324}
+  - component: {fileID: 1027684325}
+  m_Layer: 0
+  m_Name: Quest0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1027684324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027684323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287170717}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1027684325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027684323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c972050230ffd2439ed6e5f5ed3cb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sName: chivsdb
+  m_iStatus: 2
+  m_sDescription: agsgsd
 --- !u!1 &1060992249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2409397304026034052, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
@@ -209,6 +255,50 @@ MonoBehaviour:
   m_iMoney: 110
   m_iReputation: 100
   m_iBond: 50
+--- !u!1 &1287170716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287170717}
+  - component: {fileID: 1287170718}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1287170717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287170716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1027684324}
+  m_Father: {fileID: 2409397305266296788}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287170718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287170716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 064bbca22ab2171438fdfb6d838860f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1418901981
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,5 +532,10 @@ PrefabInstance:
 --- !u!223 &2409397305266296787 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 2409397305170677007, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+  m_PrefabInstance: {fileID: 2409397305266296786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2409397305266296788 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2409397304026034058, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
   m_PrefabInstance: {fileID: 2409397305266296786}
   m_PrefabAsset: {fileID: 0}

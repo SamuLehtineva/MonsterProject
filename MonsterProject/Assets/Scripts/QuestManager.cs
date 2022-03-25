@@ -13,11 +13,5 @@ namespace GA.MonsterProject
         {
             m_aQuests = GetComponentsInChildren<QuestInfo>();
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }
