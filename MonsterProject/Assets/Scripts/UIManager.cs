@@ -12,7 +12,7 @@ namespace GA.MonsterProject
         DialogController m_gcDialogController;
 
         [SerializeField]
-        QuestManager m_gcQuestManager;
+        public QuestManager m_gcQuestManager;
 
         [SerializeField]
         Canvas m_gcCanvas;

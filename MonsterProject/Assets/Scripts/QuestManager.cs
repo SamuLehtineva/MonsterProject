@@ -25,5 +25,16 @@ namespace GA.MonsterProject
             }
             return null;
         }
+
+        public void SetQuestStatus(string name, Types.EStatus status)
+        {
+            foreach (QuestInfo quest in m_aQuests)
+            {
+                if (quest.m_sName.Equals(name))
+                {
+                    quest.m_iStatus = status;
+                }
+            }
+        }
     }
 }

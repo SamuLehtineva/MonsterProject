@@ -7268,6 +7268,10 @@ PrefabInstance:
       propertyPath: m_qRewardB.m_iReputation
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+      propertyPath: <m_sFileName>k__BackingField
+      value: dialog
+      objectReference: {fileID: 0}
     - target: {fileID: 345896042830474047, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_RootOrder
       value: 4
