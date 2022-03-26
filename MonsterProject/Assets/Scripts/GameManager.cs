@@ -22,19 +22,14 @@ namespace GA.MonsterProject
             {
                 s_GameManager = this;
             }
+            
             DontDestroyOnLoad(this);
-
-            //m_gcCharMover = GameObject.FindWithTag("Player").GetComponent<CharMover>();
-
             SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
-
-            Debug.Log(m_aNoHudScenes[0]);
         }
 
         void OnEnable() 
         {
             SceneManager.sceneLoaded += OnSceneLoaded;
-            Debug.Log("Enabled");
         }
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -50,8 +45,6 @@ namespace GA.MonsterProject
             {
                 Debug.Log(e);
             }
-            
-            
         }
 
         void LateUpdate() 

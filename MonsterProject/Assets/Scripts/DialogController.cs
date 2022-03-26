@@ -31,6 +31,7 @@ namespace GA.MonsterProject
         private bool m_bCanContinue;
         private bool m_bCanEnd;
         public static string m_sFileName = "dialog";
+        INpc m_gcNpc;
 
         void Update()
         {
@@ -39,7 +40,6 @@ namespace GA.MonsterProject
                 
                 if (m_bCanContinue)
                 {
-                    Debug.Log("Jee");
                     m_iCurrentLine += 3;
                     m_bCanContinue = false;
                     ShowDialog();
@@ -62,6 +62,22 @@ namespace GA.MonsterProject
             ShowDialog();
             m_oButtons.SetActive(false);
             
+            m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
+            m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
+        }
+
+        public void StartDialog(INpc npc)
+        {
+            m_gcNpc = npc;
+            m_ReadText = new ReadTextFile(npc.m_sFileName);
+            m_sLines = m_ReadText.GetLines();
+
+            m_bCanContinue = false;
+            m_bCanEnd = false;
+            m_iCurrentLine = 0;
+            ShowDialog();
+            m_oButtons.SetActive(false);
+
             m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
             m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
         }
@@ -93,7 +109,6 @@ namespace GA.MonsterProject
             {
                 m_oButtons.SetActive(true);
             }
-
         }
 
         public void EndDialog()
@@ -114,6 +129,20 @@ namespace GA.MonsterProject
             m_txtDialogText.text = SearchIndicator("#OptionB")[0].ToString();
             m_bCanEnd = true;
             PlayerResources.s_CurrentResources.AddResources(m_gcRewardB);
+        }
+
+        public void PickOptionA()
+        {
+            m_txtDialogText.text = SearchIndicator("#OptionA")[0].ToString();
+            m_gcNpc.PickOptionA();
+            m_bCanEnd = true;
+        }
+
+        public void PickOptionB()
+        {
+            m_txtDialogText.text = SearchIndicator("#OptionB")[0].ToString();
+            m_gcNpc.PickOptionB();
+            m_bCanEnd = true;
         }
 
         public ArrayList SearchIndicator(string indicator)

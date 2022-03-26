@@ -12,12 +12,11 @@ namespace GA.MonsterProject
             set;
         }
 
+        [field: SerializeField]
         public string m_sFileName{
             get;
             set;
         }
-        public QuestReward m_qRewardA;
-        public QuestReward m_qRewardB;
         static bool m_bUsable = true;
 
         void Start()
@@ -41,7 +40,7 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
+            UIManager.s_UIManager.StartDialog(this);
             m_bUsable = false;
             Kill();
         }

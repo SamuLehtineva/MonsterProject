@@ -9048,18 +9048,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 878904087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
+  m_Script: {fileID: 11500000, guid: a0b77a14545cf5c49b6c534a7d408863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sFileName: chicken
-  m_qRewardA:
-    m_iMoney: 0
-    m_iReputation: 10
-    m_iBond: 0
-  m_qRewardB:
-    m_iMoney: 0
-    m_iReputation: -10
-    m_iBond: 0
+  <m_sFileName>k__BackingField: chicken
 --- !u!65 &878904090
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -61,7 +61,8 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
+            //UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
+            UIManager.s_UIManager.StartDialog(this);
             m_bUsable = false;
             DeActivate();
             Kill();
@@ -78,12 +79,13 @@ namespace GA.MonsterProject
 
         public void PickOptionA()
         {
-
+            PlayerResources.s_CurrentResources.AddResources(m_qRewardA);
+            Debug.Log("Tttttttttt");
         }
 
         public void PickOptionB()
         {
-            
+            PlayerResources.s_CurrentResources.AddResources(m_qRewardB);
         }
     }
 }
