@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GA.MonsterProject
 {
-    public class Npc_Trigger : MonoBehaviour, IInteractables
+    public class Npc_Trigger : MonoBehaviour, IInteractables, INpc
     {
         public bool IsActive
         {
@@ -12,7 +12,11 @@ namespace GA.MonsterProject
             set;
         }
 
-        public string m_sFileName;
+        [field: SerializeField]
+        public string m_sFileName{
+            get;
+            set;
+        }
         public QuestReward m_qRewardA;
         public QuestReward m_qRewardB;
         static bool m_bUsable = true;
@@ -38,9 +42,19 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
+            UIManager.s_UIManager.StartDialog(this);
             m_bUsable = false;
             Kill();
+        }
+
+        public void PickOptionA()
+        {
+            PlayerResources.s_CurrentResources.AddResources(m_qRewardA);
+        }
+
+        public void PickOptionB()
+        {
+            PlayerResources.s_CurrentResources.AddResources(m_qRewardB);
         }
 
         void Kill()

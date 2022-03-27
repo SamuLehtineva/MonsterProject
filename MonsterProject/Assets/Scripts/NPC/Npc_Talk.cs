@@ -80,7 +80,6 @@ namespace GA.MonsterProject
         public void PickOptionA()
         {
             PlayerResources.s_CurrentResources.AddResources(m_qRewardA);
-            Debug.Log("Tttttttttt");
         }
 
         public void PickOptionB()

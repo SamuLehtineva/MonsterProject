@@ -37,7 +37,6 @@ namespace GA.MonsterProject
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                
                 if (m_bCanContinue)
                 {
                     m_iCurrentLine += 3;
@@ -61,9 +60,6 @@ namespace GA.MonsterProject
             m_iCurrentLine = 0;
             ShowDialog();
             m_oButtons.SetActive(false);
-            
-            m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
-            m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
         }
 
         public void StartDialog(INpc npc)
@@ -77,9 +73,6 @@ namespace GA.MonsterProject
             m_iCurrentLine = 0;
             ShowDialog();
             m_oButtons.SetActive(false);
-
-            m_txtButtonA.text = SearchIndicator(m_sIndicators[1])[0].ToString();
-            m_txtButtonB.text = SearchIndicator(m_sIndicators[2])[0].ToString();
         }
 
         public void SetRewards (QuestReward rewardA, QuestReward rewardB)
@@ -107,7 +100,21 @@ namespace GA.MonsterProject
             }
             else
             {
+                CheckForButtons();
+            }
+        }
+
+        public void CheckForButtons()
+        {
+            if (SearchIndicator("#ButtonA").Count > 0)
+            {
+                m_txtButtonA.text = SearchIndicator("#ButtonA")[0].ToString();
+                m_txtButtonB.text = SearchIndicator("#ButtonB")[0].ToString();
                 m_oButtons.SetActive(true);
+            }
+            else
+            {
+                m_bCanEnd = true;
             }
         }
 
@@ -115,20 +122,6 @@ namespace GA.MonsterProject
         {
             gameObject.SetActive(false);
             GameManager.s_GameManager.PlayerCanMove(true);
-        }
-
-        public void GiveRewardA()
-        {
-            m_txtDialogText.text = SearchIndicator("#OptionA")[0].ToString();
-            m_bCanEnd = true;
-            PlayerResources.s_CurrentResources.AddResources(m_gcRewardA);
-        }
-
-        public void GiveRewardB()
-        {
-            m_txtDialogText.text = SearchIndicator("#OptionB")[0].ToString();
-            m_bCanEnd = true;
-            PlayerResources.s_CurrentResources.AddResources(m_gcRewardB);
         }
 
         public void PickOptionA()
