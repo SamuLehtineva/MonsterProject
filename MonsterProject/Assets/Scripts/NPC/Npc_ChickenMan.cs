@@ -4,60 +4,18 @@ using UnityEngine;
 
 namespace GA.MonsterProject
 {
-    public class Npc_ChickenMan : MonoBehaviour, IInteractables, INpc
+    public class Npc_ChickenMan : MonoBehaviour
     {
-        public bool IsActive
-        {
-            get;
-            set;
-        }
-
-        [field: SerializeField]
-        public string m_sFileName{
-            get;
-            set;
-        }
-        static bool m_bUsable = true;
-
+        // Start is called before the first frame update
         void Start()
         {
-            IsActive = true;
-            if (!m_bUsable)
-            {
-                Kill();
-            }
+        
         }
 
-        public void Activate()
+        // Update is called once per frame
+        void Update()
         {
-            Interact();
-        }
-
-        public void DeActivate()
-        {
-            IsActive = false;
-        }
-
-        public void Interact()
-        {
-            UIManager.s_UIManager.StartDialog(this);
-            m_bUsable = false;
-            Kill();
-        }
-
-        void Kill()
-        {
-            gameObject.SetActive(false);
-        }
-
-        public void PickOptionA()
-        {
-            UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus("fetch_helga", Types.EStatus._Active);
-        }
-
-        public void PickOptionB()
-        {
-            PlayerResources.s_CurrentResources.AddResource(Types.EResource._Reputation, -5);
+        
         }
     }
 }

@@ -22,7 +22,11 @@ namespace GA.MonsterProject
         }
         GameObject m_gcQuestIcon;
         public QuestReward m_qRewardA;
+        public string m_sQuestNameA = "none";
+        public Types.EStatus m_eQuestStatusA;
         public QuestReward m_qRewardB;
+        public string m_sQuestNameB = "none";
+        public Types.EStatus m_eQuestStatusB;
         static bool m_bUsable = true;
 
         void Start()
@@ -80,11 +84,13 @@ namespace GA.MonsterProject
         public void PickOptionA()
         {
             PlayerResources.s_CurrentResources.AddResources(m_qRewardA);
+            UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_sQuestNameA, m_eQuestStatusA);
         }
 
         public void PickOptionB()
         {
             PlayerResources.s_CurrentResources.AddResources(m_qRewardB);
+            UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_sQuestNameB, m_eQuestStatusB);
         }
     }
 }

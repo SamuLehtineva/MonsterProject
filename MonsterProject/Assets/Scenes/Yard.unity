@@ -7253,6 +7253,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 414706406}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+      propertyPath: m_sQuestNameA
+      value: none
+      objectReference: {fileID: 0}
+    - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+      propertyPath: m_sQuestNameB
+      value: none
+      objectReference: {fileID: 0}
+    - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_qRewardA.m_iBond
       value: 31
       objectReference: {fileID: 0}

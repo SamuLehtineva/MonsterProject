@@ -17,7 +17,8 @@ namespace GA.MonsterProject
         {
             _Inactive,
             _Active,
-            Completed,
+            _Completed,
+            _Failed,
         }
     }
 }
