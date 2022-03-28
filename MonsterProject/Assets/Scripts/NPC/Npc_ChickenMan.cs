@@ -6,16 +6,25 @@ namespace GA.MonsterProject
 {
     public class Npc_ChickenMan : MonoBehaviour
     {
-        // Start is called before the first frame update
+        [SerializeField]
+        Npc_Talk m_gcTalk;
+
+        [SerializeField]
+        Npc_Trigger m_gcTrigger;
+        static bool m_bTriggered = false;
+
         void Start()
         {
-        
+            
         }
 
-        // Update is called once per frame
         void Update()
         {
-        
+            if (!m_gcTrigger.gameObject.activeInHierarchy && !m_bTriggered)
+            {
+                m_gcTalk.gameObject.SetActive(true);
+                m_bTriggered = true;
+            }
         }
     }
 }

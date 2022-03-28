@@ -27,7 +27,7 @@ namespace GA.MonsterProject
         public QuestReward m_qRewardB;
         public string m_sQuestNameB = "none";
         public Types.EStatus m_eQuestStatusB;
-        static bool m_bUsable = true;
+        public bool m_bUsable = true;
 
         void Start()
         {
