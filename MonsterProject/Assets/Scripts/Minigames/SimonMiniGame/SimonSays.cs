@@ -35,34 +35,35 @@ namespace GA.MonsterProject
         // Update is called once per frame
         void Update()
         {
-            
+            GameControls();
         }
 
-        void OnMouseDown()
+        void GameControls()
         {
-            //Debug.Log(gameObject);
-            if(gameObject.tag == "PlayerLeft" && BoolMonLeft == true)
+            if (Input.GetKey(KeyCode.A) && BoolMonLeft == true)
             {
                 MonsterLeft.SetActive(false);
-                Points = +1;
-            }
-            if (gameObject.tag == "PlayerUp" && BoolMonUp == true)
+                Points += 1;
+                RandomNum();
+                ActivateButton();
+            } else if (Input.GetKey(KeyCode.W) && BoolMonUp == true)
             {
-                MonsterUp.SetActive(false);
-                Points = +1;
-            }
-            if (gameObject.tag == "PlayerRight" && BoolMonRight == true)
+                MonsterLeft.SetActive(false);
+                Points += 1;
+                RandomNum();
+                ActivateButton();
+            } else if (Input.GetKey(KeyCode.D) && BoolMonRight == true)
             {
-                MonsterRight.SetActive(false);
-                Points = +1;
+                MonsterLeft.SetActive(false);
+                Points += 1;
+                RandomNum();
+                ActivateButton();
             }
-            Debug.Log(Points);
+
         }
 
         void ActivateButton()
         {
-            RandomNum();
-
             if (RandomNumber == 0) {
                 MonsterLeft.SetActive(true);
                 BoolMonLeft = true;
