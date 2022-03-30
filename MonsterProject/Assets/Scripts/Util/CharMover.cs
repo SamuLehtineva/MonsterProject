@@ -56,6 +56,10 @@ namespace GA.MonsterProject
 
                 TryPet();
             }
+            else
+            {
+                m_gcANimator.SetBool("IsMoving", false);
+            }
             
             if (Input.GetKeyDown(KeyCode.Escape))
             {
