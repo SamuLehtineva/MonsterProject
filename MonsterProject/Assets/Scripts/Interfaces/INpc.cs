@@ -13,5 +13,6 @@ namespace GA.MonsterProject
         }
         void PickOptionA();
         void PickOptionB();
+        void DialogEnd();
     }
 }

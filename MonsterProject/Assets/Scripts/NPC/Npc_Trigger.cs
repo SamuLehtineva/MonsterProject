@@ -24,15 +24,12 @@ namespace GA.MonsterProject
         public QuestReward m_qRewardB;
         public string m_sQuestNameB = "none";
         public Types.EStatus m_eQuestStatusB;
-        public bool m_bUsable = true;
+        public bool m_bKillAfterUse;
+        public bool m_bRewardTalk = false;
 
         void Start()
         {
             IsActive = true;
-            if (!m_bUsable)
-            {
-                Kill();
-            }
         }
 
         public void Activate()
@@ -48,8 +45,6 @@ namespace GA.MonsterProject
         public void Interact()
         {
             UIManager.s_UIManager.StartDialog(this);
-            m_bUsable = false;
-            Kill();
         }
 
         public void PickOptionA()
@@ -64,14 +59,21 @@ namespace GA.MonsterProject
             UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_sQuestNameB, m_eQuestStatusB);
         }
 
-        void Kill()
+        public void Kill()
         {
             gameObject.SetActive(false);
         }
 
-        public bool GetUsable()
+        public void DialogEnd()
         {
-            return m_bUsable;
+            if (m_bRewardTalk)
+            {
+                PickOptionA();
+            }
+            if (m_bKillAfterUse)
+            {
+                Kill();
+            }
         }
     }
 }

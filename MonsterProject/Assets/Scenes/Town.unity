@@ -4293,18 +4293,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <m_sFileName>k__BackingField: dialog2
   m_qRewardA:
-    m_iMoney: 0
-    m_iReputation: 0
+    m_iMoney: 40
+    m_iReputation: 30
     m_iBond: 0
-  m_sQuestNameA: none
-  m_eQuestStatusA: 0
+  m_sQuestNameA: fetch_helga
+  m_eQuestStatusA: 4
   m_qRewardB:
     m_iMoney: 0
     m_iReputation: 0
     m_iBond: 0
   m_sQuestNameB: none
   m_eQuestStatusB: 0
-  m_bUsable: 1
+  m_bKillAfterUse: 0
+  m_bRewardTalk: 0
 --- !u!65 &391984176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9149,7 +9150,8 @@ MonoBehaviour:
     m_iBond: 0
   m_sQuestNameB: none
   m_eQuestStatusB: 0
-  m_bUsable: 1
+  m_bKillAfterUse: 1
+  m_bRewardTalk: 0
 --- !u!65 &878904090
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sName: fetch_helga
-  m_iStatus: 2
+  m_iStatus: 0
   m_sDescription: agsgsd
 --- !u!1 &1060992249 stripped
 GameObject:

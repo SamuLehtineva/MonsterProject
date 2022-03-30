@@ -19,6 +19,7 @@ namespace GA.MonsterProject
             _Active,
             _Completed,
             _Failed,
+            _Done,
         }
     }
 }

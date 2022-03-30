@@ -120,6 +120,7 @@ namespace GA.MonsterProject
 
         public void EndDialog()
         {
+            m_gcNpc.DialogEnd();
             gameObject.SetActive(false);
             GameManager.s_GameManager.PlayerCanMove(true);
         }

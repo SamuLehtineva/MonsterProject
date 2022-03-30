@@ -27,16 +27,13 @@ namespace GA.MonsterProject
         public QuestReward m_qRewardB;
         public string m_sQuestNameB = "none";
         public Types.EStatus m_eQuestStatusB;
-        public bool m_bUsable = true;
+        public bool m_bKillAfterUse;
+        public bool m_bRewardTalk = false;
 
         void Start()
         {
             IsActive = false;
             m_gcQuestIcon = GameObject.Find(transform.parent.gameObject.name + "/alert");
-            if (!m_bUsable)
-            {
-                Kill();
-            }
         }
 
         void Update()
@@ -65,14 +62,11 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
-            //UIManager.s_UIManager.StartDialog(m_sFileName, m_qRewardA, m_qRewardB);
             UIManager.s_UIManager.StartDialog(this);
-            m_bUsable = false;
             DeActivate();
-            Kill();
         }
 
-        void Kill()
+        public void Kill()
         {
             if (m_gcQuestIcon != null)
             {
@@ -91,6 +85,18 @@ namespace GA.MonsterProject
         {
             PlayerResources.s_CurrentResources.AddResources(m_qRewardB);
             UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_sQuestNameB, m_eQuestStatusB);
+        }
+
+        public void DialogEnd()
+        {
+            if (m_bRewardTalk)
+            {
+                PickOptionA();
+            }
+            if (m_bKillAfterUse)
+            {
+                Kill();
+            }
         }
     }
 }
