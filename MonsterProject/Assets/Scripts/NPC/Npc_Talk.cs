@@ -38,7 +38,7 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            if (Input.GetButtonDown("Fire1") && IsActive)
+            if (Input.GetButtonDown("Fire1") && IsActive && GameManager.s_GameManager.GetPlayerCanMove())
             {
                 Interact();
             }

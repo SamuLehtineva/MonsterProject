@@ -66,7 +66,25 @@ namespace GA.MonsterProject
 
         public void PlayerCanMove(bool value)
         {
-            m_gcCharMover.m_bCanMove = value;
+            if (value)
+            {
+                StartCoroutine(PlayerCanMoveDelay());
+            }
+            else
+            {
+                m_gcCharMover.m_bCanMove = false;
+            }
+        }
+
+        public bool GetPlayerCanMove()
+        {
+            return m_gcCharMover.m_bCanMove;
+        }
+
+        IEnumerator PlayerCanMoveDelay()
+        {
+            yield return new WaitForSeconds(0.3f);
+            m_gcCharMover.m_bCanMove = true;
         }
     }
 }

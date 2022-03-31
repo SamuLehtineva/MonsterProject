@@ -15,7 +15,50 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            if (UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga").m_iStatus == Types.EStatus._Completed)
+            Types.EStatus iEStatus = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga").m_iStatus;
+            switch (iEStatus)
+            {
+                case Types.EStatus._Inactive:
+                    m_gcTrigger.gameObject.SetActive(true);
+                    m_gcTrigger.m_sFileName = "fetch_helga_inactive";
+                    m_gcTrigger.m_bRewardTalk = false;
+                    m_gcTrigger.m_bKillAfterUse = true;
+
+                    m_gcTalk.gameObject.SetActive(false);
+
+                    break;
+
+                case Types.EStatus._Active:
+                    m_gcTrigger.gameObject.SetActive(false);
+
+                    m_gcTalk.gameObject.SetActive(true);
+                    m_gcTalk.m_sFileName = "fetch_helga_active";
+                    m_gcTalk.m_bRewardTalk = false;
+                    m_gcTalk.m_bKillAfterUse = false;
+
+                    break;
+                
+                case Types.EStatus._Completed:
+                    m_gcTrigger.gameObject.SetActive(false);
+
+                    m_gcTalk.gameObject.SetActive(true);
+                    m_gcTalk.m_sFileName = "fetch_helga_complete";
+                    m_gcTalk.m_bRewardTalk = true;
+                    m_gcTalk.m_bKillAfterUse = false;
+
+                    break;
+                
+                case Types.EStatus._Done:
+                    m_gcTrigger.gameObject.SetActive(false);
+
+                    m_gcTalk.gameObject.SetActive(true);
+                    m_gcTalk.m_sFileName = "fetch_helga_done";
+                    m_gcTalk.m_bRewardTalk = false;
+                    m_gcTalk.m_bKillAfterUse = false;
+
+                    break;
+            }
+            /*if (UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga").m_iStatus == Types.EStatus._Completed)
             {
                 m_gcTalk.m_sFileName = "fetch_helga_complete";
                 m_gcTalk.m_bRewardTalk = true;
@@ -26,7 +69,7 @@ namespace GA.MonsterProject
             {
                 m_gcTalk.gameObject.SetActive(true);
                 m_bTriggered = true;
-            }
+            }*/
         }
     }
 }
