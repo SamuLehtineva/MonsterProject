@@ -21,25 +21,26 @@ namespace GA.MonsterProject
         [SerializeField]
         UIBar m_gcPetBar;
         public SpriteRenderer m_gcPetRenderer;
-        public Sprite m_gcPetIdle;
-        public Sprite m_gcPetAttack;
-        public Sprite m_gcPetHit;
+        public Sprite[] m_aPetTeenSprites = new Sprite[3];
 
         public int m_iEnemyHealth = 100;
 
         [SerializeField]
         UIBar m_gcEnemyBar;
         public SpriteRenderer m_gcEnemyRenderer;
-        public Sprite m_gcEnemyIdle;
-        public Sprite m_gcEnemyAttack;
-        public Sprite m_gcEnemyHit;
+        public Sprite[] m_aEnemyJackSprites = new Sprite[3];
         public bool m_bIsMyTurn;
+
         private bool m_bCanAct;
         private float m_fSweetSpot;
         private float m_fSpotWidth;
         private AudioClipPlayer m_gcClipPlayer;
+        private Sprite[] m_aPetSprites;
+        private Sprite[] m_aEnemySpites;
         void Start()
         {
+            m_aPetSprites = m_aPetTeenSprites;
+            m_aEnemySpites = m_aEnemyJackSprites;
             m_bIsMyTurn = true;
             m_bCanAct = true;
             m_fSweetSpot = 0.15f;
@@ -55,12 +56,12 @@ namespace GA.MonsterProject
             {
                 if (m_bIsMyTurn)
                 {
-                    m_gcPetRenderer.sprite = m_gcPetAttack;
+                    m_gcPetRenderer.sprite = m_aPetSprites[1];
                 }
                 else
                 {
-                    m_gcEnemyRenderer.sprite = m_gcEnemyAttack;
-                    m_gcPetRenderer.sprite = m_gcPetHit;
+                    m_gcEnemyRenderer.sprite = m_aEnemySpites[1];
+                    m_gcPetRenderer.sprite = m_aPetSprites[2];
                 }
                 Action(m_gcMoveBetween.GetRatio());
             }
@@ -104,7 +105,7 @@ namespace GA.MonsterProject
 
                 if (m_bIsMyTurn)
                 {
-                    m_gcEnemyRenderer.sprite = m_gcEnemyHit;
+                    m_gcEnemyRenderer.sprite = m_aEnemySpites[2];
                     m_iEnemyHealth -= 50;
                     m_gcClipPlayer.PlayClip(0, 1f);
                 }
@@ -151,8 +152,8 @@ namespace GA.MonsterProject
             m_bCanAct = true;
             m_gcMoveBetween.Reset();
             m_bIsMyTurn = !m_bIsMyTurn;
-            m_gcEnemyRenderer.sprite = m_gcEnemyIdle;
-            m_gcPetRenderer.sprite = m_gcPetIdle;
+            m_gcEnemyRenderer.sprite = m_aEnemySpites[0];
+            m_gcPetRenderer.sprite = m_aPetSprites[0];
         }
 
         IEnumerator EndDelay()
