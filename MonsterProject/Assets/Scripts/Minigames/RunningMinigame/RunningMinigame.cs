@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,14 +28,21 @@ namespace GA.MonsterProject
         public bool WinEndMiniGame = false;
         public bool LoseEndMiniGame = false;
 
-        private QuestInfo[] m_aQuests = {UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga")};
+        private QuestInfo[] m_aQuests;
         private QuestInfo m_gcCurrentQuest;
 
         // Game is paused in the beginning so the player can read some instructions
         void Start()
         {
-            m_gcCurrentQuest = m_aQuests[GameManager.m_iMinigameQuestIndex];
-            Debug.Log(m_gcCurrentQuest.m_sName);
+            try {
+                m_aQuests[0] = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga");
+                m_gcCurrentQuest = m_aQuests[GameManager.m_iMinigameQuestIndex];
+            }
+            catch (NullReferenceException e)
+            {
+                Debug.Log("vitu nertqpogas");
+            }
+            
             Paused();
         }
 
@@ -109,10 +117,14 @@ namespace GA.MonsterProject
 
             if (WinEndMiniGame == true)
             {
-                if (m_gcCurrentQuest.m_iStatus == Types.EStatus._Active)
+                if (m_gcCurrentQuest != null)
                 {
-                    UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_gcCurrentQuest.m_sName, Types.EStatus._Completed);
+                    if (m_gcCurrentQuest.m_iStatus == Types.EStatus._Active)
+                    {
+                        UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_gcCurrentQuest.m_sName, Types.EStatus._Completed);
+                    }
                 }
+                
                 SceneManager.LoadScene("Town");
             }
         }
