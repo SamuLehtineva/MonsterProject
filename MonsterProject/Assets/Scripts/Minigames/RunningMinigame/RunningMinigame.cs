@@ -27,9 +27,14 @@ namespace GA.MonsterProject
         public bool WinEndMiniGame = false;
         public bool LoseEndMiniGame = false;
 
+        private QuestInfo[] m_aQuests = {UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga")};
+        private QuestInfo m_gcCurrentQuest;
+
         // Game is paused in the beginning so the player can read some instructions
         void Start()
         {
+            m_gcCurrentQuest = m_aQuests[GameManager.m_iMinigameQuestIndex];
+            Debug.Log(m_gcCurrentQuest.m_sName);
             Paused();
         }
 
@@ -104,7 +109,10 @@ namespace GA.MonsterProject
 
             if (WinEndMiniGame == true)
             {
-                Debug.Log("WON");
+                if (m_gcCurrentQuest.m_iStatus == Types.EStatus._Active)
+                {
+                    UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_gcCurrentQuest.m_sName, Types.EStatus._Completed);
+                }
                 SceneManager.LoadScene("Town");
             }
         }

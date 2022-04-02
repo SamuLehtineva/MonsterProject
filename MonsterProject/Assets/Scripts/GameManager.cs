@@ -10,6 +10,7 @@ namespace GA.MonsterProject
     {
         public static string m_sDestination;
         public static GameManager s_GameManager;
+        public static int m_iMinigameQuestIndex;
         CharMover m_gcCharMover;
         private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame"};
         void Awake()

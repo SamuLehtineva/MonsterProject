@@ -14,6 +14,7 @@ namespace GA.MonsterProject
         }
 
         public string m_SceneName;
+        public int m_iMinigameQuestIndex;
 
         void Start()
         {
@@ -40,6 +41,7 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
+            GameManager.m_iMinigameQuestIndex = m_iMinigameQuestIndex;
             SceneManager.LoadScene(m_SceneName);
         }
     }
