@@ -40,7 +40,7 @@ namespace GA.MonsterProject
             }
             catch (NullReferenceException e)
             {
-                Debug.Log("vitu nertqpogas");
+                Debug.Log(e);
             }
             
             Paused();

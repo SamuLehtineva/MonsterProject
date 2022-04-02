@@ -16,6 +16,10 @@ namespace GA.MonsterProject
 
         [SerializeField]
         TMP_Text m_txtTurnText;
+        public GameObject FireBall;
+        public bool m_bIsMyTurn;
+
+        [Header("Pet")]
         public int m_iPetHealth = 100;
 
         [SerializeField]
@@ -23,13 +27,13 @@ namespace GA.MonsterProject
         public SpriteRenderer m_gcPetRenderer;
         public Sprite[] m_aPetTeenSprites = new Sprite[3];
 
+        [Header("Enemy")]
         public int m_iEnemyHealth = 100;
 
         [SerializeField]
         UIBar m_gcEnemyBar;
         public SpriteRenderer m_gcEnemyRenderer;
         public Sprite[] m_aEnemyJackSprites = new Sprite[3];
-        public bool m_bIsMyTurn;
 
         private bool m_bCanAct;
         private float m_fSweetSpot;
@@ -95,7 +99,6 @@ namespace GA.MonsterProject
             {
                 m_gcSpotRenderer.transform.localScale = new Vector3(1f, 1f, 1f);
             }
-            
         }
 
         public void Action(float ratio)
@@ -108,6 +111,7 @@ namespace GA.MonsterProject
                     m_gcEnemyRenderer.sprite = m_aEnemySpites[2];
                     m_iEnemyHealth -= 50;
                     m_gcClipPlayer.PlayClip(0, 1f);
+                    Instantiate(FireBall);
                 }
                 else
                 {
