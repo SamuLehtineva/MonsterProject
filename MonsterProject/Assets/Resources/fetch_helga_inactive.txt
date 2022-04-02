@@ -1,8 +1,21 @@
 #Start
-"Hey buddy, if you're going that way could you help me find my chicken?
-She ran into the forest, but im too busy to go looking for her"
+"Hey! You are the new guy, right? Welcome to Bergensjöfellbyfjord!
+Oh... You have a creature as your companion? Hmm...
 
-"I'll pay you nicely if you bring her back in one piece"
+I need to warn you, we have a bloody history with those creatures.
+Folks here won't give you a warm welcome, not with that thing with you.
+
+...
+...
+
+Your creature is harmless you say? Hm. You do know that it can turn into a monster
+if you don't treat and raise it well, right? Newcomers word won't count for much...
+
+I know! You could help folks out to earn their trust and you can start by helping me!
+My beloved Helga ran into the forest and hasn't come back.
+
+I'll pay you if you bring her back in one piece with that creature of yours and
+on top of that I will tell people that this creature is a kind one. Deal?"
 #
 
 #OptionA
