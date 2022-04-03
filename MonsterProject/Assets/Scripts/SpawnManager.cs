@@ -10,10 +10,7 @@ namespace GA.MonsterProject
     {
         [SerializeField]
         Transform m_gcPlayer;
-        //Dictionary<string, Transform> m_dSpawnPoints = new Dictionary<string, Transform>();
-
         Transform[] m_aSpawnPoints;
-
         private CharacterController m_gcController;
 
         void Start() {

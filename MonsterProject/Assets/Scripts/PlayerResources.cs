@@ -7,11 +7,8 @@ namespace GA.MonsterProject
     public class PlayerResources : MonoBehaviour
     {
         public int m_iMoney = 100;
-
         public int m_iReputation = 100;
-
         public int m_iBond = 50;
-
         public static PlayerResources s_CurrentResources;
 
         void Awake()
