@@ -12,6 +12,16 @@ namespace GA.MonsterProject
             SceneManager.LoadScene(LevelName);
         }
 
+        public static void LoadLevelAsync(string LevelName)
+        {
+            SceneManager.LoadSceneAsync(LevelName, LoadSceneMode.Additive);
+        }
+
+        public static void UnloadLevelAsync(string LevelName)
+        {
+            SceneManager.UnloadSceneAsync(LevelName);
+        }
+
         public void CloseApp()
         {
             Application.Quit();
