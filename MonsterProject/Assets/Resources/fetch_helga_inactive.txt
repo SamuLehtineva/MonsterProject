@@ -1,21 +1,21 @@
 #Start
-"Hey! You are the new guy, right? Welcome to Bergensjöfellbyfjord!
+"Hey, new guy! Welcome to Bergensjofellbyfjord!
 Oh... You have a creature as your companion? Hmm...
 
-I need to warn you, we have a bloody history with those creatures.
-Folks here won't give you a warm welcome, not with that thing with you.
+A word of advice, we have a bloody history with creatures.
+Folks here won't give you a warm welcome, not with that thing following you around.
 
 ...
 ...
 
-Your creature is harmless you say? Hm. You do know that it can turn into a monster
-if you don't treat and raise it well, right? Newcomers word won't count for much...
+Your creature is harmless you say? Hm. You do know that it
+can turn into a monster if you don't treat and raise it well, right? Newcomers word won't count for much...
 
-I know! You could help folks out to earn their trust and you can start by helping me!
-My beloved Helga ran into the forest and hasn't come back.
+I know! You could help folks out to earn their trust and
+you can start by helping me! My beloved Helga ran into the forest and hasn't come back.
 
-I'll pay you if you bring her back in one piece with that creature of yours and
-on top of that I will tell people that this creature is a kind one. Deal?"
+I'll pay you if you bring her back in one piece with that
+creature of yours and on top of that I will tell people that this creature is a kind one. Deal?"
 #
 
 #OptionA
