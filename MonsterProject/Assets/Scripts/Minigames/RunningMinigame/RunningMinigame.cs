@@ -125,7 +125,7 @@ namespace GA.MonsterProject
                     }
                 }
                 
-                SceneManager.LoadScene("Town");
+                SceneManager.LoadScene("Forest");
             }
         }
 
@@ -137,7 +137,7 @@ namespace GA.MonsterProject
             if (LoseEndMiniGame == true)
             {
                 Debug.Log("LOST");
-                SceneManager.LoadScene("Town");
+                SceneManager.LoadScene("Forest");
             }
         }
 

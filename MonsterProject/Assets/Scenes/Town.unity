@@ -6467,6 +6467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Bush
       objectReference: {fileID: 0}
+    - target: {fileID: 7344961623123041773, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_SceneName
       value: Running Minigame
@@ -8144,6 +8148,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f519ff2875c93044ab876de6e3082aa, type: 3}
   m_PrefabInstance: {fileID: 780899220}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &786964022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786964023}
+  m_Layer: 0
+  m_Name: Town_Forest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786964023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786964022}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1097.23, y: 243.34, z: 360.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1718786330}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &795296662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2fd74ca1d807dfb42b7bca93838f7799, type: 3}
@@ -8371,6 +8405,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
   m_PrefabInstance: {fileID: 1276652824}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &837187731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837187734}
+  - component: {fileID: 837187733}
+  - component: {fileID: 837187732}
+  m_Layer: 0
+  m_Name: Exit_Forest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &837187732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837187731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8bc2259dd7f094ab8d76efe308d1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sTargetSceneName: Forest
+  m_sTargetSpawnName: Forest_Town
+--- !u!65 &837187733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837187731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.7631683, z: 12.9557495}
+  m_Center: {x: 0, y: -1.3815842, z: 0.40634155}
+--- !u!4 &837187734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837187731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1094.9923, y: 246.3017, z: 361.19333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &839491567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15952,6 +16045,7 @@ Transform:
   m_Children:
   - {fileID: 775758582}
   - {fileID: 1475521466}
+  - {fileID: 786964023}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
