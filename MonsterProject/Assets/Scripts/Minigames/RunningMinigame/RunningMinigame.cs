@@ -36,6 +36,7 @@ namespace GA.MonsterProject
         void Start()
         {
             try {
+                m_aQuests = new QuestInfo[3];
                 m_aQuests[0] = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga");
                 m_gcCurrentQuest = m_aQuests[GameManager.m_iMinigameQuestIndex];
             }

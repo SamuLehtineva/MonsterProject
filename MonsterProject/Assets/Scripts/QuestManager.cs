@@ -13,6 +13,14 @@ namespace GA.MonsterProject
         {
             m_aQuests = GetComponentsInChildren<QuestInfo>();
         }
+
+        void Awake()
+        {
+            if (m_aQuests == null)
+            {
+                m_aQuests = GetComponentsInChildren<QuestInfo>();
+            }
+        }
         
         public QuestInfo GetQuestByName(string name)
         {
