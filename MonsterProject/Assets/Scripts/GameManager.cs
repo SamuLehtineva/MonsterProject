@@ -46,6 +46,11 @@ namespace GA.MonsterProject
             {
                 Debug.Log(e);
             }
+            
+            if (UIManager.s_UIManager != null)
+            {
+                UIManager.s_UIManager.HideDialog();
+            }
         }
 
         void LateUpdate() 

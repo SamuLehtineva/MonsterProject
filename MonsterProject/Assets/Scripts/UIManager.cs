@@ -32,19 +32,16 @@ namespace GA.MonsterProject
             m_gcDialogController.gameObject.SetActive(false);
         }
 
-        public void StartDialog(string FileName, QuestReward rewardA, QuestReward rewardB) 
-        {
-            GameManager.s_GameManager.PlayerCanMove(false);
-            m_gcDialogController.gameObject.SetActive(true);
-            m_gcDialogController.StartDialog(FileName);
-            m_gcDialogController.SetRewards(rewardA, rewardB);
-        }
-
         public void StartDialog(INpc npc)
         {
             GameManager.s_GameManager.PlayerCanMove(false);
             m_gcDialogController.gameObject.SetActive(true);
             m_gcDialogController.StartDialog(npc);
+        }
+
+        public void HideDialog()
+        {
+            m_gcDialogController.gameObject.SetActive(false);
         }
 
         public void ToggleHud(bool active)

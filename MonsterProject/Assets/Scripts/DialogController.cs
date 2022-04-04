@@ -50,18 +50,6 @@ namespace GA.MonsterProject
             }
         }
 
-        public void StartDialog(string sFileName)
-        {
-            m_ReadText = new ReadTextFile(sFileName);
-            m_sLines = m_ReadText.GetLines();
-
-            m_bCanContinue = false;
-            m_bCanEnd = false;
-            m_iCurrentLine = 0;
-            ShowDialog();
-            m_oButtons.SetActive(false);
-        }
-
         public void StartDialog(INpc npc)
         {
             m_gcNpc = npc;
@@ -121,6 +109,7 @@ namespace GA.MonsterProject
         public void EndDialog()
         {
             m_gcNpc.DialogEnd();
+            m_gcNpc = null;
             gameObject.SetActive(false);
             GameManager.s_GameManager.PlayerCanMove(true);
         }
