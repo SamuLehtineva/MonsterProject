@@ -27,6 +27,7 @@ namespace GA.MonsterProject
         public Vector3 moveDirection;
         public bool WinEndMiniGame = false;
         public bool LoseEndMiniGame = false;
+        public Vector3 newPos;
 
         private QuestInfo[] m_aQuests;
         private QuestInfo m_gcCurrentQuest;

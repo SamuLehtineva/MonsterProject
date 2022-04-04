@@ -9,7 +9,7 @@ namespace GA.MonsterProject
         public Transform player;
         void Update()
         {
-            transform.position = new Vector3(player.position.x + 6, 0, -10);
+            transform.position = new Vector3(player.position.x + 6, -4, -10);
         }
     }
 }
