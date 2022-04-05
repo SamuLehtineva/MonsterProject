@@ -2118,8 +2118,8 @@ Transform:
   - {fileID: 1517335401}
   - {fileID: 2015810146}
   - {fileID: 803233361}
-  - {fileID: 1467308949}
   - {fileID: 538518179}
+  - {fileID: 1467308949}
   - {fileID: 399581966}
   - {fileID: 475997571}
   - {fileID: 679521536}
@@ -3028,7 +3028,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
