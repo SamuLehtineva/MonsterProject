@@ -7096,6 +7096,8 @@ MonoBehaviour:
   m_fXOffset: 0
   m_fYOffset: 8
   m_fZOffset: -7
+  m_fXLookOffset: 0
+  m_fYLookOffset: 0
   m_fZLookOffset: 2
 --- !u!82 &2142034909
 AudioSource:
@@ -7111,7 +7113,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.432
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
