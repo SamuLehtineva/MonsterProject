@@ -6,16 +6,14 @@ namespace GA.MonsterProject
 {
     public class SaveSystem : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        void Save()
         {
-        
+            ISaveable[] aSaveables = FindObjectsOfType(typeof(ISaveable)) as ISaveable[];
         }
 
-        // Update is called once per frame
-        void Update()
+        void Load()
         {
-        
+
         }
     }
 }
