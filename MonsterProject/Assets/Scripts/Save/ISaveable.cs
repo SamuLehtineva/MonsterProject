@@ -6,7 +6,7 @@ namespace GA.MonsterProject
 {
     public interface ISaveable
     {
-        void Save();
-        void Load();
+        void Save(ISaveWriter writer);
+        void Load(ISaveReader reader);
     }
 }
