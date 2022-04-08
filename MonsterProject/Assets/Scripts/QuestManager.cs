@@ -5,7 +5,7 @@ using UnityEngine;
 namespace GA.MonsterProject
 {
     [ExecuteInEditMode]
-    public class QuestManager : MonoBehaviour
+    public class QuestManager : MonoBehaviour, ISaveable
     {
         QuestInfo[] m_aQuests;
         // Start is called before the first frame update
@@ -42,6 +42,22 @@ namespace GA.MonsterProject
                 {
                     quest.m_iStatus = status;
                 }
+            }
+        }
+
+        public void Save(ISaveWriter writer)
+        {
+            foreach (var quest in m_aQuests)
+            {
+                quest.Save(writer);
+            }
+        }
+
+        public void Load(ISaveReader reader)
+        {
+            foreach (QuestInfo quest in m_aQuests)
+            {
+                quest.Load(reader);
             }
         }
     }

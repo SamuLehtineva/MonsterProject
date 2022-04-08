@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace GA.MonsterProject
 {
@@ -25,6 +26,18 @@ namespace GA.MonsterProject
             }
         }
 
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                Save();
+            }
+            else if (Input.GetKeyDown(KeyCode.P))
+            {
+                Load();
+            }
+        }
+
         void Save()
         {
             Debug.Log("save");
@@ -35,7 +48,7 @@ namespace GA.MonsterProject
                 return;
             }
 
-            ISaveable[] aSaveables = FindObjectsOfType(typeof(ISaveable)) as ISaveable[];
+            ISaveable[] aSaveables = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>().ToArray();
             writer.WriteInt(aSaveables.Length);
 
             foreach (var item in aSaveables)
@@ -48,7 +61,20 @@ namespace GA.MonsterProject
 
         void Load()
         {
+            ISaveReader reader = new BinarySaver();
+            if (!reader.PrepareRead(Path.Combine(m_sSaveFolder, m_sSaveName)))
+            {
+                return;
+            }
 
+            ISaveable[] aSaveables = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>().ToArray();
+            int iSavedCount = reader.ReadInt();
+            for (int i = 0; i < iSavedCount; i++)
+            {
+                aSaveables[i].Load(reader);
+            }
+
+            reader.FinalizeRead();
         }
     }
 }

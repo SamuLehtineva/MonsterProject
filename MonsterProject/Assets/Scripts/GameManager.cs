@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
-    public class GameManager : MonoBehaviour
+    public class GameManager : MonoBehaviour, ISaveable
     {
         public static string m_sDestination;
+        public static string m_sDestinationScene;
         public static GameManager s_GameManager;
         public static int m_iMinigameQuestIndex = 0;
         CharMover m_gcCharMover;
@@ -91,6 +92,17 @@ namespace GA.MonsterProject
         {
             yield return new WaitForSeconds(0.3f);
             m_gcCharMover.m_bCanMove = true;
+        }
+
+        public void Save(ISaveWriter writer)
+        {
+            writer.WriteString(m_sDestination);
+        }
+
+        public void Load(ISaveReader reader)
+        {
+            m_sDestination = reader.ReadString();
+            Debug.Log(m_sDestination);
         }
     }
 }
