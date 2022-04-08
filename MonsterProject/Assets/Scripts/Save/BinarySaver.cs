@@ -20,7 +20,8 @@ namespace GA.MonsterProject
 
         public void FinalizeWrite()
         {
-            throw new System.NotImplementedException();
+            m_Writer.Close();
+            m_FileStream.Close();
         }
 
         public bool PrepareRead(string savePath)
@@ -46,67 +47,89 @@ namespace GA.MonsterProject
 
         public bool PrepareWrite(string path)
         {
-            throw new System.NotImplementedException();
+            try 
+            {
+                string sDirectory = Path.GetDirectoryName(path);
+                if (!Directory.Exists(sDirectory))
+                {
+                    Directory.CreateDirectory(sDirectory);
+                }
+
+                m_FileStream = File.Open(path, FileMode.Create);
+                m_Writer = new BinaryWriter(m_FileStream);
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e);
+                return false;
+            }
+            return true;
         }
 
         public bool ReadBool()
         {
-            throw new System.NotImplementedException();
+            return m_Reader.ReadBoolean();
         }
 
         public float ReadFloat()
         {
-            throw new System.NotImplementedException();
+            return m_Reader.ReadSingle();
         }
 
         public int ReadInt()
         {
-            throw new System.NotImplementedException();
+            return m_Reader.ReadInt32();
         }
 
         public Types.EStatus ReadStatus()
         {
-            throw new System.NotImplementedException();
+            int val = m_Reader.ReadInt32();
+            return (Types.EStatus)val;
         }
 
         public string ReadString()
         {
-            throw new System.NotImplementedException();
+            return m_Reader.ReadString();
         }
 
         public Vector3 ReadVector3()
         {
-            throw new System.NotImplementedException();
+            float x = m_Reader.ReadSingle();
+            float y = m_Reader.ReadSingle();
+            float z = m_Reader.ReadSingle();
+            return new Vector3(x, y, z);
         }
 
         public void WriteBool(bool value)
         {
-            throw new System.NotImplementedException();
+            m_Writer.Write(value);
         }
 
         public void WriteFloat(float value)
         {
-            throw new System.NotImplementedException();
+            m_Writer.Write(value);
         }
 
         public void WriteInt(int value)
         {
-            throw new System.NotImplementedException();
+            m_Writer.Write(value);
         }
 
         public void WriteStatus(Types.EStatus value)
         {
-            throw new System.NotImplementedException();
+            m_Writer.Write((int)value);
         }
 
         public void WriteString(string value)
         {
-            throw new System.NotImplementedException();
+            m_Writer.Write(value);
         }
 
         public void WriteVector3(Vector3 value)
         {
-            throw new System.NotImplementedException();
+            m_Writer.Write(value.x);
+            m_Writer.Write(value.y);
+            m_Writer.Write(value.z);
         }
     }
 }
