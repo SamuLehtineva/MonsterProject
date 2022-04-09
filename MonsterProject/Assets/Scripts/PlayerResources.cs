@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GA.MonsterProject
 {
-    public class PlayerResources : MonoBehaviour
+    public class PlayerResources : MonoBehaviour, ISaveable
     {
         public int m_iMoney = 100;
         public int m_iReputation = 100;
@@ -133,6 +133,20 @@ namespace GA.MonsterProject
             {
                 m_iBond = 100; 
             }
+        }
+
+        public void Save(ISaveWriter writer)
+        {
+            writer.WriteInt(m_iMoney);
+            writer.WriteInt(m_iBond);
+            writer.WriteInt(m_iReputation);
+        }
+
+        public void Load(ISaveReader reader)
+        {
+            m_iMoney = reader.ReadInt();
+            m_iBond = reader.ReadInt();
+            m_iReputation = reader.ReadInt();
         }
     }
 }
