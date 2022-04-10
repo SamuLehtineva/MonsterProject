@@ -17,6 +17,7 @@ namespace GA.MonsterProject
             if (other.tag == "Player")
             {
                 SceneManager.LoadScene(m_sTargetSceneName);
+                GameManager.m_sDestinationScene = m_sTargetSceneName;
                 GameManager.m_sDestination = m_sTargetSpawnName;
                 Debug.Log(GameManager.m_sDestination);
             }

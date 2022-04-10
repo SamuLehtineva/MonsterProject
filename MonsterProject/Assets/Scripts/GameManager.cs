@@ -9,7 +9,7 @@ namespace GA.MonsterProject
     public class GameManager : MonoBehaviour, ISaveable
     {
         public static string m_sDestination = "Default";
-        public static string m_sDestinationScene;
+        public static string m_sDestinationScene = "Cabin";
         public static GameManager s_GameManager;
         public static int m_iMinigameQuestIndex = 0;
         CharMover m_gcCharMover;
@@ -97,11 +97,14 @@ namespace GA.MonsterProject
         public void Save(ISaveWriter writer)
         {
             writer.WriteString(m_sDestination);
+            writer.WriteString(m_sDestinationScene);
         }
 
         public void Load(ISaveReader reader)
         {
             m_sDestination = reader.ReadString();
+            m_sDestinationScene = reader.ReadString();
+            SceneManager.LoadScene(m_sDestinationScene);
             Debug.Log(m_sDestination);
         }
     }

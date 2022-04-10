@@ -51,6 +51,7 @@ namespace GA.MonsterProject
         public void Interact()
         {
             GameManager.m_sDestination = "Default";
+            GameManager.m_sDestinationScene = "Cabin_Bigger_Room";
             SceneManager.LoadScene("Cabin_Bigger_Room");
         }
     }
