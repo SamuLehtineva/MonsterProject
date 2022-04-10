@@ -14,10 +14,12 @@ namespace GA.MonsterProject
             get;
             set;
         }
-        // Start is called before the first frame update
+        AudioClipPlayer m_gcAudi;
+
         void Start()
         {
             IsActive = false;
+            m_gcAudi = GetComponent<AudioClipPlayer>();
         }
 
         // Update is called once per frame
@@ -31,6 +33,7 @@ namespace GA.MonsterProject
 
         public void Activate()
         {
+            m_gcAudi.PlayClip(0, PlayerPrefs.GetFloat("EffectVolume"));
             if (!IsActive)
             {
                 m_aDoorAnimator.Play("Door_Open", 0, 0.0f);

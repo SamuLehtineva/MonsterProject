@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gcMusicSlider: {fileID: 575663145}
-  m_gcEffectSlider: {fileID: 0}
+  m_gcEffectSlider: {fileID: 318989455}
 --- !u!1 &442434973
 GameObject:
   m_ObjectHideFlags: 0
