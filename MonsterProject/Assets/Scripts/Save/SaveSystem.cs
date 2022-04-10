@@ -61,6 +61,7 @@ namespace GA.MonsterProject
 
         void Load()
         {
+            Debug.Log("load");
             ISaveReader reader = new BinarySaver();
             if (!reader.PrepareRead(Path.Combine(m_sSaveFolder, m_sSaveName)))
             {

@@ -8,7 +8,7 @@ namespace GA.MonsterProject
 {
     public class GameManager : MonoBehaviour, ISaveable
     {
-        public static string m_sDestination;
+        public static string m_sDestination = "Default";
         public static string m_sDestinationScene;
         public static GameManager s_GameManager;
         public static int m_iMinigameQuestIndex = 0;
