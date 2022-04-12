@@ -59,8 +59,8 @@ namespace GA.MonsterProject
             m_bCanContinue = false;
             m_bCanEnd = false;
             m_iCurrentLine = 0;
-            ShowDialog();
             m_oButtons.SetActive(false);
+            ShowDialog();
         }
 
         public void SetRewards (QuestReward rewardA, QuestReward rewardB)
@@ -85,10 +85,12 @@ namespace GA.MonsterProject
             if (sLines.Count > (m_iCurrentLine + 3))
             {
                 m_bCanContinue = true;
+                Debug.Log("lines");
             }
             else
             {
                 CheckForButtons();
+                Debug.Log("but");
             }
         }
 
@@ -99,6 +101,7 @@ namespace GA.MonsterProject
                 m_txtButtonA.text = SearchIndicator("#ButtonA")[0].ToString();
                 m_txtButtonB.text = SearchIndicator("#ButtonB")[0].ToString();
                 m_oButtons.SetActive(true);
+                Debug.Log("but2");
             }
             else
             {

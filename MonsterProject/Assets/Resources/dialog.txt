@@ -1,6 +1,6 @@
 #Start
 Hi neighbour! Welcome to our little village! I hope
-you like it here! I know this is strange but could I get some water form your well?
+you like it here! I know this is strange but could I get some water from your well?
 #
 
 #OptionA
