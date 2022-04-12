@@ -56,6 +56,16 @@ namespace GA.MonsterProject
                     m_gcTalk.m_bKillAfterUse = false;
 
                     break;
+
+                case Types.EStatus._Failed:
+                    m_gcTrigger.gameObject.SetActive(false);
+
+                    m_gcTalk.gameObject.SetActive(true);
+                    //m_gcTalk.m_sFileName = "fetch_helga_failed";
+                    m_gcTalk.m_bRewardTalk = false;
+                    m_gcTalk.m_bKillAfterUse = false;
+
+                    break;
             }
         }
     }
