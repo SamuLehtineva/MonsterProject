@@ -1,23 +1,20 @@
 #Start
-You walked past your neighbours house.
-You could see flames dancing in his eyes as the old man walked closer
-
-"Your creature ate some of my chickens!
-What the fuck my guy? You better pay for them or else!"
+Hi neighbour! Welcome to our little village! I hope
+you like it here! I know this is strange but could I get some water form your well?
 #
 
 #OptionA
-You laughed at your neighbour and continued walking
+You told your neighbour she can take as much as she needs
 #
 
 #OptionB
-You paid for the damages your monster had caused, apologized and left
+You tell her she can't and leave
 #
 
 #ButtonA
-Ignore him
+Of course
 #
 
 #ButtonB
-Pay
+Umm... no
 #
