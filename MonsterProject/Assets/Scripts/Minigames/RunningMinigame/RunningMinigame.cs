@@ -13,8 +13,8 @@ namespace GA.MonsterProject
         public float jumpHeight = 15f;
 
         [Header("Movement")]
-        public float moveSpeed = 1000f;
-        public float speedWhileJumping = 200f;
+        public float moveSpeed = 10f;
+        public float speedWhileJumping = 10f;
 
         [Header("Pause")]
         public static bool GamePaused = false;
@@ -55,10 +55,10 @@ namespace GA.MonsterProject
         {
             if (onGround == true)
             {
-                rigbod.AddForce(moveSpeed * Time.deltaTime, 0, 0);
+                transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
             } else
             {
-                rigbod.AddForce(speedWhileJumping * Time.deltaTime, 0, 0);
+                transform.Translate(Vector3.right * speedWhileJumping * Time.deltaTime);
             }
 
             onGround = Physics.Raycast(transform.position, Vector3.down, rayLength, groundLayer);

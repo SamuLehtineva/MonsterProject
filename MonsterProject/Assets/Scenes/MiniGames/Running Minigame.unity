@@ -1105,8 +1105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayLength: 0.55
   jumpHeight: 8
-  moveSpeed: 1000
-  speedWhileJumping: 100
+  moveSpeed: 10
+  speedWhileJumping: 10
   PauseMenu: {fileID: 1521482040}
   onGround: 0
   rigbod: {fileID: 437709828}
