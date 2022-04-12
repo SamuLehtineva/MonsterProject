@@ -21,7 +21,7 @@ namespace GA.MonsterProject
             float fRatio = InverseLerp(transform.position, m_vTargetPos, transform.position + transform.forward);
             try
             {
-                Debug.Log(fRatio * (JumpToZero(0.2f, m_fDistance / m_fDesiredDistance)));
+                //Debug.Log(fRatio * (JumpToZero(0.2f, m_fDistance / m_fDesiredDistance)));
                 transform.position += transform.forward * m_fMoveSpeed * Time.deltaTime / fRatio * (JumpToZero(0.2f, m_fDistance / m_fDesiredDistance));
             }
             catch (Exception e)
