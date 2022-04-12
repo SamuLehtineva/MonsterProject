@@ -15064,6 +15064,8 @@ MonoBehaviour:
   m_fXOffset: 0
   m_fYOffset: 8
   m_fZOffset: -7
+  m_fXLookOffset: 0
+  m_fYLookOffset: 0
   m_fZLookOffset: 2
 --- !u!82 &1594055179
 AudioSource:
