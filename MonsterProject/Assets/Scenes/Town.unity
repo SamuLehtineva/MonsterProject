@@ -6955,7 +6955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ac85872f6442abe46bea112aee1b688c, type: 3}
       propertyPath: m_Name
-      value: Fisherman (1)
+      value: ChickenMan
       objectReference: {fileID: 0}
     - target: {fileID: 4905203268507880565, guid: ac85872f6442abe46bea112aee1b688c, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9094,8 +9094,8 @@ MonoBehaviour:
     m_iMoney: 0
     m_iReputation: -5
     m_iBond: 0
-  m_sQuestNameB: none
-  m_eQuestStatusB: 0
+  m_sQuestNameB: fetch_helga
+  m_eQuestStatusB: 3
   m_bKillAfterUse: 1
   m_bRewardTalk: 0
 --- !u!65 &878904090
@@ -15064,6 +15064,8 @@ MonoBehaviour:
   m_fXOffset: 0
   m_fYOffset: 8
   m_fZOffset: -7
+  m_fXLookOffset: 0
+  m_fYLookOffset: 0
   m_fZLookOffset: 2
 --- !u!82 &1594055179
 AudioSource:
