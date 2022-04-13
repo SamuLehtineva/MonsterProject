@@ -19,6 +19,9 @@ namespace GA.MonsterProject
         TextMeshProUGUI m_txtButtonB;
 
         [SerializeField]
+        TMP_Text m_txtContinue;
+
+        [SerializeField]
         GameObject m_oButtons;
 
         public QuestReward m_gcRewardA;
@@ -85,12 +88,14 @@ namespace GA.MonsterProject
             if (sLines.Count > (m_iCurrentLine + 3))
             {
                 m_bCanContinue = true;
+                m_txtContinue.gameObject.SetActive(true);
                 Debug.Log("lines");
             }
             else
             {
                 CheckForButtons();
                 Debug.Log("but");
+                m_txtContinue.gameObject.SetActive(false);
             }
         }
 
