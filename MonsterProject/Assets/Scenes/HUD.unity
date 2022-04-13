@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_iMoney: 100
-  m_iReputation: 70
+  m_iReputation: 50
   m_iBond: 50
 --- !u!1 &1077470091
 GameObject:
