@@ -38,6 +38,11 @@ namespace GA.MonsterProject
             m_bPaused = false;
         }
 
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             try
@@ -55,6 +60,7 @@ namespace GA.MonsterProject
             if (UIManager.s_UIManager != null)
             {
                 UIManager.s_UIManager.HideDialog();
+                UIManager.s_UIManager.TogglePauseMenu(false);
             }
         }
 
@@ -83,6 +89,7 @@ namespace GA.MonsterProject
                 m_bPaused = false;
             }
             Time.fixedDeltaTime = m_fFixedDeltaTime * Time.timeScale;
+            UIManager.s_UIManager.TogglePauseMenu(m_bPaused);
         }
 
         void OnDisable()
@@ -121,6 +128,7 @@ namespace GA.MonsterProject
 
         public void Load(ISaveReader reader)
         {
+            m_bPaused = false;
             m_sDestination = reader.ReadString();
             m_sDestinationScene = reader.ReadString();
             SceneManager.LoadScene(m_sDestinationScene);

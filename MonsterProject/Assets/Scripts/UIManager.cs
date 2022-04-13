@@ -15,6 +15,9 @@ namespace GA.MonsterProject
         public QuestManager m_gcQuestManager;
 
         [SerializeField]
+        GameObject m_oPauseMenu;
+
+        [SerializeField]
         Canvas m_gcCanvas;
 
         void Awake()
@@ -30,6 +33,7 @@ namespace GA.MonsterProject
             DontDestroyOnLoad(this);
 
             m_gcDialogController.gameObject.SetActive(false);
+            TogglePauseMenu(false);
         }
 
         public void StartDialog(INpc npc)
@@ -47,6 +51,11 @@ namespace GA.MonsterProject
         public void ToggleHud(bool active)
         {
             m_gcCanvas.gameObject.SetActive(active);
+        }
+
+        public void TogglePauseMenu(bool value)
+        {
+            m_oPauseMenu.gameObject.SetActive(value);
         }
     }
 }

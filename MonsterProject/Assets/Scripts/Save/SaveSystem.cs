@@ -38,7 +38,7 @@ namespace GA.MonsterProject
             }
         }
 
-        void Save()
+        public void Save()
         {
             Debug.Log("save");
 
@@ -59,7 +59,7 @@ namespace GA.MonsterProject
             writer.FinalizeWrite();
         }
 
-        void Load()
+        public void Load()
         {
             Debug.Log("load");
             ISaveReader reader = new BinarySaver();
