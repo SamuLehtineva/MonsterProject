@@ -13,6 +13,11 @@ namespace GA.MonsterProject
         private Vector3 m_vTargetPos;
         private float m_fDistance;
 
+        void Start()
+        {
+            transform.position = m_tTarget.position - transform.forward * 10;
+        }
+
         void LateUpdate()
         {
             m_fDistance = Vector3.Distance(transform.position, m_tTarget.position);

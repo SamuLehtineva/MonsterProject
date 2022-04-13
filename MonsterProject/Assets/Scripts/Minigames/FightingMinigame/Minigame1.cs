@@ -163,8 +163,7 @@ namespace GA.MonsterProject
         IEnumerator EndDelay()
         {
             yield return new WaitForSeconds(2);
-            GameManager.m_sDestination = "Yard_Fight";
-            SceneManager.LoadScene("Yard");
+            SceneManager.LoadScene(GameManager.m_sDestinationScene);
         }
     }
 }
