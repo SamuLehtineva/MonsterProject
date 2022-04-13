@@ -65,6 +65,10 @@ namespace GA.MonsterProject
                     {
                         m_iReputation = 0;
                     }
+                    else if (m_iReputation > 100)
+                    {
+                        m_iReputation = 100;
+                    }
 
                     break;
 
