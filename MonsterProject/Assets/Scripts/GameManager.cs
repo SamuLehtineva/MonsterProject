@@ -45,6 +45,10 @@ namespace GA.MonsterProject
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
+            if (m_bPaused)
+            {
+                Pause();
+            }
             try
             {
                 if (m_gcCharMover == null)

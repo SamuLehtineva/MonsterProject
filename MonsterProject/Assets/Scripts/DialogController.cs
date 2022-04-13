@@ -38,6 +38,14 @@ namespace GA.MonsterProject
 
         void Update()
         {
+            if (m_bCanContinue || m_bCanEnd)
+            {
+                m_txtContinue.gameObject.SetActive(true);
+            }
+            else
+            {
+                m_txtContinue.gameObject.SetActive(false);
+            }
             if (Input.GetButtonDown("Fire1"))
             {
                 if (m_bCanContinue)
@@ -88,14 +96,12 @@ namespace GA.MonsterProject
             if (sLines.Count > (m_iCurrentLine + 3))
             {
                 m_bCanContinue = true;
-                m_txtContinue.gameObject.SetActive(true);
                 Debug.Log("lines");
             }
             else
             {
                 CheckForButtons();
                 Debug.Log("but");
-                m_txtContinue.gameObject.SetActive(false);
             }
         }
 
