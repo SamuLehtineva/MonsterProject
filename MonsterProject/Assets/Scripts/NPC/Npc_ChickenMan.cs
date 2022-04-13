@@ -21,7 +21,6 @@ namespace GA.MonsterProject
                     m_gcTrigger.gameObject.SetActive(true);
                     m_gcTrigger.m_sFileName = "fetch_helga_inactive";
                     m_gcTrigger.m_bRewardTalk = false;
-                    m_gcTrigger.m_bKillAfterUse = true;
 
                     m_gcTalk.gameObject.SetActive(false);
 
@@ -33,7 +32,6 @@ namespace GA.MonsterProject
                     m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.m_sFileName = "fetch_helga_active";
                     m_gcTalk.m_bRewardTalk = false;
-                    m_gcTalk.m_bKillAfterUse = false;
 
                     break;
                 
@@ -43,7 +41,6 @@ namespace GA.MonsterProject
                     m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.m_sFileName = "fetch_helga_complete";
                     m_gcTalk.m_bRewardTalk = true;
-                    m_gcTalk.m_bKillAfterUse = false;
 
                     break;
                 
@@ -53,7 +50,6 @@ namespace GA.MonsterProject
                     m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.m_sFileName = "fetch_helga_done";
                     m_gcTalk.m_bRewardTalk = false;
-                    m_gcTalk.m_bKillAfterUse = false;
 
                     break;
 
@@ -63,7 +59,6 @@ namespace GA.MonsterProject
                     m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.m_sFileName = "fetch_helga_failed";
                     m_gcTalk.m_bRewardTalk = false;
-                    m_gcTalk.m_bKillAfterUse = false;
 
                     break;
             }

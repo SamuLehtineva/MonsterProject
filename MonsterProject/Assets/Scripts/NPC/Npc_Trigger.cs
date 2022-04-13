@@ -24,7 +24,6 @@ namespace GA.MonsterProject
         public QuestReward m_qRewardB;
         public string m_sQuestNameB = "none";
         public Types.EStatus m_eQuestStatusB;
-        public bool m_bKillAfterUse;
         public bool m_bRewardTalk = false;
 
         void Start()
@@ -69,10 +68,6 @@ namespace GA.MonsterProject
             if (m_bRewardTalk)
             {
                 PickOptionA();
-            }
-            if (m_bKillAfterUse)
-            {
-                Kill();
             }
         }
     }
