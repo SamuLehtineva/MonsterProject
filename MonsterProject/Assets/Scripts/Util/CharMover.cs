@@ -63,7 +63,8 @@ namespace GA.MonsterProject
             
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneChanger.LoadLevel("Menu");
+                GameManager.s_GameManager.Pause();
+                //SceneChanger.LoadLevel("Menu");
             }
         }
         

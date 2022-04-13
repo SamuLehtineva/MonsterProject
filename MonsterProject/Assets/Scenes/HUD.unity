@@ -600,6 +600,10 @@ PrefabInstance:
       propertyPath: m_gcRewardA.m_iBond
       value: 36
       objectReference: {fileID: 0}
+    - target: {fileID: 2409397305379384162, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2409397305575154720, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_text
       value: x 100

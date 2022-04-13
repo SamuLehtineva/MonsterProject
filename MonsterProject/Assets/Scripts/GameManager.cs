@@ -12,8 +12,10 @@ namespace GA.MonsterProject
         public static string m_sDestinationScene = "Cabin";
         public static GameManager s_GameManager;
         public static int m_iMinigameQuestIndex = 0;
+        public bool m_bPaused = false;
         CharMover m_gcCharMover;
-        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame"};
+        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu"};
+        private float m_fFixedDeltaTime;
         void Awake()
         {
             if (s_GameManager != null)
@@ -29,11 +31,11 @@ namespace GA.MonsterProject
             m_sDestinationScene = SceneManager.GetActiveScene().name;
             Debug.Log("active scene: " + m_sDestinationScene);
             SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
-        }
 
-        void OnEnable() 
-        {
-            SceneManager.sceneLoaded += OnSceneLoaded;
+            Time.timeScale = 1f;
+            Time.fixedDeltaTime = 0.02f;
+            m_fFixedDeltaTime = Time.fixedDeltaTime;
+            m_bPaused = false;
         }
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -66,6 +68,21 @@ namespace GA.MonsterProject
             {
                 UIManager.s_UIManager.ToggleHud(true);
             }
+        }
+
+        public void Pause()
+        {
+            if (!m_bPaused)
+            {
+                Time.timeScale = 0f;
+                m_bPaused = true;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                m_bPaused = false;
+            }
+            Time.fixedDeltaTime = m_fFixedDeltaTime * Time.timeScale;
         }
 
         void OnDisable()
@@ -107,7 +124,6 @@ namespace GA.MonsterProject
             m_sDestination = reader.ReadString();
             m_sDestinationScene = reader.ReadString();
             SceneManager.LoadScene(m_sDestinationScene);
-            Debug.Log(m_sDestination);
         }
     }
 }
