@@ -11637,31 +11637,43 @@ PrefabInstance:
       objectReference: {fileID: 414706406}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_sQuestNameA
-      value: none
+      value: talk_well
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_sQuestNameB
-      value: none
+      value: talk_well
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_bKillAfterUse
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
-      propertyPath: m_qRewardA.m_iBond
-      value: 31
+      propertyPath: m_eQuestStatusA
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
-      propertyPath: m_qRewardA.m_iMoney
+      propertyPath: m_eQuestStatusB
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+      propertyPath: m_qRewardA.m_iBond
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+      propertyPath: m_qRewardA.m_iMoney
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_qRewardB.m_iMoney
-      value: -50
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+      propertyPath: m_qRewardA.m_iReputation
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_qRewardB.m_iReputation
-      value: 50
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: <m_sFileName>k__BackingField
@@ -11717,6 +11729,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+--- !u!1 &235990256494686661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1118878643837202821, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+  m_PrefabInstance: {fileID: 235990256494686660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &235990256494686662 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
+  m_PrefabInstance: {fileID: 235990256494686660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &235990256494686663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235990256494686661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c98573c9d592c4aa2573a4a145d7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gcTalk: {fileID: 235990256494686662}
 --- !u!114 &502349771853156880 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1796922722274050862, guid: 95a64211466e8a64795f3f743e04cbc6, type: 3}
