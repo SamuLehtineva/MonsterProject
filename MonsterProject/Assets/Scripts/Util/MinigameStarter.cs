@@ -5,12 +5,19 @@ using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
-    public class MinigameStarter : MonoBehaviour, IInteractables
+    public class MinigameStarter : MonoBehaviour, IInteractables, INpc
     {
         public bool IsActive
         {
             get;
             set;
+        }
+
+        [field: SerializeField]
+        public string m_sFileName 
+        {
+            get;
+            set;    
         }
 
         public string m_SceneName;
@@ -41,6 +48,22 @@ namespace GA.MonsterProject
         }
 
         public void Interact()
+        {
+            UIManager.s_UIManager.StartDialog(this);
+            DeActivate();
+        }
+
+        public void PickOptionA()
+        {
+            //empty for now
+        }
+
+        public void PickOptionB()
+        {
+            //empty for now
+        }
+
+        public void DialogEnd()
         {
             GameManager.m_sDestination = m_sSpawnPoint;
             GameManager.m_iMinigameQuestIndex = m_iMinigameQuestIndex;

@@ -1633,6 +1633,10 @@ PrefabInstance:
       propertyPath: m_sSpawnPoint
       value: Forest_Bush
       objectReference: {fileID: 0}
+    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: <m_sFileName>k__BackingField
+      value: fetch_helga_minigame_start
+      objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229747, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.41
@@ -2939,6 +2943,10 @@ PrefabInstance:
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_iMinigameQuestIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: <m_sFileName>k__BackingField
+      value: bush_minigame_battle
       objectReference: {fileID: 0}
     - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_RootOrder
