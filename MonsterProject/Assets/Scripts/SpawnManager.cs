@@ -16,14 +16,12 @@ namespace GA.MonsterProject
         void Start() {
             m_gcController = m_gcPlayer.GetComponent<CharacterController>();
             m_gcController.gameObject.SetActive(false);
-            //SpawnPoint[] points = FindObjectsOfType(typeof(SpawnPoint)) as SpawnPoint[];
             m_aSpawnPoints = new Transform[transform.childCount];
 
             for (int i = 0; i < m_aSpawnPoints.Length; i++)
             {
                 try
                 {
-                    //m_dSpawnPoints.Add(points[i].m_sSpawnName, points[i].transform);
                     m_aSpawnPoints[i] = transform.GetChild(i);
                 }
                 catch (ArgumentException)
@@ -42,10 +40,6 @@ namespace GA.MonsterProject
                         m_gcPlayer.forward = item.forward;
                     }
                 }
-
-                /*Debug.Log(m_gcPlayer.transform.position);
-                Debug.Log("spawn point" + m_dSpawnPoints[GameManager.m_sDestination].position);
-                m_gcPlayer.transform.forward = m_dSpawnPoints[GameManager.m_sDestination].forward;*/
             }
             catch (KeyNotFoundException)
             {
