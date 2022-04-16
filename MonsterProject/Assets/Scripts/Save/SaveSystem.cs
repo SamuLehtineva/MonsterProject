@@ -26,6 +26,9 @@ namespace GA.MonsterProject
             }
         }
 
+        /*
+        Calls the save method on all applicable objects
+        */
         public void Save()
         {
             Debug.Log("save");
@@ -47,6 +50,9 @@ namespace GA.MonsterProject
             writer.FinalizeWrite();
         }
 
+        /*
+        Calls the load method on all applicable objects
+        */
         public void Load()
         {
             Debug.Log("load");

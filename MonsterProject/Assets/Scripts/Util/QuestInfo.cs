@@ -15,11 +15,17 @@ namespace GA.MonsterProject
             gameObject.name = m_sName;
         }
 
+        /*
+        Saves current status
+        */
         public void Save(ISaveWriter writer)
         {
             writer.WriteStatus(m_iStatus);
         }
 
+        /*
+        Loads status from file
+        */
         public void Load(ISaveReader reader)
         {
             m_iStatus = reader.ReadStatus();

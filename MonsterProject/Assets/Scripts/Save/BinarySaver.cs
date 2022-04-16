@@ -97,6 +97,9 @@ namespace GA.MonsterProject
             return m_Reader.ReadInt32();
         }
 
+        /*
+        Reads an integer and transforms it to an enum
+        */
         public Types.EStatus ReadStatus()
         {
             int val = m_Reader.ReadInt32();
@@ -131,6 +134,9 @@ namespace GA.MonsterProject
             m_Writer.Write(value);
         }
 
+        /*
+        Takes an enum and saves it as an integer
+        */
         public void WriteStatus(Types.EStatus value)
         {
             m_Writer.Write((int)value);

@@ -124,12 +124,18 @@ namespace GA.MonsterProject
             m_gcCharMover.m_bCanMove = true;
         }
 
+        /*
+        Saves the current scene and spawn point names
+        */
         public void Save(ISaveWriter writer)
         {
             writer.WriteString(m_sDestination);
             writer.WriteString(m_sDestinationScene);
         }
 
+        /*
+        Unpauses the game, loads the scene and spawn point name from file and then loads the scene
+        */
         public void Load(ISaveReader reader)
         {
             m_bPaused = false;

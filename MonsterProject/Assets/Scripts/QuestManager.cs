@@ -45,6 +45,9 @@ namespace GA.MonsterProject
             }
         }
 
+        /*
+        Calls the Save method on all quests
+        */
         public void Save(ISaveWriter writer)
         {
             foreach (var quest in m_aQuests)
@@ -53,6 +56,9 @@ namespace GA.MonsterProject
             }
         }
 
+        /*
+        Calls the load method on all quests
+        */
         public void Load(ISaveReader reader)
         {
             foreach (QuestInfo quest in m_aQuests)

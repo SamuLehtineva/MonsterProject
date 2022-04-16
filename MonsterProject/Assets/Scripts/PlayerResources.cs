@@ -139,6 +139,9 @@ namespace GA.MonsterProject
             }
         }
 
+        /*
+        Saves current money, bond and reputation values
+        */
         public void Save(ISaveWriter writer)
         {
             writer.WriteInt(m_iMoney);
@@ -146,6 +149,9 @@ namespace GA.MonsterProject
             writer.WriteInt(m_iReputation);
         }
 
+        /*
+        Loads money, bond and reputation values from file
+        */
         public void Load(ISaveReader reader)
         {
             m_iMoney = reader.ReadInt();
