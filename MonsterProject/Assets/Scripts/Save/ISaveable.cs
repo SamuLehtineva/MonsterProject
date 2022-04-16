@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace GA.MonsterProject
 {
+    /*
+    Interface for objects that need to save data
+    */
     public interface ISaveable
     {
         void Save(ISaveWriter writer);

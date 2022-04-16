@@ -6,24 +6,36 @@ using System.IO;
 
 namespace GA.MonsterProject
 {
+    /*
+    Saves and loads data using BinaryReader and BinaryWriter
+    */
     public class BinarySaver : ISaveReader, ISaveWriter
     {
         private BinaryReader m_Reader;
         private BinaryWriter m_Writer;
         private FileStream m_FileStream;
 
+        /*
+        Closes the reader and filestream to free up memory
+        */
         public void FinalizeRead()
         {
             m_Reader.Close();
             m_FileStream.Close();
         }
 
+        /*
+        Closes the writer and filestream to free up memory
+        */
         public void FinalizeWrite()
         {
             m_Writer.Close();
             m_FileStream.Close();
         }
 
+        /*
+        Checks if the file exists and can be read
+        */
         public bool PrepareRead(string savePath)
         {
             if (!File.Exists(savePath))
@@ -45,6 +57,10 @@ namespace GA.MonsterProject
             return true;
         }
 
+        /*
+        Open the file for writing.
+        If the file doesn't exist it's created
+        */
         public bool PrepareWrite(string path)
         {
             try 

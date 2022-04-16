@@ -26,18 +26,6 @@ namespace GA.MonsterProject
             }
         }
 
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                Save();
-            }
-            else if (Input.GetKeyDown(KeyCode.P))
-            {
-                Load();
-            }
-        }
-
         public void Save()
         {
             Debug.Log("save");
