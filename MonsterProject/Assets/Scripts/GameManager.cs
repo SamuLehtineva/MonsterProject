@@ -45,7 +45,7 @@ namespace GA.MonsterProject
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (m_bPaused)
+            if (m_bPaused && scene.name != "Settings")
             {
                 Pause();
             }
@@ -64,7 +64,7 @@ namespace GA.MonsterProject
             if (UIManager.s_UIManager != null)
             {
                 UIManager.s_UIManager.HideDialog();
-                UIManager.s_UIManager.TogglePauseMenu(false);
+                UIManager.s_UIManager.TogglePauseMenu(m_bPaused);
             }
         }
 
