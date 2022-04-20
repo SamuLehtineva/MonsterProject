@@ -27,6 +27,7 @@ namespace GA.MonsterProject
                 case Types.EStatus._Completed:
                     m_gcTalk.m_sFileName = "fetch_flower_completed";
                     m_gcTalk.m_qRewardA = new QuestReward(10, 10, 0);
+                    m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
 
                     break;
