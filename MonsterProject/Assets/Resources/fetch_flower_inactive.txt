@@ -1,0 +1,41 @@
+#Start
+Bloody ankle... What are you looking at, kid?
+Is... that... a monster?
+
+...
+...
+
+It doesn't matter if you raised that thing, it's a monster.
+* Mumble mumble* First I sprain my ankle so I can't visit my sons grave and now the thing responsible for his death has appeared in my yard!
+
+The gods are mocking me!
+
+
+...
+...
+
+I don't care if your monster specificly didn't kill my son,
+a monster is a monster, no matter what...
+
+(You wonder if helping this man would change his mind)
+#
+
+#OptionA
+You offer to go gather flowers to bring to the son's grave
+First he seemed offended that you had the audacity to ask, but after thinking for a few seconds he mumbled something resembling a yes
+
+"... Fine, everyone else is too busy... But don't you let that
+thing go anywhere close to Sven's grave! If I find even one paw print in the graveyard I will chase you out of this fine village!"
+#
+
+#OptionB
+You decided to leave the man alone. It's probably for the best
+#
+
+#ButtonA
+Offer your help
+#
+
+#ButtonB
+Walk away
+#
