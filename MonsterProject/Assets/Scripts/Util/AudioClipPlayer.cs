@@ -18,7 +18,7 @@ namespace GA.MonsterProject
 
         public void PlayClip(int index, float volume)
         {
-            m_gcAudio.PlayOneShot(m_lClips[index], volume);
+            m_gcAudio.PlayOneShot(m_lClips[index], volume * PlayerPrefs.GetFloat("EffectVolume"));
         }
 
         public void PlayClipDelayed(int index, int delayInSecs)
