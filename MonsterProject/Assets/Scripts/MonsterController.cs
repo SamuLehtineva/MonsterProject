@@ -22,6 +22,10 @@ namespace GA.MonsterProject
             {
                 transform.Find("Teen").gameObject.SetActive(true);
             }
+            else if (PlayerResources.s_CurrentResources.m_iBond < 25)
+            {
+                transform.Find("Bad").gameObject.SetActive(true);
+            }
             else
             {
                 transform.Find("Baby").gameObject.SetActive(true);

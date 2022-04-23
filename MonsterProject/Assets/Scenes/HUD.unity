@@ -891,7 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_iMoney: 100
   m_iReputation: 50
-  m_iBond: 50
+  m_iBond: 10
 --- !u!1 &1077470091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,7 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sName: none
-  m_iStatus: 4
+  m_iStatus: 0
   m_sDescription: used as filler
 --- !u!1 &1701261059
 GameObject:
