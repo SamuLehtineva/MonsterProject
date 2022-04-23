@@ -1507,7 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sName: none
-  m_iStatus: 0
+  m_iStatus: 4
   m_sDescription: used as filler
 --- !u!1 &1701261059
 GameObject:

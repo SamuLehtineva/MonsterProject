@@ -18,6 +18,14 @@ namespace GA.MonsterProject
 
         void Start()
         {
+            if (UIManager.s_UIManager.m_gcQuestManager.QuestCountDone() >= 1)
+            {
+                transform.Find("Teen").gameObject.SetActive(true);
+            }
+            else
+            {
+                transform.Find("Baby").gameObject.SetActive(true);
+            }
             m_gcAnimator = GetComponentInChildren<Animator>();
             DeActivate();
             //m_gcAnimator.SetBool("IsMoving", true);
