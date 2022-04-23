@@ -7,7 +7,7 @@ namespace GA.MonsterProject
     public class CharMover : MonoBehaviour
     {
         [SerializeField]
-        PetController m_gcPetController;
+        MonsterController m_gcPetController;
         private CharacterController m_ccCharacterController;
         private Vector3 m_vDirection;
         private Animator m_gcANimator;

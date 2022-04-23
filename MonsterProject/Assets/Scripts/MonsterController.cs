@@ -37,6 +37,7 @@ namespace GA.MonsterProject
         {
             m_2dInteract.gameObject.SetActive(false);
         }
+
         public void PlayPetAnimation()
         {
             m_gcAnimator.Play("Being_Pet");

@@ -45,6 +45,19 @@ namespace GA.MonsterProject
             }
         }
 
+        public int QuestCountDone()
+        {
+            int count = 0;
+            for (int i = 0; i < m_aQuests.Length; i++)
+            {
+                if (m_aQuests[i].m_iStatus == Types.EStatus._Done)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
         /*
         Calls the Save method on all quests
         */
