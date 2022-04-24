@@ -11907,10 +11907,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2255866027024232216, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37059987
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255866027024232216, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33162016
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255866027024232216, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8025464
+      objectReference: {fileID: 0}
     - target: {fileID: 2255866027024232217, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
       propertyPath: m_gcTarget
       value: 
       objectReference: {fileID: 2142034907}
+    - target: {fileID: 2255866027247136859, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_fontSize
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255866027247136859, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255866027247136859, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2255866027298484786, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
       propertyPath: m_Camera
       value: 
