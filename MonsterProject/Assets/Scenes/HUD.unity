@@ -1313,81 +1313,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1 &1421155968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1421155969}
-  - component: {fileID: 1421155971}
-  - component: {fileID: 1421155970}
-  m_Layer: 5
-  m_Name: Chatbox_Outline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1421155969
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421155968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.94499993, z: 0.9}
-  m_Children: []
-  m_Father: {fileID: 500422426}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.42913818}
-  m_SizeDelta: {x: 1307, y: 282}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1421155970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421155968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6ad350254ec64da41b8b86ed1156db5e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1421155971
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421155968}
-  m_CullTransparentMesh: 1
 --- !u!1 &1502323781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,8 +1666,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284499871
-  m_fontColor: {r: 0.62352943, g: 0.2784314, b: 0.3764706, a: 1}
+    rgba: 4288841202
+  m_fontColor: {r: 0.9490197, g: 0.52156866, b: 0.63529414, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2175,6 +2100,34 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 90bef0e7a8cc1604fbd75e064a07114d, type: 2}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.52156866
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.9490197
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6997396678002514885, guid: 90bef0e7a8cc1604fbd75e064a07114d, type: 2}
+    - target: {fileID: 2409397303878978801, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4288841202
+      objectReference: {fileID: 0}
     - target: {fileID: 2409397303911935630, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_gcRepBar
       value: 
@@ -2355,6 +2308,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1f55715ef7bd9224f9c809b7b3b2be54, type: 3}
+    - target: {fileID: 2409397304466370057, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_Color.a
+      value: 0.74509805
+      objectReference: {fileID: 0}
     - target: {fileID: 2409397305298945194, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.39022
