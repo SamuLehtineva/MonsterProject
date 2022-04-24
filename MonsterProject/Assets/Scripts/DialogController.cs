@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -19,7 +20,7 @@ namespace GA.MonsterProject
         TextMeshProUGUI m_txtButtonB;
 
         [SerializeField]
-        TMP_Text m_txtContinue;
+        Image m_iContinue;
 
         [SerializeField]
         GameObject m_oButtons;
@@ -40,11 +41,11 @@ namespace GA.MonsterProject
         {
             if (m_bCanContinue || m_bCanEnd)
             {
-                m_txtContinue.gameObject.SetActive(true);
+                m_iContinue.gameObject.SetActive(true);
             }
             else
             {
-                m_txtContinue.gameObject.SetActive(false);
+                m_iContinue.gameObject.SetActive(false);
             }
             if (Input.GetButtonDown("Fire1"))
             {
