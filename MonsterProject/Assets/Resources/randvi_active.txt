@@ -1,0 +1,56 @@
+#Start
+You walked next to, who you presumed to be Marget,
+and introduced yourself. She snapped out of her thoughts and turned towards you.
+
+"Oh hello there. You must be our new villager.
+I'm Marget, I run the inn and the pub here in Bergensjofellbyfjord. You are welcome to visit any time."
+
+You thanked Marget and handed her the package
+explaining Randvi had sent it and every other detail she wished you to deliver. Marget grinned and laughed.
+
+"Oh you sweet little Randvi. Always looking out for others
+while neck deep in shit yourself. Thank you for helping her out. If you come by the pub the first drink will be on the house."
+
+You asked what issues Randvi was dealing with. Marget
+eyed you from head to toe, looking sceptical.
+
+"Oh what the hell, what's the harm. Have you met the
+old fart that reeks of fish? Doesn't really matter, but he's one bitter bastard and he owns the house Randvi and Ygge live in.
+
+He used the house as storage when he had money from fishing,
+but since he drank most of it he needed more to keep drinking so he sold it to the newly wed couple.
+
+However, Randvi and Ygge didn't have that kind of money
+so they made a deal of small monthly payments. The problem is, until the full amount has been payed, they will be treated like tenants
+
+and if they don't pay up every month, the bastard can
+just throw them out without any warning or anything. Randvi makes very pretty jewerly, but since the jackalopes have infested the area where she can find
+
+the materials she uses to make the jewelry, she can't make
+the best sellers any longer. That has really hurt their capability to pay the cranky fisherman. If that adorable creature of yours can fight, you could take care of the jackalopes!
+
+Speaking of which, may I pet your little friend?"
+#
+
+#OptionA
+You promised to help Randvi by taking care of the jackalopes.
+You knew your monster might not like it, but at least they got to play around with Marget for a good while before you continued your journey
+
+"Oh and before I forget, the jackalopes are in X area"
+#
+
+#OptionB
+You told Marget that your creature didn't know how
+to fight but told her they could play for a while. 
+
+"I had one myself, but it wouldn't have been safe to take him here...
+I called him Houndr, because he looked like a hound when he evolved. My grandma is looking after him, which is fine. She needed some company after grandpa died and Houndr was such a good boy."
+#
+
+#ButtonA
+Promise to help Ranvi
+#
+
+#ButtonB
+It's too dangerous
+#
