@@ -50,7 +50,7 @@ namespace GA.MonsterProject
             int count = 0;
             for (int i = 0; i < m_aQuests.Length; i++)
             {
-                if (m_aQuests[i].m_iStatus == Types.EStatus._Done)
+                if (m_aQuests[i].m_iStatus == Types.EStatus._Done && m_aQuests[i].m_sName != "none")
                 {
                     count++;
                 }

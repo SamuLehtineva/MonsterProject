@@ -13,6 +13,7 @@ namespace GA.MonsterProject
         public static GameManager s_GameManager;
         public static int m_iMinigameQuestIndex = 0;
         public bool m_bPaused = false;
+        public Types.EForm m_iForm = Types.EForm._Baby;
         CharMover m_gcCharMover;
         private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu"};
         private float m_fFixedDeltaTime;
