@@ -14,21 +14,27 @@ namespace GA.MonsterProject
 
         [SerializeField]
         SpriteRenderer m_2dInteract;
+        public int m_iEvolveTresh1;
+        public int m_iEvolveTresh2;
         private Animator m_gcAnimator;
+        Types.EForm m_iForm;
 
         void Start()
         {
-            if (UIManager.s_UIManager.m_gcQuestManager.QuestCountDone() >= 1)
+            m_iForm = GameManager.s_GameManager.m_iForm;
+            switch(m_iForm)
             {
-                transform.Find("Teen").gameObject.SetActive(true);
-            }
-            else if (PlayerResources.s_CurrentResources.m_iBond < 25)
-            {
-                transform.Find("Bad").gameObject.SetActive(true);
-            }
-            else
-            {
-                transform.Find("Baby").gameObject.SetActive(true);
+                case Types.EForm._Baby:
+                    transform.Find("Baby").gameObject.SetActive(true);
+                    break;
+                
+                case Types.EForm._Teen:
+                    transform.Find("Teen").gameObject.SetActive(true);
+                    break;
+                
+                case Types.EForm._Bad:
+                    transform.Find("Bad").gameObject.SetActive(true);
+                    break;
             }
             m_gcAnimator = GetComponentInChildren<Animator>();
             DeActivate();
@@ -56,5 +62,6 @@ namespace GA.MonsterProject
             m_gcAudi.PlayClip(0, 1);
             DeActivate();
         }
+
     }
 }

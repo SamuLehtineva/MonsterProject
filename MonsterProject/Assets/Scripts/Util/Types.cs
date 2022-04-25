@@ -21,5 +21,13 @@ namespace GA.MonsterProject
             _Failed,
             _Done,
         }
+
+        public enum EForm
+        {
+            _Baby,
+            _Teen,
+            _Bad,
+            _Good,
+        }
     }
 }

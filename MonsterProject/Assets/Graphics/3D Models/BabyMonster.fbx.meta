@@ -21,7 +21,12 @@ ModelImporter:
   - first:
       74: 728915926005471019
     second: Baby Armature|Walking Baby
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Baby
+    second: {fileID: 2100000, guid: b0dbdd2696bb9ac408378538a0446f0c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
