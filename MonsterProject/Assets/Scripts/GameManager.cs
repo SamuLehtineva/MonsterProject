@@ -11,7 +11,7 @@ namespace GA.MonsterProject
         public static string m_sDestination = "Default";
         public static string m_sDestinationScene = "Cabin";
         public static GameManager s_GameManager;
-        public static int m_iMinigameQuestIndex = 0;
+        public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;
         public Types.EForm m_iForm = Types.EForm._Baby;
         CharMover m_gcCharMover;
