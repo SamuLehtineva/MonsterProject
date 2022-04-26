@@ -29,16 +29,13 @@ namespace GA.MonsterProject
         public bool LoseEndMiniGame = false;
         public Vector3 newPos;
 
-        private QuestInfo[] m_aQuests;
         private QuestInfo m_gcCurrentQuest;
 
         // Game is paused in the beginning so the player can read some instructions
         void Start()
         {
             try {
-                m_aQuests = new QuestInfo[3];
-                m_aQuests[0] = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("fetch_helga");
-                m_gcCurrentQuest = m_aQuests[GameManager.m_iMinigameQuestIndex];
+                m_gcCurrentQuest = GameManager.m_qMinigameQuest;
             }
             catch (NullReferenceException e)
             {
