@@ -1,23 +1,23 @@
 #Start
-Bloody ankle... What are you looking at, kid?
-Is... that... a monster?
+"Bloody ankle... What are you looking at, kid?
+Is... that... a monster?"
 
-...
-...
+You clarified that you companion is a creature, not a monster,
+and that you have raised it from an egg so it listens to your commands
 
-It doesn't matter if you raised that thing, it's a monster.
+"A monster is a monster, plain and simple.
 * Mumble mumble* First I sprain my ankle so I can't visit my sons grave and now the thing responsible for his death has appeared in my yard!
 
-The gods are mocking me!
+The gods are mocking me!"
 
 
-...
-...
+You told the old man that your creature had never
+hurt anyone and hadn't killed his son
 
-I don't care if your monster specificly didn't kill my son,
-a monster is a monster, no matter what...
+"I don't care if your monster specificly didn't kill my son,
+but it's brothers did. I know what those things are capable of..."
 
-(You wonder if helping this man would change his mind)
+You wondered if helping this man would change his mind
 #
 
 #OptionA
