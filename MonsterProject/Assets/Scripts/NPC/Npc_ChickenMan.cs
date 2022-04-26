@@ -50,6 +50,7 @@ namespace GA.MonsterProject
                     m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.m_sFileName = "fetch_helga_done";
                     m_gcTalk.m_bRewardTalk = false;
+                    m_gcTalk.ShowIcon(false);
 
                     break;
 
@@ -59,6 +60,7 @@ namespace GA.MonsterProject
                     m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.m_sFileName = "fetch_helga_failed";
                     m_gcTalk.m_bRewardTalk = false;
+                    m_gcTalk.ShowIcon(false);
 
                     break;
             }

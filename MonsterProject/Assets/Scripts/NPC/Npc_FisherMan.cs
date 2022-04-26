@@ -35,11 +35,13 @@ namespace GA.MonsterProject
                 case Types.EStatus._Done:
                     m_gcTalk.m_sFileName = "fetch_flower_done";
                     m_gcTalk.m_bRewardTalk = false;
+                    m_gcTalk.ShowIcon(false);
 
                     break;
 
                 case Types.EStatus._Failed:
                     m_gcTalk.m_sFileName = "fetch_flower_failed";
+                    m_gcTalk.ShowIcon(false);
 
                     break;
             }
