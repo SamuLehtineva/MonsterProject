@@ -424,6 +424,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181091867}
   m_CullTransparentMesh: 1
+--- !u!1 &416350342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416350343}
+  - component: {fileID: 416350344}
+  m_Layer: 0
+  m_Name: marget_kill_jackalopes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416350343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416350342}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287170717}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416350344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416350342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c972050230ffd2439ed6e5f5ed3cb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sName: marget_kill_jackalopes
+  m_iStatus: 0
+  m_sDescription: Kill jackalopes to help out Randvi
 --- !u!224 &500422426 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2409397304466370056, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
@@ -1401,6 +1447,7 @@ Transform:
   - {fileID: 1549824092}
   - {fileID: 1829627839}
   - {fileID: 722818583}
+  - {fileID: 416350343}
   m_Father: {fileID: 2409397305266296788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
