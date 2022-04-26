@@ -1,1 +1,4 @@
-"Hello there little guy! Who's a good little monster, hmm"
+#Start
+"Well isn't it my second favourite little mostrosity!
+Do you want a treat? Of course you do! Here you go."
+#
