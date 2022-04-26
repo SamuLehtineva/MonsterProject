@@ -340,6 +340,10 @@ PrefabInstance:
       value: Running Minigame
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: m_sQuestName
+      value: fetch_helga
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_sSpawnPoint
       value: Forest_Bush
       objectReference: {fileID: 0}
@@ -502,75 +506,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
   m_PrefabInstance: {fileID: 708191446}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1155999570
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7344961623123041773, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_Name
-      value: Enemy_Bush
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_sSpawnPoint
-      value: after_killing_jackalopes
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_iMinigameQuestIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: <m_sFileName>k__BackingField
-      value: jackalope_minigame_battle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 94.487564
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 100.63112
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
 --- !u!1001 &1235684662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,6 +592,10 @@ PrefabInstance:
     - target: {fileID: 7344961623123041773, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_Name
       value: Enemy_Bush (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: m_sQuestName
+      value: none
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_sSpawnPoint
@@ -1536,3 +1475,228 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40fec4c8a3133ac47b01089126b9ae8c, type: 3}
+--- !u!33 &6416082008584777632
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344961622127360703}
+  m_Mesh: {fileID: 70948873267775455, guid: b83de0f37e8e6e24f8b3d2b9300a5aa4, type: 3}
+--- !u!1 &7344961622127360703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7972878781850804229}
+  - component: {fileID: 6416082008584777632}
+  - component: {fileID: 9146379689163004778}
+  - component: {fileID: 7344961622127360704}
+  m_Layer: 0
+  m_Name: Enemy_Bush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7344961622127360704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344961622127360703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf658a535b149f544b6cab979f6330f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_goTarget: {fileID: 7579525736348467302}
+  m_sQuestName: marget_kill_jackalopes
+--- !u!65 &7579525736348467296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579525736348467302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.861145, y: 1.6107448, z: 2.8540392}
+  m_Center: {x: -0.27977943, y: -0.30537242, z: 0.09781027}
+--- !u!4 &7579525736348467297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579525736348467302}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.57, y: 0.23400003, z: -0.036758423}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7579525736790371168}
+  m_Father: {fileID: 7972878781850804229}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7579525736348467299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579525736348467302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cb24af5c2957441855f40d2803e304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sFileName>k__BackingField: jackalope_minigame_battle
+  m_SceneName: MinigameTest
+  m_sQuestName: marget_kill_jackalopes
+  m_sSpawnPoint: after_killing_jackalopes
+--- !u!1 &7579525736348467302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7579525736348467297}
+  - component: {fileID: 7579525736348467296}
+  - component: {fileID: 7579525736348467299}
+  m_Layer: 8
+  m_Name: InteractableTrigger
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1001 &7579525736790371167
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7579525736348467297}
+    m_Modifications:
+    - target: {fileID: 5421559264190422073, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_Name
+      value: alert
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422077, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_gcTarget
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5209964
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.059761047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+--- !u!4 &7579525736790371168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+  m_PrefabInstance: {fileID: 7579525736790371167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7972878781850804229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344961622127360703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.487564, y: 0.73, z: 100.63112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7579525736348467297}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &9146379689163004778
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7344961622127360703}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: fc8f51fa96e63ef4cb71a47150c09d29, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

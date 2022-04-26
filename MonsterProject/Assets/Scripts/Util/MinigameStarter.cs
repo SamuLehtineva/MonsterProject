@@ -21,7 +21,7 @@ namespace GA.MonsterProject
         }
 
         public string m_SceneName;
-        public int m_iMinigameQuestIndex;
+        public string m_sQuestName;
         public string m_sSpawnPoint;
 
         void Start()
@@ -66,7 +66,7 @@ namespace GA.MonsterProject
         public void DialogEnd()
         {
             GameManager.m_sDestination = m_sSpawnPoint;
-            GameManager.m_iMinigameQuestIndex = m_iMinigameQuestIndex;
+            GameManager.m_qMinigameQuest = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName(m_sQuestName);
             SceneManager.LoadScene(m_SceneName);
         }
     }
