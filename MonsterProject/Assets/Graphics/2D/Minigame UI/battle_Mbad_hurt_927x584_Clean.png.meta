@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8558aaa113ba61441ba9cbf9c8769234
+guid: 89e1ed0ae922b8340ad9ac9348ab96cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2394498562460815548
-    second: battle_Mbaby_hurt_314x193_0
+      213: 4355516219057145689
+    second: battle_Mbad_hurt_927x584_Clean_0
   - first:
-      213: -1210419872282319666
-    second: battle_Mbaby_hurt_314x193_1
+      213: 4044266078209861064
+    second: battle_Mbad_hurt_927x584_Clean_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 313, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: battle_Mbaby_hurt_314x193_0
+      name: battle_Mbad_hurt_927x584_Clean_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 314
-        height: 193
+        width: 927
+        height: 584
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44fe6597e3805ced0800000000000000
-      internalID: -2394498562460815548
+      spriteID: 9578a5abce6e17c30800000000000000
+      internalID: 4355516219057145689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battle_Mbaby_hurt_314x193_1
+      name: battle_Mbad_hurt_927x584_Clean_1
       rect:
         serializedVersion: 2
-        x: 314
+        x: 927
         y: 0
-        width: 314
-        height: 193
+        width: 927
+        height: 584
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec4e98b0a89b33fe0800000000000000
-      internalID: -1210419872282319666
+      spriteID: 8c56cd8129e102830800000000000000
+      internalID: 4044266078209861064
       vertices: []
       indices: 
       edges: []

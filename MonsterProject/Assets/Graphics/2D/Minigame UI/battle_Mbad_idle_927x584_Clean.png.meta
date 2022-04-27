@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 8558aaa113ba61441ba9cbf9c8769234
+guid: 05d00524082bc444ea6180b0ab00c8a6
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2394498562460815548
-    second: battle_Mbaby_hurt_314x193_0
-  - first:
-      213: -1210419872282319666
-    second: battle_Mbaby_hurt_314x193_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 313, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -95,49 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: battle_Mbaby_hurt_314x193_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 314
-        height: 193
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44fe6597e3805ced0800000000000000
-      internalID: -2394498562460815548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: battle_Mbaby_hurt_314x193_1
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 0
-        width: 314
-        height: 193
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec4e98b0a89b33fe0800000000000000
-      internalID: -1210419872282319666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

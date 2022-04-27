@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8558aaa113ba61441ba9cbf9c8769234
+guid: 1339fc68431cf2b46a31cdfa66159c7b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2394498562460815548
-    second: battle_Mbaby_hurt_314x193_0
+      213: 2252929552502184777
+    second: battle_Mgood_idle_902x670_Clean_0
   - first:
-      213: -1210419872282319666
-    second: battle_Mbaby_hurt_314x193_1
+      213: -3903351818224956168
+    second: battle_Mgood_idle_902x670_Clean_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 313, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: battle_Mbaby_hurt_314x193_0
+      name: battle_Mgood_idle_902x670_Clean_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 314
-        height: 193
+        width: 902
+        height: 670
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44fe6597e3805ced0800000000000000
-      internalID: -2394498562460815548
+      spriteID: 94b5fd0dd73044f10800000000000000
+      internalID: 2252929552502184777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battle_Mbaby_hurt_314x193_1
+      name: battle_Mgood_idle_902x670_Clean_1
       rect:
         serializedVersion: 2
-        x: 314
+        x: 902
         y: 0
-        width: 314
-        height: 193
+        width: 902
+        height: 670
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec4e98b0a89b33fe0800000000000000
-      internalID: -1210419872282319666
+      spriteID: 8fc8351c33284d9c0800000000000000
+      internalID: -3903351818224956168
       vertices: []
       indices: 
       edges: []
