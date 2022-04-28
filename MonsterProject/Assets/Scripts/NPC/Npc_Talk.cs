@@ -96,7 +96,10 @@ namespace GA.MonsterProject
         
         public void ShowIcon(bool value)
         {
-            m_gcQuestIcon.SetActive(value);
+            if (m_gcQuestIcon != null)
+            {
+                m_gcQuestIcon.SetActive(false);
+            }
         }
     }
 }
