@@ -7395,7 +7395,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -7411,7 +7411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.130112
+      value: -15.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7419,11 +7419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -67.71603
+      value: -62.49
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.5792643
+      value: -0.34160405
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7431,7 +7431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.81513983
+      value: -0.93984395
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -7443,7 +7443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -250.798
+      value: -219.949
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7df37199ad2d0694ca01c4d8a91837d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7500,7 +7500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6c2d7d949c95e4e9f421e6c36d8158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_gcTalk: {fileID: 0}
+  m_gcTalk: {fileID: 1959293273}
 --- !u!1001 &649078545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11455,8 +11455,8 @@ Transform:
   m_Children:
   - {fileID: 205645727}
   - {fileID: 1450488645}
-  - {fileID: 576567669}
   - {fileID: 644611721}
+  - {fileID: 576567669}
   - {fileID: 1476263981}
   - {fileID: 1484576556}
   - {fileID: 1301032342}
@@ -13322,7 +13322,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalScale.x
@@ -13338,7 +13338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.15
+      value: -21.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13346,11 +13346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -65.08
+      value: -69.68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.37663677
+      value: 0.28992683
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -13358,7 +13358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9263611
+      value: -0.9570488
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -13370,7 +13370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -224.251
+      value: -146.293
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -19146,6 +19146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959293271}
   - component: {fileID: 1959293272}
+  - component: {fileID: 1959293273}
   m_Layer: 0
   m_Name: talk
   m_TagString: Untagged
@@ -19175,11 +19176,37 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959293270}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1959293273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959293270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sFileName>k__BackingField: randvi_inactive
+  m_qRewardA:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: 0
+  m_sQuestNameA: deliver_package
+  m_eQuestStatusA: 1
+  m_qRewardB:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: 0
+  m_sQuestNameB: deliver_package
+  m_eQuestStatusB: 3
+  m_bRewardTalk: 0
 --- !u!1001 &1960914720
 PrefabInstance:
   m_ObjectHideFlags: 0
