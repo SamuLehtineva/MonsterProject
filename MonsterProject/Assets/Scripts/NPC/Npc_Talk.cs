@@ -105,7 +105,7 @@ namespace GA.MonsterProject
         {
             if (m_gcQuestIcon != null)
             {
-                m_gcQuestIcon.SetActive(false);
+                m_gcQuestIcon.SetActive(value);
             }
         }
     }

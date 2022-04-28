@@ -1056,7 +1056,7 @@ PrefabInstance:
       objectReference: {fileID: 1594055177}
     - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
       propertyPath: m_LocalScale.x
@@ -2899,6 +2899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: 
   <m_sFileName>k__BackingField: fetch_flower_inactive
   m_qRewardA:
     m_iMoney: 0
@@ -4386,7 +4387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &391984174
 Transform:
   m_ObjectHideFlags: 0
@@ -4399,7 +4400,7 @@ Transform:
   m_LocalScale: {x: 0.7999999, y: 0.8, z: 0.7999999}
   m_Children: []
   m_Father: {fileID: 1450488645}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &391984175
 MonoBehaviour:
@@ -4413,6 +4414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: 
   <m_sFileName>k__BackingField: fetch_helga_active
   m_qRewardA:
     m_iMoney: 40
@@ -9789,7 +9791,7 @@ Transform:
   m_LocalScale: {x: 0.7999998, y: 0.8, z: 0.7999998}
   m_Children: []
   m_Father: {fileID: 1450488645}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -19.548, z: 0}
 --- !u!114 &878904089
 MonoBehaviour:
@@ -9803,6 +9805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: 
   <m_sFileName>k__BackingField: chicken
   m_qRewardA:
     m_iMoney: 0
@@ -10545,6 +10548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: 
   <m_sFileName>k__BackingField: madame_innkeep_inactive
   m_qRewardA:
     m_iMoney: 0
@@ -11458,8 +11462,8 @@ Transform:
   - {fileID: 644611721}
   - {fileID: 576567669}
   - {fileID: 1476263981}
-  - {fileID: 1484576556}
   - {fileID: 1301032342}
+  - {fileID: 1484576556}
   - {fileID: 1571562601}
   m_Father: {fileID: 1636569944}
   m_RootOrder: 0
@@ -19193,6 +19197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: 
   <m_sFileName>k__BackingField: randvi_inactive
   m_qRewardA:
     m_iMoney: 0

@@ -21,6 +21,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Active:
                     m_gcTalk.m_sFileName = "randvi_active";
+                    m_gcTalk.gameObject.SetActive(false);
 
                     break;
 
@@ -29,6 +30,7 @@ namespace GA.MonsterProject
                     m_gcTalk.m_qRewardA = new QuestReward(0, 20, 0);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
+                    m_gcTalk.gameObject.SetActive(true);
 
                     break;
 
