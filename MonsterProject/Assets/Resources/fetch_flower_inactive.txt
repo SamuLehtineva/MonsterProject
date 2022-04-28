@@ -2,17 +2,17 @@
 "Bloody ankle... What are you looking at, kid?
 Is... that... a monster?"
 
-You clarified that you companion is a creature, not a monster,
-and that you have raised it from an egg so it listens to your commands
+You clarified that you companion is a creature, not a
+monster, and that you have raised it from an egg so it listens to your commands
 
-"A monster is a monster, plain and simple.
-* Mumble mumble* First I sprain my ankle so I can't visit my sons grave and now the thing responsible for his death has appeared in my yard!
+"A monster is a monster, plain and simple. * Mumble mumble*
+First I sprain my ankle so I can't visit my sons grave and now the thing responsible for his death has appeared in my yard!
 
 The gods are mocking me!"
 
 
-You told the old man that your creature had never
-hurt anyone and hadn't killed his son
+You told the old man that your creature had never hurt
+anyone and hadn't killed his son
 
 "I don't care if your monster specificly didn't kill my son,
 but it's brothers did. I know what those things are capable of..."
@@ -33,7 +33,7 @@ You decided to leave the man alone. It's probably for the best
 #
 
 #ButtonA
-Offer your help
+Offer to help
 #
 
 #ButtonB
