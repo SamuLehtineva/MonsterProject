@@ -20,6 +20,9 @@ namespace GA.MonsterProject
         TextMeshProUGUI m_txtButtonB;
 
         [SerializeField]
+        TMP_Text m_txtNameText;
+
+        [SerializeField]
         Image m_iContinue;
 
         [SerializeField]
@@ -66,6 +69,7 @@ namespace GA.MonsterProject
         {
             m_gcNpc = npc;
             m_ReadText = new ReadTextFile(npc.m_sFileName);
+            m_txtNameText.text = m_gcNpc.m_sName;
             m_sLines = m_ReadText.GetLines();
 
             m_bCanContinue = false;

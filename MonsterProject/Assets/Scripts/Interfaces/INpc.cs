@@ -6,6 +6,12 @@ namespace GA.MonsterProject
 {
     public interface INpc
     {
+        string m_sName
+        {
+            get;
+            set;
+        }
+
         string m_sFileName
         {
             get;
