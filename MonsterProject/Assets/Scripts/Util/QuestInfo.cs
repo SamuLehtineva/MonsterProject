@@ -31,7 +31,7 @@ namespace GA.MonsterProject
                 {
                     m_iCurrentProgress++;
                 }
-                
+
                 if (m_iCurrentProgress < m_iMaxProgress)
                 {
                     m_iStatus = Types.EStatus._Active;
@@ -45,6 +45,7 @@ namespace GA.MonsterProject
         public void Save(ISaveWriter writer)
         {
             writer.WriteStatus(m_iStatus);
+            writer.WriteInt(m_iCurrentProgress);
         }
 
         /*
@@ -53,6 +54,7 @@ namespace GA.MonsterProject
         public void Load(ISaveReader reader)
         {
             m_iStatus = reader.ReadStatus();
+            m_iCurrentProgress = reader.ReadInt();
         }
     }
 }
