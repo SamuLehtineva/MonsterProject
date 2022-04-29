@@ -57,5 +57,10 @@ namespace GA.MonsterProject
         {
             m_oPauseMenu.gameObject.SetActive(value);
         }
+
+        public void CallPause()
+        {
+            GameManager.s_GameManager.Pause();
+        }
     }
 }
