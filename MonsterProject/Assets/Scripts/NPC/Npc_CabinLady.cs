@@ -9,6 +9,15 @@ namespace GA.MonsterProject
         [SerializeField]
         Npc_Talk m_gcTalk;
 
+        void Start()
+        {
+            if (UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("talk_well").m_iStatus == Types.EStatus._Done)
+            {
+                Destroy(this.gameObject);
+                Debug.Log("kill");
+            }
+        }
+
         void Update()
         {
             Types.EStatus iEStatus = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("talk_well").m_iStatus;
