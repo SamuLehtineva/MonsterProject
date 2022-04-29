@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 namespace GA.MonsterProject
 {
@@ -56,6 +57,20 @@ namespace GA.MonsterProject
                 }
             }
             return count;
+        }
+
+        public QuestInfo[] GetActiveQuests()
+        {
+            List<QuestInfo> Result = new List<QuestInfo>();
+            foreach (QuestInfo quest in m_aQuests)
+            {
+                if (quest.m_iStatus == Types.EStatus._Active)
+                {
+                    Result.Add(quest);
+                }
+            }
+
+            return Result.ToArray();
         }
 
         /*
