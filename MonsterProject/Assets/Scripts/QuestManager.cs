@@ -64,7 +64,7 @@ namespace GA.MonsterProject
             List<QuestInfo> Result = new List<QuestInfo>();
             foreach (QuestInfo quest in m_aQuests)
             {
-                if (quest.m_iStatus == Types.EStatus._Active)
+                if (quest.m_iStatus == Types.EStatus._Active || quest.m_iStatus == Types.EStatus._Completed)
                 {
                     Result.Add(quest);
                 }

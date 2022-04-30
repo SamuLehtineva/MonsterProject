@@ -30,6 +30,10 @@ namespace GA.MonsterProject
                 position.y = -i * 100;
                 item.GetComponent<RectTransform>().anchoredPosition = position;
                 item.gameObject.SetActive(true);
+                if (m_aActveQuests[i].m_iStatus == Types.EStatus._Active)
+                {
+                    item.transform.Find("Tick").gameObject.SetActive(false);
+                }
             }
         }
     }
