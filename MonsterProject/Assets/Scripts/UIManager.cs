@@ -15,6 +15,9 @@ namespace GA.MonsterProject
         public QuestManager m_gcQuestManager;
 
         [SerializeField]
+        QuestLogController m_gcQuestLogController;
+
+        [SerializeField]
         GameObject m_oPauseMenu;
 
         [SerializeField]
@@ -56,6 +59,7 @@ namespace GA.MonsterProject
         public void TogglePauseMenu(bool value)
         {
             m_oPauseMenu.gameObject.SetActive(value);
+            m_gcQuestLogController.UpdateQuestLog();
         }
 
         public void CallPause()

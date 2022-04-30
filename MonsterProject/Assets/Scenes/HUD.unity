@@ -232,7 +232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.7, y: 3.1}
+  m_AnchoredPosition: {x: 4.7, y: 3.0999756}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135914790
@@ -737,11 +737,11 @@ GameObject:
   - component: {fileID: 781180360}
   m_Layer: 5
   m_Name: QuestLogEntry
-  m_TagString: Untagged
+  m_TagString: LogEntry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &781180360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -759,10 +759,10 @@ RectTransform:
   m_Father: {fileID: 1044115134}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -437, y: 88}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.65911824}
+  m_AnchoredPosition: {x: -437, y: 17}
+  m_SizeDelta: {x: -1200, y: -42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &781654959
 GameObject:
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sName: fetch_helga
   m_iStatus: 0
-  m_sDescription: agsgsd
+  m_sDescription: Find helga in the Forest
   m_iCurrentProgress: 0
   m_iMaxProgress: 1
 --- !u!1 &1044115133
@@ -1159,6 +1159,7 @@ GameObject:
   - component: {fileID: 1044115134}
   - component: {fileID: 1044115136}
   - component: {fileID: 1044115135}
+  - component: {fileID: 1044115137}
   m_Layer: 5
   m_Name: PauseBG
   m_TagString: Untagged
@@ -1229,6 +1230,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044115133}
   m_CullTransparentMesh: 1
+--- !u!114 &1044115137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044115133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6980395188a25d043a7eb7689f64532f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_goTemplate: {fileID: 781180359}
 --- !u!1 &1048518855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285.8, y: 3.1}
+  m_AnchoredPosition: {x: 285.8, y: 3.0999756}
   m_SizeDelta: {x: 473.0718, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072343290
@@ -2961,6 +2975,10 @@ PrefabInstance:
       propertyPath: m_gcQuestManager
       value: 
       objectReference: {fileID: 1287170718}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_gcQuestLogController
+      value: 
+      objectReference: {fileID: 1044115137}
     - target: {fileID: 2409397304026034058, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3385,16 +3403,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2409397303911935625, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
   m_PrefabInstance: {fileID: 2409397305266296786}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2409397305266296792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2409397305266296790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6980395188a25d043a7eb7689f64532f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_goTemplate: {fileID: 781180359}

@@ -1,21 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 namespace GA.MonsterProject
 {
     public class QuestLogController : MonoBehaviour
     {
         public GameObject m_goTemplate;
-        void Start()
-        {
-        
-        }
+        private QuestInfo[] m_aActveQuests;
 
-        // Update is called once per frame
-        void Update()
+        public void UpdateQuestLog()
         {
-        
+            GameObject[] aThings = GameObject.FindGameObjectsWithTag("LogEntry");
+            foreach (GameObject thing in aThings)
+            {
+                Destroy(thing);
+            }
+            m_aActveQuests = UIManager.s_UIManager.m_gcQuestManager.GetActiveQuests();
+
+            for (int i = 0; i < m_aActveQuests.Length; i++)
+            {
+                Debug.Log("quest");
+                Debug.Log(m_aActveQuests.Length);
+                var item = Instantiate(m_goTemplate, transform);
+                item.GetComponentInChildren<TMP_Text>().text = m_aActveQuests[i].m_sDescription;
+
+                Vector3 position = m_goTemplate.GetComponent<RectTransform>().anchoredPosition;
+                position.y = -i * 100;
+                item.GetComponent<RectTransform>().anchoredPosition = position;
+                item.gameObject.SetActive(true);
+            }
         }
     }
 }

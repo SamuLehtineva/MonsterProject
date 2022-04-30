@@ -15,6 +15,7 @@ TagManager:
   - PlayerLeft
   - PlayerUp
   - PlayerRight
+  - LogEntry
   layers:
   - Default
   - TransparentFX
