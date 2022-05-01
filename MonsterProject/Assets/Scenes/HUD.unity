@@ -514,7 +514,7 @@ MonoBehaviour:
   m_iStatus: 0
   m_sDescription: Find flowers for the fishermans sons grave.
   m_iCurrentProgress: 0
-  m_iMaxProgress: 1
+  m_iMaxProgress: 2
 --- !u!1 &729527434
 GameObject:
   m_ObjectHideFlags: 0
