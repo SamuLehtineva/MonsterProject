@@ -21,6 +21,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Active:
                     m_gcTalk.m_sFileName = "randvi_active";
+                    m_gcTalk.ShowIcon(false);
                     m_gcTalk.gameObject.SetActive(false);
 
                     break;
