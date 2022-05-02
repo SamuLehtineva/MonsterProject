@@ -2015,6 +2015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_goTarget: {fileID: 7344961622127360703}
   m_sQuestName: marget_kill_jackalopes
+  m_iStatus: 1
 --- !u!114 &878863595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2029,6 +2030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_goTarget: {fileID: 1399085559}
   m_sQuestName: fetch_helga
+  m_iStatus: 1
 --- !u!114 &878863596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,7 +4829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81cb24af5c2957441855f40d2803e304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <m_sName>k__BackingField: 
+  <m_sName>k__BackingField: Shiny gem
   <m_sFileName>k__BackingField: jackalope_minigame_battle
   m_SceneName: MinigameTest
   m_sQuestName: marget_kill_jackalopes

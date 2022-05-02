@@ -14,8 +14,6 @@ namespace GA.MonsterProject
 
         [SerializeField]
         SpriteRenderer m_2dInteract;
-        public int m_iEvolveTresh1;
-        public int m_iEvolveTresh2;
         private Animator m_gcAnimator;
         Types.EForm m_iForm;
 
@@ -34,6 +32,10 @@ namespace GA.MonsterProject
                 
                 case Types.EForm._Bad:
                     transform.Find("Bad").gameObject.SetActive(true);
+                    break;
+
+                case Types.EForm._Good:
+                    transform.Find("Good").gameObject.SetActive(true);
                     break;
             }
             m_gcAnimator = GetComponentInChildren<Animator>();
