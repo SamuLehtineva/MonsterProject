@@ -22,6 +22,9 @@ namespace GA.MonsterProject
 
         [SerializeField]
         Canvas m_gcCanvas;
+        public Types.EForm m_iForm = Types.EForm._Baby;
+        public int m_iEvolveTresh1;
+        public int m_iEvolveTresh2;
 
         void Awake()
         {
@@ -65,6 +68,39 @@ namespace GA.MonsterProject
         public void CallPause()
         {
             GameManager.s_GameManager.Pause();
+        }
+
+        public void PetEvent()
+        {
+            if (m_gcQuestManager.GetQuestByName("evolve").m_iStatus == Types.EStatus._Done)
+            {
+                m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Inactive);
+                Evolve();
+            }
+            if (m_gcQuestManager.QuestCountDone() == m_iEvolveTresh1 || m_gcQuestManager.QuestCountDone() == m_iEvolveTresh2)
+            {
+                m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Active);
+            }
+
+        }
+
+        public void Evolve()
+        {
+            if (m_iForm == Types.EForm._Teen)
+            {
+                if (PlayerResources.s_CurrentResources.m_iBond >= 50)
+                {
+                    m_iForm = Types.EForm._Good;
+                }
+                else
+                {
+                    m_iForm = Types.EForm._Bad;
+                }
+            }
+            else if (m_iForm == Types.EForm._Baby)
+            {
+                m_iForm = Types.EForm._Teen;
+            }
         }
     }
 }

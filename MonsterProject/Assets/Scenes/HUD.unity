@@ -198,6 +198,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76635752}
   m_CullTransparentMesh: 1
+--- !u!1 &103483897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103483898}
+  - component: {fileID: 103483899}
+  m_Layer: 0
+  m_Name: evolve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &103483898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103483897}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287170717}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &103483899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103483897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c972050230ffd2439ed6e5f5ed3cb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sName: evolve
+  m_iStatus: 0
+  m_sDescription: Your pet is hungry, go to the cabin
+  m_iCurrentProgress: 0
+  m_iMaxProgress: 1
 --- !u!1 &135914788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1455,7 @@ Transform:
   - {fileID: 722818583}
   - {fileID: 416350343}
   - {fileID: 1675317647}
+  - {fileID: 103483898}
   m_Father: {fileID: 2409397305266296788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2964,6 +3013,10 @@ PrefabInstance:
       value: UIManager
       objectReference: {fileID: 0}
     - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_iForm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_gcCanvas
       value: 
       objectReference: {fileID: 2409397305266296787}
@@ -2971,6 +3024,14 @@ PrefabInstance:
       propertyPath: m_oPauseMenu
       value: 
       objectReference: {fileID: 2409397305266296790}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_iEvolveTresh1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_iEvolveTresh2
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_gcQuestManager
       value: 

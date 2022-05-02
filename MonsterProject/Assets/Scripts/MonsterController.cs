@@ -19,7 +19,30 @@ namespace GA.MonsterProject
 
         void Start()
         {
-            m_iForm = GameManager.s_GameManager.m_iForm;
+            m_iForm = UIManager.s_UIManager.m_iForm;
+            ChangeForm();
+            m_gcAnimator = GetComponentInChildren<Animator>();
+            DeActivate();
+            //m_gcAnimator.SetBool("IsMoving", true);
+        }
+
+        void Update()
+        {
+            m_gcAnimator.SetBool("IsMoving", m_gcMoveClose.IsMoving());
+            if (m_iForm != UIManager.s_UIManager.m_iForm)
+            {
+                m_iForm = UIManager.s_UIManager.m_iForm;
+                ChangeForm();
+            }
+        }
+
+        void ChangeForm()
+        {
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+
             switch(m_iForm)
             {
                 case Types.EForm._Baby:
@@ -38,14 +61,6 @@ namespace GA.MonsterProject
                     transform.Find("Good").gameObject.SetActive(true);
                     break;
             }
-            m_gcAnimator = GetComponentInChildren<Animator>();
-            DeActivate();
-            //m_gcAnimator.SetBool("IsMoving", true);
-        }
-
-        void Update()
-        {
-            m_gcAnimator.SetBool("IsMoving", m_gcMoveClose.IsMoving());
         }
 
         public void Activate()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0071097165, g: 0.006730773, b: 0.0066642133, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -631,6 +631,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 92d480b7ee332b7418d0b4812cef1cfc, type: 3}
   m_PrefabInstance: {fileID: 476026148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &370960057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370960058}
+  - component: {fileID: 370960059}
+  m_Layer: 0
+  m_Name: PetEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370960058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370960057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2022588482}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370960059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370960057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf658a535b149f544b6cab979f6330f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_goTarget: {fileID: 2022588481}
+  m_sQuestName: evolve
+  m_iStatus: 1
 --- !u!1 &433340306
 GameObject:
   m_ObjectHideFlags: 0
@@ -26048,6 +26095,78 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.41, y: 1.57, z: 1.15}
   m_Center: {x: 0.10008696, y: -1.7103735, z: 2.5396566}
+--- !u!1 &2022588481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022588482}
+  - component: {fileID: 2022588484}
+  - component: {fileID: 2022588483}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2022588482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022588481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 370960058}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2022588483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022588481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.704668, y: 1, z: 9.406776}
+  m_Center: {x: 0.637455, y: 0, z: -1.7846977}
+--- !u!114 &2022588484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022588481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: Pet
+  <m_sFileName>k__BackingField: pet/evolve
+  m_qRewardA:
+    m_iMoney: -25
+    m_iReputation: 0
+    m_iBond: 25
+  m_sQuestNameA: evolve
+  m_eQuestStatusA: 4
+  m_qRewardB:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: -20
+  m_sQuestNameB: evolve
+  m_eQuestStatusB: 4
+  m_bRewardTalk: 0
 --- !u!1001 &2046235836
 PrefabInstance:
   m_ObjectHideFlags: 0

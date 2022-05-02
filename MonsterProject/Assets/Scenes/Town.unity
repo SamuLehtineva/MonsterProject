@@ -5553,6 +5553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3677523851884256693, guid: 40fec4c8a3133ac47b01089126b9ae8c, type: 3}
+      propertyPath: m_iForm
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3677523851884256694, guid: 40fec4c8a3133ac47b01089126b9ae8c, type: 3}
       propertyPath: m_RootOrder
       value: 12
