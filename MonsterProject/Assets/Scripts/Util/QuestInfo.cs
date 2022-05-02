@@ -9,10 +9,34 @@ namespace GA.MonsterProject
         public string m_sName;
         public Types.EStatus m_iStatus = Types.EStatus._Inactive;
         public string m_sDescription;
+        public int m_iCurrentProgress = 0;
+        public int m_iMaxProgress = 1;
 
         public void OnValidate()
         {
             gameObject.name = m_sName;
+            CheckProgress();
+        }
+
+        void Update()
+        {
+            CheckProgress();
+        }
+
+        void CheckProgress()
+        {
+            if (m_iStatus == Types.EStatus._Completed)
+            {
+                if (m_iCurrentProgress < m_iMaxProgress)
+                {
+                    m_iCurrentProgress++;
+                }
+
+                if (m_iCurrentProgress < m_iMaxProgress)
+                {
+                    m_iStatus = Types.EStatus._Active;
+                }
+            }
         }
 
         /*
@@ -21,6 +45,7 @@ namespace GA.MonsterProject
         public void Save(ISaveWriter writer)
         {
             writer.WriteStatus(m_iStatus);
+            writer.WriteInt(m_iCurrentProgress);
         }
 
         /*
@@ -29,6 +54,7 @@ namespace GA.MonsterProject
         public void Load(ISaveReader reader)
         {
             m_iStatus = reader.ReadStatus();
+            m_iCurrentProgress = reader.ReadInt();
         }
     }
 }

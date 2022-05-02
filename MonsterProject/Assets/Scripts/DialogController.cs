@@ -20,6 +20,9 @@ namespace GA.MonsterProject
         TextMeshProUGUI m_txtButtonB;
 
         [SerializeField]
+        TMP_Text m_txtNameText;
+
+        [SerializeField]
         Image m_iContinue;
 
         [SerializeField]
@@ -31,6 +34,7 @@ namespace GA.MonsterProject
         private ReadTextFile m_ReadText;
         private string[] m_sLines;
         private int m_iCurrentLine;
+        private string m_sCurrentIndicator;
         private string[] m_sIndicators = {"#Start", "#ButtonA", "#ButtonB", "#OptionA", "#OptionB", "#ButtonEnd"};
         private bool m_bCanContinue;
         private bool m_bCanEnd;
@@ -66,11 +70,13 @@ namespace GA.MonsterProject
         {
             m_gcNpc = npc;
             m_ReadText = new ReadTextFile(npc.m_sFileName);
+            m_txtNameText.text = m_gcNpc.m_sName;
             m_sLines = m_ReadText.GetLines();
 
             m_bCanContinue = false;
             m_bCanEnd = false;
             m_iCurrentLine = 0;
+            m_sCurrentIndicator = "#Start";
             m_oButtons.SetActive(false);
             ShowDialog();
         }
@@ -84,7 +90,7 @@ namespace GA.MonsterProject
         public void ShowDialog()
         {
             m_txtDialogText.text = "";
-            ArrayList sLines = SearchIndicator("#Start");
+            ArrayList sLines = SearchIndicator(m_sCurrentIndicator);
 
             for (int i = m_iCurrentLine; i < m_iCurrentLine + 3 && i < sLines.Count; i++)
             {
@@ -108,7 +114,7 @@ namespace GA.MonsterProject
 
         public void CheckForButtons()
         {
-            if (SearchIndicator("#ButtonA").Count > 0)
+            if (SearchIndicator("#ButtonA").Count > 0 && m_sCurrentIndicator == "#Start")
             {
                 m_txtButtonA.text = SearchIndicator("#ButtonA")[0].ToString();
                 m_txtButtonB.text = SearchIndicator("#ButtonB")[0].ToString();
@@ -131,14 +137,21 @@ namespace GA.MonsterProject
 
         public void PickOptionA()
         {
-            m_txtDialogText.text = SearchIndicator("#OptionA")[0].ToString();
+            //m_txtDialogText.text = SearchIndicator("#OptionA")[0].ToString();
+            m_sCurrentIndicator = "#OptionA";
+            m_iCurrentLine = 0;
+            m_bCanContinue = false;
+            ShowDialog();
             m_gcNpc.PickOptionA();
             m_bCanEnd = true;
         }
 
         public void PickOptionB()
         {
-            m_txtDialogText.text = SearchIndicator("#OptionB")[0].ToString();
+            m_sCurrentIndicator = "#OptionB";
+            m_iCurrentLine = 0;
+            m_bCanContinue = false;
+            ShowDialog();
             m_gcNpc.PickOptionB();
             m_bCanEnd = true;
         }

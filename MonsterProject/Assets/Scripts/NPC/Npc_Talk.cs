@@ -15,6 +15,13 @@ namespace GA.MonsterProject
         }
 
         [field: SerializeField]
+        public string m_sName
+        {
+            get;
+            set;
+        }
+
+        [field: SerializeField]
         public string m_sFileName
         {
             get;
@@ -96,7 +103,10 @@ namespace GA.MonsterProject
         
         public void ShowIcon(bool value)
         {
-            m_gcQuestIcon.SetActive(value);
+            if (m_gcQuestIcon != null)
+            {
+                m_gcQuestIcon.SetActive(value);
+            }
         }
     }
 }

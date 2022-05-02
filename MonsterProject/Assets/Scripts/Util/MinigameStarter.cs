@@ -14,6 +14,13 @@ namespace GA.MonsterProject
         }
 
         [field: SerializeField]
+        public string m_sName
+        {
+            get;
+            set;
+        }
+
+        [field: SerializeField]
         public string m_sFileName 
         {
             get;
