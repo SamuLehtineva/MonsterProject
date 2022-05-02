@@ -1,0 +1,21 @@
+#Start
+!PetName! stares at you hungrily
+#
+
+#OptionA
+*You feed !PetName! some meat.*
+*Suddenly !PetName! starts to change*
+#
+
+#OptionB
+*You tell !PetName! you can't afford food right now*
+*Suddenly !PetName! starts to change*
+#
+
+#ButtonA
+Feed
+#
+
+#ButtonB
+Don't feed
+#
