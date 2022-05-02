@@ -15,18 +15,18 @@ namespace GA.MonsterProject
             switch (iEStatus)
             {
                 case Types.EStatus._Inactive:
-                    m_gcTalk.m_sFileName = "fetch_flower_inactive";
+                    m_gcTalk.m_sFileName = "fetch_flower/inactive";
 
                     break;
 
                 case Types.EStatus._Active:
-                    m_gcTalk.m_sFileName = "fetch_flower_active";
+                    m_gcTalk.m_sFileName = "fetch_flower/active";
                     m_gcTalk.gameObject.SetActive(false);
                     
                     break;
                 
                 case Types.EStatus._Completed:
-                    m_gcTalk.m_sFileName = "fetch_flower_completed";
+                    m_gcTalk.m_sFileName = "fetch_flower/completed";
                     m_gcTalk.m_qRewardA = new QuestReward(10, 10, 0);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
@@ -35,14 +35,14 @@ namespace GA.MonsterProject
                     break;
                 
                 case Types.EStatus._Done:
-                    m_gcTalk.m_sFileName = "fetch_flower_done";
+                    m_gcTalk.m_sFileName = "fetch_flower/done";
                     m_gcTalk.m_bRewardTalk = false;
                     m_gcTalk.ShowIcon(false);
 
                     break;
 
                 case Types.EStatus._Failed:
-                    m_gcTalk.m_sFileName = "fetch_flower_failed";
+                    m_gcTalk.m_sFileName = "fetch_flower/failed";
                     m_gcTalk.ShowIcon(false);
 
                     break;

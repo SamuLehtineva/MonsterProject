@@ -19,7 +19,7 @@ namespace GA.MonsterProject
             {
                 case Types.EStatus._Inactive:
                     m_gcTrigger.gameObject.SetActive(true);
-                    m_gcTrigger.m_sFileName = "fetch_helga_inactive";
+                    m_gcTrigger.m_sFileName = "fetch_helga/inactive";
                     m_gcTrigger.m_bRewardTalk = false;
 
                     m_gcTalk.gameObject.SetActive(false);
@@ -30,7 +30,7 @@ namespace GA.MonsterProject
                     m_gcTrigger.gameObject.SetActive(false);
 
                     m_gcTalk.gameObject.SetActive(true);
-                    m_gcTalk.m_sFileName = "fetch_helga_active";
+                    m_gcTalk.m_sFileName = "fetch_helga/active";
                     m_gcTalk.m_bRewardTalk = false;
                     m_gcTalk.ShowIcon(false);
 
@@ -40,7 +40,7 @@ namespace GA.MonsterProject
                     m_gcTrigger.gameObject.SetActive(false);
 
                     m_gcTalk.gameObject.SetActive(true);
-                    m_gcTalk.m_sFileName = "fetch_helga_complete";
+                    m_gcTalk.m_sFileName = "fetch_helga/complete";
                     m_gcTalk.m_bRewardTalk = true;
                     m_gcTalk.ShowIcon(true);
 
@@ -50,7 +50,7 @@ namespace GA.MonsterProject
                     m_gcTrigger.gameObject.SetActive(false);
 
                     m_gcTalk.gameObject.SetActive(true);
-                    m_gcTalk.m_sFileName = "fetch_helga_done";
+                    m_gcTalk.m_sFileName = "fetch_helga/done";
                     m_gcTalk.m_bRewardTalk = false;
                     m_gcTalk.ShowIcon(false);
 
@@ -60,7 +60,7 @@ namespace GA.MonsterProject
                     m_gcTrigger.gameObject.SetActive(false);
 
                     m_gcTalk.gameObject.SetActive(true);
-                    m_gcTalk.m_sFileName = "fetch_helga_failed";
+                    m_gcTalk.m_sFileName = "fetch_helga/failed";
                     m_gcTalk.m_bRewardTalk = false;
                     m_gcTalk.ShowIcon(false);
 
