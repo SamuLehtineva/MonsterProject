@@ -25,7 +25,10 @@ namespace GA.MonsterProject
         [SerializeField]
         UIBar m_gcPetBar;
         public SpriteRenderer m_gcPetRenderer;
+        public Sprite[] m_aPetBabySprites = new Sprite[3];
         public Sprite[] m_aPetTeenSprites = new Sprite[3];
+        public Sprite[] m_aPetBadSprites = new Sprite[3];
+        public Sprite[] m_aPetGoodSprites = new Sprite[3];
 
         [Header("Enemy")]
         public int m_iEnemyHealth = 100;
@@ -43,7 +46,25 @@ namespace GA.MonsterProject
         private Sprite[] m_aEnemySpites;
         void Start()
         {
-            m_aPetSprites = m_aPetTeenSprites;
+            m_aPetSprites = m_aPetGoodSprites;
+            switch (UIManager.s_UIManager.m_iForm)
+            {
+                case Types.EForm._Baby:
+                    m_aPetSprites = m_aPetBabySprites;
+                    break;
+
+                case Types.EForm._Teen:
+                    m_aPetSprites = m_aPetTeenSprites;
+                    break;
+
+                case Types.EForm._Good:
+                    m_aPetSprites = m_aPetGoodSprites;
+                    break;
+
+                case Types.EForm._Bad:
+                    m_aPetSprites = m_aPetBadSprites;
+                    break;
+            }
             m_aEnemySpites = m_aEnemyJackSprites;
             m_bIsMyTurn = true;
             m_bCanAct = true;

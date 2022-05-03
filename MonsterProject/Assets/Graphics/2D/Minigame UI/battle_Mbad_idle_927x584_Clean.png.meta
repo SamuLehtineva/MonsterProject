@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 05d00524082bc444ea6180b0ab00c8a6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4437429216032575629
+    second: battle_Mbad_idle_927x584_Clean_0
+  - first:
+      213: -1368180310375583913
+    second: battle_Mbad_idle_927x584_Clean_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +95,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: battle_Mbad_idle_927x584_Clean_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 927
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80df898c5ae49d30800000000000000
+      internalID: 4437429216032575629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battle_Mbad_idle_927x584_Clean_1
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 0
+        width: 927
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f2163b14f330de0800000000000000
+      internalID: -1368180310375583913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

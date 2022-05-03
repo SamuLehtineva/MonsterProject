@@ -925,10 +925,22 @@ MonoBehaviour:
   m_iPetHealth: 100
   m_gcPetBar: {fileID: 1463624381}
   m_gcPetRenderer: {fileID: 842351449}
+  m_aPetBabySprites:
+  - {fileID: 1738470542110640476, guid: 2c1d90b774a002c4f99e2f137f2f7984, type: 3}
+  - {fileID: 21300000, guid: 41529798fa4bbed489648432789ef07c, type: 3}
+  - {fileID: -1210419872282319666, guid: 8558aaa113ba61441ba9cbf9c8769234, type: 3}
   m_aPetTeenSprites:
   - {fileID: -2720910691312325483, guid: 933aa3e9d52d02540b56d838a5d8081b, type: 3}
   - {fileID: 21300000, guid: c4566fced2ab1a1488cb0c50e6f00a27, type: 3}
   - {fileID: -3256400990086396954, guid: f8e7f9eac5ff00e47a33215561098760, type: 3}
+  m_aPetBadSprites:
+  - {fileID: 4437429216032575629, guid: 05d00524082bc444ea6180b0ab00c8a6, type: 3}
+  - {fileID: 21300000, guid: 66e1f05b851cd544ca0ed9f210c6b574, type: 3}
+  - {fileID: 4044266078209861064, guid: 89e1ed0ae922b8340ad9ac9348ab96cd, type: 3}
+  m_aPetGoodSprites:
+  - {fileID: 2252929552502184777, guid: 1339fc68431cf2b46a31cdfa66159c7b, type: 3}
+  - {fileID: 21300000, guid: 4f87b97d8bcdaa9489bd758ae0b5e948, type: 3}
+  - {fileID: -4697100269757720356, guid: 925db4e28f2f80f4cb4831c8e4cb418a, type: 3}
   m_iEnemyHealth: 100
   m_gcEnemyBar: {fileID: 97545119}
   m_gcEnemyRenderer: {fileID: 1241762086}
