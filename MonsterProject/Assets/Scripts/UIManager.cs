@@ -23,8 +23,7 @@ namespace GA.MonsterProject
         [SerializeField]
         Canvas m_gcCanvas;
         public Types.EForm m_iForm = Types.EForm._Baby;
-        public int m_iEvolveTresh1;
-        public int m_iEvolveTresh2;
+        public int m_iEvolveTresh;
 
         void Awake()
         {
@@ -77,8 +76,9 @@ namespace GA.MonsterProject
                 m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Inactive);
                 Evolve();
             }
-            if (m_gcQuestManager.QuestCountDone() == m_iEvolveTresh1 || m_gcQuestManager.QuestCountDone() == m_iEvolveTresh2)
+            if (m_gcQuestManager.QuestCountDone() == m_iEvolveTresh)
             {
+                Debug.Log("quests done: " + m_gcQuestManager.QuestCountDone());
                 m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Active);
             }
 
@@ -96,10 +96,12 @@ namespace GA.MonsterProject
                 {
                     m_iForm = Types.EForm._Bad;
                 }
+                m_iEvolveTresh = 100;
             }
             else if (m_iForm == Types.EForm._Baby)
             {
                 m_iForm = Types.EForm._Teen;
+                m_iEvolveTresh = 4;
             }
         }
     }

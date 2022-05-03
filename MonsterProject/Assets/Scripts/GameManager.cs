@@ -29,7 +29,6 @@ namespace GA.MonsterProject
             
             DontDestroyOnLoad(this);
             m_sDestinationScene = SceneManager.GetActiveScene().name;
-            Debug.Log("active scene: " + m_sDestinationScene);
             SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
 
             Time.timeScale = 1f;

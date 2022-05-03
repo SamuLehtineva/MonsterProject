@@ -21,8 +21,6 @@ namespace GA.MonsterProject
 
             for (int i = 0; i < m_aActveQuests.Length; i++)
             {
-                Debug.Log("quest");
-                Debug.Log(m_aActveQuests.Length);
                 var item = Instantiate(m_goTemplate, transform);
                 item.GetComponentInChildren<TMP_Text>().text = m_aActveQuests[i].m_sDescription;
 

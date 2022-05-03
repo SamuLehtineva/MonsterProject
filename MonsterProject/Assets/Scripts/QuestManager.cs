@@ -44,7 +44,10 @@ namespace GA.MonsterProject
                     quest.m_iStatus = status;
                 }
             }
-            UIManager.s_UIManager.PetEvent();
+            if (status == Types.EStatus._Done || status == Types.EStatus._Failed)
+            {
+                UIManager.s_UIManager.PetEvent();
+            }
         }
 
         public int QuestCountDone()
@@ -52,7 +55,7 @@ namespace GA.MonsterProject
             int count = 0;
             for (int i = 0; i < m_aQuests.Length; i++)
             {
-                if ((m_aQuests[i].m_iStatus == Types.EStatus._Done || m_aQuests[i].m_iStatus == Types.EStatus._Failed) && m_aQuests[i].m_sName != "none")
+                if ((m_aQuests[i].m_iStatus == Types.EStatus._Done || m_aQuests[i].m_iStatus == Types.EStatus._Failed) && m_aQuests[i].m_sName != "none" && m_aQuests[i].m_sName != "evolve")
                 {
                     count++;
                 }

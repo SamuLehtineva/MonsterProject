@@ -21,7 +21,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Active:
                     m_gcTalk.m_sFileName = "fetch_flower/active";
-                    m_gcTalk.gameObject.SetActive(false);
+                    m_gcTalk.ShowIcon(false);
                     
                     break;
                 

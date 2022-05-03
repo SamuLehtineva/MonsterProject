@@ -1114,6 +1114,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1991216123, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
+      propertyPath: m_gcTarget
+      value: 
+      objectReference: {fileID: 1471310886}
+    - target: {fileID: 5948669748543155573, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1471310885}
     - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_gcPetController
       value: 
@@ -1292,7 +1300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501893847}
   m_Layer: 0
-  m_Name: Forest_Bush
+  m_Name: Forest_helga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,7 +1314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501893846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 170.24, y: 0.162, z: 80}
+  m_LocalPosition: {x: 130.748, y: 0.344, z: 101.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1675242917}
@@ -1702,11 +1710,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_sSpawnPoint
-      value: Forest_Bush
+      value: Forest_helga
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: <m_sName>k__BackingField
+      value: Rustling bush
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: <m_sFileName>k__BackingField
-      value: fetch_helga_minigame_start
+      value: fetch_helga/minigame_start
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229747, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1782,7 +1794,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734328013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.03, y: 0.99, z: 98.29}
+  m_LocalPosition: {x: 98.03, y: 0.273, z: 98.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1675242917}
@@ -1936,7 +1948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 875020907}
   m_Layer: 0
-  m_Name: Forest_Fight
+  m_Name: Forest_Fight_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1950,7 +1962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875020906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 106.63, y: 0.73, z: 102.97}
+  m_LocalPosition: {x: 177.31, y: 0.66, z: 101.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1675242917}
@@ -2701,11 +2713,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_sSpawnPoint
-      value: Forest_Fight
+      value: Forest_Fight_1
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_iMinigameQuestIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+      propertyPath: <m_sName>k__BackingField
+      value: Ominous bush
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: <m_sFileName>k__BackingField

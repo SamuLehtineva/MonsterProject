@@ -32,6 +32,7 @@ namespace GA.MonsterProject
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
                     m_gcTalk.gameObject.SetActive(true);
+                    m_gcTalk.ShowIcon(true);
 
                     break;
 

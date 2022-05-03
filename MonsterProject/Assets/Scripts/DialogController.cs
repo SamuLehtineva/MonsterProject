@@ -108,7 +108,6 @@ namespace GA.MonsterProject
             else
             {
                 CheckForButtons();
-                Debug.Log("but");
             }
         }
 
@@ -119,7 +118,6 @@ namespace GA.MonsterProject
                 m_txtButtonA.text = SearchIndicator("#ButtonA")[0].ToString();
                 m_txtButtonB.text = SearchIndicator("#ButtonB")[0].ToString();
                 m_oButtons.SetActive(true);
-                Debug.Log("but2");
             }
             else
             {
