@@ -5,8 +5,8 @@ Oh... You have a creature as your companion? Hmm...
 A word of advice, we have a bloody history with creatures.
 Folks here won't give you a warm welcome, not with that thing following you around."
 
-*You were confused and stated that your companion
-was harmless. You also asked the man to explain what happened between humans and creatures.*
+You were confused and stated that your companion
+was harmless. You also asked the man to explain what happened between humans and creatures.
 
 "It's a long story. You can read about it on the memorials,
 they can be found all around the place where something notable happened.
@@ -23,12 +23,12 @@ creature of yours and on top of that I will tell people that this creature is a 
 #
 
 #OptionA
-*You promised to find the chicken*
+You promised to find the chicken
 #
 
 #OptionB
-*You tell the man it's not your problem.
-He mutters something under his breath.*
+You tell the man it's not your problem.
+He mutters something under his breath.
 #
 
 #ButtonA
