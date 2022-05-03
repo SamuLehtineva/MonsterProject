@@ -480,7 +480,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lClips:
+  - {fileID: 8300000, guid: adf0ffa1911d34e4ca706975e9cd95b9, type: 3}
   - {fileID: 8300000, guid: 8be1bfe0470e25d4f80eb50165ecc981, type: 3}
+  - {fileID: 8300000, guid: 9f830919375760f4983531b4ae8b1417, type: 3}
+  - {fileID: 8300000, guid: 6d8901d63614a374694f23f45f99b829, type: 3}
 --- !u!114 &2255866027486897127
 MonoBehaviour:
   m_ObjectHideFlags: 0

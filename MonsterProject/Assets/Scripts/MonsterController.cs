@@ -61,6 +61,7 @@ namespace GA.MonsterProject
                     transform.Find("Good").gameObject.SetActive(true);
                     break;
             }
+            m_gcAnimator = GetComponentInChildren<Animator>();
         }
 
         public void Activate()
@@ -76,7 +77,25 @@ namespace GA.MonsterProject
         public void PlayPetAnimation()
         {
             m_gcAnimator.Play("Being_Pet");
-            m_gcAudi.PlayClip(0, 1);
+            switch (m_iForm)
+            {
+                case Types.EForm._Baby:
+                    m_gcAudi.PlayClip(0, 1);
+                    break;
+                
+                case Types.EForm._Teen:
+                    m_gcAudi.PlayClip(1, 1);
+                    break;
+
+                case Types.EForm._Good:
+                    m_gcAudi.PlayClip(2, 1);
+                    break;
+
+                case Types.EForm._Bad:
+                    m_gcAudi.PlayClip(3, 1);
+                    break;
+            }
+            
             DeActivate();
         }
 
