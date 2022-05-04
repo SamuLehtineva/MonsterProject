@@ -156,9 +156,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 119.436646, y: 20.539185}
-  m_SizeDelta: {x: 348, y: 57}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.563354, y: -1.4608154}
+  m_SizeDelta: {x: 76, y: 13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &76635754
 MonoBehaviour:
@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_iMoney: 100
   m_iReputation: 50
-  m_iBond: 10
+  m_iBond: 50
 --- !u!114 &1060992253 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
