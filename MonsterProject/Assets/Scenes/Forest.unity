@@ -8022,7 +8022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_sQuestName
-      value: none
+      value: fetch_helga_enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7579525735327229745, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
       propertyPath: m_sSpawnPoint
@@ -8086,6 +8086,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+--- !u!1 &1241082782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7344961623123041773, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
+  m_PrefabInstance: {fileID: 1241082781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1241082783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241082782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf658a535b149f544b6cab979f6330f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_goTarget: {fileID: 1241082782}
+  m_sQuestName: fetch_helga_enemy
+  m_iStatus: 1
 --- !u!1 &1251282547
 GameObject:
   m_ObjectHideFlags: 0
