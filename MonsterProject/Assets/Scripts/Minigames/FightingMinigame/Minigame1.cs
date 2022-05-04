@@ -48,25 +48,32 @@ namespace GA.MonsterProject
         private QuestInfo m_gcCurrentQuest;
         void Start()
         {
-            m_aPetSprites = m_aPetGoodSprites;
-            switch (UIManager.s_UIManager.m_iForm)
-            {
-                case Types.EForm._Baby:
-                    m_aPetSprites = m_aPetBabySprites;
-                    break;
+            try {
+                switch (UIManager.s_UIManager.m_iForm)
+                {
+                    case Types.EForm._Baby:
+                        m_aPetSprites = m_aPetBabySprites;
+                        break;
 
-                case Types.EForm._Teen:
-                    m_aPetSprites = m_aPetTeenSprites;
-                    break;
+                    case Types.EForm._Teen:
+                        m_aPetSprites = m_aPetTeenSprites;
+                        break;
 
-                case Types.EForm._Good:
-                    m_aPetSprites = m_aPetGoodSprites;
-                    break;
+                    case Types.EForm._Good:
+                        m_aPetSprites = m_aPetGoodSprites;
+                        break;
 
-                case Types.EForm._Bad:
-                    m_aPetSprites = m_aPetBadSprites;
-                    break;
+                    case Types.EForm._Bad:
+                        m_aPetSprites = m_aPetBadSprites;
+                        break;
+                }
             }
+            catch (NullReferenceException e)
+            {
+                Debug.Log(e);
+                m_aPetSprites = m_aPetBabySprites;
+            }
+            m_gcPetRenderer.sprite = m_aPetSprites[0];
             m_aEnemySpites = m_aEnemyJackSprites;
             m_bIsMyTurn = true;
             m_bCanAct = true;
