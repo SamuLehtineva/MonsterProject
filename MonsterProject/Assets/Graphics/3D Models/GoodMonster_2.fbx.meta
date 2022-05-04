@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 303f01b70c6ae3f4585418b871e3b88d
+guid: eb14ad494eddfed4480bf144d479666e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -10,11 +10,17 @@ ModelImporter:
       74: 4070538863632162376
     second: Good idle
   - first:
-      74: -7408434021822712960
-    second: Good Armature|Action
+      74: -8204312773840376941
+    second: Good Walk.001
+  - first:
+      74: -5887301939750991984
+    second: Good Petting
   - first:
       74: 9028126222895464854
     second: Good Armature|Good idle
+  - first:
+      74: -3396191671213325977
+    second: Good Armature|Good Petting
   - first:
       74: -2822402285829562940
     second: Good Armature|Good Walk
@@ -105,11 +111,40 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Good Armature|Action
-      takeName: Good Armature|Action
+      name: Good Walk.001
+      takeName: Good Walk.001
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Good Petting
+      takeName: Good Petting
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -146,6 +181,35 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Good Armature|Good Petting
+      takeName: Good Armature|Good Petting
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

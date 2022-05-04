@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_iStatus: 0
   m_sDescription: Find helga in the Forest
   m_iCurrentProgress: 0
-  m_iMaxProgress: 1
+  m_iMaxProgress: 2
   m_bHidden: 0
 --- !u!1 &1044115133
 GameObject:
