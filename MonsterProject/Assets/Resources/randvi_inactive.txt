@@ -9,27 +9,30 @@ Ygge mumbled something while having his back turned
 towards you. He seemed to be focused on the outhouse. You ignored him and asked Randvi why she seemed so worried.
 
 "Worried? Well... *sigh* It's Marget, our innkeeper. She
-went through a rough break up with a bloke from the neghbouring village. Thought she had finally found someone 
+went through a rough break up with a bloke from the neghbouring village. Thought she had finally found someone"
 
-who didn't look at her as some cheap whore with
-whome to have fun before setteling down. But no, he was just like the two before him. Poor Marget.
+"who didn't look at her as some cheap whore with whome
+to have fun before setteling down. But no, he was just like the two before him. Poor Marget."
 
-You asked if the package was for her. Randvi nodded
-and fiddled with the lose ends of the rope that she had used to tie the package."
+You asked if the package was for her. Randvi nodded.
 
-Actually, could you be a dear and go give it to her?
-Tell her that I will join her later when we are finished cleaning the outhouse. She can eat this herself, I will bring more when I get there in the evening.
+
+"Yes it is, but we really need to clean the outhouse today...
+Actually, could you be a dear and go give it to her?"
+
+"Tell her that I will join her later when we are finished
+cleaning the outhouse. She can eat this herself, I will bring more when I get there in the evening."
 #
 
 #OptionA
-You took the package and told Randvi you'd
-be happy to help. She seemed relieved.
+You took the package and told Randvi you'd be happy to
+help. She seemed relieved.
 
-"Thank you! Oh, and if at all possible please let her
-pet your creature. She had one herself before her family moved in Bergensjofellbyfjord, but her family left it behind because they knew this village
+"Thank you! Oh, and if at all possible please let her pet your
+creature. She had one herself before her family moved here, but they left it behind because they knew this village"
 
-had recently had a war with them so little Houndr
-would have been killed before they even reached their new home"
+"had recently had a war with them so Houndr would have
+been killed before they even reached the near by forest."
 #
 
 #OptionB
@@ -40,9 +43,9 @@ the very oposite direction of the inn and were in a hurry. Randvi didn't look co
 #
 
 #ButtonA
-Deliver the package
+Help her
 #
 
 #ButtonB
-You are busy
+Too busy
 #
