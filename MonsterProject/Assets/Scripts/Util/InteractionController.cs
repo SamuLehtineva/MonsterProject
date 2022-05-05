@@ -9,14 +9,14 @@ namespace GA.MonsterProject
     public class InteractionController : MonoBehaviour
     {
         [SerializeField]
-        Canvas m_gcCanvas;
+        GameObject m_goInteraction;
         bool m_bCanInteract;
         
         void Update()
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                m_gcCanvas.gameObject.SetActive(false);
+                m_goInteraction.SetActive(false);
             }
         }
         private void OnTriggerEnter(Collider other) {
@@ -24,7 +24,7 @@ namespace GA.MonsterProject
             if (mytest is IInteractables)
             {
                 mytest.Activate();
-                m_gcCanvas.gameObject.SetActive(true);
+                m_goInteraction.SetActive(true);
             }
         }
 
@@ -33,7 +33,7 @@ namespace GA.MonsterProject
             if (mytest is IInteractables)
             {
                 mytest.DeActivate();
-                m_gcCanvas.gameObject.SetActive(false);
+                m_goInteraction.SetActive(false);
             }
         }
     }

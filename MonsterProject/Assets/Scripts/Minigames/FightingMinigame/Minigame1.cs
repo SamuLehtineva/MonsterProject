@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -44,32 +45,48 @@ namespace GA.MonsterProject
         private AudioClipPlayer m_gcClipPlayer;
         private Sprite[] m_aPetSprites;
         private Sprite[] m_aEnemySpites;
+        private QuestInfo m_gcCurrentQuest;
         void Start()
         {
-            m_aPetSprites = m_aPetGoodSprites;
-            switch (UIManager.s_UIManager.m_iForm)
-            {
-                case Types.EForm._Baby:
-                    m_aPetSprites = m_aPetBabySprites;
-                    break;
+            try {
+                switch (UIManager.s_UIManager.m_iForm)
+                {
+                    case Types.EForm._Baby:
+                        m_aPetSprites = m_aPetBabySprites;
+                        break;
 
-                case Types.EForm._Teen:
-                    m_aPetSprites = m_aPetTeenSprites;
-                    break;
+                    case Types.EForm._Teen:
+                        m_aPetSprites = m_aPetTeenSprites;
+                        break;
 
-                case Types.EForm._Good:
-                    m_aPetSprites = m_aPetGoodSprites;
-                    break;
+                    case Types.EForm._Good:
+                        m_aPetSprites = m_aPetGoodSprites;
+                        break;
 
-                case Types.EForm._Bad:
-                    m_aPetSprites = m_aPetBadSprites;
-                    break;
+                    case Types.EForm._Bad:
+                        m_aPetSprites = m_aPetBadSprites;
+                        break;
+                }
             }
+            catch (NullReferenceException e)
+            {
+                Debug.Log(e);
+                m_aPetSprites = m_aPetBabySprites;
+            }
+            m_gcPetRenderer.sprite = m_aPetSprites[0];
             m_aEnemySpites = m_aEnemyJackSprites;
             m_bIsMyTurn = true;
             m_bCanAct = true;
             m_fSweetSpot = 0.15f;
             m_gcClipPlayer = GetComponent<AudioClipPlayer>();
+
+            try {
+                m_gcCurrentQuest = GameManager.m_qMinigameQuest;
+            }
+            catch (NullReferenceException e)
+            {
+                Debug.Log(e);
+            }
         }
 
         void Update()
@@ -158,6 +175,13 @@ namespace GA.MonsterProject
             {
                 m_txtTurnText.text = "Victory";
                 m_gcMoveBetween.enabled = false;
+                if (m_gcCurrentQuest != null)
+                {
+                    if (m_gcCurrentQuest.m_iStatus == Types.EStatus._Active)
+                    {
+                        UIManager.s_UIManager.m_gcQuestManager.SetQuestStatus(m_gcCurrentQuest.m_sName, Types.EStatus._Completed);
+                    }
+                }
                 StartCoroutine(EndDelay());
             }
             else if (m_iPetHealth <= 0)

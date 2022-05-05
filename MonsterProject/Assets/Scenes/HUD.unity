@@ -156,9 +156,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 119.436646, y: 20.539185}
-  m_SizeDelta: {x: 348, y: 57}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16.563354, y: -1.4608154}
+  m_SizeDelta: {x: 76, y: 13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &76635754
 MonoBehaviour:
@@ -246,6 +246,7 @@ MonoBehaviour:
   m_sDescription: Your pet is hungry, go to the cabin
   m_iCurrentProgress: 0
   m_iMaxProgress: 1
+  m_bHidden: 0
 --- !u!1 &135914788
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +370,7 @@ MonoBehaviour:
   m_sDescription: Kill jackalopes to help out Randvi
   m_iCurrentProgress: 0
   m_iMaxProgress: 1
+  m_bHidden: 0
 --- !u!224 &500422426 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2409397304466370056, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
@@ -563,6 +565,7 @@ MonoBehaviour:
   m_sDescription: Find flowers for the fishermans sons grave.
   m_iCurrentProgress: 0
   m_iMaxProgress: 2
+  m_bHidden: 0
 --- !u!1 &729527434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1198,8 @@ MonoBehaviour:
   m_iStatus: 0
   m_sDescription: Find helga in the Forest
   m_iCurrentProgress: 0
-  m_iMaxProgress: 1
+  m_iMaxProgress: 2
+  m_bHidden: 0
 --- !u!1 &1044115133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_iMoney: 100
   m_iReputation: 50
-  m_iBond: 10
+  m_iBond: 50
 --- !u!114 &1060992253 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
@@ -1421,6 +1425,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b28c5a0806ed3f468f108fe6de3ea10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1243601733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243601734}
+  - component: {fileID: 1243601735}
+  m_Layer: 0
+  m_Name: fetch_helga_enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243601734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243601733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287170717}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243601735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243601733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c972050230ffd2439ed6e5f5ed3cb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sName: fetch_helga_enemy
+  m_iStatus: 1
+  m_sDescription: Used for helga quest. NOT FOR QUEST LOG
+  m_iCurrentProgress: 0
+  m_iMaxProgress: 1
+  m_bHidden: 1
 --- !u!1 &1287170716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1509,7 @@ Transform:
   - {fileID: 416350343}
   - {fileID: 1675317647}
   - {fileID: 103483898}
+  - {fileID: 1243601734}
   m_Father: {fileID: 2409397305266296788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1471,6 +1525,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064bbca22ab2171438fdfb6d838860f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_aQuests:
+  - {fileID: 1027684325}
+  - {fileID: 1549824093}
+  - {fileID: 1829627840}
+  - {fileID: 722818584}
+  - {fileID: 416350344}
+  - {fileID: 1675317648}
+  - {fileID: 103483899}
+  - {fileID: 1243601735}
 --- !u!1 &1342303449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +1840,7 @@ MonoBehaviour:
   m_sDescription: used as filler
   m_iCurrentProgress: 0
   m_iMaxProgress: 1
+  m_bHidden: 1
 --- !u!1 &1586037282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,6 +2113,7 @@ MonoBehaviour:
   m_sDescription: Deliver Randvis package to Marget
   m_iCurrentProgress: 0
   m_iMaxProgress: 1
+  m_bHidden: 0
 --- !u!1 &1701261059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2521,7 @@ MonoBehaviour:
   m_sDescription: Talk to the lady outside your cabin.
   m_iCurrentProgress: 0
   m_iMaxProgress: 1
+  m_bHidden: 0
 --- !u!1 &1898341227
 GameObject:
   m_ObjectHideFlags: 0

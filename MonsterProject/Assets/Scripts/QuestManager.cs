@@ -8,7 +8,7 @@ namespace GA.MonsterProject
     [ExecuteInEditMode]
     public class QuestManager : MonoBehaviour, ISaveable
     {
-        QuestInfo[] m_aQuests;
+        public QuestInfo[] m_aQuests;
         // Start is called before the first frame update
         public void OnValidate()
         {
@@ -55,7 +55,7 @@ namespace GA.MonsterProject
             int count = 0;
             for (int i = 0; i < m_aQuests.Length; i++)
             {
-                if ((m_aQuests[i].m_iStatus == Types.EStatus._Done || m_aQuests[i].m_iStatus == Types.EStatus._Failed) && m_aQuests[i].m_sName != "none" && m_aQuests[i].m_sName != "evolve")
+                if ((m_aQuests[i].m_iStatus == Types.EStatus._Done || m_aQuests[i].m_iStatus == Types.EStatus._Failed) && m_aQuests[i].m_sName != "evolve" && !m_aQuests[i].m_bHidden)
                 {
                     count++;
                 }
@@ -68,7 +68,7 @@ namespace GA.MonsterProject
             List<QuestInfo> Result = new List<QuestInfo>();
             foreach (QuestInfo quest in m_aQuests)
             {
-                if (quest.m_iStatus == Types.EStatus._Active || quest.m_iStatus == Types.EStatus._Completed)
+                if ((quest.m_iStatus == Types.EStatus._Active || quest.m_iStatus == Types.EStatus._Completed) && !quest.m_bHidden)
                 {
                     Result.Add(quest);
                 }

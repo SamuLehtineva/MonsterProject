@@ -55,6 +55,7 @@ namespace GA.MonsterProject
                 
                 case Types.EForm._Bad:
                     transform.Find("Bad").gameObject.SetActive(true);
+                    m_gcMoveClose.m_fDesiredDistance = 18f;
                     break;
 
                 case Types.EForm._Good:

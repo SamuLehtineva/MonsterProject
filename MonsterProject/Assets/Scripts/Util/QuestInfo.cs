@@ -11,6 +11,7 @@ namespace GA.MonsterProject
         public string m_sDescription;
         public int m_iCurrentProgress = 0;
         public int m_iMaxProgress = 1;
+        public bool m_bHidden = false;
 
         public void OnValidate()
         {
