@@ -22,6 +22,11 @@ namespace GA.MonsterProject
                 s_CurrentResources = this;
             }
         }
+
+        void Update()
+        {
+            CheckMinAndMax();
+        }
         
         public int GetResource(Types.EResource resource)
         {
@@ -50,39 +55,14 @@ namespace GA.MonsterProject
             {
                 case Types.EResource._Money:
                     m_iMoney += amount;
-
-                    if (m_iMoney < 0)
-                    {
-                        m_iMoney = 0;
-                    }
-
                     break;
 
                 case Types.EResource._Reputation:
                     m_iReputation += amount;
-
-                    if (m_iReputation < 0)
-                    {
-                        m_iReputation = 0;
-                    }
-                    else if (m_iReputation > 100)
-                    {
-                        m_iReputation = 100;
-                    }
-
                     break;
 
                 case Types.EResource._Bond:
                     m_iBond += amount;
-
-                    if (m_iBond < 0)
-                    {
-                        m_iBond = 0;
-                    }
-                    else if (m_iBond > 100)
-                    {
-                        m_iBond = 100; 
-                    }
                     break;
             }
         }
@@ -90,52 +70,40 @@ namespace GA.MonsterProject
         public void AddResources(int money, int rep, int bond)
         {
             m_iMoney += money;
-            if (m_iMoney < 0)
-            {
-                m_iMoney = 0;
-            }
-
             m_iReputation += rep;
-            if (m_iReputation < 0)
-            {
-                m_iReputation = 0;
-            }
-
             m_iBond += bond;
-
-            if (m_iBond < 0)
-            {
-                m_iBond = 0;
-            }
-            else if (m_iBond > 100)
-            {
-                m_iBond = 100; 
-            }
         }
 
         public void AddResources(QuestReward reward)
         {
             m_iMoney += reward.m_iMoney;
-            if (m_iMoney < 0)
+            m_iReputation += reward.m_iReputation;
+            m_iBond += reward.m_iBond;
+        }
+
+        public void CheckMinAndMax()
+        {
+            if (m_iBond > 100)
             {
-                m_iMoney = 0;
+                m_iBond = 100;
+            }
+            else if (m_iBond < 0)
+            {
+                m_iBond = 0;
             }
 
-            m_iReputation += reward.m_iReputation;
-            if (m_iReputation < 0)
+            if (m_iReputation > 100)
+            {
+                m_iReputation = 100;
+            }
+            else if (m_iReputation < 0)
             {
                 m_iReputation = 0;
             }
 
-            m_iBond += reward.m_iBond;
-
-            if (m_iBond < 0)
+            if (m_iMoney < 0)
             {
-                m_iBond = 0;
-            }
-            else if (m_iBond > 100)
-            {
-                m_iBond = 100; 
+                m_iMoney = 0;
             }
         }
 
