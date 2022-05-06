@@ -36,10 +36,20 @@ namespace GA.MonsterProject
         {
             try {
                 m_gcCurrentQuest = GameManager.m_qMinigameQuest;
+
             }
             catch (NullReferenceException e)
             {
                 Debug.Log(e);
+            }
+
+            if (UIManager.s_UIManager != null && UIManager.s_UIManager.m_iForm == Types.EForm._Baby)
+            {
+                transform.Find("Baby").gameObject.SetActive(true);
+            }
+            else
+            {
+                transform.Find("Teen").gameObject.SetActive(true);
             }
             
             Paused();
