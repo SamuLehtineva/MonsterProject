@@ -14,7 +14,7 @@ namespace GA.MonsterProject
         public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;
         CharMover m_gcCharMover;
-        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu"};
+        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro"};
         private float m_fFixedDeltaTime;
         void Awake()
         {
@@ -29,7 +29,8 @@ namespace GA.MonsterProject
             
             DontDestroyOnLoad(this);
             m_sDestinationScene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadSceneAsync("HUD", LoadSceneMode.Additive);
+            SceneChanger.LoadLevelAdditive("HUD");
+            Debug.Log("Awake");
 
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
@@ -44,6 +45,7 @@ namespace GA.MonsterProject
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
+            Debug.Log(scene.name);
             if (m_bPaused && scene.name != "Settings")
             {
                 Pause();
@@ -59,6 +61,11 @@ namespace GA.MonsterProject
             {
                 Debug.Log(e);
             }
+
+            if (scene.name == "Intro")
+            {
+                ResetValues();
+            }
             
             if (UIManager.s_UIManager != null)
             {
@@ -69,13 +76,16 @@ namespace GA.MonsterProject
 
         void LateUpdate() 
         {
-            if (Array.Exists(m_aNoHudScenes, element => element == SceneManager.GetActiveScene().name))
+            if (UIManager.s_UIManager != null)
             {
-                UIManager.s_UIManager.ToggleHud(false);
-            }
-            else
-            {
-                UIManager.s_UIManager.ToggleHud(true);
+                if (Array.Exists(m_aNoHudScenes, element => element == SceneManager.GetActiveScene().name))
+                {
+                    UIManager.s_UIManager.ToggleHud(false);
+                }
+                else
+                {
+                    UIManager.s_UIManager.ToggleHud(true);
+                }
             }
         }
 
@@ -93,6 +103,15 @@ namespace GA.MonsterProject
             }
             Time.fixedDeltaTime = m_fFixedDeltaTime * Time.timeScale;
             UIManager.s_UIManager.TogglePauseMenu(m_bPaused);
+        }
+
+        public void ResetValues()
+        {
+            Debug.Log("Reset");
+            m_sDestination = "Default";
+            m_sDestinationScene = "Cabin";
+            Destroy(GameObject.Find("UIManager"));
+            SceneChanger.LoadLevelAdditive("HUD");
         }
 
         void OnDisable()

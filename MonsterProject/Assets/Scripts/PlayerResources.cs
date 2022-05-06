@@ -107,6 +107,13 @@ namespace GA.MonsterProject
             }
         }
 
+        public void ResetValues()
+        {
+            m_iBond = 50;
+            m_iReputation = 50;
+            m_iMoney = 100;
+        }
+
         /*
         Saves current money, bond and reputation values
         */

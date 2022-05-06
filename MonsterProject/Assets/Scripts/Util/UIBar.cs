@@ -20,7 +20,6 @@ namespace GA.MonsterProject
         public void SetWidth(float width)
         {
             m_iMask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_fDefaultWidth * width);
-            Debug.Log(m_iMask.rectTransform.rect.width);
         }
         
     }

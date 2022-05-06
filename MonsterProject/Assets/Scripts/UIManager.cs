@@ -104,5 +104,11 @@ namespace GA.MonsterProject
                 m_iEvolveTresh = 4;
             }
         }
+
+        public void ResetValues()
+        {
+            m_iForm = Types.EForm._Baby;
+            m_iEvolveTresh = 2;
+        }
     }
 }
