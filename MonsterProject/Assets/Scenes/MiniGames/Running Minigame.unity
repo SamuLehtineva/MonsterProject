@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 437709832}
   m_fXOffset: 8.7
-  m_fYOffset: 4.8
+  m_fYOffset: 1
   m_fZOffset: -18
 --- !u!114 &773265322
 MonoBehaviour:

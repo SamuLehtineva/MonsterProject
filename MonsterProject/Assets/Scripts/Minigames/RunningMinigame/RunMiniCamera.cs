@@ -12,7 +12,7 @@ namespace GA.MonsterProject
         public float m_fZOffset = -10f;
         void Update()
         {
-            transform.position = player.position + new Vector3(m_fXOffset, m_fYOffset, m_fZOffset);
+            transform.position = new Vector3(m_fXOffset + player.position.x, m_fYOffset, m_fZOffset + player.position.z);
         }
     }
 }
