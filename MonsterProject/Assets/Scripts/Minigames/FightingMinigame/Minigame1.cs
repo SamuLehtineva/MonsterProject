@@ -33,7 +33,6 @@ namespace GA.MonsterProject
         [SerializeField]
         UIBar m_gcEnemyBar;
         public Animator m_gcEnemyAnimator;
-        public Sprite[] m_aEnemyJackSprites = new Sprite[3];
 
         private bool m_bCanAct;
         private float m_fSweetSpot;
@@ -45,7 +44,6 @@ namespace GA.MonsterProject
         void Start()
         {
             ChangeForm();
-            m_aEnemySpites = m_aEnemyJackSprites;
             m_bIsMyTurn = true;
             m_bCanAct = true;
             m_fSweetSpot = 0.15f;
