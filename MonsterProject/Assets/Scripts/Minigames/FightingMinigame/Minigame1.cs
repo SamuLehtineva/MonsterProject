@@ -25,18 +25,14 @@ namespace GA.MonsterProject
 
         [SerializeField]
         UIBar m_gcPetBar;
-        public SpriteRenderer m_gcPetRenderer;
-        public Sprite[] m_aPetBabySprites = new Sprite[3];
-        public Sprite[] m_aPetTeenSprites = new Sprite[3];
-        public Sprite[] m_aPetBadSprites = new Sprite[3];
-        public Sprite[] m_aPetGoodSprites = new Sprite[3];
+        public Animator m_gcPetAnimator;
 
         [Header("Enemy")]
         public int m_iEnemyHealth = 100;
 
         [SerializeField]
         UIBar m_gcEnemyBar;
-        public SpriteRenderer m_gcEnemyRenderer;
+        public Animator m_gcEnemyAnimator;
         public Sprite[] m_aEnemyJackSprites = new Sprite[3];
 
         private bool m_bCanAct;
@@ -48,32 +44,7 @@ namespace GA.MonsterProject
         private QuestInfo m_gcCurrentQuest;
         void Start()
         {
-            try {
-                switch (UIManager.s_UIManager.m_iForm)
-                {
-                    case Types.EForm._Baby:
-                        m_aPetSprites = m_aPetBabySprites;
-                        break;
-
-                    case Types.EForm._Teen:
-                        m_aPetSprites = m_aPetTeenSprites;
-                        break;
-
-                    case Types.EForm._Good:
-                        m_aPetSprites = m_aPetGoodSprites;
-                        break;
-
-                    case Types.EForm._Bad:
-                        m_aPetSprites = m_aPetBadSprites;
-                        break;
-                }
-            }
-            catch (NullReferenceException e)
-            {
-                Debug.Log(e);
-                m_aPetSprites = m_aPetBabySprites;
-            }
-            m_gcPetRenderer.sprite = m_aPetSprites[0];
+            ChangeForm();
             m_aEnemySpites = m_aEnemyJackSprites;
             m_bIsMyTurn = true;
             m_bCanAct = true;
@@ -98,12 +69,12 @@ namespace GA.MonsterProject
             {
                 if (m_bIsMyTurn)
                 {
-                    m_gcPetRenderer.sprite = m_aPetSprites[1];
+                    m_gcPetAnimator.Play("attack");
                 }
                 else
                 {
-                    m_gcEnemyRenderer.sprite = m_aEnemySpites[1];
-                    m_gcPetRenderer.sprite = m_aPetSprites[2];
+                    m_gcEnemyAnimator.Play("attack");
+                    m_gcPetAnimator.Play("hurt");
                 }
                 Action(m_gcMoveBetween.GetRatio());
             }
@@ -120,6 +91,34 @@ namespace GA.MonsterProject
                 m_gcIconRenderer.sprite = m_gcDefSprite;
             }
             CheckWin();
+        }
+
+        void ChangeForm()
+        {
+            GameObject pet = transform.Find("Teen").gameObject;
+            if (UIManager.s_UIManager != null)
+            {
+                switch(UIManager.s_UIManager.m_iForm)
+                {
+                    case Types.EForm._Baby:
+                        pet = transform.Find("Baby").gameObject;
+                        break;
+                    
+                    case Types.EForm._Teen:
+                        pet = transform.Find("Teen").gameObject;
+                        break;
+                    
+                    case Types.EForm._Bad:
+                        pet = transform.Find("Bad").gameObject;
+                        break;
+
+                    case Types.EForm._Good:
+                        pet = transform.Find("Good").gameObject;
+                        break;
+                }
+            }
+            pet.gameObject.SetActive(true);
+            m_gcPetAnimator = pet.GetComponent<Animator>();
         }
 
         public void ScaleIcon()
@@ -146,7 +145,7 @@ namespace GA.MonsterProject
 
                 if (m_bIsMyTurn)
                 {
-                    m_gcEnemyRenderer.sprite = m_aEnemySpites[2];
+                    m_gcEnemyAnimator.Play("hurt");
                     m_iEnemyHealth -= 50;
                     m_gcClipPlayer.PlayClip(0, 1f);
                     Instantiate(FireBall);
@@ -201,8 +200,8 @@ namespace GA.MonsterProject
             m_bCanAct = true;
             m_gcMoveBetween.Reset();
             m_bIsMyTurn = !m_bIsMyTurn;
-            m_gcEnemyRenderer.sprite = m_aEnemySpites[0];
-            m_gcPetRenderer.sprite = m_aPetSprites[0];
+            m_gcEnemyAnimator.Play("idle");
+            m_gcPetAnimator.Play("idle");
         }
 
         IEnumerator EndDelay()

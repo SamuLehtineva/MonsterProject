@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: battle_teen_attack
+  m_Name: battle_enemy_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: c4566fced2ab1a1488cb0c50e6f00a27, type: 3}
+      value: {fileID: 6457905113588779037, guid: 68bfb329436418b4897157d74f0708cb, type: 3}
+    - time: 1
+      value: {fileID: 3106133670717860718, guid: 68bfb329436418b4897157d74f0708cb, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: c4566fced2ab1a1488cb0c50e6f00a27, type: 3}
+    - {fileID: 6457905113588779037, guid: 68bfb329436418b4897157d74f0708cb, type: 3}
+    - {fileID: 3106133670717860718, guid: 68bfb329436418b4897157d74f0708cb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 2
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
