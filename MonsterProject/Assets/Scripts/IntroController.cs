@@ -22,7 +22,7 @@ namespace GA.MonsterProject
                 m_iCurrent++;
                 if (m_iCurrent >= m_sSprites.Length)
                 {
-                    SceneChanger.LoadLevel("Cabin");
+                    SceneChanger.LoadLevel("Name");
                 }
             }
         }
