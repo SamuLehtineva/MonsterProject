@@ -1,14 +1,24 @@
 #Start
-Hi neighbour! Welcome to our little village! I hope
-you like it here! I know this is strange but could I get some water from your well?
+Hi neighbour! Welcome to our little village! I hope you like it
+here! I know this is strange but could I get some water from your well?
 #
 
 #OptionA
-You told your neighbour she can take as much as she needs
+You told your new neighbour she can take as much as she needs
+
+
+"Thank you so much! Here, some coin for your trouble."
 #
 
 #OptionB
-You tell her she can't and leave
+You told her that the water was yours and yours alone. 
+
+
+"Oh... O-okay? I'm sorry I bothered you."
+
+
+She looked astonished by your rude demeanor. You turned
+around and continued onwards.
 #
 
 #ButtonA
@@ -16,5 +26,5 @@ Of course
 #
 
 #ButtonB
-Umm... no
+Umm.. no?
 #
