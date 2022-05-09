@@ -1,27 +1,27 @@
 #Start
-"Hey, new guy! Welcome to Bergensjofellbyfjord!
-Oh... You have a creature as your companion? Hmm..."
+"Hey, new guy! Welcome to Bergensjofellbyfjord! Oh...
+You have a creature as your companion. Hmm..."
 
 "A word of advice - we have a bloody history with creatures.
 Folks here won't give you a warm welcome, not with that thing following you around."
 
-Confused you told the man that !MonsterName! was
+Confused, you told the man that !MonsterName! was
 harmless. You also asked him to explain what had happened in the past.
 
 "It's a long story. You can read about it on the memorials,
 they can be found where something notable happened."
 
-
 "... You do know that your friend here can turn into a monster
 if you don't treat and raise it well, right?"
 
-"You say it's harmless but newcomers word won't count for much... hmm..."
+"You say it's harmless but newcomers' words won't count for
+much... hmm..."
 
 "I know! You could help folks out to earn their trust! And you
 can start by helping me! My beloved Helga ran into the forest and hasn't come home."
 
 "I'll pay you if you bring her back in one piece with that
-creature of yours and on top of that I will tell people that this creature is a kind one. Deal?"
+creature of yours and on top of that, I will tell people that this creature is a kind one. Deal?"
 #
 
 #OptionA
