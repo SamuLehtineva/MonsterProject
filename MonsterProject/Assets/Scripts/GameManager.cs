@@ -10,6 +10,7 @@ namespace GA.MonsterProject
     {
         public static string m_sDestination = "Default";
         public static string m_sDestinationScene = "Cabin";
+        public static string m_sPetName = "PetName";
         public static GameManager s_GameManager;
         public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;

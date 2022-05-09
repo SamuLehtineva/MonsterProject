@@ -18,6 +18,10 @@ namespace GA.MonsterProject
             m_sFileContents = file.text;
 
             m_sLines = m_sFileContents.Split("\n"[0]);
+            for (int i = 0; i < m_sLines.Length; i++)
+            {
+                m_sLines[i] = m_sLines[i].Replace("!MonsterName!", GameManager.m_sPetName);
+            }
         }
 
         public string GetLine(int line) 
