@@ -74,7 +74,7 @@ namespace GA.MonsterProject
         {
             GameManager.m_sDestination = m_sSpawnPoint;
             GameManager.m_qMinigameQuest = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName(m_sQuestName);
-            SceneManager.LoadScene(m_SceneName);
+            SceneChanger.LoadLevel(m_SceneName);
         }
     }
 }

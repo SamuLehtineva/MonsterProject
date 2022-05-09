@@ -20,7 +20,7 @@ namespace GA.MonsterProject
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (scene.name != "Settings" && scene.name != "HUD")
+            if (scene.name != "Settings" && scene.name != "HUD" && scene.name != "Transitions")
             {
                PlayMusic(); 
             }

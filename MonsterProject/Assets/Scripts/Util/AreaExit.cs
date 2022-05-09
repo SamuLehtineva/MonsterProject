@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
@@ -12,13 +11,20 @@ namespace GA.MonsterProject
 
         [SerializeField]
         string m_sTargetSpawnName;
+
+        public SceneChanger m_gcChanger;
+
+        void Start()
+        {
+            m_gcChanger = GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>();
+        }
         
         void OnTriggerEnter(Collider other) {
             if (other.tag == "Player")
             {
-                SceneManager.LoadScene(m_sTargetSceneName);
                 GameManager.m_sDestinationScene = m_sTargetSceneName;
                 GameManager.m_sDestination = m_sTargetSpawnName;
+                m_gcChanger.LoadWithFade(m_sTargetSceneName);
                 Debug.Log(GameManager.m_sDestination);
             }
         }

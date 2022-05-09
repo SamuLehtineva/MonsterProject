@@ -33,6 +33,25 @@ namespace GA.MonsterProject
             SceneManager.UnloadSceneAsync(LevelName);
         }
 
+        public void LoadWithFade(string LevelName)
+        {
+            GameManager.s_GameManager.PlayerCanMove(false);
+            StartCoroutine(LoadAsyncScene(LevelName));
+        }
+
+        IEnumerator LoadAsyncScene(string sceneName)
+        {
+            AsyncOperation asyncLoadFade = SceneManager.LoadSceneAsync("Transitions", LoadSceneMode.Additive);
+
+            while (!asyncLoadFade.isDone)
+            {
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadSceneAsync(sceneName);
+        }
+
         public void CloseApp()
         {
             Application.Quit();
