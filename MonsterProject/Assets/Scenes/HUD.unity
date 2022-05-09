@@ -614,6 +614,10 @@ PrefabInstance:
       propertyPath: m_gcQuestLogIcon
       value: 
       objectReference: {fileID: 1910514969}
+    - target: {fileID: 2409397304026034053, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_gcMusicController
+      value: 
+      objectReference: {fileID: 2077221110}
     - target: {fileID: 2409397304026034058, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_RootOrder
       value: 2

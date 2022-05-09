@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GA.MonsterProject
 {
@@ -12,9 +13,23 @@ namespace GA.MonsterProject
         private float m_fEventTime = 0.0f;
         private float m_fRatio = 0.0f;
 
+        void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (scene.name != "Settings" && scene.name != "HUD")
+            {
+               PlayMusic(); 
+            }
+        }
+
         void Start()
         {
             m_gcAudi = GetComponent<AudioSource>();
+            PlayMusic();
         }
 
         public void PlayMusic()
@@ -38,6 +53,11 @@ namespace GA.MonsterProject
         public void SetVolume(float volume)
         {
             m_gcAudi.volume = volume;
+        }
+
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
     }
 }

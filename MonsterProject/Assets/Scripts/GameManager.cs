@@ -49,7 +49,10 @@ namespace GA.MonsterProject
             Debug.Log(scene.name);
             if (m_bPaused && scene.name != "Settings")
             {
-                Pause();
+                if (m_bPaused)
+                {
+                   Pause(); 
+                }
             }
             try
             {

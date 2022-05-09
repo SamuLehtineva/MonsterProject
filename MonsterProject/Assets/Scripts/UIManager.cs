@@ -18,6 +18,8 @@ namespace GA.MonsterProject
         [SerializeField]
         QuestLogController m_gcQuestLogController;
 
+        public MusicController m_gcMusicController;
+
         [SerializeField]
         GameObject m_oPauseMenu;
 

@@ -2972,6 +2972,7 @@ MonoBehaviour:
   m_gcDialogController: {fileID: 2409397305379384160}
   m_gcQuestManager: {fileID: 1287170718}
   m_gcQuestLogController: {fileID: 1044115137}
+  m_gcMusicController: {fileID: 0}
   m_oPauseMenu: {fileID: 2409397305575912862}
   m_gcCanvas: {fileID: 2409397305170677007}
   m_gcQuestLogIcon: {fileID: 0}
