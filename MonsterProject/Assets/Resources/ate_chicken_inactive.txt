@@ -1,5 +1,5 @@
 #Start
-"You! That creature of yours ate my one of my chickens!
+"You! That creature of yours ate one of my chickens!
 And you called it harmless. Harmless!"
 #
 
@@ -8,7 +8,7 @@ You apologized profusely and
 blamed yourself for forgetting to feed him. You also refunded the chicken.
 
 After getting out of the situation
-you turned to face your creature. You scolded !MonsterName!, but not too harshy since you were partly to blame and decided to hurry back home to feed them.
+you turned to face your creature. You scolded !MonsterName!, but not too harshly since you were partly to blame and decided to hurry back home to feed them.
 #
 
 #OptionB
