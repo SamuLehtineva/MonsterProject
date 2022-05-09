@@ -12403,7 +12403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7961923627403563028, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
       propertyPath: m_Name
-      value: SceneChanger
+      value: Scenefader
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}

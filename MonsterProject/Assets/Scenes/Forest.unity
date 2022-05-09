@@ -2483,6 +2483,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.926064, y: 1.5514629, z: 1.5385371}
   m_Center: {x: -0.0039423117, y: 0.6692153, z: -0.025279736}
+--- !u!1001 &760957237
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.30999756
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.48999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563028, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_Name
+      value: SceneChanger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
 --- !u!1001 &769466850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9188,6 +9245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sTargetSceneName: Town
   m_sTargetSpawnName: Town_Forest
+  m_gcChanger: {fileID: 0}
 --- !u!4 &1478504965
 Transform:
   m_ObjectHideFlags: 0

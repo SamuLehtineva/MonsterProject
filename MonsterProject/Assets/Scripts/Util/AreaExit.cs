@@ -24,7 +24,7 @@ namespace GA.MonsterProject
             {
                 GameManager.m_sDestinationScene = m_sTargetSceneName;
                 GameManager.m_sDestination = m_sTargetSpawnName;
-                m_gcChanger.LoadWithFade(m_sTargetSceneName);
+                m_gcChanger.LoadWithFadeOut(m_sTargetSceneName);
                 Debug.Log(GameManager.m_sDestination);
             }
         }

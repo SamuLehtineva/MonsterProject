@@ -398,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sTargetSceneName: Yard
   m_sTargetSpawnName: Yard_Cabin
+  m_gcChanger: {fileID: 0}
 --- !u!65 &73532461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6271,6 +6272,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360850920}
   m_Mesh: {fileID: 5512361600001258384, guid: 92d480b7ee332b7418d0b4812cef1cfc, type: 3}
+--- !u!1001 &366246821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.30999756
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.48999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563026, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961923627403563028, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+      propertyPath: m_Name
+      value: SceneChanger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
 --- !u!1 &384959733
 GameObject:
   m_ObjectHideFlags: 0
@@ -19292,6 +19350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sTargetSceneName: Cabin
   m_sTargetSpawnName: Cabin_Bigger
+  m_gcChanger: {fileID: 0}
 --- !u!65 &1303415541
 BoxCollider:
   m_ObjectHideFlags: 0
