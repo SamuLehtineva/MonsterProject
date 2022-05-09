@@ -12,6 +12,8 @@ namespace GA.MonsterProject
         private AudioSource m_gcAudi;
         private float m_fEventTime = 0.0f;
         private float m_fRatio = 0.0f;
+        private float m_fTargetVolume1 = 0.0f;
+        private float m_fTargetVolume2;
 
         void OnEnable()
         {
@@ -39,6 +41,8 @@ namespace GA.MonsterProject
             m_gcAudi.Play();
             m_fEventTime = Time.time;
             m_fRatio = 0.0f;
+            m_fTargetVolume1 = 0.0f;
+            m_fTargetVolume2 = PlayerPrefs.GetFloat("MusicVolume");
         }
 
         void Update()
@@ -47,12 +51,24 @@ namespace GA.MonsterProject
             {
                 m_fRatio = (Time.time - m_fEventTime) / m_fLerpDurationSeconds;
             }
-            m_gcAudi.volume = Mathf.Lerp(0.0f, PlayerPrefs.GetFloat("MusicVolume"), m_fRatio);
+            else if (m_fTargetVolume2 != 0.0f)
+            {
+                m_fTargetVolume2 = PlayerPrefs.GetFloat("MusicVolume");
+            }
+            m_gcAudi.volume = Mathf.Lerp(m_fTargetVolume1, m_fTargetVolume2, m_fRatio);
         }
 
         public void SetVolume(float volume)
         {
             m_gcAudi.volume = volume;
+        }
+
+        public void FadeOut()
+        {
+            m_fEventTime = Time.time;
+            m_fRatio = 0.0f;
+            m_fTargetVolume1 = m_gcAudi.volume;
+            m_fTargetVolume2 = 0.0f;
         }
 
         void OnDisable()

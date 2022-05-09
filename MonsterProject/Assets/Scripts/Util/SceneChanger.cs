@@ -36,6 +36,7 @@ namespace GA.MonsterProject
         public void LoadWithFade(string LevelName)
         {
             GameManager.s_GameManager.PlayerCanMove(false);
+            UIManager.s_UIManager.m_gcMusicController.FadeOut();
             StartCoroutine(LoadAsyncScene(LevelName));
         }
 
