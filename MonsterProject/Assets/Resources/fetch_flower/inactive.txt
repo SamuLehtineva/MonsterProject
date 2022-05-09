@@ -1,15 +1,15 @@
 #Start
-"Bloody ankle... What are you looking at, kid?
-Is... that... a monster?"
+"Bloody ankle... What are you looking at, kid? Is... that...
+a monster?"
 
 You clarified that your companion is a creature, not a
 monster, and that you have raised it from an egg so it listens to your commands
 
-"They are the same thing! All monsters are the same..."
+"Creature, monster, what's the difference? They are all evil!"
 
 
 "*Mumble mumble* First I sprain my ankle so I can't visit
-my sons grave and now the thing responsible for his death has appeared in my yard!"
+my son's grave and now his murderer has appeared in my yard!"
 
 "The gods are mocking me!"
 
@@ -17,24 +17,26 @@ my sons grave and now the thing responsible for his death has appeared in my yar
 You told the old man that !MonsterName! had never hurt
 anyone and hadn't killed his son
 
-"I don't care if your monster specificly didn't kill my son,
-but it's brothers did. I know what those things are capable of!"
+"I don't care if your monster specifically didn't kill my son,
+but its brethren did! I know what those things are capable of... I saw it with my own eyes..."
 
 You wondered if helping this man would change his mind
 #
 
 #OptionA
-You offered to go gather flowers to bring to the son's grave
+You offered to go gather flowers to bring to his son's grave
 
 
-First he seemed offended that you had the audacity to ask,
-but after thinking for a few seconds he mumbled something resembling a yes
+First, he seemed offended that you had the audacity to even
+ask, but after thinking for a few seconds he mumbled something resembling a yes
 
 "... Fine, everyone else is too busy... But don't you let that
 thing go anywhere close to Sven's grave!"
 
 "If I find even one paw print in the graveyard I will chase
-you out of this fine village!"
+you out of this fine village the second my ankle heals! Understood?"
+
+You nodded quickly and left before the old man would get even angrier.
 #
 
 #OptionB

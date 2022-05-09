@@ -9,10 +9,10 @@ Ygge mumbled something while having his back turned
 towards you. He seemed to be focused on the outhouse. You ignored him and asked Randvi why she seemed so worried.
 
 "Worried? Well... *sigh* It's Marget, our innkeeper. She
-went through a rough break up with a bloke from the neghbouring village. Thought she had finally found someone"
+went through a rough breakup with a bloke from the neighboring village. Thought she had finally found someone"
 
-"who didn't look at her as some cheap whore with whome
-to have fun before setteling down. But no, he was just like the two before him. Poor Marget."
+"who didn't look at her like some cheap whore with whom
+to have fun before settling down. But no, he was just like the two before him. Poor Marget."
 
 You asked if the package was for her. Randvi nodded.
 
@@ -32,12 +32,12 @@ help. She seemed relieved.
 creature. She had one herself before her family moved here, but they left it behind because they knew this village"
 
 "had recently had a war with them so Houndr would have
-been killed before they even reached the near by forest."
+been killed before they even reached the nearby forest."
 #
 
 #OptionB
-You apologized and explained that you needed to go to
-the very oposite direction of the inn and were in a hurry. Randvi didn't look convinced but shrugged.
+You apologized and explained that you needed to go in
+the very opposite direction of the inn and were in a hurry. Randvi didn't look convinced but shrugged.
 
 "Well, see you around, I guess."
 #
