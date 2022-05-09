@@ -44,9 +44,15 @@ namespace GA.MonsterProject
                     quest.m_iStatus = status;
                 }
             }
+
             if (status == Types.EStatus._Done || status == Types.EStatus._Failed)
             {
                 UIManager.s_UIManager.PetEvent();
+            }
+
+            if (name != "none" && status != Types.EStatus._Done)
+            {
+                UIManager.s_UIManager.ToggleQuestLogIcon(true);
             }
         }
 
