@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GA.MonsterProject
 {
@@ -17,11 +18,16 @@ namespace GA.MonsterProject
         [SerializeField]
         QuestLogController m_gcQuestLogController;
 
+        public MusicController m_gcMusicController;
+
         [SerializeField]
         GameObject m_oPauseMenu;
 
         [SerializeField]
         Canvas m_gcCanvas;
+
+        [SerializeField]
+        Image m_gcQuestLogIcon;
         public Types.EForm m_iForm = Types.EForm._Baby;
         public int m_iEvolveTresh;
 
@@ -62,6 +68,12 @@ namespace GA.MonsterProject
         {
             m_oPauseMenu.gameObject.SetActive(value);
             m_gcQuestLogController.UpdateQuestLog();
+            ToggleQuestLogIcon(false);
+        }
+
+        public void ToggleQuestLogIcon(bool value)
+        {
+            m_gcQuestLogIcon.gameObject.SetActive(value);
         }
 
         public void CallPause()

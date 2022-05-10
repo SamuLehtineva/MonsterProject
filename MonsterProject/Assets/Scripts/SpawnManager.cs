@@ -13,6 +13,11 @@ namespace GA.MonsterProject
         Transform[] m_aSpawnPoints;
         private CharacterController m_gcController;
 
+        void Awake()
+        {
+            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().LoadFadeIn();
+        }
+
         void Start() {
             m_gcController = m_gcPlayer.GetComponent<CharacterController>();
             m_gcController.gameObject.SetActive(false);

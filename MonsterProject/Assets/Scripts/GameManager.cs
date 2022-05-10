@@ -49,7 +49,10 @@ namespace GA.MonsterProject
             Debug.Log(scene.name);
             if (m_bPaused && scene.name != "Settings")
             {
-                Pause();
+                if (m_bPaused)
+                {
+                   Pause(); 
+                }
             }
             try
             {
@@ -150,6 +153,7 @@ namespace GA.MonsterProject
         {
             writer.WriteString(m_sDestination);
             writer.WriteString(m_sDestinationScene);
+            writer.WriteString(m_sPetName);
         }
 
         /*
@@ -160,6 +164,7 @@ namespace GA.MonsterProject
             m_bPaused = false;
             m_sDestination = reader.ReadString();
             m_sDestinationScene = reader.ReadString();
+            m_sPetName = reader.ReadString();
             SceneManager.LoadScene(m_sDestinationScene);
         }
     }

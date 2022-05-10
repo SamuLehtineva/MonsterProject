@@ -16,6 +16,8 @@ TagManager:
   - PlayerUp
   - PlayerRight
   - LogEntry
+  - Music
+  - SceneChanger
   layers:
   - Default
   - TransparentFX

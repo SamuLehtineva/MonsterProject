@@ -33,6 +33,45 @@ namespace GA.MonsterProject
             SceneManager.UnloadSceneAsync(LevelName);
         }
 
+        public void LoadWithFadeOut(string LevelName)
+        {
+            GameManager.s_GameManager.PlayerCanMove(false);
+            UIManager.s_UIManager.m_gcMusicController.FadeOut();
+            StartCoroutine(LoadAsyncFadeOut(LevelName));
+        }
+
+        public void LoadFadeIn()
+        {
+            StartCoroutine(LoadAsyncFadeIn());
+        }
+
+        IEnumerator LoadAsyncFadeOut(string sceneName)
+        {
+            AsyncOperation asyncLoadFade = SceneManager.LoadSceneAsync("Transitions", LoadSceneMode.Additive);
+
+            while (!asyncLoadFade.isDone)
+            {
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadSceneAsync(sceneName);
+        }
+
+        IEnumerator LoadAsyncFadeIn()
+        {
+            AsyncOperation asyncLoadFade = SceneManager.LoadSceneAsync("Transitions", LoadSceneMode.Additive);
+
+            while (!asyncLoadFade.isDone)
+            {
+                yield return null;
+            }
+
+            SceneManager.GetSceneByName("Transitions").GetRootGameObjects()[0].GetComponent<FadeController>().FadeIn();
+            yield return new WaitForSeconds(2);
+            SceneManager.UnloadSceneAsync("Transitions");
+        }
+
         public void CloseApp()
         {
             Application.Quit();
