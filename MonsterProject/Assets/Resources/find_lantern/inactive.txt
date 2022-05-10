@@ -1,0 +1,43 @@
+#Start
+"Hey, it's you again! Heh, this is a bit awkward
+but could you help please help me again? I lost our lantern, somehow, and we need it back before the sun sets."
+
+"It's just... I don't want to leave my old mother
+alone for long. She hasn't really been herself lately..."
+
+You turned to take a look at the girls mother who was
+standing in front of a bench, looking into the horizon with a blank gaze. She looked tired.
+
+Slowly she moved her head and looked at you. She gave
+you a gentle smile, so suddle you might have just imagined it, but when she saw !MonsterName! something changed.
+
+"M-m-monster! Kill it!"
+
+
+She picked up a rock and threw it at !MosnterName!. Luckily,
+it dodged the rock and hid behind your legs. shocked, you took a few steps back.
+
+"Mother! Don't hurt them! It's not a monster!
+I'm so sorry, she fought in the war with my father and-"
+
+"They attacked him... His screams... I can still hear him screaming... Until they bit his neck and ripped it open... Those monsters... I will... kill them"
+#
+
+#OptionA
+You apologized and left before the old lady would pick up another rock. You could not count on her missing again.
+#
+
+#OptionB
+You promised to help them out and find the lantern. You left swiftly to not upset the old lady any further.
+
+
+!MonsterName! was visibly shaken after the encoutner and you knew it wouldn't appreaciate you going back
+#
+
+#ButtonA
+Escape
+#
+
+#ButtonB
+Find lantern
+#
