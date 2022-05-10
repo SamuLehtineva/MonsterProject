@@ -10,7 +10,8 @@ namespace GA.MonsterProject
 
         void Start()
         {
-            m_gcChanger.LoadFadeIn();
+            //m_gcChanger.LoadFadeIn();
+            Debug.Log("fader");
         }
     }
 }

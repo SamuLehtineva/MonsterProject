@@ -15,7 +15,7 @@ namespace GA.MonsterProject
 
         void Awake()
         {
-            GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().LoadFadeIn();
+            //GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>().LoadFadeIn();
         }
 
         void Start() {
