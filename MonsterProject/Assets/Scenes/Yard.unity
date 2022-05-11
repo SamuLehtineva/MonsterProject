@@ -6714,6 +6714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_aDoorAnimator: {fileID: 2061348862}
+  m_gcChanger: {fileID: 0}
 --- !u!114 &1185931767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11984,7 +11985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: <m_sName>k__BackingField
-      value: Well lady
+      value: Inger
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_qRewardA.m_iReputation
