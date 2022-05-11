@@ -21918,6 +21918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: alert
       objectReference: {fileID: 0}
+    - target: {fileID: 5421559264190422077, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
+      propertyPath: m_gcTarget
+      value: 
+      objectReference: {fileID: 1594055177}
     - target: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
       propertyPath: m_RootOrder
       value: 2
