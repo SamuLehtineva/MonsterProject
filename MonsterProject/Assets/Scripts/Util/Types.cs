@@ -20,6 +20,7 @@ namespace GA.MonsterProject
             _Completed,
             _Failed,
             _Done,
+            _Disabled,
         }
 
         public enum EForm

@@ -15,11 +15,13 @@ namespace GA.MonsterProject
             set;
         }
         AudioClipPlayer m_gcAudi;
+        public SceneChanger m_gcChanger;
 
         void Start()
         {
             IsActive = false;
             m_gcAudi = GetComponent<AudioClipPlayer>();
+            m_gcChanger = GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>();
         }
 
         // Update is called once per frame
@@ -55,7 +57,7 @@ namespace GA.MonsterProject
         {
             GameManager.m_sDestination = "Default";
             GameManager.m_sDestinationScene = "Cabin_Bigger_Room";
-            SceneManager.LoadScene("Cabin_Bigger_Room");
+            m_gcChanger.LoadWithFadeOut("Cabin_Bigger_Room");
         }
     }
 }
