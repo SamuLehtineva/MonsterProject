@@ -1,0 +1,11 @@
+#Start
+Bottom left show your bond.
+It indicates how much your pet likes you.
+
+Top Right shows your reputation and money.
+Reputation tells you how much the villagers like you.
+Money is a currency that can be exchanged for goods and services
+
+Top left tells you that your quest log has been updated.
+You can open it by pressing esc
+#

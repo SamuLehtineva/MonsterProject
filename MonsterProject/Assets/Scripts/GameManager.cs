@@ -74,7 +74,7 @@ namespace GA.MonsterProject
             if (UIManager.s_UIManager != null)
             {
                 UIManager.s_UIManager.HideDialog();
-                UIManager.s_UIManager.TogglePauseMenu(m_bPaused);
+                //UIManager.s_UIManager.TogglePauseMenu(m_bPaused);
             }
         }
 

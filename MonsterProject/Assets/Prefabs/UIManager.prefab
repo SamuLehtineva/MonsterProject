@@ -1276,6 +1276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064bbca22ab2171438fdfb6d838860f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_iEvolveTresh1: 4
+  m_iEvolveTresh2: 8
   m_aQuests:
   - {fileID: 1027684325}
   - {fileID: 1549824093}
