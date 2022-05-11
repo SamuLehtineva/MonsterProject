@@ -8,7 +8,11 @@ namespace GA.MonsterProject
     [ExecuteInEditMode]
     public class QuestManager : MonoBehaviour, ISaveable
     {
+        public int m_iEvolveTresh1 = 4;
+        public int m_iEvolveTresh2 = 8;
         public QuestInfo[] m_aQuests;
+        private bool m_bStep1 = false;
+        private bool m_bStep2 = false;
         // Start is called before the first frame update
         public void OnValidate()
         {
@@ -83,6 +87,33 @@ namespace GA.MonsterProject
             return Result.ToArray();
         }
 
+        public void CheckProgress()
+        {
+            int iProgress = QuestCountDone();
+
+            if (iProgress == m_iEvolveTresh1 && GetQuestByName("evolve").m_iStatus == Types.EStatus._Inactive)
+            {
+                SetQuestStatus("evolve", Types.EStatus._Active);
+            } 
+            else if (iProgress == m_iEvolveTresh2 && GetQuestByName("evolve2").m_iStatus == Types.EStatus._Inactive)
+            {
+                SetQuestStatus("evolve2", Types.EStatus._Active);
+            }
+
+            if (iProgress > m_iEvolveTresh1 && !m_bStep1)
+            {
+
+                m_bStep1 = true;
+            }
+
+            if (iProgress > m_iEvolveTresh2 && !m_bStep2)
+            {
+
+                m_bStep2 = true;
+            }
+
+        }
+
         /*
         Calls the Save method on all quests
         */
@@ -92,6 +123,8 @@ namespace GA.MonsterProject
             {
                 quest.Save(writer);
             }
+            writer.WriteBool(m_bStep1);
+            writer.WriteBool(m_bStep2);
         }
 
         /*
@@ -103,6 +136,8 @@ namespace GA.MonsterProject
             {
                 quest.Load(reader);
             }
+            m_bStep1 = reader.ReadBool();
+            m_bStep2 = reader.ReadBool();
         }
     }
 }

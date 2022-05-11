@@ -103,10 +103,18 @@ namespace GA.MonsterProject
                 if (PlayerResources.s_CurrentResources.m_iBond >= 50)
                 {
                     m_iForm = Types.EForm._Good;
+                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
+                    {
+                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipGood();
+                    }
                 }
                 else
                 {
                     m_iForm = Types.EForm._Bad;
+                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
+                    {
+                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipBad();
+                    }
                 }
                 m_iEvolveTresh = 100;
             }
@@ -114,6 +122,11 @@ namespace GA.MonsterProject
             {
                 m_iForm = Types.EForm._Teen;
                 m_iEvolveTresh = 4;
+
+                if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
+                {
+                    GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipTeen();
+                }
             }
         }
 

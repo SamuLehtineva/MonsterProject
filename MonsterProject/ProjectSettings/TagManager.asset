@@ -18,6 +18,7 @@ TagManager:
   - LogEntry
   - Music
   - SceneChanger
+  - VideoPlayer
   layers:
   - Default
   - TransparentFX
