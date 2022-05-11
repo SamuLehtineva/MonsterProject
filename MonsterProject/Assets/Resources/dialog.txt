@@ -1,30 +1,34 @@
 #Start
-Hi neighbour! Welcome to our little village! I hope you like it
-here! I know this is strange but could I get some water from your well?
+"Hi, neighbour! My name is Inger. Oh... you have a mon- I mean a creature as your companion?
+
+
+... N-nice! Um, I thought you might be hungry after moving so I bought some vegetables! Do you want to buy some?
 #
 
 #OptionA
-You told your new neighbour she can take as much as she needs
+You told your neighbour you'd love to buy some food.
 
 
-"Thank you so much! Here, some coin for your trouble."
+"Okay! I have a bundle of carrots, potatoes and a few cabbages. What do you want?"
+
+
+After buying some food and talking with Inger about the village you continued onwards. 
+
+
+!MonsterName! didn't seem to enjoy Inger's company.
 #
 
 #OptionB
-You told her that the water was yours and yours alone. 
+You thanked your neighbour and told her you didn't need more food. You also ensured her that !MonsterName! was a kind creature before you left.
 
 
-"Oh... O-okay? I'm sorry I bothered you."
-
-
-She looked astonished by your rude demeanor. You turned
-around and continued onwards.
+!MonsterName! seemed relieved that you continued onwards.
 #
 
 #ButtonA
-Of course
+Buy
 #
 
 #ButtonB
-Umm.. no?
+Save
 #

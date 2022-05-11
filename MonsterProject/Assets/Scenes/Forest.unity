@@ -1724,6 +1724,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.015487221, y: 0.0065676565, z: 0.034623384}
   m_Center: {x: -0.0017401394, y: 0.0000049675573, z: 0.017324608}
+--- !u!4 &572370560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: df9ef25ab570fe4409ddb2d77614029e, type: 3}
+  m_PrefabInstance: {fileID: 572370557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &597960846
 GameObject:
   m_ObjectHideFlags: 0
@@ -9450,6 +9455,78 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.663467, y: 9.297504, z: 49.462524}
   m_Center: {x: 17.8993, y: 4.148752, z: 17.475258}
+--- !u!1 &1528098696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1528098697}
+  - component: {fileID: 1528098699}
+  - component: {fileID: 1528098698}
+  m_Layer: 0
+  m_Name: interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1528098697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528098696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.00653, z: 0.0156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 572370560}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1528098698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528098696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: Memorial Rock
+  <m_sFileName>k__BackingField: memorials/memoB
+  m_qRewardA:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: 0
+  m_sQuestNameA: none
+  m_eQuestStatusA: 0
+  m_qRewardB:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: 0
+  m_sQuestNameB: none
+  m_eQuestStatusB: 0
+  m_bRewardTalk: 0
+--- !u!65 &1528098699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528098696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.01, z: 0.03}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1563693371
 GameObject:
   m_ObjectHideFlags: 0

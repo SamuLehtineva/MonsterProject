@@ -1,7 +1,5 @@
 #Start
-"Hi, have you found the lantern yet? Not yet?
-No, it's fine, really. Don't worry too much about it."
+"Hi, have you found the lantern yet? Not yet? No, it's fine, really. Don't worry too much about it."
 
-"I've only been walking around the villag so
-it should not be far, but I just can't remember where I could have put it."
+"I've only been walking around the village so it shouldn't be far, but I just can't remember where I could have put it."
 #
