@@ -1,15 +1,15 @@
 #Start
-!PetName! stares at you hungrily
+!MonsterName! stares at you hungrily
 #
 
 #OptionA
-*You feed !PetName! some meat.*
-*Suddenly !PetName! starts to change*
+*You feed !MonsterName! some meat.*
+*Suddenly !MonsterName! starts to change*
 #
 
 #OptionB
-*You tell !PetName! you can't afford food right now*
-*Suddenly !PetName! starts to change*
+*You tell !MonsterName! you can't afford food right now*
+*Suddenly !MonsterName! starts to change*
 #
 
 #ButtonA
