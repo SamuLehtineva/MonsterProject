@@ -51,12 +51,6 @@ namespace GA.MonsterProject
                 
                 case Types.EForm._Teen:
                     transform.Find("Teen").gameObject.SetActive(true);
-                    
-                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
-                    {
-                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipTeen();
-                    }
-
                     break;
                 
                 case Types.EForm._Bad:

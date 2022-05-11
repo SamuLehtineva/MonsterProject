@@ -38,6 +38,20 @@ namespace GA.MonsterProject
             m_gcVideo.Play();
         }
 
+        public void PlayClipBad()
+        {
+            GameManager.s_GameManager.PlayerCanMove(false);
+            m_gcVideo.clip = m_vBad;
+            m_gcVideo.Play();
+        }
+
+        public void PlayClipGood()
+        {
+            GameManager.s_GameManager.PlayerCanMove(false);
+            m_gcVideo.clip = m_vGood;
+            m_gcVideo.Play();
+        }
+
         void EndReached(VideoPlayer vp)
         {
             m_gcVideo.Stop();
