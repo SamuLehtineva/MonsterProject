@@ -123,6 +123,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &254117623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 254117625}
+  - component: {fileID: 254117624}
+  m_Layer: 0
+  m_Name: evolve2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &254117624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254117623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c972050230ffd2439ed6e5f5ed3cb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sName: evolve2
+  m_iStatus: 0
+  m_sDescription: Your pet is hungry, go to the cabin
+  m_iCurrentProgress: 0
+  m_iMaxProgress: 1
+  m_bHidden: 0
+--- !u!4 &254117625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254117623}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2409397305266296789}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &716106409
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +659,7 @@ PrefabInstance:
     - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_aQuests.Array.data[8]
       value: 
-      objectReference: {fileID: 1230431197}
+      objectReference: {fileID: 254117624}
     - target: {fileID: 1512657685, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -6.3497925

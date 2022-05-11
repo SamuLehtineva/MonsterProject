@@ -50,7 +50,7 @@ namespace GA.MonsterProject
                 UIManager.s_UIManager.PetEvent();
             }
 
-            if (name != "none" && status != Types.EStatus._Done)
+            if (name != "none" && status != Types.EStatus._Done && status != Types.EStatus._Failed)
             {
                 UIManager.s_UIManager.ToggleQuestLogIcon(true);
             }
