@@ -51,7 +51,7 @@ namespace GA.MonsterProject
             {
                 m_fRatio = (Time.time - m_fEventTime) / m_fLerpDurationSeconds;
             }
-            else if (m_fTargetVolume2 != 0.0f)
+            else
             {
                 m_fTargetVolume2 = PlayerPrefs.GetFloat("MusicVolume");
             }
