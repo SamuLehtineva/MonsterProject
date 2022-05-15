@@ -102,7 +102,7 @@ namespace GA.MonsterProject
 
             if (iProgress > m_iEvolveTresh1 && !m_bStep1)
             {
-
+                SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Inactive);
                 m_bStep1 = true;
             }
 

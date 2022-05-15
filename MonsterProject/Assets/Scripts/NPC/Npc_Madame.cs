@@ -14,6 +14,11 @@ namespace GA.MonsterProject
             Types.EStatus iEStatus = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("marget_kill_jackalopes").m_iStatus;
             switch (iEStatus)
             {
+                case Types.EStatus._Disabled:
+                    m_gcTalk.gameObject.SetActive(false);
+                    m_gcTalk.ShowIcon(false);
+                    break;
+
                 case Types.EStatus._Inactive:
                     m_gcTalk.m_sFileName = "madame_innkeep_inactive";
                     m_gcTalk.gameObject.SetActive(true);
@@ -22,7 +27,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Active:
                     m_gcTalk.m_sFileName = "madame_innkeep_active";
-                    m_gcTalk.gameObject.SetActive(false);
+                    m_gcTalk.ShowIcon(false);
 
                     break;
 
@@ -31,7 +36,6 @@ namespace GA.MonsterProject
                     m_gcTalk.m_qRewardA = new QuestReward(10, 10, -10);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
-                    m_gcTalk.gameObject.SetActive(true);
 
                     break;
 
