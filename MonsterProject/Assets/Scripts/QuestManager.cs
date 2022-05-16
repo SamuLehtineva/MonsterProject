@@ -51,7 +51,16 @@ namespace GA.MonsterProject
 
             if (status == Types.EStatus._Done || status == Types.EStatus._Failed)
             {
-                UIManager.s_UIManager.PetEvent();
+                CheckProgress();
+
+                if (name == "evolve")
+                {
+                    UIManager.s_UIManager.Evolve1();
+                }
+                else if (name == "evolve2")
+                {
+                    UIManager.s_UIManager.Evolve2();
+                }
             }
 
             if (name != "none" && status != Types.EStatus._Done && status != Types.EStatus._Failed)
@@ -65,7 +74,7 @@ namespace GA.MonsterProject
             int count = 0;
             for (int i = 0; i < m_aQuests.Length; i++)
             {
-                if ((m_aQuests[i].m_iStatus == Types.EStatus._Done || m_aQuests[i].m_iStatus == Types.EStatus._Failed) && m_aQuests[i].m_sName != "evolve" && !m_aQuests[i].m_bHidden)
+                if ((m_aQuests[i].m_iStatus == Types.EStatus._Done || m_aQuests[i].m_iStatus == Types.EStatus._Failed) && !m_aQuests[i].m_bHidden)
                 {
                     count++;
                 }
@@ -103,12 +112,13 @@ namespace GA.MonsterProject
             if (iProgress > m_iEvolveTresh1 && !m_bStep1)
             {
                 SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Inactive);
+                SetQuestStatus("fetch_flower", Types.EStatus._Inactive);
+                SetQuestStatus("find_flower", Types.EStatus._Inactive);
                 m_bStep1 = true;
             }
 
             if (iProgress > m_iEvolveTresh2 && !m_bStep2)
             {
-
                 m_bStep2 = true;
             }
 

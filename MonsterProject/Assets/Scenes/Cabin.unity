@@ -768,6 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 370960058}
   - component: {fileID: 370960059}
+  - component: {fileID: 370960060}
   m_Layer: 0
   m_Name: PetEvent
   m_TagString: Untagged
@@ -787,6 +788,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2022588482}
+  - {fileID: 546537079}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -804,6 +806,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_goTarget: {fileID: 2022588481}
   m_sQuestName: evolve
+  m_iStatus: 1
+--- !u!114 &370960060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370960057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf658a535b149f544b6cab979f6330f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_goTarget: {fileID: 546537076}
+  m_sQuestName: evolve2
   m_iStatus: 1
 --- !u!1001 &419238541
 PrefabInstance:
@@ -5917,6 +5934,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d480b7ee332b7418d0b4812cef1cfc, type: 3}
+--- !u!1 &546537076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546537079}
+  - component: {fileID: 546537078}
+  - component: {fileID: 546537077}
+  m_Layer: 0
+  m_Name: evolve2
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &546537077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546537076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.561173, y: 1, z: 13.315975}
+  m_Center: {x: 0.24121523, y: 0, z: 0.3036976}
+--- !u!114 &546537078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546537076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: Pet
+  <m_sFileName>k__BackingField: pet/evolve
+  m_qRewardA:
+    m_iMoney: -25
+    m_iReputation: 0
+    m_iBond: 25
+  m_sQuestNameA: evolve2
+  m_eQuestStatusA: 4
+  m_qRewardB:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: -20
+  m_sQuestNameB: evolve2
+  m_eQuestStatusB: 4
+  m_bRewardTalk: 0
+--- !u!4 &546537079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546537076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 370960058}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619608654
 GameObject:
   m_ObjectHideFlags: 0

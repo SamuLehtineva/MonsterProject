@@ -29,7 +29,6 @@ namespace GA.MonsterProject
         [SerializeField]
         Image m_gcQuestLogIcon;
         public Types.EForm m_iForm = Types.EForm._Baby;
-        public int m_iEvolveTresh;
 
         void Awake()
         {
@@ -81,7 +80,7 @@ namespace GA.MonsterProject
             GameManager.s_GameManager.Pause();
         }
 
-        public void PetEvent()
+        /*public void PetEvent()
         {
             if (m_gcQuestManager.GetQuestByName("evolve").m_iStatus == Types.EStatus._Done)
             {
@@ -93,10 +92,44 @@ namespace GA.MonsterProject
                 Debug.Log("quests done: " + m_gcQuestManager.QuestCountDone());
                 m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Active);
             }
+        }*/
 
+        public void Evolve1()
+        {
+            if (m_iForm == Types.EForm._Baby)
+            {
+                m_iForm = Types.EForm._Teen;
+                if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
+                {
+                    GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipTeen();
+                }
+            }
         }
 
-        public void Evolve()
+        public void Evolve2()
+        {
+            if (m_iForm == Types.EForm._Teen)
+            {
+                if (PlayerResources.s_CurrentResources.m_iBond >= 50)
+                {
+                    m_iForm = Types.EForm._Good;
+                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
+                    {
+                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipGood();
+                    }
+                }
+                else
+                {
+                    m_iForm = Types.EForm._Bad;
+                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
+                    {
+                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipBad();
+                    }
+                }
+            }
+        }
+
+        /*public void Evolve()
         {
             if (m_iForm == Types.EForm._Teen)
             {
@@ -128,12 +161,11 @@ namespace GA.MonsterProject
                     GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipTeen();
                 }
             }
-        }
+        }*/
 
         public void ResetValues()
         {
             m_iForm = Types.EForm._Baby;
-            m_iEvolveTresh = 2;
         }
     }
 }

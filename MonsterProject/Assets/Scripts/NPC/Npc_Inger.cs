@@ -14,6 +14,11 @@ namespace GA.MonsterProject
             Types.EStatus iEStatus = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("find_lantern").m_iStatus;
             switch (iEStatus)
             {
+                case Types.EStatus._Disabled:
+                    m_gcTalk.gameObject.SetActive(false);
+                    m_gcTalk.ShowIcon(false);
+                    break;
+
                 case Types.EStatus._Inactive:
                     m_gcTalk.m_sFileName = "find_lantern/inactive";
 
@@ -30,7 +35,6 @@ namespace GA.MonsterProject
                     m_gcTalk.m_qRewardA = new QuestReward(0, 20, -20);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
-                    m_gcTalk.gameObject.SetActive(true);
                     m_gcTalk.ShowIcon(true);
 
                     break;
