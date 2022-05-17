@@ -1267,7 +1267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &361302334
 Transform:
   m_ObjectHideFlags: 0
@@ -2776,7 +2776,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878863592}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5c3a171c0791d847b700c187aa5dcba, type: 3}
   m_Name: 
@@ -2823,12 +2823,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 878863592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf658a535b149f544b6cab979f6330f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e076530a92b79e48b50e26fa0edb7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_goTarget: {fileID: 404009743}
+  m_oTarget: {fileID: 404009743}
   m_sQuestName: fetch_flower
-  m_iStatus: 2
+  m_iStatuses: 0200000004000000
 --- !u!4 &888275983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7972878782859069271, guid: deeffbeb94246424f99ef5ad2d84901e, type: 3}
@@ -8691,6 +8691,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5612575958642813779, guid: daf6cc301b421f54585ab84d17ec1127, type: 3}
   m_PrefabInstance: {fileID: 1257691589}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1256631583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256631581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.612564, y: 1, z: 2.8648682}
+  m_Center: {x: 1.306282, y: 0, z: -0.042099}
+--- !u!114 &1256631584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256631581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5900ff980d54df74e96db71abea0c465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: Beatiful flowers
+  <m_sFileName>k__BackingField: fetch_flower/step_1
+  m_sQuestName: fetch_flower
+  m_bUsed: 0
 --- !u!1001 &1257691589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8713,6 +8742,10 @@ PrefabInstance:
     - target: {fileID: 5381685720147571080, guid: daf6cc301b421f54585ab84d17ec1127, type: 3}
       propertyPath: m_Name
       value: Flowers_Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381685720147571080, guid: daf6cc301b421f54585ab84d17ec1127, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 5612575958642813779, guid: daf6cc301b421f54585ab84d17ec1127, type: 3}
       propertyPath: m_RootOrder

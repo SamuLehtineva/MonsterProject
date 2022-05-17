@@ -52,7 +52,6 @@ namespace GA.MonsterProject
             }
 
             m_gcController.gameObject.SetActive(true);
-            
         }    
     }
 }
