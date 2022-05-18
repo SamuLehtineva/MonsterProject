@@ -36,7 +36,7 @@ First, he seemed offended that you had the audacity to even ask, but after think
 "If I find even one paw print in the graveyard I will chase you out of this fine village the second my ankle heals! Understood?"
 
 
-You nodded quickly and left before the old man would get even angrier.
+You nodded quickly and left before the old man would get even angrier. !MonsterName! let out an angry growl. They didn't seem to like the fisherman.
 #
 
 #OptionB
