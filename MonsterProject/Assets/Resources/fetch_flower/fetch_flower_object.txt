@@ -1,4 +1,3 @@
 #Start
-You picked up some flowers and tried to arrange them
-so the bouquet wouldn't look like a random mess. Surprisingly, it ended up looking quite elegant. 
+You picked up some flowers and tried to arrange them so the bouquet wouldn't look like a random mess. Surprisingly, it ended up looking quite elegant. 
 #

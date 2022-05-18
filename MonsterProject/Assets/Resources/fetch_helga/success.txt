@@ -1,6 +1,6 @@
 #Start
-!MonsterName! managed to catch Helga. You picked up the
-hen. She was surprisingly calm, at least for now.
+!MonsterName! managed to catch Helga. You picked up the hen. She was surprisingly calm, at least for now.
+
 
 You thought it would be smart to get her home as soon as possible.
 #

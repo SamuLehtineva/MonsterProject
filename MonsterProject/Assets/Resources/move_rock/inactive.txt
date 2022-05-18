@@ -1,20 +1,18 @@
 #Start
-You walked past a man rubbing his right temple.
-He was glaring at a rock in the middle of his yard. You asked if he was okay.
+You walked past a man rubbing his right temple. He was glaring at a rock in the middle of his yard. You asked if he was okay.
 
-"Hm? Me? Yes, I'm fine, I guess. I came from
-the pub last night and tripped over this stupid rock... Too bad it's just heavy enough that I can't move it alone."
 
-"Mind lending me a hand? My father is too
-old to help me and I don't want to bother Marget... o-or any other of my neighbours."
+"Hm? Me? Yes, I'm fine, I guess. I came from the pub last night and tripped over this stupid rock... Too bad it's just heavy enough that I can't move it alone."
+
+
+"Mind lending me a hand? My father is too old to help me and I don't want to bother Marget... o-or any other of my neighbours."
 #
 
 #OptionA
-You told the young man that you didn't have
-the arm strenght to even consider helping but !MonsterName! could try and lift the rock.
+You told the young man that you didn't have the arm strenght to even consider helping but !MonsterName! could try and lift the rock.
 
-"Hmm... Yeah, that could actually work.
-Let's see what this thing is capable of."
+
+"Hmm... Yeah, that could actually work. Let's see what this thing is capable of."
 #
 
 #OptionB

@@ -1,22 +1,19 @@
 #Start
-"You! That creature - no, monster of yours ate
-one of my chickens! And you called it harmless. Harmless!"
+"You! That creature - no, monster of yours ate one of my chickens! And you called it harmless. Harmless!"
 #
 
 #OptionA
-You apologized profusely and
-blamed yourself for forgetting to feed him. You also refunded the chicken.
+You apologized profusely and blamed yourself for forgetting to feed him. You also refunded the chicken.
 
-"I told you! You have to raise !MonsterName! well
-otherwise it turns into a monster. You didn't listen. I hope this is the only problem it will cause, for your sake."
 
-After getting out of the situation
-you turned to face your creature. You scolded !MonsterName! and decided to hurry back home to feed them.
+"I told you! You have to raise !MonsterName! well otherwise it turns into a monster. You didn't listen. I hope this is the only problem it will cause, for your sake."
+
+
+After getting out of the situation you turned to face your creature. You scolded !MonsterName! and decided to hurry back home to feed them.
 #
 
 #OptionB
-You refunded the chicken.
-After leaving you glared at !MonsterName! and hurried back home to feed them.
+You refunded the chicken. After leaving you glared at !MonsterName! and hurried back home to feed them.
 #
 
 #ButtonA

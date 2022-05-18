@@ -1,43 +1,41 @@
 #Start
-You walked past a woman who was looking towards the inn
-with a worried gaze while holding a small package. You stopped to introduce yourself
+You walked past a woman who was looking towards the inn with a worried gaze while holding a small package. You stopped to introduce yourself
 
-"Oh, you must be the one Marget was talking about. Hello
-and welcome to Bergensjofellbyfjord! I'm Randvi and this is my husband Ygge."
 
-Ygge mumbled something while having his back turned
-towards you. He seemed to be focused on the outhouse. You ignored him and asked Randvi why she seemed so worried.
+"Oh, you must be the one Marget was talking about. Hello and welcome to Bergensjofellbyfjord! I'm Randvi and this is my husband Ygge."
 
-"Worried? Well... *sigh* It's Marget, our innkeeper. She
-went through a rough breakup with a bloke from the neighboring village. Thought she had finally found someone"
 
-"who didn't look at her like some cheap whore with whom
-to have fun before settling down. But no, he was just like the two before him. Poor Marget."
+Ygge mumbled something while having his back turned towards you. He seemed to be focused on the outhouse. You ignored him and asked Randvi why she seemed so worried.
+
+
+"Worried? Well... *sigh* It's Marget, our innkeeper. She went through a rough breakup with a bloke from the neighboring village. Thought she had finally found someone"
+
+
+"who didn't look at her like some cheap whore with whom to have fun before settling down. But no, he was just like the two before him. Poor Marget."
+
 
 You asked if the package was for her. Randvi nodded.
 
 
-"Yes it is, but we really need to clean the outhouse today...
-Actually, could you be a dear and go give it to her?"
+"Yes it is, but we really need to clean the outhouse today... Actually, could you be a dear and go give it to her?"
 
-"Tell her that I will join her later when we are finished
-cleaning the outhouse. She can eat this herself, I will bring more when I get there in the evening."
+
+"Tell her that I will join her later when we are finished cleaning the outhouse. She can eat this herself, I will bring more when I get there in the evening."
 #
 
 #OptionA
-You took the package and told Randvi you'd be happy to
-help. She seemed relieved.
+You took the package and told Randvi you'd be happy to help. She seemed relieved.
 
-"Thank you! Oh, and if at all possible please let her pet your
-creature. She had one herself before her family moved here, but they left it behind because they knew this village"
 
-"had recently had a war with them so Houndr would have
-been killed before they even reached the nearby forest."
+"Thank you! Oh, and if at all possible please let her pet your creature. She had one herself before her family moved here, but they left it behind because they knew this village"
+
+
+"had recently had a war with them so Houndr would have been killed before they even reached the nearby forest."
 #
 
 #OptionB
-You apologized and explained that you needed to go in
-the very opposite direction of the inn and were in a hurry. Randvi didn't look convinced but shrugged.
+You apologized and explained that you needed to go in the very opposite direction of the inn and were in a hurry. Randvi didn't look convinced but shrugged.
+
 
 "Well, see you around, I guess."
 #

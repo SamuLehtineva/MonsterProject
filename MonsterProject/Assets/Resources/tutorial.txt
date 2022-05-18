@@ -1,11 +1,21 @@
 #Start
-Bottom left show your bond.
-It indicates how much your pet likes you.
+Press E to interact with the world and to move forward in dialogue.
 
-Top Right shows your reputation and money.
-Reputation tells you how much the villagers like you.
-Money is a currency that can be exchanged for goods and services
 
-Top left tells you that your quest log has been updated.
-You can open it by pressing esc
+Use WASD to move around.
+
+
+You can also press R to pet your creature.
+
+
+The pink bar in the bottom left corner indicates how much your creature likes you.
+
+
+The blue bar in the top right corner shows your reputation in the village.
+
+
+Beneath the reputation bar is your wallet. It shows how much money you have to spend.
+
+
+When a round icon appears in the top left corner it means the quest log has been updated and you can open it by pressing esc.
 #

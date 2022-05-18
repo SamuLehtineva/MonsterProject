@@ -1,27 +1,27 @@
 #Start
-You remembered Marget talking about some trouble Randvi
-was having, so you asked if you could help her in any way. Marget eyed you from head to toe, looking skeptical.
+You remembered Marget talking about some trouble Randvi was having, so you asked if you could help her in any way. Marget eyed you from head to toe, looking skeptical.
 
-"Oh what the hell, what's the harm. Have you met the fish
-reeking old man? Doesn't really matter, but he's one bitter bastard and he owns the house Randvi and Ygge live in."
 
-"He used the house as storage when he had money from
-fishing, but since he drank most of it he needed more to keep drinking so he sold it to them."
+"Oh what the hell, what's the harm. Have you met the fish reeking old man? Doesn't really matter, but he's one bitter bastard and he owns the house Randvi and Ygge live in."
 
-"However, Randvi and Ygge didn't have that kind of money
-so they made a deal of small monthly payments. The problem is until the full amount has been paid, they don't own it."
 
-"If they don't pay up every month, the bastard can just
-throw them out and not refund any of the money... Well, it's not like he would have any of the money left anyways."
+"He used the house as storage when he had money from fishing, but since he drank most of it he needed more to keep drinking so he sold it to them."
 
-"Randvi and Ygge didn't have any problems paying before.
-Randvi makes very pretty jewelry and people from other villages come here just to buy them."
 
-"However, jackalopes have infested the area where she
-can find the materials she uses to make the jewelry."
+"However, Randvi and Ygge didn't have that kind of money so they made a deal of small monthly payments. The problem is until the full amount has been paid, they don't own it."
 
-"She can't make many of the bestsellers any longer. That
-has really hurt their capability to pay the cranky fisherman."
+
+"If they don't pay up every month, the bastard can just throw them out and not refund any of the money... Well, it's not like he would have any of the money left anyways."
+
+
+"Randvi and Ygge didn't have any problems paying before. Randvi makes very pretty jewelry and people from other villages come here just to buy them."
+
+
+"However, jackalopes have infested the area where she can find the materials she uses to make the jewelry."
+
+
+"She can't make many of the bestsellers any longer. That has really hurt their capability to pay the cranky fisherman."
+
 
 "If that adorable creature of yours can fight, you could take care of the jackalopes!"
 #
@@ -30,19 +30,17 @@ has really hurt their capability to pay the cranky fisherman."
 You promised to help Randvi by taking care of the jackalopes.
 
 
-You knew your monster would not like it, but you needed
-good relations with the other villagers to be able to settle down in the charming village.
+You knew your monster would not like it, but you needed good relations with the other villagers to be able to settle down in the charming village.
 
-"Oh, and before I forget, the jackalopes are on the very left
-of the forest. Be careful!"
+
+"Oh, and before I forget, the jackalopes are on the very left of the forest. Be careful!"
 #
 
 #OptionB
-You told Marget that your creature didn't know how to fight
-and apologized. She seemed understanding.
+You told Marget that your creature didn't know how to fight and apologized. She seemed understanding.
 
-"It's okay. You don't want !MonsterName! to get hurt. Can't
-blame you. I have to come up with another plan to help Randvi. See you around."
+
+"It's okay. You don't want !MonsterName! to get hurt. Can't blame you. I have to come up with another plan to help Randvi. See you around."
 #
 
 #ButtonA
