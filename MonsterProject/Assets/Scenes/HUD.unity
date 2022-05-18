@@ -660,6 +660,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1027684325, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_sDescription
+      value: Find Helga in the Forest
+      objectReference: {fileID: 0}
     - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_iEvolveTresh1
       value: 3
