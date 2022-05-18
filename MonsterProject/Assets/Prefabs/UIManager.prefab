@@ -2979,7 +2979,6 @@ MonoBehaviour:
   m_gcCanvas: {fileID: 2409397305170677007}
   m_gcQuestLogIcon: {fileID: 0}
   m_iForm: 0
-  m_iEvolveTresh: 2
 --- !u!114 &1060992250
 MonoBehaviour:
   m_ObjectHideFlags: 0
