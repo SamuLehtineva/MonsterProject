@@ -10,7 +10,7 @@ namespace GA.MonsterProject
         public static UIManager s_UIManager;
 
         [SerializeField]
-        DialogController m_gcDialogController;
+        public DialogController m_gcDialogController;
 
         [SerializeField]
         public QuestManager m_gcQuestManager;
@@ -80,20 +80,6 @@ namespace GA.MonsterProject
             GameManager.s_GameManager.Pause();
         }
 
-        /*public void PetEvent()
-        {
-            if (m_gcQuestManager.GetQuestByName("evolve").m_iStatus == Types.EStatus._Done)
-            {
-                m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Inactive);
-                Evolve();
-            }
-            if (m_gcQuestManager.QuestCountDone() == m_iEvolveTresh)
-            {
-                Debug.Log("quests done: " + m_gcQuestManager.QuestCountDone());
-                m_gcQuestManager.SetQuestStatus("evolve", Types.EStatus._Active);
-            }
-        }*/
-
         public void Evolve1()
         {
             if (m_iForm == Types.EForm._Baby)
@@ -128,40 +114,6 @@ namespace GA.MonsterProject
                 }
             }
         }
-
-        /*public void Evolve()
-        {
-            if (m_iForm == Types.EForm._Teen)
-            {
-                if (PlayerResources.s_CurrentResources.m_iBond >= 50)
-                {
-                    m_iForm = Types.EForm._Good;
-                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
-                    {
-                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipGood();
-                    }
-                }
-                else
-                {
-                    m_iForm = Types.EForm._Bad;
-                    if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
-                    {
-                        GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipBad();
-                    }
-                }
-                m_iEvolveTresh = 100;
-            }
-            else if (m_iForm == Types.EForm._Baby)
-            {
-                m_iForm = Types.EForm._Teen;
-                m_iEvolveTresh = 4;
-
-                if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
-                {
-                    GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipTeen();
-                }
-            }
-        }*/
 
         public void ResetValues()
         {

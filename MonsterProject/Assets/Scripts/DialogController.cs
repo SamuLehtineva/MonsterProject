@@ -118,6 +118,15 @@ namespace GA.MonsterProject
                 m_txtButtonA.text = SearchIndicator("#ButtonA")[0].ToString();
                 m_txtButtonB.text = SearchIndicator("#ButtonB")[0].ToString();
                 m_oButtons.SetActive(true);
+                
+                if (m_gcRewardA != null && PlayerResources.s_CurrentResources.m_iMoney + m_gcRewardA.m_iMoney < 0)
+                {
+                    m_oButtons.transform.Find("Button1A").GetComponent<Button>().interactable = false;
+                }
+                if (m_gcRewardB != null && PlayerResources.s_CurrentResources.m_iMoney + m_gcRewardB.m_iMoney < 0)
+                {
+                    m_oButtons.transform.Find("Button1B").GetComponent<Button>().interactable = false;
+                }
             }
             else
             {
@@ -129,6 +138,8 @@ namespace GA.MonsterProject
         {
             m_gcNpc.DialogEnd();
             m_gcNpc = null;
+            m_gcRewardA = null;
+            m_gcRewardB = null;
             gameObject.SetActive(false);
             GameManager.s_GameManager.PlayerCanMove(true);
         }
