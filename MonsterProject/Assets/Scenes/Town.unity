@@ -1851,7 +1851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4905203268507880565, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18951,7 +18951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1616787090
 Transform:
   m_ObjectHideFlags: 0
@@ -18981,11 +18981,11 @@ MonoBehaviour:
   <m_sName>k__BackingField: Jens
   <m_sFileName>k__BackingField: move_rock/inactive
   m_qRewardA:
-    m_iMoney: 0
-    m_iReputation: 0
+    m_iMoney: 20
+    m_iReputation: 20
     m_iBond: 0
   m_sQuestNameA: move_rock
-  m_eQuestStatusA: 3
+  m_eQuestStatusA: 4
   m_qRewardB:
     m_iMoney: 0
     m_iReputation: 0

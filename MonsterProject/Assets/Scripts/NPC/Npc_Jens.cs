@@ -26,16 +26,13 @@ namespace GA.MonsterProject
                     break;
 
                 case Types.EStatus._Active:
-                    m_gcTalk.m_sFileName = "move_rock/active";
+                    m_gcTalk.gameObject.SetActive(false);
                     m_gcTalk.ShowIcon(false);
 
                     break;
 
                 case Types.EStatus._Completed:
-                    m_gcTalk.m_sFileName = "move_rock/completed";
-                    m_gcTalk.m_qRewardA = new QuestReward(10, 10, -10);
-                    m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
-                    m_gcTalk.m_bRewardTalk = true;
+                    m_gcTalk.gameObject.SetActive(false);
 
                     break;
 
@@ -47,7 +44,7 @@ namespace GA.MonsterProject
                     break;
 
                 case Types.EStatus._Failed:
-                    m_gcTalk.m_sFileName = "move_rock/failed";
+                    m_gcTalk.gameObject.SetActive(false);
                     m_gcTalk.ShowIcon(false);
 
                     break;
