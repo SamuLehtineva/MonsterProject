@@ -17673,7 +17673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae41605f756fa4b429b6072025d2b7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_gcTalk: {fileID: 0}
+  m_gcTalk: {fileID: 1616787091}
 --- !u!1001 &1486015650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18979,19 +18979,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <m_sName>k__BackingField: Jens
-  <m_sFileName>k__BackingField: 
+  <m_sFileName>k__BackingField: move_rock/inactive
   m_qRewardA:
     m_iMoney: 0
     m_iReputation: 0
     m_iBond: 0
-  m_sQuestNameA: none
-  m_eQuestStatusA: 0
+  m_sQuestNameA: move_rock
+  m_eQuestStatusA: 3
   m_qRewardB:
     m_iMoney: 0
     m_iReputation: 0
     m_iBond: 0
-  m_sQuestNameB: none
-  m_eQuestStatusB: 0
+  m_sQuestNameB: move_rock
+  m_eQuestStatusB: 1
   m_bRewardTalk: 0
 --- !u!4 &1622888816 stripped
 Transform:

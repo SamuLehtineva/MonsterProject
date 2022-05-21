@@ -331,7 +331,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -382,4 +382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef5846271798e24d9e44ac3716a368c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vClips: []
+  m_vClips:
+  - {fileID: 32900000, guid: c18fd668acb4a804fb8d8a1179619775, type: 3}
+  - {fileID: 32900000, guid: fa3efb7927405cc4eaed75c642e5eae6, type: 3}
+  - {fileID: 32900000, guid: 5c4400805ca9fb640b62a50dd6b927c1, type: 3}
+  - {fileID: 32900000, guid: 9a4072e44d93af34fb02d9caba044393, type: 3}
