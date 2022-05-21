@@ -14,10 +14,30 @@ namespace GA.MonsterProject
         {
             m_gcPlayer = GetComponent<VideoPlayer>();
 
-            if (PlayerResources.s_CurrentResources.m_iReputation < 25)
+            if (UIManager.s_UIManager.m_iForm == Types.EForm._Good)
             {
-                m_gcPlayer.clip = m_vClips[0];
+                if (PlayerResources.s_CurrentResources.m_iReputation > 50)
+                {
+                    m_gcPlayer.clip = m_vClips[0];
+                }
+                else
+                {
+                    m_gcPlayer.clip = m_vClips[1];
+                }
             }
+            else
+            {
+                if (PlayerResources.s_CurrentResources.m_iReputation > 50)
+                {
+                    m_gcPlayer.clip = m_vClips[2];
+                }
+                else
+                {
+                    m_gcPlayer.clip = m_vClips[1];
+                }
+            }
+
+            m_gcPlayer.Play();
         }
     }
 }
