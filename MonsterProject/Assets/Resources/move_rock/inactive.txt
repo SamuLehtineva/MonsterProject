@@ -5,7 +5,13 @@ You walked past a man rubbing his right temple. He was glaring at a rock in the 
 "Hm? Me? Yes, I'm fine, I guess. I came from the pub last night and tripped over this stupid rock... Too bad it's just heavy enough that I can't move it alone."
 
 
-"Mind lending me a hand? My father is too old to help me and I don't want to bother Marget... o-or any other of my neighbours."
+"You are the new guy, aren't you? I'm Jens, pleasure to meet you."
+
+
+You introduced yourself and !MonsterName!.
+
+
+"Mind lending me a hand with this rock? My father is too old to help me and I don't want to bother Marget... o-or any other of my neighbours."
 #
 
 #OptionA
@@ -16,7 +22,40 @@ You told the young man that you didn't have the arm strenght to even consider he
 #
 
 #OptionB
-You asked
+You asked why Marget of all people, and why he reacted the way he did.
+
+
+"It's nothing really... She is a, eh, good innkeeper, fun to talk to. That's all."
+
+
+You told Jens he's very bad at lying.
+
+
+"Lying? But- ugh. Fine... I like her. But my father hates her and she hates my father. It's a complicated and tiring mess."
+
+
+You asked why would someone hate Marget. Jens sighed.
+
+
+"Marget loves creatures and father hates them. My brother Sven died in the war and father started drinking so much that he drove our mother out. He blames everything on monsters."
+
+
+"He is also the reason why Marget's pet couldn't move here. And ever since they have been at eachothers throats."
+
+
+You noted that Jens didn't seem to have the same hatered for monsters like his father. Jens nodded.
+
+
+"I know there is a difference between monsters and creatures. Hell, we even have a statue of Krona, one of the creatures that fought on our side."
+
+
+"Father just... never got over Sven's death and he became an angry drunken man. He can be such a horrible person sometimes but at the same time I feel sorry for him..."
+
+
+You expressed your condolences and apologized for not being able to help with the rock. Jens didn't seem to mind.
+
+
+You wondered if asking Marget to help Jens would be a good idea.
 #
 
 #ButtonA
