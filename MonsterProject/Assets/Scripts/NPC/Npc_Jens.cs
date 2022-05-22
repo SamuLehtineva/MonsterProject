@@ -22,6 +22,7 @@ namespace GA.MonsterProject
                 case Types.EStatus._Inactive:
                     m_gcTalk.m_sFileName = "move_rock/inactive";
                     m_gcTalk.gameObject.SetActive(true);
+                    m_gcTalk.ShowIcon(true);
 
                     break;
 
