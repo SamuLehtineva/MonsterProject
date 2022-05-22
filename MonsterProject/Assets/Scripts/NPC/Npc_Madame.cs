@@ -59,12 +59,20 @@ namespace GA.MonsterProject
             else
             {
                 m_gcTalk.gameObject.SetActive(true);
-                m_gcTalk.m_sFileName = "move_rock/active";
                 m_gcTalk.ShowIcon(true);
-                m_gcTalk.m_qRewardA = new QuestReward(0, 10, 0);
                 m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                 m_gcTalk.m_sQuestNameA = "move_rock";
                 m_gcTalk.m_bRewardTalk = true;
+
+                if (UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("marget_kill_jackalopes").m_iStatus == Types.EStatus._Done)
+                {
+                    m_gcTalk.m_sFileName = "move_rock/active_pos";
+                    m_gcTalk.m_qRewardA = new QuestReward(0, 10, 0);
+                }
+                else {
+                    m_gcTalk.m_sFileName = "move_rock/active_neg";
+                    m_gcTalk.m_qRewardA = new QuestReward(0, 0, 0);
+                }
             }
         }
     }
