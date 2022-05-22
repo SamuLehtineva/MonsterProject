@@ -59,9 +59,11 @@ namespace GA.MonsterProject
             else
             {
                 m_gcTalk.gameObject.SetActive(true);
-                m_gcTalk.m_sFileName = "move_rock/marget";
+                m_gcTalk.m_sFileName = "move_rock/active";
                 m_gcTalk.ShowIcon(true);
                 m_gcTalk.m_qRewardA = new QuestReward(0, 10, 0);
+                m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
+                m_gcTalk.m_sQuestNameA = "move_rock";
                 m_gcTalk.m_bRewardTalk = true;
             }
         }
