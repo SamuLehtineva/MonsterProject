@@ -68,6 +68,7 @@ namespace GA.MonsterProject
 
         public void Interact()
         {
+            UIManager.s_UIManager.m_gcDialogController.SetRewards(m_qRewardA, m_qRewardB);
             UIManager.s_UIManager.StartDialog(this);
             DeActivate();
         }

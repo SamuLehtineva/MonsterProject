@@ -7,22 +7,28 @@ namespace GA.MonsterProject
 {
     public class IntroController : MonoBehaviour
     {
-        [SerializeField]
-        Sprite[] m_sSprites = new Sprite[8];
-
-        [SerializeField]
-        Image m_iImage;
-        private int m_iCurrent = 0;
+        private int m_iCurrent = 1;
 
         void Update()
         {
-            m_iImage.sprite = m_sSprites[m_iCurrent];
             if (Input.GetButtonDown("Fire1"))
             {
                 m_iCurrent++;
-                if (m_iCurrent >= m_sSprites.Length)
+                
+                if (m_iCurrent == 9)
                 {
                     SceneChanger.LoadLevel("Name");
+                }
+                else
+                {
+                    foreach (Transform child in transform)
+                    {
+                        if (child.name != "Continue")
+                        {
+                            child.gameObject.SetActive(false);
+                        }
+                    }
+                    transform.Find(m_iCurrent.ToString()).gameObject.SetActive(true);
                 }
             }
         }

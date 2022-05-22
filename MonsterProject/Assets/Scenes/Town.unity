@@ -1849,6 +1849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jens
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4905203268507880565, guid: 540631521c826f5459686ed8d7a4cf7e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17657,6 +17661,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1484576558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484576555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae41605f756fa4b429b6072025d2b7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gcTalk: {fileID: 1616787091}
 --- !u!1001 &1486015650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18918,6 +18935,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
   m_PrefabInstance: {fileID: 2072851895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1616787089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616787090}
+  - component: {fileID: 1616787091}
+  m_Layer: 0
+  m_Name: interact
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1616787090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616787089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1484576556}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1616787091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616787089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ab27d5414f30d48bfadddac67cffb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <m_sName>k__BackingField: Jens
+  <m_sFileName>k__BackingField: move_rock/inactive
+  m_qRewardA:
+    m_iMoney: 20
+    m_iReputation: 20
+    m_iBond: 0
+  m_sQuestNameA: move_rock
+  m_eQuestStatusA: 4
+  m_qRewardB:
+    m_iMoney: 0
+    m_iReputation: 0
+    m_iBond: 0
+  m_sQuestNameB: move_rock
+  m_eQuestStatusB: 1
+  m_bRewardTalk: 0
 --- !u!4 &1622888816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b83de0f37e8e6e24f8b3d2b9300a5aa4, type: 3}
@@ -19046,6 +19121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1636569944}
   - component: {fileID: 1636569945}
+  - component: {fileID: 1636569946}
   m_Layer: 0
   m_Name: Props
   m_TagString: Untagged
@@ -19111,6 +19187,21 @@ MonoBehaviour:
   m_goTarget: {fileID: 1808989972}
   m_sQuestName: fetch_helga
   m_iStatus: 4
+--- !u!114 &1636569946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636569943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e076530a92b79e48b50e26fa0edb7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oTarget: {fileID: 2062256902}
+  m_sQuestName: ate_chicken
+  m_iStatuses: 05000000
 --- !u!4 &1638034581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
