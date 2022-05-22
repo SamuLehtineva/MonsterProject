@@ -19056,7 +19056,7 @@ MonoBehaviour:
     m_iReputation: 20
     m_iBond: 0
   m_sQuestNameA: move_rock
-  m_eQuestStatusA: 4
+  m_eQuestStatusA: 3
   m_qRewardB:
     m_iMoney: 0
     m_iReputation: 0
