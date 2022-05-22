@@ -816,8 +816,12 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_iEvolveTresh2
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_aQuests.Array.size
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_aQuests.Array.data[8]
@@ -827,6 +831,18 @@ PrefabInstance:
       propertyPath: m_aQuests.Array.data[9]
       value: 
       objectReference: {fileID: 254117624}
+    - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_aQuests.Array.data[10]
+      value: 
+      objectReference: {fileID: 1415646484}
+    - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_aQuests.Array.data[11]
+      value: 
+      objectReference: {fileID: 2075058013}
+    - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_aQuests.Array.data[12]
+      value: 
+      objectReference: {fileID: 1696741759}
     - target: {fileID: 1512657685, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -6.3497925
