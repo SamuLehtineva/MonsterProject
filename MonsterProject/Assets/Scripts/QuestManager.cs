@@ -119,6 +119,14 @@ namespace GA.MonsterProject
 
             if (iProgress > m_iEvolveTresh2 && !m_bStep2)
             {
+                if (UIManager.s_UIManager.m_iForm == Types.EForm._Good)
+                {
+                    SetQuestStatus("move_rock", Types.EStatus._Inactive);
+                }
+                else if (UIManager.s_UIManager.m_iForm == Types.EForm._Bad)
+                {
+                    SetQuestStatus("ate_chicken", Types.EStatus._Inactive);
+                }
                 m_bStep2 = true;
             }
 
