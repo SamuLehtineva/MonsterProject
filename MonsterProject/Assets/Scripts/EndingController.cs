@@ -14,7 +14,7 @@ namespace GA.MonsterProject
         {
             m_gcPlayer = GetComponent<VideoPlayer>();
 
-            if (UIManager.s_UIManager.m_iForm == Types.EForm._Good)
+            if (UIManager.s_UIManager != null && UIManager.s_UIManager.m_iForm == Types.EForm._Good)
             {
                 if (PlayerResources.s_CurrentResources.m_iReputation > 50)
                 {
@@ -27,7 +27,7 @@ namespace GA.MonsterProject
             }
             else
             {
-                if (PlayerResources.s_CurrentResources.m_iReputation > 50)
+                if (PlayerResources.s_CurrentResources != null && PlayerResources.s_CurrentResources.m_iReputation > 50)
                 {
                     m_gcPlayer.clip = m_vClips[2];
                 }

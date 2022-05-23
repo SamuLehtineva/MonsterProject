@@ -15,7 +15,7 @@ namespace GA.MonsterProject
         public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;
         CharMover m_gcCharMover;
-        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro_Animated"};
+        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro_Animated", "Ending"};
         private float m_fFixedDeltaTime;
         void Awake()
         {

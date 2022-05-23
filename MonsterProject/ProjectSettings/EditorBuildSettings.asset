@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro_Animated.unity
     guid: 59a0efceaa5565c4bbf95c99ac6d4bd1
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: d39e3483b569b2f4093a0845ac7803b6
   m_configObjects: {}

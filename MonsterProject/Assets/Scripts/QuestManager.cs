@@ -67,6 +67,11 @@ namespace GA.MonsterProject
             {
                 UIManager.s_UIManager.ToggleQuestLogIcon(true);
             }
+
+            if (name == "deliver_package" && status == Types.EStatus._Failed)
+            {
+                SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Failed);
+            }
         }
 
         public int QuestCountDone()

@@ -4652,6 +4652,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5421559264190422078, guid: 9779d63208063a64999175b6932a3ecd, type: 3}
   m_PrefabInstance: {fileID: 1739027694}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &370432636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370432639}
+  - component: {fileID: 370432638}
+  - component: {fileID: 370432637}
+  m_Layer: 0
+  m_Name: EndingTrigger
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &370432637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370432636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8bc2259dd7f094ab8d76efe308d1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sTargetSceneName: Ending
+  m_sTargetSpawnName: default
+  m_gcChanger: {fileID: 1006457915}
+--- !u!65 &370432638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370432636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 39.874634, y: 2.876236, z: 53.70874}
+  m_Center: {x: -4.712097, y: -0.938118, z: 1.5993958}
+--- !u!4 &370432639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370432636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1137.1968, y: 244.4, z: 364.52304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &374782826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12043,6 +12103,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+--- !u!114 &1006457915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7961923627403563027, guid: bfb99c633c9be074a910cc5bdada89e1, type: 3}
+  m_PrefabInstance: {fileID: 1006457914}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c5a94cc30f4264498e8f692223606a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1022137628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19206,6 +19277,7 @@ GameObject:
   - component: {fileID: 1636569944}
   - component: {fileID: 1636569945}
   - component: {fileID: 1636569946}
+  - component: {fileID: 1636569947}
   m_Layer: 0
   m_Name: Props
   m_TagString: Untagged
@@ -19286,6 +19358,21 @@ MonoBehaviour:
   m_oTarget: {fileID: 2062256902}
   m_sQuestName: ate_chicken
   m_iStatuses: 05000000
+--- !u!114 &1636569947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636569943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf658a535b149f544b6cab979f6330f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_goTarget: {fileID: 370432636}
+  m_sQuestName: last
+  m_iStatus: 1
 --- !u!4 &1638034581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50886f9b917c83b4cbc6ec2c2c5fbe34, type: 3}
