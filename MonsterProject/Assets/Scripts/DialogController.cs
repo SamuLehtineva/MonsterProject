@@ -123,9 +123,18 @@ namespace GA.MonsterProject
                 {
                     m_oButtons.transform.Find("Button1A").GetComponent<Button>().interactable = false;
                 }
+                else
+                {
+                    m_oButtons.transform.Find("Button1A").GetComponent<Button>().interactable = true;
+                }
+
                 if (m_gcRewardB != null && PlayerResources.s_CurrentResources.m_iMoney + m_gcRewardB.m_iMoney < 0)
                 {
                     m_oButtons.transform.Find("Button1B").GetComponent<Button>().interactable = false;
+                }
+                else
+                {
+                    m_oButtons.transform.Find("Button1B").GetComponent<Button>().interactable = true;
                 }
             }
             else
