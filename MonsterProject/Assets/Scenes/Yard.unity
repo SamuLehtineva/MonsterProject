@@ -11977,7 +11977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_qRewardA.m_iMoney
-      value: -200
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 235990256414979383, guid: 56683e84fcba6e5438bfdc27d59514cc, type: 3}
       propertyPath: m_qRewardB.m_iMoney
