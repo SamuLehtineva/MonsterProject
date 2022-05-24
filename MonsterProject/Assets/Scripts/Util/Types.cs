@@ -30,5 +30,13 @@ namespace GA.MonsterProject
             _Bad,
             _Good,
         }
+
+        public enum EDirection
+        {
+            _Left,
+            _Up,
+            _Right,
+            _Empty,
+        }
     }
 }

@@ -1,0 +1,1 @@
+bond + reputation -    = Player leaves the village with the monster, too bad the village was just not for them
