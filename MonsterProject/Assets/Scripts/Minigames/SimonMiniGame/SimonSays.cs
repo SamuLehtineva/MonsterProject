@@ -25,9 +25,8 @@ namespace GA.MonsterProject
         public bool rightChoice = false;
         public int RandomNumber;
         public int Points = 0;
-
-        public Types.EDirection randomDir;
-        public Types.EDirection playerDir;
+        public float timer = 0;
+        public float timeLimit = 2;
 
         // Start is called before the first frame update
         void Start()
@@ -39,7 +38,16 @@ namespace GA.MonsterProject
         // Update is called once per frame
         void Update()
         {
-            GameControls();
+            timer += Time.deltaTime;
+            if(timer >= timeLimit)
+            {
+                GameLost();
+            }
+            if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D))
+            {
+                GameControls();
+                timer = 0;
+            }
             if (Points == 10)
             {
                 GameWon();
@@ -48,9 +56,8 @@ namespace GA.MonsterProject
 
         void GameControls()
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) && BoolMonLeft == true)
             {
-                playerDir = Types.EDirection._Left;
                 MonsterLeft.SetActive(false);
                 BoolMonLeft = false;
                 Points += 1;
@@ -58,7 +65,6 @@ namespace GA.MonsterProject
                 ActivateButton();
             } else if (Input.GetKeyDown(KeyCode.W) && BoolMonUp == true)
             {
-                playerDir = Types.EDirection._Up;
                 MonsterUp.SetActive(false);
                 BoolMonUp = false;
                 Points += 1;
@@ -66,23 +72,15 @@ namespace GA.MonsterProject
                 ActivateButton();
             } else if (Input.GetKeyDown(KeyCode.D) && BoolMonRight == true)
             {
-                playerDir = Types.EDirection._Right;
                 MonsterRight.SetActive(false);
                 BoolMonRight = false;
                 Points += 1;
                 RandomNum();
                 ActivateButton();
-            }
-
-            if(playerDir == randomDir)
-            {
-                GameWon();
-            } else if(playerDir != Types.EDirection._Empty)
+            } else
             {
                 GameLost();
             }
-
-            playerDir = Types.EDirection._Empty;
         }
 
         void ActivateButton()
@@ -105,7 +103,6 @@ namespace GA.MonsterProject
         void RandomNum()
         {
             RandomNumber = Random.Range(0, 3);
-            randomDir = (Types.EDirection)Random.Range(0, 3);
         }
 
         void GameWon()
