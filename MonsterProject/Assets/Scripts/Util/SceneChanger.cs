@@ -45,6 +45,11 @@ namespace GA.MonsterProject
             StartCoroutine(LoadAsyncFadeIn());
         }
 
+        public void BattleStart()
+        {
+            
+        }
+
         IEnumerator LoadAsyncFadeOut(string sceneName)
         {
             AsyncOperation asyncLoadFade = SceneManager.LoadSceneAsync("Transitions", LoadSceneMode.Additive);

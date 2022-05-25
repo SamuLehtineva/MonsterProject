@@ -185,6 +185,7 @@ namespace GA.MonsterProject
             {
                 m_txtTurnText.text = "Defeat";
                 m_gcMoveBetween.enabled = false;
+                //PlayerResources.s_CurrentResources
                 StartCoroutine(EndDelay());
             }
         }
