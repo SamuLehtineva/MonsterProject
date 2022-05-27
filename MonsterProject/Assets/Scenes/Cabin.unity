@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.006247386, g: 0.00580059, b: 0.0054951683, a: 1}
+  m_IndirectSpecularColor: {r: 0.0071097165, g: 0.006730773, b: 0.0066642133, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5977,7 +5977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <m_sName>k__BackingField: Pet
+  <m_sName>k__BackingField: '!MonsterName!'
   <m_sFileName>k__BackingField: pet/evolve
   m_qRewardA:
     m_iMoney: -25
@@ -26515,7 +26515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <m_sName>k__BackingField: Pet
+  <m_sName>k__BackingField: '!MonsterName!'
   <m_sFileName>k__BackingField: pet/evolve
   m_qRewardA:
     m_iMoney: -25
