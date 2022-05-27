@@ -7,13 +7,14 @@ namespace GA.MonsterProject
 {
     public class MusicController : MonoBehaviour
     {
-        public float m_fLerpDurationSeconds = 1.0f;
+        public float m_fLerpDurationSeconds = 2f;
         public AudioClip m_cgClip;
         private AudioSource m_gcAudi;
         private float m_fEventTime = 0.0f;
         private float m_fRatio = 0.0f;
         private float m_fTargetVolume1 = 0.0f;
         private float m_fTargetVolume2;
+        private bool m_bFading;
 
         void OnEnable()
         {
@@ -43,6 +44,8 @@ namespace GA.MonsterProject
             m_fRatio = 0.0f;
             m_fTargetVolume1 = 0.0f;
             m_fTargetVolume2 = PlayerPrefs.GetFloat("MusicVolume");
+            m_bFading = false;
+
         }
 
         void Update()
@@ -51,7 +54,7 @@ namespace GA.MonsterProject
             {
                 m_fRatio = (Time.time - m_fEventTime) / m_fLerpDurationSeconds;
             }
-            else
+            else if (!m_bFading)
             {
                 m_fTargetVolume2 = PlayerPrefs.GetFloat("MusicVolume");
             }
@@ -69,6 +72,7 @@ namespace GA.MonsterProject
             m_fRatio = 0.0f;
             m_fTargetVolume1 = m_gcAudi.volume;
             m_fTargetVolume2 = 0.0f;
+            m_bFading = true;
         }
 
         void OnDisable()

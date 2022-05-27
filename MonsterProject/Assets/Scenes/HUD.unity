@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a67f13adac99fd4692b06c4b2bc1028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fLerpDurationSeconds: 1
+  m_fLerpDurationSeconds: 2
   m_cgClip: {fileID: 0}
 --- !u!82 &2077221111
 AudioSource:
