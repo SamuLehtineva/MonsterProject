@@ -30,6 +30,7 @@ namespace GA.MonsterProject
         public string m_SceneName;
         public string m_sQuestName;
         public string m_sSpawnPoint;
+        public SceneChanger m_gcChanger;
 
         void Start()
         {
@@ -74,7 +75,7 @@ namespace GA.MonsterProject
         {
             GameManager.m_sDestination = m_sSpawnPoint;
             GameManager.m_qMinigameQuest = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName(m_sQuestName);
-            SceneChanger.LoadLevel(m_SceneName);
+            m_gcChanger.BattleStart(m_SceneName);
         }
     }
 }
