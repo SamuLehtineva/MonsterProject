@@ -68,6 +68,14 @@ namespace GA.MonsterProject
         public void Activate()
         {
             m_2dInteract.gameObject.SetActive(true);
+            if (m_iForm == Types.EForm._Good)
+			{
+                m_2dInteract.transform.position = new Vector3(transform.position.x, 2.85f, transform.position.z);
+			}
+            else
+			{
+                m_2dInteract.transform.position = new Vector3(transform.position.x, 2.2f, transform.position.z);
+            }
         }
 
         public void DeActivate()
