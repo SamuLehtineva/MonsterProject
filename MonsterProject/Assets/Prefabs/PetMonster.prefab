@@ -342,9 +342,10 @@ GameObject:
   - component: {fileID: 2255866027486897144}
   - component: {fileID: 2255866027486897145}
   - component: {fileID: 2255866027486897126}
-  - component: {fileID: 2255866027486897127}
   - component: {fileID: 2255866027486897147}
   - component: {fileID: 2255866027486897146}
+  - component: {fileID: 378498505}
+  - component: {fileID: 378498506}
   m_Layer: 7
   m_Name: PetMonster
   m_TagString: Pet
@@ -484,21 +485,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8be1bfe0470e25d4f80eb50165ecc981, type: 3}
   - {fileID: 8300000, guid: 9f830919375760f4983531b4ae8b1417, type: 3}
   - {fileID: 8300000, guid: 6d8901d63614a374694f23f45f99b829, type: 3}
---- !u!114 &2255866027486897127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2255866027486897124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5932f90b94bbc4794b2bff6d9ec4ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_tTarget: {fileID: 0}
-  m_fDesiredDistance: 10
-  m_fMoveSpeed: 3
 --- !u!114 &2255866027486897147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69ab13ffad36f74493bde25b326e128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_gcMoveClose: {fileID: 2255866027486897127}
+  m_gcMoveClose: {fileID: 0}
+  m_gcNav: {fileID: 378498505}
   m_gcAudi: {fileID: 2255866027486897126}
   m_2dInteract: {fileID: 2255866027024232198}
 --- !u!65 &2255866027486897146
@@ -527,6 +514,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5499859, y: 1.329904, z: 1}
   m_Center: {x: -0.036167145, y: 0.3502354, z: 0}
+--- !u!114 &378498505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255866027486897124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2e301078c45044894857a77591a8df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gcTarget: {fileID: 0}
+--- !u!195 &378498506
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255866027486897124}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 12
+  avoidancePriority: 50
+  m_AngularSpeed: 190
+  m_StoppingDistance: 5
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &2255866026771303835
 PrefabInstance:
   m_ObjectHideFlags: 0
