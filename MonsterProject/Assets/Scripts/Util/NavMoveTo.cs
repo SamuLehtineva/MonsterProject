@@ -9,6 +9,8 @@ namespace GA.MonsterProject
     {
         [SerializeField]
         public Transform m_gcTarget;
+        public bool m_bTeleport = true;
+        public float m_fTeleportDist;
         private NavMeshAgent m_gcNav;
 
         void Start()
@@ -20,6 +22,11 @@ namespace GA.MonsterProject
         void Update()
         {
             m_gcNav.destination = m_gcTarget.position;
+            if (m_bTeleport && m_gcNav.remainingDistance > m_fTeleportDist)
+			{
+                transform.position = m_gcTarget.position;
+                m_gcNav.ResetPath();
+			}
         }
 
         public bool IsMoving()
