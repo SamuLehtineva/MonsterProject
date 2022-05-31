@@ -20,6 +20,10 @@ namespace GA.MonsterProject
         void Update()
         {
             m_gcNav.destination = m_gcTarget.position;
+            if (m_gcNav.remainingDistance > 3 * m_gcNav.stoppingDistance && m_gcNav.remainingDistance != float.PositiveInfinity)
+			{
+                m_gcNav.Warp(m_gcTarget.position);
+			}
         }
 
         public bool IsMoving()
