@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace GA.MonsterProject
 {
@@ -28,6 +29,10 @@ namespace GA.MonsterProject
 
         [SerializeField]
         Image m_gcQuestLogIcon;
+
+        [SerializeField]
+        TMP_Text m_txtSavedText;
+
         public Types.EForm m_iForm = Types.EForm._Baby;
 
         void Awake()
@@ -75,6 +80,12 @@ namespace GA.MonsterProject
             m_gcQuestLogIcon.gameObject.SetActive(value);
         }
 
+        public void ShowSavedText()
+		{
+            m_txtSavedText.gameObject.SetActive(true);
+            StartCoroutine(SavedTextDelay());
+		}
+
         public void CallPause()
         {
             GameManager.s_GameManager.Pause();
@@ -119,5 +130,11 @@ namespace GA.MonsterProject
         {
             m_iForm = Types.EForm._Baby;
         }
+
+        IEnumerator SavedTextDelay()
+		{
+            yield return new WaitForSeconds(2);
+            m_txtSavedText.gameObject.SetActive(false);
+		}
     }
 }
