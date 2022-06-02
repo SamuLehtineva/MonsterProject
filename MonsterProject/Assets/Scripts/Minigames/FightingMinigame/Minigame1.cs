@@ -93,7 +93,7 @@ namespace GA.MonsterProject
 
         void ChangeForm()
         {
-            GameObject pet = transform.Find("Teen").gameObject;
+            GameObject pet = transform.Find("Baby").gameObject;
             if (UIManager.s_UIManager != null)
             {
                 switch(UIManager.s_UIManager.m_iForm)
