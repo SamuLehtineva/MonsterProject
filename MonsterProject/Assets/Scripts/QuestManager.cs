@@ -105,11 +105,11 @@ namespace GA.MonsterProject
         {
             int iProgress = QuestCountDone();
 
-            if (iProgress == m_iEvolveTresh1 && GetQuestByName("evolve").m_iStatus == Types.EStatus._Inactive)
+            if (iProgress >= m_iEvolveTresh1 && GetQuestByName("evolve").m_iStatus == Types.EStatus._Inactive)
             {
                 SetQuestStatus("evolve", Types.EStatus._Active);
             } 
-            else if (iProgress == m_iEvolveTresh2 && GetQuestByName("evolve2").m_iStatus == Types.EStatus._Inactive)
+            else if (iProgress >= m_iEvolveTresh2 && GetQuestByName("evolve2").m_iStatus == Types.EStatus._Inactive)
             {
                 SetQuestStatus("evolve2", Types.EStatus._Active);
             }
