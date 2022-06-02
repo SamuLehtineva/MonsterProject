@@ -15,7 +15,7 @@ namespace GA.MonsterProject
         public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;
         CharMover m_gcCharMover;
-        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro_Animated", "Ending", "Credits"};
+        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro_Animated", "Ending", "Credits", "Name"};
         private float m_fFixedDeltaTime;
         void Awake()
         {
@@ -66,7 +66,7 @@ namespace GA.MonsterProject
                 Debug.Log(e);
             }
 
-            if (scene.name == "Intro")
+            if (scene.name == "Intro_Animated")
             {
                 ResetValues();
             }
