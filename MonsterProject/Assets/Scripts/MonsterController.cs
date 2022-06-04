@@ -7,7 +7,7 @@ namespace GA.MonsterProject
     public class MonsterController : MonoBehaviour
     {
         [SerializeField]
-        MoveClose m_gcMoveClose;
+        NavMoveTo m_gcNav;
 
         [SerializeField]
         AudioClipPlayer m_gcAudi;
@@ -28,7 +28,7 @@ namespace GA.MonsterProject
 
         void Update()
         {
-            m_gcAnimator.SetBool("IsMoving", m_gcMoveClose.IsMoving());
+            m_gcAnimator.SetBool("IsMoving", m_gcNav.IsMoving());
             if (m_iForm != UIManager.s_UIManager.m_iForm)
             {
                 m_iForm = UIManager.s_UIManager.m_iForm;
@@ -55,7 +55,7 @@ namespace GA.MonsterProject
                 
                 case Types.EForm._Bad:
                     transform.Find("Bad").gameObject.SetActive(true);
-                    m_gcMoveClose.m_fDesiredDistance = 18f;
+                    //m_gcMoveClose.m_fDesiredDistance = 18f;
                     break;
 
                 case Types.EForm._Good:
@@ -68,6 +68,14 @@ namespace GA.MonsterProject
         public void Activate()
         {
             m_2dInteract.gameObject.SetActive(true);
+            if (m_iForm == Types.EForm._Good)
+			{
+                m_2dInteract.transform.position = new Vector3(transform.position.x, 2.85f, transform.position.z);
+			}
+            else
+			{
+                m_2dInteract.transform.position = new Vector3(transform.position.x, 2.2f, transform.position.z);
+            }
         }
 
         public void DeActivate()

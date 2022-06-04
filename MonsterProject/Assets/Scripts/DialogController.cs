@@ -70,7 +70,7 @@ namespace GA.MonsterProject
         {
             m_gcNpc = npc;
             m_ReadText = new ReadTextFile(npc.m_sFileName);
-            m_txtNameText.text = m_gcNpc.m_sName;
+            m_txtNameText.text = m_gcNpc.m_sName.Replace("!MonsterName!", GameManager.m_sPetName);
             m_sLines = m_ReadText.GetLines();
 
             m_bCanContinue = false;

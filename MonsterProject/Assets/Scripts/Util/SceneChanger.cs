@@ -45,9 +45,11 @@ namespace GA.MonsterProject
             StartCoroutine(LoadAsyncFadeIn());
         }
 
-        public void BattleStart()
+        public void BattleStart(string LevelName)
         {
-            
+            GameManager.s_GameManager.PlayerCanMove(false);
+            UIManager.s_UIManager.m_gcMusicController.FadeOut();
+            StartCoroutine(LoadBattleStart(LevelName));
         }
 
         IEnumerator LoadAsyncFadeOut(string sceneName)
@@ -76,6 +78,19 @@ namespace GA.MonsterProject
             yield return new WaitForSeconds(2);
             SceneManager.UnloadSceneAsync("Transitions");
         }
+
+        IEnumerator LoadBattleStart(string scenename)
+		{
+            AsyncOperation asyncLoadBattle = SceneManager.LoadSceneAsync("Transition_2", LoadSceneMode.Additive);
+
+            while (!asyncLoadBattle.isDone)
+			{
+                yield return null;
+			}
+
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadSceneAsync(scenename);
+		}
 
         public void CloseApp()
         {

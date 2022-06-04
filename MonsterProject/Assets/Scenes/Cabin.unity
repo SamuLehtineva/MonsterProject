@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.006247386, g: 0.00580059, b: 0.0054951683, a: 1}
+  m_IndirectSpecularColor: {r: 0.0071097165, g: 0.006730773, b: 0.0066642133, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 4ab529e9dd63db445a7d0d89ac0eb153, type: 2}
 --- !u!1 &61475546
 GameObject:
   m_ObjectHideFlags: 0
@@ -5977,7 +5977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <m_sName>k__BackingField: Pet
+  <m_sName>k__BackingField: '!MonsterName!'
   <m_sFileName>k__BackingField: pet/evolve
   m_qRewardA:
     m_iMoney: -25
@@ -26371,6 +26371,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 378498505, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_gcTarget
+      value: 
+      objectReference: {fileID: 2046235837}
     - target: {fileID: 2255866027024232217, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
       propertyPath: m_gcTarget
       value: 
@@ -26515,7 +26519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <m_sName>k__BackingField: Pet
+  <m_sName>k__BackingField: '!MonsterName!'
   <m_sFileName>k__BackingField: pet/evolve
   m_qRewardA:
     m_iMoney: -25
@@ -26622,6 +26626,14 @@ PrefabInstance:
     - target: {fileID: 1589798616845515607, guid: c3c230fcd2d5f47408cc427ae847b41d, type: 3}
       propertyPath: m_Name
       value: BLE_Cottage_Items_Sofaetc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789972776116634999, guid: c3c230fcd2d5f47408cc427ae847b41d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953635755715965230, guid: c3c230fcd2d5f47408cc427ae847b41d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2115506309331395053, guid: c3c230fcd2d5f47408cc427ae847b41d, type: 3}
       propertyPath: m_RootOrder
@@ -26731,6 +26743,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -23.811
       objectReference: {fileID: 0}
+    - target: {fileID: 7934755911500040163, guid: c3c230fcd2d5f47408cc427ae847b41d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c230fcd2d5f47408cc427ae847b41d, type: 3}
 --- !u!1001 &2594345684143745779
@@ -26740,6 +26756,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 419665279913640666, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 533085672944595779, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2560946036770711563, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -26788,9 +26812,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FBX_Cottage_Fireplaceroom_Merged
       objectReference: {fileID: 0}
+    - target: {fileID: 4207792083646443380, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281661901482162603, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6230224992648769796, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: d21287514dfc7e340bcfef3c393ccf48, type: 2}
+    - target: {fileID: 6750498266027060973, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915277355678778294, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 117bbda65f1cc3a428b32d6e2e285a89, type: 3}

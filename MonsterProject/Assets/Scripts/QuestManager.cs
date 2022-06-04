@@ -105,20 +105,37 @@ namespace GA.MonsterProject
         {
             int iProgress = QuestCountDone();
 
-            if (iProgress == m_iEvolveTresh1 && GetQuestByName("evolve").m_iStatus == Types.EStatus._Inactive)
+            if (iProgress >= m_iEvolveTresh1 && GetQuestByName("evolve").m_iStatus == Types.EStatus._Inactive)
             {
                 SetQuestStatus("evolve", Types.EStatus._Active);
             } 
-            else if (iProgress == m_iEvolveTresh2 && GetQuestByName("evolve2").m_iStatus == Types.EStatus._Inactive)
+            else if (iProgress >= m_iEvolveTresh2 && GetQuestByName("evolve2").m_iStatus == Types.EStatus._Inactive)
             {
                 SetQuestStatus("evolve2", Types.EStatus._Active);
             }
 
             if (iProgress > m_iEvolveTresh1 && !m_bStep1)
             {
-                SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Inactive);
                 SetQuestStatus("fetch_flower", Types.EStatus._Inactive);
-                SetQuestStatus("find_flower", Types.EStatus._Inactive);
+
+                if (GetQuestByName("deliver_package").m_iStatus == Types.EStatus._Failed)
+                {
+                    SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Failed);
+                }
+                else
+                {
+                    SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Inactive);
+                }
+
+                if (GetQuestByName("talk_well").m_iStatus == Types.EStatus._Failed)
+                {
+                    SetQuestStatus("find_lantern", Types.EStatus._Failed);
+                }
+                else
+                {
+                    SetQuestStatus("find_lantern", Types.EStatus._Inactive);
+                }
+
                 m_bStep1 = true;
             }
 
@@ -132,6 +149,7 @@ namespace GA.MonsterProject
                 {
                     SetQuestStatus("ate_chicken", Types.EStatus._Inactive);
                 }
+
                 m_bStep2 = true;
             }
 
