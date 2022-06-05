@@ -21,6 +21,10 @@ namespace GA.MonsterProject
         public bool BoolMonUp = false;
         public bool BoolMonRight = false;
 
+        [Header("Pause")]
+        public static bool GamePaused = false;
+        public GameObject PauseMenu;
+
 
         public bool rightChoice = false;
         public int RandomNumber;
@@ -32,6 +36,7 @@ namespace GA.MonsterProject
         // Start is called before the first frame update
         void Start()
         {
+            Paused();
             ChangeForm();
             RandomNum();
             ActivateButton();
@@ -40,6 +45,7 @@ namespace GA.MonsterProject
         // Update is called once per frame
         void Update()
         {
+            StartMiniGame();
             timer += Time.deltaTime;
             if(timer >= timeLimit)
             {
@@ -53,6 +59,23 @@ namespace GA.MonsterProject
             if (Points == 20)
             {
                 GameWon();
+            }
+        }
+
+        void Paused()
+        {
+            PauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+            GamePaused = true;
+        }
+
+        public void StartMiniGame()
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                PauseMenu.SetActive(false);
+                Time.timeScale = 1f;
+                GamePaused = false;
             }
         }
 
