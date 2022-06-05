@@ -63,14 +63,9 @@ namespace GA.MonsterProject
                 }
             }
 
-            if (name != "none" && status != Types.EStatus._Done && status != Types.EStatus._Failed)
+            if (!GetQuestByName(name).m_bHidden && status != Types.EStatus._Done && status != Types.EStatus._Failed)
             {
                 UIManager.s_UIManager.ToggleQuestLogIcon(true);
-            }
-
-            if (name == "deliver_package" && status == Types.EStatus._Failed)
-            {
-                SetQuestStatus("marget_kill_jackalopes", Types.EStatus._Failed);
             }
         }
 
