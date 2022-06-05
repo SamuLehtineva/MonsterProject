@@ -147,6 +147,15 @@ namespace GA.MonsterProject
                     SetQuestStatus("ate_chicken", Types.EStatus._Inactive);
                 }
             }
+
+            if (GetQuestByName("move_rock").m_iStatus == Types.EStatus._Failed || GetQuestByName("move_rock").m_iStatus == Types.EStatus._Done)
+			{
+                SetQuestStatus("last", Types.EStatus._Active);
+			}
+            else if (GetQuestByName("ate_chicken").m_iStatus == Types.EStatus._Failed || GetQuestByName("ate_chicken").m_iStatus == Types.EStatus._Done)
+			{
+                SetQuestStatus("last", Types.EStatus._Active);
+            }
         }
 
         /*

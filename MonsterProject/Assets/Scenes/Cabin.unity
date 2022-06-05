@@ -5943,8 +5943,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 546537079}
-  - component: {fileID: 546537078}
   - component: {fileID: 546537077}
+  - component: {fileID: 546537078}
   m_Layer: 0
   m_Name: evolve2
   m_TagString: Interactable
@@ -5974,24 +5974,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 546537076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
+  m_Script: {fileID: 11500000, guid: a1327c4ab7a997d4fae328e5c71f49fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <m_sName>k__BackingField: '!MonsterName!'
   <m_sFileName>k__BackingField: pet/evolve
-  m_qRewardA:
-    m_iMoney: -25
-    m_iReputation: 0
-    m_iBond: 25
-  m_sQuestNameA: evolve2
-  m_eQuestStatusA: 4
-  m_qRewardB:
-    m_iMoney: 0
-    m_iReputation: 0
-    m_iBond: -20
-  m_sQuestNameB: evolve2
-  m_eQuestStatusB: 4
-  m_bRewardTalk: 0
+  <m_sEvolution>k__BackingField: evolve2
 --- !u!4 &546537079
 Transform:
   m_ObjectHideFlags: 0
@@ -26471,8 +26459,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2022588482}
-  - component: {fileID: 2022588484}
   - component: {fileID: 2022588483}
+  - component: {fileID: 2022588485}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Interactable
@@ -26507,7 +26495,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 14.704668, y: 1, z: 9.406776}
   m_Center: {x: 0.637455, y: 0, z: -1.7846977}
---- !u!114 &2022588484
+--- !u!114 &2022588485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26516,24 +26504,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2022588481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 699b6256447b08a43bd70420dbaeef55, type: 3}
+  m_Script: {fileID: 11500000, guid: a1327c4ab7a997d4fae328e5c71f49fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <m_sName>k__BackingField: '!MonsterName!'
   <m_sFileName>k__BackingField: pet/evolve
-  m_qRewardA:
-    m_iMoney: -25
-    m_iReputation: 0
-    m_iBond: 25
-  m_sQuestNameA: evolve
-  m_eQuestStatusA: 4
-  m_qRewardB:
-    m_iMoney: 0
-    m_iReputation: 0
-    m_iBond: -20
-  m_sQuestNameB: evolve
-  m_eQuestStatusB: 4
-  m_bRewardTalk: 0
+  <m_sEvolution>k__BackingField: evolve
 --- !u!1001 &2046235836
 PrefabInstance:
   m_ObjectHideFlags: 0

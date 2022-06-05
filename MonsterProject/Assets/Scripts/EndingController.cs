@@ -33,7 +33,7 @@ namespace GA.MonsterProject
                 }
                 else
                 {
-                    m_gcPlayer.clip = m_vClips[1];
+                    m_gcPlayer.clip = m_vClips[3];
                 }
             }
 
