@@ -162,6 +162,7 @@ namespace GA.MonsterProject
         public void Load(ISaveReader reader)
         {
             m_bPaused = false;
+            UIManager.s_UIManager.TogglePauseMenu(false);
             m_sDestination = reader.ReadString();
             m_sDestinationScene = reader.ReadString();
             m_sPetName = reader.ReadString();
