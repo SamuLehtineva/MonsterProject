@@ -111,6 +111,8 @@ namespace GA.MonsterProject
 
             if (iProgress > m_iEvolveTresh1 && !m_bStep1)
             {
+                m_bStep1 = true;
+
                 SetQuestStatus("fetch_flower", Types.EStatus._Inactive);
 
                 if (GetQuestByName("deliver_package").m_iStatus == Types.EStatus._Failed)
@@ -130,12 +132,12 @@ namespace GA.MonsterProject
                 {
                     SetQuestStatus("find_lantern", Types.EStatus._Inactive);
                 }
-
-                m_bStep1 = true;
             }
 
             if (iProgress > m_iEvolveTresh2 && !m_bStep2)
             {
+                m_bStep2 = true;
+
                 if (UIManager.s_UIManager.m_iForm == Types.EForm._Good)
                 {
                     SetQuestStatus("move_rock", Types.EStatus._Inactive);
@@ -144,10 +146,7 @@ namespace GA.MonsterProject
                 {
                     SetQuestStatus("ate_chicken", Types.EStatus._Inactive);
                 }
-
-                m_bStep2 = true;
             }
-
         }
 
         /*

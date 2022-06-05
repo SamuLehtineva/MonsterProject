@@ -23,6 +23,10 @@ namespace GA.MonsterProject
             ChangeForm();
             m_gcAnimator = GetComponentInChildren<Animator>();
             DeActivate();
+            if (m_iForm == Types.EForm._Bad || m_iForm == Types.EForm._Good)
+			{
+                m_gcNav.SetStoppingDistance(4f);
+            }
             //m_gcAnimator.SetBool("IsMoving", true);
         }
 
@@ -55,7 +59,7 @@ namespace GA.MonsterProject
                 
                 case Types.EForm._Bad:
                     transform.Find("Bad").gameObject.SetActive(true);
-                    //m_gcMoveClose.m_fDesiredDistance = 18f;
+                    m_gcNav.SetStoppingDistance(4f);
                     break;
 
                 case Types.EForm._Good:

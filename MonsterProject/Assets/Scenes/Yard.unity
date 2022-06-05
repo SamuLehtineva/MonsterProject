@@ -12136,7 +12136,11 @@ PrefabInstance:
       objectReference: {fileID: 543450653579936483}
     - target: {fileID: 378498506, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
       propertyPath: m_Speed
-      value: 6
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 378498506, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
+      propertyPath: m_Acceleration
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 378498506, guid: 4c2386e4ef671144f8db12efeb903091, type: 3}
       propertyPath: m_StoppingDistance

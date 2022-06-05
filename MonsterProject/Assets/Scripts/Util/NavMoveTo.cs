@@ -41,5 +41,10 @@ namespace GA.MonsterProject
                 return false;
 			}
 		}
+
+        public void SetStoppingDistance(float amount)
+		{
+            m_gcNav.stoppingDistance = amount;
+		}
     }
 }
