@@ -26,11 +26,13 @@ namespace GA.MonsterProject
         public int RandomNumber;
         public int Points = 0;
         public float timer = 0;
-        public float timeLimit = 2;
+        public float timeLimit = 3;
+        GameObject pet;
 
         // Start is called before the first frame update
         void Start()
         {
+            ChangeForm();
             RandomNum();
             ActivateButton();
         }
@@ -48,7 +50,7 @@ namespace GA.MonsterProject
                 GameControls();
                 timer = 0;
             }
-            if (Points == 10)
+            if (Points == 20)
             {
                 GameWon();
             }
@@ -58,44 +60,71 @@ namespace GA.MonsterProject
         {
             if (Input.GetKeyDown(KeyCode.A) && BoolMonLeft == true)
             {
-                MonsterLeft.SetActive(false);
+                pet.transform.Find("Left").gameObject.SetActive(false);
                 BoolMonLeft = false;
                 Points += 1;
                 RandomNum();
-                ActivateButton();
+                StartCoroutine(DelayBetweenSprites());
             } else if (Input.GetKeyDown(KeyCode.W) && BoolMonUp == true)
             {
-                MonsterUp.SetActive(false);
+                pet.transform.Find("Up").gameObject.SetActive(false);
                 BoolMonUp = false;
                 Points += 1;
                 RandomNum();
-                ActivateButton();
+                StartCoroutine(DelayBetweenSprites());
             } else if (Input.GetKeyDown(KeyCode.D) && BoolMonRight == true)
             {
-                MonsterRight.SetActive(false);
+                pet.transform.Find("Right").gameObject.SetActive(false);
                 BoolMonRight = false;
                 Points += 1;
                 RandomNum();
-                ActivateButton();
+                StartCoroutine(DelayBetweenSprites());
             } else
             {
                 GameLost();
             }
         }
 
+        void ChangeForm()
+        {
+            pet = transform.Find("Baby").gameObject;
+            if (UIManager.s_UIManager != null)
+            {
+                switch (UIManager.s_UIManager.m_iForm)
+                {
+                    case Types.EForm._Baby:
+                        pet = transform.Find("Baby").gameObject;
+                        break;
+
+                    case Types.EForm._Teen:
+                        pet = transform.Find("Teen").gameObject;
+                        break;
+
+                    case Types.EForm._Bad:
+                        pet = transform.Find("Bad").gameObject;
+                        break;
+
+                    case Types.EForm._Good:
+                        pet = transform.Find("Good").gameObject;
+                        break;
+                }
+            }
+            pet.gameObject.SetActive(true);
+        }
+
         void ActivateButton()
         {
             if (RandomNumber == 0) {
-                MonsterLeft.SetActive(true);
+                pet.transform.Find("Left").gameObject.SetActive(true);
                 BoolMonLeft = true;
 
             } else if (RandomNumber == 1)
             {
-                MonsterUp.SetActive(true);
+                pet.transform.Find("Up").gameObject.SetActive(true);
                 BoolMonUp = true;
             } else //(RandomNumber == 2)
             {
-                MonsterRight.SetActive(true);
+                pet.transform.Find("Right").gameObject.SetActive(true);
                 BoolMonRight = true;
             }
         }
@@ -113,6 +142,12 @@ namespace GA.MonsterProject
         void GameLost()
         {
             Debug.Log("Lost");
+        }
+
+        IEnumerator DelayBetweenSprites()
+        {
+            yield return new WaitForSeconds(0.5f);
+            ActivateButton();
         }
     }
 }
