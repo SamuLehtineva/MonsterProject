@@ -39,5 +39,13 @@ namespace GA.MonsterProject
 
             m_gcPlayer.Play();
         }
+
+        void Update()
+		{
+            if (Input.GetButtonDown("Fire1"))
+			{
+                SceneChanger.LoadLevel("Credits");
+			}
+		}
     }
 }
