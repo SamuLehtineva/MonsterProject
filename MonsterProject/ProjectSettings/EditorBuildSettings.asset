@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transition_2.unity
     guid: db9389eb9984cfc4bb08947b3331ac3a
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/SImonSays.unity
+    guid: 92bf00348f7d8f84aae7816b85d4fed7
   m_configObjects: {}
