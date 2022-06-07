@@ -1,0 +1,19 @@
+#Start
+Play with !MonsterName!?
+#
+
+#ButtonA
+Play
+#
+
+#OptionA
+!MonsterName! jumps around excitedly
+#
+
+#ButtonB
+Not now
+#
+
+#OptionB
+!MonsterName! looks disappointed
+#

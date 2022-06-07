@@ -39,7 +39,7 @@ namespace GA.MonsterProject
             Paused();
             ChangeForm();
             RandomNum();
-            ActivateButton();
+            
         }
 
         // Update is called once per frame
@@ -76,6 +76,7 @@ namespace GA.MonsterProject
                 PauseMenu.SetActive(false);
                 Time.timeScale = 1f;
                 GamePaused = false;
+                ActivateButton();
             }
         }
 
@@ -110,7 +111,7 @@ namespace GA.MonsterProject
 
         void ChangeForm()
         {
-            pet = transform.Find("Baby").gameObject;
+            pet = transform.Find("Bad").gameObject;
             if (UIManager.s_UIManager != null)
             {
                 switch (UIManager.s_UIManager.m_iForm)
