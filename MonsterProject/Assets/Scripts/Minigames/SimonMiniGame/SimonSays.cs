@@ -6,16 +6,6 @@ namespace GA.MonsterProject
 {
     public class SimonSays : MonoBehaviour
     {
-        [Header("Monster")]
-        public GameObject MonsterLeft;
-        public GameObject MonsterUp;
-        public GameObject MonsterRight;
-
-        [Header("Player")]
-        public GameObject PlayerLeft;
-        public GameObject PlayerUp;
-        public GameObject PlayerRight;
-
         [Header("Booleans")]
         public bool BoolMonLeft = false;
         public bool BoolMonUp = false;
@@ -25,13 +15,14 @@ namespace GA.MonsterProject
         public static bool GamePaused = false;
         public GameObject PauseMenu;
 
-
         public bool rightChoice = false;
         public int RandomNumber;
         public int Points = 0;
         public float timer = 0;
         public float timeLimit = 3;
-        GameObject pet;
+
+        private GameObject pet;
+        private AudioClipPlayer Audi;
 
         // Start is called before the first frame update
         void Start()
@@ -39,7 +30,7 @@ namespace GA.MonsterProject
             Paused();
             ChangeForm();
             RandomNum();
-            
+            Audi = GetComponent<AudioClipPlayer>();
         }
 
         // Update is called once per frame
@@ -89,6 +80,7 @@ namespace GA.MonsterProject
                 Points += 1;
                 RandomNum();
                 StartCoroutine(DelayBetweenSprites());
+                Audi.PlayClip(0, 1);
             } else if (Input.GetKeyDown(KeyCode.W) && BoolMonUp == true)
             {
                 pet.transform.Find("Up").gameObject.SetActive(false);
@@ -96,6 +88,7 @@ namespace GA.MonsterProject
                 Points += 1;
                 RandomNum();
                 StartCoroutine(DelayBetweenSprites());
+                Audi.PlayClip(0, 1);
             } else if (Input.GetKeyDown(KeyCode.D) && BoolMonRight == true)
             {
                 pet.transform.Find("Right").gameObject.SetActive(false);
@@ -103,8 +96,10 @@ namespace GA.MonsterProject
                 Points += 1;
                 RandomNum();
                 StartCoroutine(DelayBetweenSprites());
+                Audi.PlayClip(0, 1);
             } else
             {
+                Audi.PlayClip(1, 1);
                 GameLost();
             }
         }
@@ -160,6 +155,7 @@ namespace GA.MonsterProject
 
         void GameWon()
         {
+            Audi.PlayClip(2, 1);
             Debug.Log("Won");
         }
 
@@ -173,5 +169,11 @@ namespace GA.MonsterProject
             yield return new WaitForSeconds(0.5f);
             ActivateButton();
         }
+
+        IEnumerator EndDelay()
+		{
+            yield return new WaitForSeconds(1);
+            SceneChanger.LoadLevel("Cabin_Bigger_Room");
+		}
     }
 }
