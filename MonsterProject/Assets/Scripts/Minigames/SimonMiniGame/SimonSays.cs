@@ -23,6 +23,7 @@ namespace GA.MonsterProject
 
         private GameObject pet;
         private AudioClipPlayer Audi;
+        private bool Over;
 
         // Start is called before the first frame update
         void Start()
@@ -31,6 +32,7 @@ namespace GA.MonsterProject
             ChangeForm();
             RandomNum();
             Audi = GetComponent<AudioClipPlayer>();
+            Over = false;
         }
 
         // Update is called once per frame
@@ -38,7 +40,7 @@ namespace GA.MonsterProject
         {
             StartMiniGame();
             timer += Time.deltaTime;
-            if(timer >= timeLimit)
+            if(timer >= timeLimit && !Over)
             {
                 GameLost();
             }
@@ -47,7 +49,7 @@ namespace GA.MonsterProject
                 GameControls();
                 timer = 0;
             }
-            if (Points == 20)
+            if (Points == 20 && !Over)
             {
                 GameWon();
             }
@@ -99,7 +101,6 @@ namespace GA.MonsterProject
                 Audi.PlayClip(0, 1);
             } else
             {
-                Audi.PlayClip(1, 1);
                 GameLost();
             }
         }
@@ -155,13 +156,18 @@ namespace GA.MonsterProject
 
         void GameWon()
         {
+            Over = true;
             Audi.PlayClip(2, 1);
             Debug.Log("Won");
+            StartCoroutine(EndDelay());
         }
 
         void GameLost()
         {
+            Over = true;
+            Audi.PlayClip(1, 1);
             Debug.Log("Lost");
+            StartCoroutine(EndDelay());
         }
 
         IEnumerator DelayBetweenSprites()
