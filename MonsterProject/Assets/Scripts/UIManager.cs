@@ -96,6 +96,7 @@ namespace GA.MonsterProject
             if (m_iForm == Types.EForm._Baby)
             {
                 m_iForm = Types.EForm._Teen;
+                GameManager.m_bCanPlay = true;
                 if (GameObject.FindGameObjectWithTag("VideoPlayer") != null)
                 {
                     GameObject.FindGameObjectWithTag("VideoPlayer").GetComponent<VideoClipPlayer>().PlayClipTeen();
@@ -107,6 +108,7 @@ namespace GA.MonsterProject
         {
             if (m_iForm == Types.EForm._Teen)
             {
+                GameManager.m_bCanPlay = true;
                 if (PlayerResources.s_CurrentResources.m_iBond >= 50)
                 {
                     m_iForm = Types.EForm._Good;

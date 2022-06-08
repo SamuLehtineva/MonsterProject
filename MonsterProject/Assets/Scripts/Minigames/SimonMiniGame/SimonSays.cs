@@ -156,6 +156,11 @@ namespace GA.MonsterProject
 
         void GameWon()
         {
+            if (PlayerResources.s_CurrentResources != null)
+			{
+                PlayerResources.s_CurrentResources.AddResource(Types.EResource._Bond, 5);
+			}
+
             Over = true;
             Audi.PlayClip(2, 1);
             Debug.Log("Won");

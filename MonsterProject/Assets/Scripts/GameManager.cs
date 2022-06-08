@@ -11,6 +11,7 @@ namespace GA.MonsterProject
         public static string m_sDestination = "Default";
         public static string m_sDestinationScene = "Cabin";
         public static string m_sPetName = "PetName";
+        public static bool m_bCanPlay = true;
         public static GameManager s_GameManager;
         public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;
@@ -114,6 +115,7 @@ namespace GA.MonsterProject
             Debug.Log("Reset");
             m_sDestination = "Default";
             m_sDestinationScene = "Cabin";
+            m_bCanPlay = true;
             Destroy(GameObject.Find("UIManager"));
             SceneChanger.LoadLevelAdditive("HUD");
         }
@@ -154,6 +156,7 @@ namespace GA.MonsterProject
             writer.WriteString(m_sDestination);
             writer.WriteString(m_sDestinationScene);
             writer.WriteString(m_sPetName);
+            writer.WriteBool(m_bCanPlay);
         }
 
         /*
@@ -166,6 +169,7 @@ namespace GA.MonsterProject
             m_sDestination = reader.ReadString();
             m_sDestinationScene = reader.ReadString();
             m_sPetName = reader.ReadString();
+            m_bCanPlay = reader.ReadBool();
             SceneManager.LoadScene(m_sDestinationScene);
         }
     }

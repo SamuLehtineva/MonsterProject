@@ -25,9 +25,19 @@ namespace GA.MonsterProject
 			set;
 		}
 
+		public GameObject m_oAlert;
+
 		void Start()
 		{
-			m_sFileName = "pet/play";
+			if (GameManager.m_bCanPlay)
+			{
+				m_sFileName = "pet/play";
+			}
+			else
+			{
+				m_sFileName = "pet/play_no";
+				m_oAlert.SetActive(false);
+			}
 		}
 
 		void Update()
@@ -62,6 +72,7 @@ namespace GA.MonsterProject
 
 		public void PickOptionA()
 		{
+			GameManager.m_bCanPlay = false;
 			SceneChanger.LoadLevel("SImonSays");
 		}
 
