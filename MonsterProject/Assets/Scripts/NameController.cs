@@ -9,7 +9,8 @@ namespace GA.MonsterProject
     {
         [SerializeField]
         TMP_Text m_txtInput;
-        public void ChangeName()
+
+		public void ChangeName()
         {
             GameManager.m_sPetName = m_txtInput.text;
             Debug.Log(GameManager.m_sPetName);

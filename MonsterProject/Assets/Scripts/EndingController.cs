@@ -29,11 +29,11 @@ namespace GA.MonsterProject
             {
                 if (PlayerResources.s_CurrentResources != null && PlayerResources.s_CurrentResources.m_iReputation > 50)
                 {
-                    m_gcPlayer.clip = m_vClips[2];
+                    m_gcPlayer.clip = m_vClips[3];
                 }
                 else
                 {
-                    m_gcPlayer.clip = m_vClips[3];
+                    m_gcPlayer.clip = m_vClips[2];
                 }
             }
 

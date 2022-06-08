@@ -9,6 +9,9 @@ namespace GA.MonsterProject
         [SerializeField]
         Npc_Talk m_gcTalk;
 
+        [SerializeField]
+        Npc_Talk m_gcTalk2;
+
         void Update()
         {
             Types.EStatus iEStatus = UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("move_rock").m_iStatus;
@@ -58,20 +61,21 @@ namespace GA.MonsterProject
             }
             else
             {
-                m_gcTalk.gameObject.SetActive(true);
-                m_gcTalk.ShowIcon(true);
-                m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
-                m_gcTalk.m_sQuestNameA = "move_rock";
-                m_gcTalk.m_bRewardTalk = true;
+                m_gcTalk.gameObject.SetActive(false);
+                m_gcTalk2.gameObject.SetActive(true);
+                m_gcTalk2.ShowIcon(true);
+                m_gcTalk2.m_eQuestStatusA = Types.EStatus._Done;
+                m_gcTalk2.m_sQuestNameA = "move_rock";
+                m_gcTalk2.m_bRewardTalk = true;
 
                 if (UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("marget_kill_jackalopes").m_iStatus == Types.EStatus._Done)
                 {
-                    m_gcTalk.m_sFileName = "move_rock/active_pos";
-                    m_gcTalk.m_qRewardA = new QuestReward(0, 10, 0);
+                    m_gcTalk2.m_sFileName = "move_rock/active_pos";
+                    m_gcTalk2.m_qRewardA = new QuestReward(0, 10, 0);
                 }
                 else {
-                    m_gcTalk.m_sFileName = "move_rock/active_neg";
-                    m_gcTalk.m_qRewardA = new QuestReward(0, 0, 0);
+                    m_gcTalk2.m_sFileName = "move_rock/active_neg";
+                    m_gcTalk2.m_qRewardA = new QuestReward(0, 0, 0);
                 }
             }
         }
