@@ -55,7 +55,7 @@ namespace GA.MonsterProject
 
             if (status == Types.EStatus._Done || status == Types.EStatus._Failed)
             {
-                CheckProgress();
+                
 
                 if (name == "evolve")
                 {
@@ -65,6 +65,7 @@ namespace GA.MonsterProject
                 {
                     UIManager.s_UIManager.Evolve2();
                 }
+                CheckProgress();
             }
 
             if (!GetQuestByName(name).m_bHidden && status != Types.EStatus._Done && status != Types.EStatus._Failed)
