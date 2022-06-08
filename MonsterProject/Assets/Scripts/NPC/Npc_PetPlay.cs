@@ -26,6 +26,7 @@ namespace GA.MonsterProject
 		}
 
 		public GameObject m_oAlert;
+		public bool m_bPlay;
 
 		void Start()
 		{
@@ -61,19 +62,23 @@ namespace GA.MonsterProject
 
 		public void DialogEnd()
 		{
-			//Empty for now
+			if (m_bPlay)
+			{
+				SceneChanger.LoadLevel("SImonSays");
+			}
 		}
 
 		public void Interact()
 		{
 			UIManager.s_UIManager.StartDialog(this);
 			DeActivate();
+			m_bPlay = false;
 		}
 
 		public void PickOptionA()
 		{
 			GameManager.m_bCanPlay = false;
-			SceneChanger.LoadLevel("SImonSays");
+			m_bPlay = true;
 		}
 
 		public void PickOptionB()

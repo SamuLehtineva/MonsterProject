@@ -44,7 +44,7 @@ namespace GA.MonsterProject
             {
                 GameLost();
             }
-            if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D))
+            if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.D)) && !GamePaused)
             {
                 GameControls();
                 timer = 0;

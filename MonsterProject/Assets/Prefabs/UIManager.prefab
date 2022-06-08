@@ -1287,6 +1287,8 @@ MonoBehaviour:
   - {fileID: 1675317648}
   - {fileID: 103483899}
   - {fileID: 1243601735}
+  m_bStep1: 0
+  m_bStep2: 0
 --- !u!1 &1342303449
 GameObject:
   m_ObjectHideFlags: 0

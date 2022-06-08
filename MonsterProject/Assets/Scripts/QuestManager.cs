@@ -11,7 +11,11 @@ namespace GA.MonsterProject
         public int m_iEvolveTresh1 = 4;
         public int m_iEvolveTresh2 = 8;
         public QuestInfo[] m_aQuests;
+
+        [field: SerializeField]
         private bool m_bStep1 = false;
+
+        [field: SerializeField]
         private bool m_bStep2 = false;
         // Start is called before the first frame update
         public void OnValidate()

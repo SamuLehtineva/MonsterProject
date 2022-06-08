@@ -951,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_iEvolveTresh2
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1287170718, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_aQuests.Array.size

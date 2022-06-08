@@ -6,7 +6,7 @@ using TMPro;
 
 namespace GA.MonsterProject
 {
-    public class UIManager : MonoBehaviour
+    public class UIManager : MonoBehaviour, ISaveable
     {
         public static UIManager s_UIManager;
 
@@ -137,6 +137,16 @@ namespace GA.MonsterProject
 		{
             yield return new WaitForSeconds(2);
             m_txtSavedText.gameObject.SetActive(false);
+		}
+
+        public void Save(ISaveWriter writer)
+		{
+            writer.WriteInt((int)m_iForm);
+		}
+
+        public void Load(ISaveReader reader)
+		{
+            m_iForm = (Types.EForm)reader.ReadInt();
 		}
     }
 }
