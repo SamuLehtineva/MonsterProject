@@ -1,1 +1,9 @@
-bond + reputation +    = All is good, you keep living in the village with your little creature
+#Start
+Already after the first day, the villagers learned to trust you and !MonsterName!. It didn’t take long before you felt like you had found your forever home. Even !MonsterName! seemed to enjoy living in Bergensjofellbyfjord.
+
+
+You earned your living mostly by working together with !MonsterName! to help out the others.
+
+
+Your future seemed bright and the only issues were caused by the old fisherman, but even he couldn’t touch you since everyone else told him to leave you and your lovable pet alone.
+#

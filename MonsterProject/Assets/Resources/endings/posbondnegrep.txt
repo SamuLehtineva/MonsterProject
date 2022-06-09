@@ -1,1 +1,9 @@
-bond + reputation -    = Player leaves the village with the monster, too bad the village was just not for them
+#Start
+Already after the first day, you knew Bergensjofellbyfjord was not the place you’d be calling home. Most of the other villagers didn’t like !MonsterName! and your pet seemed stressed to walk around there.
+
+
+You couldn’t force your friend to live in such a close-minded village so you left the next day as soon as the morning sun rose. You felt a bit… tired, but you had to keep going so you could find a good home for yourself and your pet.
+#
+
+
+

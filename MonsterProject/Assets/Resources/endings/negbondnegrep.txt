@@ -1,1 +1,9 @@
-bond - reputation -    = Both get thrown out - and depending on how the player sees it the monster either leaves or kills the player
+#Start
+After the first day you knew you had messed up. !MonsterName! had caused some trouble in the village and you hadn’t made many friends. The villagers threw you out after the first day.
+
+
+They didn’t like you and !MonsterName! had evolved into a monster, which had caused even more distrust between you and the people of Bergensjofellbyfjord.
+
+
+You had to continue your journey to find a village you could settle in, but you didn’t know if you could take !MonsterName! with you… or if it even wanted to travel with you. The way !MonsterName! was looking at you sent chills down your spine…
+#

@@ -1,1 +1,15 @@
-bond - reputation +    = Monster gets killed, and the player is sad. Doesn’t want to keep looking for a home for the rest of forever and they didn’t raise the creature well
+#Start
+After the first day you knew you had messed up. !MonsterName! had evolved badly and had caused some trouble in the village. The old fisherman had given you a choice - you could stay but that would mean !MonsterName! needed to be put down.
+
+
+Most of the other villagers agreed, they didn’t want to leave a chance that !MonsterName! would stay in the nearby forest and attack someone or even worse - join Fernir’s army.
+
+
+It was a painful decision to make, mostly because you could only blame yourself that !MonsterName! had evolved badly, but you had grown fond of Bergensjofellbyfjord and the people who lived there, but in the end, you agreed.
+
+
+You felt so tired of searching for a good village to settle down in and now that you had finally found one, you couldn’t let your pet ruin it for you. But you knew that you’d forever need to live with the guilt of letting your pet down.
+
+
+You had raised !MonsterName! badly and then betrayed its trust.
+#
