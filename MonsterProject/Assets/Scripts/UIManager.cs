@@ -25,6 +25,9 @@ namespace GA.MonsterProject
         GameObject m_oPauseMenu;
 
         [SerializeField]
+        GameObject m_oResources;
+
+        [SerializeField]
         Canvas m_gcCanvas;
 
         [SerializeField]
@@ -67,6 +70,11 @@ namespace GA.MonsterProject
         {
             m_gcCanvas.gameObject.SetActive(active);
         }
+
+        public void ToggleResources(bool active)
+		{
+            m_oResources.SetActive(active);
+		}
 
         public void TogglePauseMenu(bool value)
         {

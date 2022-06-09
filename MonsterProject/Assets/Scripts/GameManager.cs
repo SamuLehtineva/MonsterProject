@@ -16,7 +16,7 @@ namespace GA.MonsterProject
         public static QuestInfo m_qMinigameQuest;
         public bool m_bPaused = false;
         CharMover m_gcCharMover;
-        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro_Animated", "Ending", "Credits", "Name"};
+        private string[] m_aNoHudScenes = {"MinigameTest", "SImonSays", "Running Minigame", "Menu", "Intro_Animated", "Credits", "Name"};
         private float m_fFixedDeltaTime;
         void Awake()
         {
@@ -91,6 +91,15 @@ namespace GA.MonsterProject
                 {
                     UIManager.s_UIManager.ToggleHud(true);
                 }
+
+                if (SceneManager.GetActiveScene().name == "Ending")
+                {
+                    UIManager.s_UIManager.ToggleResources(false);
+                }
+                else
+                {
+                    UIManager.s_UIManager.ToggleResources(true);
+                }
             }
         }
 
@@ -127,13 +136,16 @@ namespace GA.MonsterProject
 
         public void PlayerCanMove(bool value)
         {
-            if (value)
-            {
-                StartCoroutine(PlayerCanMoveDelay());
-            }
-            else
-            {
-                m_gcCharMover.m_bCanMove = false;
+            if (m_gcCharMover != null)
+			{
+                if (value)
+                {
+                    StartCoroutine(PlayerCanMoveDelay());
+                }
+                else
+                {
+                    m_gcCharMover.m_bCanMove = false;
+                }
             }
         }
 

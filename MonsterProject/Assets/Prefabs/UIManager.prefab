@@ -2978,6 +2978,7 @@ MonoBehaviour:
   m_gcQuestLogController: {fileID: 1044115137}
   m_gcMusicController: {fileID: 0}
   m_oPauseMenu: {fileID: 2409397305575912862}
+  m_oResources: {fileID: 0}
   m_gcCanvas: {fileID: 2409397305170677007}
   m_gcQuestLogIcon: {fileID: 0}
   m_txtSavedText: {fileID: 0}
