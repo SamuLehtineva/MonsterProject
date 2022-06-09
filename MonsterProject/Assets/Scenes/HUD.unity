@@ -946,6 +946,10 @@ PrefabInstance:
       value: Find Helga in the Forest
       objectReference: {fileID: 0}
     - target: {fileID: 1060992252, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
+      propertyPath: m_iMoney
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060992252, guid: c5ab705d52e9d6f40b1beb17bf16f40a, type: 3}
       propertyPath: m_iReputation
       value: 0
       objectReference: {fileID: 0}
