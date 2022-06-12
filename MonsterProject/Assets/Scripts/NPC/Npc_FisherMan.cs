@@ -32,7 +32,7 @@ namespace GA.MonsterProject
                 
                 case Types.EStatus._Completed:
                     m_gcTalk.m_sFileName = "fetch_flower/completed";
-                    m_gcTalk.m_qRewardA = new QuestReward(10, 10, 0);
+                    m_gcTalk.m_qRewardA = new QuestReward(10, 10, -10);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
                     m_gcTalk.ShowIcon(true);
@@ -48,6 +48,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Failed:
                     m_gcTalk.m_sFileName = "fetch_flower/failed";
+                    m_gcTalk.m_qRewardB = new QuestReward(0, 0, 10);
                     m_gcTalk.ShowIcon(false);
 
                     break;

@@ -20,7 +20,7 @@ You told the old man that !MonsterName! had never hurt anyone and hadn't killed 
 "I don't care if your monster specifically didn't kill my son, but its brethren did! I know what those things are capable of... I saw it with my own eyes..."
 
 
-You wondered if helping this man would change his mind
+You wondered if helping this man would change his mind. !MonsterName! hid behind your legs and glared at the fisherman.
 #
 
 #OptionA

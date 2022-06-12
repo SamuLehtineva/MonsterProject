@@ -80,7 +80,7 @@ namespace GA.MonsterProject
                         m_gcTrigger.m_qRewardA = new QuestReward(-20, 5, -5);
                         m_gcTrigger.m_sQuestNameA = "ate_chicken";
                         m_gcTrigger.m_eQuestStatusA = Types.EStatus._Done;
-                        m_gcTrigger.m_qRewardB = new QuestReward(0, 0, 0);
+                        m_gcTrigger.m_qRewardB = new QuestReward(0, -20, 0);
                         m_gcTrigger.m_sQuestNameB = "ate_chicken";
                         m_gcTrigger.m_eQuestStatusB = Types.EStatus._Failed;
 

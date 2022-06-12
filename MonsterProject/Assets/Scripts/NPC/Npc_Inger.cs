@@ -32,7 +32,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Completed:
                     m_gcTalk.m_sFileName = "find_lantern/completed";
-                    m_gcTalk.m_qRewardA = new QuestReward(0, 20, -20);
+                    m_gcTalk.m_qRewardA = new QuestReward(0, 30, -30);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
                     m_gcTalk.ShowIcon(true);
@@ -48,6 +48,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Failed:
                     m_gcTalk.m_sFileName = "find_lantern/failed";
+                    m_gcTalk.m_qRewardB = new QuestReward(0, -5, 10);
                     m_gcTalk.ShowIcon(false);
 
                     break;
