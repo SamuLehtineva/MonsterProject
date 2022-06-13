@@ -1693,6 +1693,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
+      propertyPath: m_fMoveSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_gcPetController
       value: 
       objectReference: {fileID: 790954673}
@@ -3331,7 +3335,7 @@ MonoBehaviour:
   m_eQuestStatusA: 1
   m_qRewardB:
     m_iMoney: 0
-    m_iReputation: -10
+    m_iReputation: 0
     m_iBond: 0
   m_sQuestNameB: fetch_flower
   m_eQuestStatusB: 3
@@ -5107,7 +5111,7 @@ MonoBehaviour:
   <m_sFileName>k__BackingField: fetch_helga_active
   m_qRewardA:
     m_iMoney: 40
-    m_iReputation: 10
+    m_iReputation: 15
     m_iBond: 0
   m_sQuestNameA: fetch_helga
   m_eQuestStatusA: 4
@@ -19708,7 +19712,7 @@ MonoBehaviour:
   <m_sFileName>k__BackingField: move_rock/inactive
   m_qRewardA:
     m_iMoney: 20
-    m_iReputation: 20
+    m_iReputation: 10
     m_iBond: 0
   m_sQuestNameA: move_rock
   m_eQuestStatusA: 3

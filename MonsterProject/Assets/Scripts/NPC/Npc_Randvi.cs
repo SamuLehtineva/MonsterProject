@@ -28,7 +28,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Completed:
                     m_gcTalk.m_sFileName = "randvi_completed";
-                    m_gcTalk.m_qRewardA = new QuestReward(0, 20, 0);
+                    m_gcTalk.m_qRewardA = new QuestReward(0, 20, 5);
                     m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                     m_gcTalk.m_bRewardTalk = true;
                     m_gcTalk.gameObject.SetActive(true);
@@ -45,7 +45,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Failed:
                     m_gcTalk.m_sFileName = "randvi_failed";
-                    m_gcTalk.m_qRewardB = new QuestReward(0, -5, 0);
+                    m_gcTalk.m_qRewardB = new QuestReward(0, -10, 0);
                     m_gcTalk.ShowIcon(false);
 
                     break;

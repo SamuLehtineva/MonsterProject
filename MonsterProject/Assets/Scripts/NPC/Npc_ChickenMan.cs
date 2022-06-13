@@ -77,10 +77,10 @@ namespace GA.MonsterProject
                     case Types.EStatus._Inactive:
                         m_gcTrigger.gameObject.SetActive(true);
                         m_gcTrigger.m_sFileName = "Ate_chicken_inactive";
-                        m_gcTrigger.m_qRewardA = new QuestReward(-20, 5, -5);
+                        m_gcTrigger.m_qRewardA = new QuestReward(0, -25, 0);
                         m_gcTrigger.m_sQuestNameA = "ate_chicken";
                         m_gcTrigger.m_eQuestStatusA = Types.EStatus._Done;
-                        m_gcTrigger.m_qRewardB = new QuestReward(0, -20, 0);
+                        m_gcTrigger.m_qRewardB = new QuestReward(-25, 5, -10);
                         m_gcTrigger.m_sQuestNameB = "ate_chicken";
                         m_gcTrigger.m_eQuestStatusB = Types.EStatus._Failed;
 

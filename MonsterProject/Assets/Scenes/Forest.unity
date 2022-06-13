@@ -1451,6 +1451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1471310885}
     - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
+      propertyPath: m_fMoveSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948669748566539852, guid: 1322c16f4e1ac3b4a8ba1ef72117964c, type: 3}
       propertyPath: m_gcPetController
       value: 
       objectReference: {fileID: 1235684663}

@@ -55,12 +55,12 @@ namespace GA.MonsterProject
 
 		public void PickOptionA()
 		{
-			PlayerResources.s_CurrentResources.AddResources(-25, 0, 25);
+			PlayerResources.s_CurrentResources.AddResources(-50, 0, 10);
 		}
 
 		public void PickOptionB()
 		{
-			PlayerResources.s_CurrentResources.AddResources(0, 0, -20);
+			PlayerResources.s_CurrentResources.AddResources(0, 0, -25);
 		}
     }
 }
