@@ -45,7 +45,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Failed:
                     m_gcTalk.m_sFileName = "randvi_failed";
-                    m_gcTalk.m_qRewardB = new QuestReward(0, -10, 0);
+                    m_gcTalk.m_qRewardB = new QuestReward(0, -15, 0);
                     m_gcTalk.ShowIcon(false);
 
                     break;

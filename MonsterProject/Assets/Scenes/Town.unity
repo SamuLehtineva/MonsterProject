@@ -5117,7 +5117,7 @@ MonoBehaviour:
   m_eQuestStatusA: 4
   m_qRewardB:
     m_iMoney: 0
-    m_iReputation: -5
+    m_iReputation: -10
     m_iBond: 0
   m_sQuestNameB: none
   m_eQuestStatusB: 0

@@ -48,7 +48,7 @@ namespace GA.MonsterProject
 
                 case Types.EStatus._Failed:
                     m_gcTalk.m_sFileName = "find_lantern/failed";
-                    m_gcTalk.m_qRewardB = new QuestReward(0, -10, 10);
+                    m_gcTalk.m_qRewardB = new QuestReward(0, -20, 10);
                     m_gcTalk.ShowIcon(false);
 
                     break;
