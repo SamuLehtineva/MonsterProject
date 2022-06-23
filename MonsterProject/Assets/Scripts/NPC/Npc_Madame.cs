@@ -39,7 +39,7 @@ namespace GA.MonsterProject
 
                     case Types.EStatus._Completed:
                         m_gcTalk.m_sFileName = "madame_innkeep_completed";
-                        m_gcTalk.m_qRewardA = new QuestReward(10, 20, -10);
+                        m_gcTalk.m_qRewardA = new QuestReward(10, 10, -5);
                         m_gcTalk.m_eQuestStatusA = Types.EStatus._Done;
                         m_gcTalk.m_bRewardTalk = true;
 
@@ -72,11 +72,11 @@ namespace GA.MonsterProject
                 if (UIManager.s_UIManager.m_gcQuestManager.GetQuestByName("marget_kill_jackalopes").m_iStatus == Types.EStatus._Done)
                 {
                     m_gcTalk2.m_sFileName = "move_rock/active_pos";
-                    m_gcTalk2.m_qRewardA = new QuestReward(0, 10, 0);
+                    m_gcTalk2.m_qRewardA = new QuestReward(0, 5, 5);
                 }
                 else {
                     m_gcTalk2.m_sFileName = "move_rock/active_neg";
-                    m_gcTalk2.m_qRewardA = new QuestReward(0, 0, 0);
+                    m_gcTalk2.m_qRewardA = new QuestReward(0, -10, 0);
                 }
             }
         }
