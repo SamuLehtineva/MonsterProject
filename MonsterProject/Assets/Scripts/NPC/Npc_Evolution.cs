@@ -50,6 +50,7 @@ namespace GA.MonsterProject
 
 		public void Interact()
 		{
+			UIManager.s_UIManager.m_gcDialogController.SetRewards(new QuestReward(-50, 0, 10), new QuestReward(0, 0, -25));
 			UIManager.s_UIManager.StartDialog(this);
 		}
 
