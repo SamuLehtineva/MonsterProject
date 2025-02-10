@@ -26,7 +26,6 @@ namespace GA.MonsterProject
                 {
                     var SceneLoad = SceneManager.LoadSceneAsync("NarrativeBox", LoadSceneMode.Additive);
                     SceneLoad.completed += (s) => {
-                        //SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.SetActive(false);
                         SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.transform.position = GameObject.Find("Main Camera").transform.position;
                         SceneManager.GetSceneByName("NarrativeBox").GetRootGameObjects()[0].gameObject.transform.rotation = GameObject.Find("Main Camera").transform.rotation;
                     };

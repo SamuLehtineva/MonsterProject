@@ -27,7 +27,6 @@ namespace GA.MonsterProject
 			{
                 m_gcNav.SetStoppingDistance(4f);
             }
-            //m_gcAnimator.SetBool("IsMoving", true);
         }
 
         void Update()

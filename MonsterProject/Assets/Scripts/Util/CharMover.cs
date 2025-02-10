@@ -16,7 +16,7 @@ namespace GA.MonsterProject
         public float m_fTurnSpeed;
 
         public bool m_bCanMove;
-        // Start is called before the first frame update
+
         void Start()
         {
             m_ccCharacterController = GetComponent<CharacterController>();
@@ -24,7 +24,6 @@ namespace GA.MonsterProject
             m_bCanMove = true;
         }
 
-        // Update is called once per frame
         void Update()
         {
             m_vDirection.x = Input.GetAxis("Horizontal");
@@ -46,7 +45,6 @@ namespace GA.MonsterProject
                 {
                     m_gcANimator.SetBool("IsMoving", true);
                     Quaternion gTargetRotation = Quaternion.LookRotation(m_vDirection, Vector3.up);
-                    Quaternion qNewRotation = Quaternion.Slerp(transform.rotation, gTargetRotation, m_fTurnSpeed * Time.deltaTime);
                     transform.rotation = gTargetRotation;
                 }
                 else

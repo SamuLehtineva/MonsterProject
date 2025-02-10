@@ -24,7 +24,6 @@ namespace GA.MonsterProject
             m_gcChanger = GameObject.FindGameObjectWithTag("SceneChanger").GetComponent<SceneChanger>();
         }
 
-        // Update is called once per frame
         void Update()
         {
             if (Input.GetButtonDown("Fire1") && IsActive)
